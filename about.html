@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — LAUSD Contract Watch</title>
+  <meta name="description" content="About the LAUSD Contract Watch project — mission, methodology, and data sources.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="container">
+    <h1>About This Project</h1>
+    <p>Who we are, why we built this, and how the data works.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container" style="max-width:820px">
+    <div class="context-grid" style="margin-bottom:3rem">
+      <div class="context-card">
+        <div class="context-icon">🏫</div>
+        <h3>Built by Parents &amp; Teachers</h3>
+        <p>This site was built by a teacher and parent in LAUSD using Claude Code as an AI partner to process public records at scale. It is not affiliated with LAUSD.</p>
+      </div>
+      <div class="context-card">
+        <div class="context-icon">📂</div>
+        <h3>Public Records Only</h3>
+        <p>All contract data comes from official LAUSD board reports and Legistar, the district's public meeting system. Form 700 disclosures are public documents required by California law.</p>
+      </div>
+      <div class="context-card">
+        <div class="context-icon">🔓</div>
+        <h3>Fully Open</h3>
+        <p>This site has no login, no paywall, and no tracking beyond basic analytics. All data is freely available to download and use.</p>
+      </div>
+    </div>
+
+    <div class="about-content">
+
+      <h2 id="mission">Our Mission</h2>
+      <p>Los Angeles Unified School District is the second-largest school district in the United States. It spends billions of dollars each year on contracts with private companies — technology vendors, consultants, construction firms, and more.</p>
+      <p>Most of this spending is technically public. Board reports are posted online. Form 700 financial disclosures are filed every year. But the data is scattered across hundreds of PDFs, buried in bureaucratic language, and nearly impossible for a working parent or teacher to navigate.</p>
+      <p>We built this site to change that. Our goal is simple: make LAUSD's contract spending as easy to search and understand as possible, so parents, educators, and journalists can hold the district accountable.</p>
+
+      <h2 id="methodology">Methodology</h2>
+      <p>Contract data was extracted from LAUSD board reports published via the Legistar public meeting system. Each contract was reviewed and cross-referenced with the original board report PDF.</p>
+      <p>The <strong>"High Priority"</strong> finding levels are assigned based on a combination of:</p>
+      <ul>
+        <li>Public reporting (news coverage of scandals, investigations, or failures)</li>
+        <li>Federal or state investigations</li>
+        <li>Known data breaches involving student or staff data</li>
+        <li>Board member financial connections via Form 700 disclosures</li>
+        <li>Cost analysis and comparisons to market rates or public alternatives</li>
+      </ul>
+      <p><strong>These are not legal findings.</strong> They are starting points for community scrutiny, not conclusions of wrongdoing.</p>
+
+      <h2 id="conflicts">Conflicts of Interest Methodology</h2>
+      <p>California's Form 700 Statement of Economic Interests requires public officials to disclose financial interests, including investments, business positions, income sources, and real property. We obtained Form 700 filings for LAUSD board members from the FPPC's public portal.</p>
+      <p>We then cross-referenced company names in those disclosures with LAUSD vendor names using fuzzy matching. Matches are rated by confidence level:</p>
+      <ul>
+        <li><strong>High:</strong> Direct name match between disclosed company and LAUSD vendor, with overlapping time periods</li>
+        <li><strong>Medium:</strong> Strong name match, but no confirmed time overlap</li>
+        <li><strong>Low:</strong> Partial or indirect match (e.g., parent company relationship)</li>
+      </ul>
+      <p><strong>Important caveat:</strong> Many matches involve publicly-traded stocks (AT&T, Apple, etc.) held through mutual funds or brokerage accounts. These are required to be disclosed but generally do not represent a material conflict. We flag them for completeness and mark them as "Public Stock."</p>
+
+      <h2 id="data">Data Sources</h2>
+      <ul>
+        <li><strong>Contract data:</strong> LAUSD Board of Education meeting agendas and reports via Legistar (laschools.legistar.com)</li>
+        <li><strong>Form 700 disclosures:</strong> California Fair Political Practices Commission (FPPC) public portal</li>
+        <li><strong>Board member information:</strong> LAUSD Board of Education official website</li>
+        <li><strong>School data:</strong> LAUSD school listings and enrollment data</li>
+        <li><strong>News coverage:</strong> The 74, LA Times, LA County District Attorney press releases</li>
+      </ul>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Is this data accurate?</h3>
+      <p>We verify contracts against original board report PDFs. Some contracts are marked "estimated" when amounts could not be confirmed from the source document. We mark all data with verification status. If you find an error, please let us know.</p>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Why does the total amount seem so high?</h3>
+      <p>Contract amounts represent the <em>maximum authorized value</em> over the full contract period, not annual spending. A 5-year $50M contract represents $10M/year in actual spending. We display full contract values for comparability.</p>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Are you affiliated with LAUSD?</h3>
+      <p>No. This is an independent parent-led project. We have no connection to LAUSD, UTLA, or any political organization.</p>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Are you trying to get rid of technology in schools?</h3>
+      <p>No. Our concern is <em>accountability</em>, not technology itself. We believe students deserve thoughtful, evidence-based technology decisions — not contracts driven by vendor relationships or rushed procurement. The Schools Beyond Screens campaign specifically calls for <em>intentional</em> technology use, not a ban.</p>
+
+      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Can I use this data?</h3>
+      <p>Yes. All data on this site comes from public records. You are welcome to use, share, and build on it. Please cite your sources — including the original LAUSD board reports.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Found an error? Have data to share? Want to get involved? Reach us at <a href="mailto:info@lausdcontractwatch.com">info@lausdcontractwatch.com</a></p>
+
+    </div>
+  </div>
+</section>
+
+<script src="/js/layout.js"></script>
+<script>initLayout();</script>
+</body>
+</html>

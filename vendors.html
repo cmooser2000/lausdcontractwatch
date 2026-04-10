@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Analysis — LAUSD Contract Watch</title>
+  <meta name="description" content="LAUSD vendors ranked by total contract spending.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Vendor Analysis</h1>
+    <p>LAUSD vendors ranked by total contract value.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="tabs">
+      <a href="#" class="tab tab-active" data-tab="active">Active Contracts <span class="tab-badge" id="activeCount">—</span></a>
+      <a href="#" class="tab" data-tab="all">All Vendors <span class="tab-badge" id="allCount">—</span></a>
+    </div>
+
+    <div class="results-summary" id="vendorSummary">Loading…</div>
+
+    <div class="contracts-table-wrap">
+      <table class="contracts-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Vendor</th>
+            <th>Contracts</th>
+            <th class="col-right">Total Value</th>
+            <th>Categories</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="vendorsTbody">
+          <tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<script src="/js/layout.js"></script>
+<script src="/js/vendors.js"></script>
+</body>
+</html>

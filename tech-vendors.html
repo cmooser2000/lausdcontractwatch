@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Spending — LAUSD Contract Watch</title>
+  <meta name="description" content="LAUSD technology contract spending analysis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Technology Spending</h1>
+    <p>LAUSD's technology contracts — the largest and fastest-growing category of vendor spending.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="results-summary" id="techSummary">Loading…</div>
+
+    <div class="contracts-table-wrap" style="margin-top:1rem">
+      <table class="contracts-table">
+        <thead>
+          <tr>
+            <th>Contract</th>
+            <th>Vendor</th>
+            <th class="col-right">Amount</th>
+            <th>Status</th>
+            <th>Finding</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="techTbody">
+          <tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border)">
+      <h2 class="section-title" style="font-size:1.3rem">Why Technology?</h2>
+      <p style="color:var(--text-light);line-height:1.7;max-width:750px">
+        Technology is LAUSD's largest contract category by value. While some technology spending is necessary,
+        several contracts have raised serious concerns — including the AllHere AI chatbot (FBI investigation),
+        the Yondr phone pouch program (widely criticized), and PowerSchool (largest student data breach in US history).
+        Meanwhile, the district claims it cannot afford fair teacher pay.
+      </p>
+      <div style="margin-top:1rem">
+        <a href="/search.html?category=Technology" class="btn btn-primary">Explore All Tech Contracts</a>
+        <a href="/high-priority.html" class="btn btn-outline" style="margin-left:0.75rem">View High Priority Findings</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="/js/layout.js"></script>
+<script src="/js/tech-vendors.js"></script>
+</body>
+</html>

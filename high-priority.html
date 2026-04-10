@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Priority Contracts — LAUSD Contract Watch</title>
+  <meta name="description" content="LAUSD contracts flagged for significant concerns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="container">
+    <h1>High Priority Contracts</h1>
+    <p>Contracts flagged for significant findings — waste, fraud risk, conflicts of interest, or questionable value.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="priority-disclaimer">
+      <strong>Methodology note:</strong> These contracts are flagged based on public reporting, board member connections, cost analysis, and data breach history.
+      Flags are not legal findings — they are starting points for community scrutiny.
+      <a href="/about.html#methodology">Learn more about our methodology.</a>
+    </div>
+
+    <div class="tabs">
+      <a href="#" class="tab tab-active" data-level="significant">Significant <span class="tab-badge" id="countSig">—</span></a>
+      <a href="#" class="tab" data-level="medium">Medium <span class="tab-badge" id="countMed">—</span></a>
+      <a href="#" class="tab" data-level="minor">Minor <span class="tab-badge" id="countMin">—</span></a>
+    </div>
+
+    <div id="priorityList">
+      <p style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</p>
+    </div>
+  </div>
+</section>
+
+<script src="/js/layout.js"></script>
+<script src="/js/high-priority.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Old PHP backend — not part of the static site
+api/
+pages/
+config/
+config.php
+cron/
+public/
+vendor/
+composer.json
+composer.lock
+setup.sh
+SETUP.md
+
+# Raw data pipeline files (too large / not needed for deploy)
+pipeline/
+csv_export/
+lausd_contracts_dump.sql
+lausd_schools_with_boe.csv
+lausd_schools_with_boe.json
+
+# Uploads
+uploads/
+
+# OS / editor
+.DS_Store
+*.DS_Store
+.env

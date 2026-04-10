@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conflicts of Interest — LAUSD Contract Watch</title>
+  <meta name="description" content="Form 700 financial disclosure cross-references with LAUSD contracts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Conflicts of Interest</h1>
+    <p>Cross-referencing Form 700 financial disclosures with LAUSD contract approvals.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="info-box" style="margin-bottom:1.5rem">
+      <h4>About this data</h4>
+      <p>California's Form 700 requires public officials to disclose financial interests. We cross-referenced these disclosures with LAUSD contracts approved during overlapping periods. <strong>Many matches involve publicly-traded stock holdings</strong> and may not represent actual conflicts — use this as a starting point for investigation, not a conclusion.</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="filter-row" style="margin-bottom:1.25rem">
+      <div class="filter-group">
+        <label for="filterFiler">Board Member</label>
+        <select id="filterFiler">
+          <option value="">All Members</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filterYear">Filing Year</label>
+        <select id="filterYear">
+          <option value="">All Years</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filterConfidence">Confidence</label>
+        <select id="filterConfidence">
+          <option value="">All</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label><input type="checkbox" id="filterOverlapOnly"> Year Overlap Only</label>
+      </div>
+    </div>
+
+    <div class="results-summary" id="conflictsSummary">Loading…</div>
+
+    <div id="conflictsList">
+      <p style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</p>
+    </div>
+
+  </div>
+</section>
+
+<script src="/js/layout.js"></script>
+<script src="/js/conflicts.js"></script>
+</body>
+</html>
