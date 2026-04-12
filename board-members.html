@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board Member Profiles — LAUSD Contract Watch</title>
+  <meta name="description" content="LAUSD Board of Education member profiles, voting records, and accountability links.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<!-- Nav injected by layout.js -->
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <h1>Meet the Board That Approved $6.7 Billion in Private Contracts</h1>
+    <p>Seven elected members. Unanimous on almost every vote in the public record.</p>
+  </div>
+</div>
+
+<!-- Transparency Alert -->
+<section class="section" style="padding-top: 2rem; padding-bottom: 0;">
+  <div class="container">
+    <div class="bm-transparency-alert">
+      <div class="bm-alert-icon"><i data-lucide="alert-triangle"></i></div>
+      <div>
+        <strong>Transparency Gap</strong>
+        <p>LAUSD's Legistar system only contains roll-call vote records from June 2025 onward. Key votes — including the AllHere AI chatbot contract, iReady renewals, and teacher contract approvals — are not publicly accessible in the digital record. Schools Beyond Screens filed 2 public records requests for complete voting histories. LAUSD did not respond to either.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Board Summary Stats -->
+<section class="section" style="padding-top: 2rem;">
+  <div class="container">
+    <div class="bm-stats-row">
+      <div class="bm-stat-box">
+        <span class="bm-stat-number">7</span>
+        <span class="bm-stat-label">Elected board members</span>
+      </div>
+      <div class="bm-stat-box">
+        <span class="bm-stat-number">7-0</span>
+        <span class="bm-stat-label">Every vote in the record except one</span>
+      </div>
+      <div class="bm-stat-box">
+        <span class="bm-stat-number">$6.7B</span>
+        <span class="bm-stat-label">Committed to private contracts since 2022</span>
+      </div>
+      <div class="bm-stat-box">
+        <span class="bm-stat-number">2</span>
+        <span class="bm-stat-label">CPRA requests filed, 0 responses received</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The One Split Vote -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="bm-callout">
+      <h2>The Only Contested Vote</h2>
+      <p>In the available public record, the board voted unanimously on every item — including $500 million in bonds approved without public discussion — except one. On December 16, 2025, the board voted 6-1 on a resolution addressing immigration enforcement and community safety. Board member Sherlett Hendy Newbill (District 1) cast the only dissenting vote.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Board Member Profiles -->
+<section class="section">
+  <div class="container">
+    <div id="boardProfiles">
+      <p style="color:var(--text-muted)">Loading board member profiles...</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer CTA -->
+<section class="section section-alt">
+  <div class="container" style="text-align: center; max-width: 700px;">
+    <h2 class="section-title">See something missing? Help us fill the gaps.</h2>
+    <p class="section-subtitle">If you have documentation of additional board votes, Form 700 disclosures, or campaign finance connections, we want to know.</p>
+    <a href="/take-action.html" class="btn btn-primary">Submit a tip</a>
+  </div>
+</section>
+
+<script src="/js/layout.js"></script>
+<script>
+(function() {
+  initLayout();
+
+  const MEMBERS = [
+    { name: 'Sherlett Hendy Newbill', district: 1, email: 'sherlett.newbill@lausd.net', termEnds: 2026 },
+    { name: 'Dr. Rocio Rivas', district: 2, email: 'rocio.rivas@lausd.net', termEnds: 2028 },
+    { name: 'Scott Schmerelson', district: 3, email: 'scott.schmerelson@lausd.net', termEnds: 2028 },
+    { name: 'Nick Melvoin', district: 4, email: 'nick.melvoin@lausd.net', termEnds: 2026 },
+    { name: 'Karla Griego', district: 5, email: 'karla.griego@lausd.net', termEnds: 2028 },
+    { name: 'Kelly Gonez', district: 6, email: 'kelly.gonez@lausd.net', termEnds: 2026 },
+    { name: 'Tanya Ortiz Franklin', district: 7, email: 'tanya.franklin@lausd.net', termEnds: 2028 }
+  ];
+
+  const FPPC_URL = 'https://www.fppc.ca.gov/transparency/form-700-filed-by-public-officials/form700-search.html';
+  const ETHICS_URL = 'https://ethics.lacity.org';
+
+  fetch('/board_votes.json')
+    .then(r => r.json())
+    .then(data => renderProfiles(data))
+    .catch(() => {
+      document.getElementById('boardProfiles').innerHTML = '<p style="color:var(--red)">Failed to load vote data.</p>';
+    });
+
+  function renderProfiles(data) {
+    const votes = data.votes || [];
+    const container = document.getElementById('boardProfiles');
+    container.innerHTML = '';
+
+    MEMBERS.forEach(member => {
+      const card = document.createElement('div');
+      card.className = 'bm-profile-card';
+
+      // Header
+      const header = document.createElement('div');
+      header.className = 'bm-profile-header';
+      header.innerHTML = `
+        <div>
+          <h3>${escapeHtml(member.name)}</h3>
+          <span class="bm-district">District ${member.district}</span>
+          <span class="bm-term">Term ends ${member.termEnds}</span>
+        </div>
+        <a href="mailto:${escapeHtml(member.email)}" class="bm-email-link">
+          <i data-lucide="mail"></i> Contact this board member &rarr;
+        </a>
+      `;
+      card.appendChild(header);
+
+      // Vote table
+      const memberVotes = votes.filter(v => v.member_votes && v.member_votes[member.name] !== undefined);
+      if (memberVotes.length > 0) {
+        const tableWrap = document.createElement('div');
+        tableWrap.className = 'bm-vote-table-wrap';
+        let rows = '';
+        memberVotes.forEach(v => {
+          const vote = v.member_votes[member.name];
+          const label = v.label.length > 50 ? v.label.substring(0, 50) + '...' : v.label;
+          const date = formatDate(v.date);
+          let voteCell = '';
+          if (vote === 'Yes') {
+            voteCell = '<span class="bm-vote-yes" title="Yes">&#10003;</span>';
+          } else if (vote === 'No') {
+            voteCell = '<span class="bm-vote-no" title="No">&#10007;</span>';
+          } else {
+            voteCell = '<span class="bm-vote-absent" title="' + escapeHtml(vote) + '">&mdash;</span>';
+          }
+          const url = v.legistar_url ? ' href="' + escapeHtml(v.legistar_url) + '" target="_blank" rel="noopener"' : '';
+          rows += '<tr><td class="date-cell">' + date + '</td><td><a' + url + ' class="bm-vote-link">' + escapeHtml(label) + '</a></td><td class="bm-vote-cell">' + voteCell + '</td></tr>';
+        });
+        tableWrap.innerHTML = `
+          <table class="bm-vote-table">
+            <thead><tr><th>Date</th><th>Item</th><th>Vote</th></tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        `;
+        card.appendChild(tableWrap);
+      } else {
+        const noVotes = document.createElement('p');
+        noVotes.className = 'bm-no-votes';
+        noVotes.textContent = 'No vote records available in the public database for this member.';
+        card.appendChild(noVotes);
+      }
+
+      // Data gap note
+      const gap = document.createElement('p');
+      gap.className = 'bm-data-gap';
+      gap.textContent = 'Vote records shown are from the LAUSD Legistar public database (June 2025\u2013present). Earlier votes are not publicly accessible in the digital record.';
+      card.appendChild(gap);
+
+      // External links
+      const links = document.createElement('div');
+      links.className = 'bm-external-links';
+      links.innerHTML = `
+        <a href="${FPPC_URL}" target="_blank" rel="noopener"><i data-lucide="file-text"></i> View Form 700 financial disclosure &rarr;</a>
+        <a href="${ETHICS_URL}" target="_blank" rel="noopener"><i data-lucide="landmark"></i> View campaign donors &rarr;</a>
+      `;
+      card.appendChild(links);
+
+      container.appendChild(card);
+    });
+
+    lucide.createIcons();
+  }
+})();
+</script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
