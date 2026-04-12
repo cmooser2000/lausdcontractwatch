@@ -1,0 +1,110 @@
+/* Vote Detail Page Styles */
+
+.vote-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.vote-date {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+}
+.vote-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0.85rem;
+  border-radius: 50px;
+}
+.vote-badge--unanimous {
+  background: rgba(212,168,67,0.2);
+  color: var(--gold-light);
+  border: 1px solid rgba(212,168,67,0.4);
+}
+.vote-badge--split {
+  background: rgba(192,57,43,0.2);
+  color: #e74c3c;
+  border: 1px solid rgba(192,57,43,0.4);
+}
+.vote-source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.5rem;
+}
+.vote-source-link:hover { color: var(--gold-light); }
+.vote-source-link svg.lucide { width: 14px; height: 14px; }
+
+/* Why It Matters dark section */
+.vote-why-section {
+  background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 100%);
+  padding: 4rem 1.5rem;
+}
+.vote-why-section p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+/* Vote breakdown table */
+.vote-breakdown-table {
+  overflow-x: auto;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+.vote-breakdown-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.vote-breakdown-table th {
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.vote-breakdown-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.vote-breakdown-table tr:last-child td { border-bottom: none; }
+
+/* Footer CTA */
+.vote-footer-cta {
+  background: var(--navy);
+  padding: 3rem 1.5rem;
+}
+
+/* Callout box (for immigration resolution note) */
+.vote-callout-box {
+  background: #fff8e1;
+  border: 1px solid #f0d060;
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--navy-mid);
+}
+.vote-callout-box strong {
+  color: var(--navy);
+}
+
+@media (max-width: 768px) {
+  .vote-why-section { padding: 3rem 1.5rem; }
+  .vote-breakdown-table th,
+  .vote-breakdown-table td { padding: 0.6rem 0.75rem; font-size: 0.82rem; }
+}

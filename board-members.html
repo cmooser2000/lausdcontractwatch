@@ -142,6 +142,17 @@
         const tableWrap = document.createElement('div');
         tableWrap.className = 'bm-vote-table-wrap';
         let rows = '';
+        // Map vote labels to detail page slugs
+        const VOTE_SLUGS = {
+          'Approved $500M judgment obligation bonds sale': '/votes/500m-judgment-bonds.html',
+          'Approved $1B general obligation bonds issuance': '/votes/1b-go-bonds.html',
+          'Approved $5.1B general obligation refunding bonds': '/votes/51b-refunding-bonds.html',
+          'Approved IT Infrastructure - School Network Upgrade Phase 3 (198 sites)': '/votes/it-network-upgrade.html',
+          'Approved IT Infrastructure - School Network Alternative Connectivity Pilot': '/votes/it-network-connectivity.html',
+          'Approved IT Infrastructure - Campus Safety Systems (Intrusion) Phase 2': '/votes/it-campus-safety.html',
+          'Adopted resolution on community safety during heightened immigration enforcement': '/votes/immigration-resolution.html'
+        };
+
         memberVotes.forEach(v => {
           const vote = v.member_votes[member.name];
           const label = v.label.length > 50 ? v.label.substring(0, 50) + '...' : v.label;
@@ -154,7 +165,9 @@
           } else {
             voteCell = '<span class="bm-vote-absent" title="' + escapeHtml(vote) + '">&mdash;</span>';
           }
-          const url = v.legistar_url ? ' href="' + escapeHtml(v.legistar_url) + '" target="_blank" rel="noopener"' : '';
+          const detailUrl = VOTE_SLUGS[v.label] || v.legistar_url;
+          const isExternal = detailUrl && detailUrl.startsWith('http');
+          const url = detailUrl ? ' href="' + escapeHtml(detailUrl) + '"' + (isExternal ? ' target="_blank" rel="noopener"' : '') : '';
           rows += '<tr><td class="date-cell">' + date + '</td><td><a' + url + ' class="bm-vote-link">' + escapeHtml(label) + '</a></td><td class="bm-vote-cell">' + voteCell + '</td></tr>';
         });
         tableWrap.innerHTML = `
