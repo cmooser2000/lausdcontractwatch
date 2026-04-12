@@ -139,7 +139,6 @@ function injectNav() {
             <a href="/transparency.html">Transparency</a>
           </div>
         </div>
-        <a href="/campaigns.html">Campaigns</a>
         <a href="/board-members.html">Board Profiles</a>
         <a href="/sources.html">Sources</a>
         <a href="/about.html">About</a>
@@ -211,7 +210,6 @@ function injectFooter() {
         <h4>Accountability</h4>
         <ul>
           <li><a href="/board.html">Board Members</a></li>
-          <li><a href="/campaigns.html">Campaigns</a></li>
           <li><a href="/take-action.html">Take Action</a></li>
         </ul>
       </div>
