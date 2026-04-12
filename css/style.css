@@ -105,14 +105,14 @@ svg.lucide {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--white);
+    color: #ffffff;
     font-weight: 700;
     font-size: 1.1rem;
     text-decoration: none;
 }
 .nav-brand:hover { color: var(--gold-light); }
 .nav-icon { font-size: 1.5rem; }
-.nav-title { letter-spacing: -0.3px; }
+.nav-title { letter-spacing: -0.3px; color: #ffffff; }
 .nav-links {
     display: flex;
     align-items: center;
