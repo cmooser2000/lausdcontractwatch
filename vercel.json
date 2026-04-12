@@ -31,6 +31,12 @@
     { "source": "/campaigns",    "destination": "/campaigns.html" },
     { "source": "/take-action",  "destination": "/take-action.html" },
     { "source": "/about",        "destination": "/about.html" },
-    { "source": "/sources",      "destination": "/sources.html" }
+    { "source": "/sources",            "destination": "/sources.html" },
+    { "source": "/private-companies",  "destination": "/private-companies.html" },
+    { "source": "/edtech",             "destination": "/edtech.html" },
+    { "source": "/teachers",           "destination": "/teachers.html" },
+    { "source": "/students",           "destination": "/students.html" },
+    { "source": "/transparency",       "destination": "/transparency.html" },
+    { "source": "/board-members",      "destination": "/board-members.html" }
   ]
 }
