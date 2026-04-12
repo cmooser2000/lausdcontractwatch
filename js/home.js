@@ -61,17 +61,18 @@ function renderEdtechChart() {
   const ctx = document.getElementById('edtechChart');
   if (!ctx) return;
 
-  const years = ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
-  const spending = [45, 52, 61, 89, 380, 290, 245, 210];
-  const math = [33.5, 33.5, null, null, 28.5, 32.8, 32.8, 36.8];
-  const reading = [44.1, 44.1, null, null, 41.7, 43.1, 43.1, 46.5];
+  const years = ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+  const spending = [12, 15, 18, 45, 52, 61, 89, 380, 290, 245, 210];
+  const math = [30.2, 31.1, 32.3, 33.5, 33.5, null, null, 28.5, 32.8, 32.8, 36.8];
+  const reading = [42.0, 42.8, 43.5, 44.1, 44.1, null, null, 41.7, 43.1, 43.1, 46.5];
+  const covidIndices = [5, 6]; // 2020, 2021
 
   // COVID bars get muted color
   const barColors = spending.map((_, i) =>
-    i === 2 || i === 3 ? 'rgba(150, 150, 150, 0.4)' : 'rgba(212, 168, 67, 0.6)'
+    covidIndices.includes(i) ? 'rgba(150, 150, 150, 0.4)' : 'rgba(212, 168, 67, 0.6)'
   );
   const barBorders = spending.map((_, i) =>
-    i === 2 || i === 3 ? 'rgba(150, 150, 150, 0.6)' : 'rgba(212, 168, 67, 0.9)'
+    covidIndices.includes(i) ? 'rgba(150, 150, 150, 0.6)' : 'rgba(212, 168, 67, 0.9)'
   );
 
   new Chart(ctx, {
@@ -146,8 +147,8 @@ function renderEdtechChart() {
           callbacks: {
             label: function(context) {
               if (context.dataset.label === 'Ed-Tech Spending ($M)') {
-                if (context.dataIndex === 2 || context.dataIndex === 3) {
-                  return 'Ed-Tech Spending: $' + context.raw + 'M (No Testing — COVID)';
+                if (context.dataIndex === 5 || context.dataIndex === 6) {
+                  return 'Ed-Tech Spending: $' + context.raw + 'M (No Testing \u2014 COVID)';
                 }
                 return 'Ed-Tech Spending: $' + context.raw + 'M';
               }
@@ -195,17 +196,18 @@ function renderEdtechChart() {
             callback: v => v + '%'
           },
           grid: { drawOnChartArea: false },
-          min: 20,
-          max: 55
+          min: 0,
+          max: 100
         }
       }
     },
     plugins: [{
-      // COVID label plugin
       afterDraw: function(chart) {
         const meta = chart.getDatasetMeta(0);
         const ctx = chart.ctx;
-        [2, 3].forEach(i => {
+
+        // COVID labels on 2020, 2021 bars
+        [5, 6].forEach(i => {
           const bar = meta.data[i];
           if (!bar) return;
           ctx.save();
@@ -216,6 +218,28 @@ function renderEdtechChart() {
           ctx.fillText('(COVID)', bar.x, bar.y + 4);
           ctx.restore();
         });
+
+        // Vertical marker at 2022 (index 7)
+        const bar2022 = meta.data[7];
+        if (!bar2022) return;
+        const xScale = chart.scales.x;
+        const yScale = chart.scales.y;
+        const x = xScale.getPixelForValue(7);
+        ctx.save();
+        ctx.beginPath();
+        ctx.setLineDash([6, 4]);
+        ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+        ctx.lineWidth = 1.5;
+        ctx.moveTo(x, yScale.top);
+        ctx.lineTo(x, yScale.bottom);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = 'rgba(255,255,255,0.55)';
+        ctx.font = "10px 'Inter', sans-serif";
+        ctx.textAlign = 'center';
+        ctx.fillText('Carvalho era / ed-tech', x, yScale.top - 16);
+        ctx.fillText('spending jumps 84%', x, yScale.top - 4);
+        ctx.restore();
       }
     }]
   });

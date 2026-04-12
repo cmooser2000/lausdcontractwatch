@@ -9,6 +9,199 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    /* ── Pull Quote — dramatic ──────────────────────────── */
+    .dramatic-quote {
+      background: linear-gradient(135deg, #1a2332 0%, #243044 50%, #1a3a5c 100%);
+      padding: 80px 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .dramatic-quote-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .dramatic-quote-mark {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 160px;
+      color: var(--gold);
+      opacity: 0.25;
+      line-height: 1;
+      position: absolute;
+      top: -60px;
+      left: -20px;
+      pointer-events: none;
+      user-select: none;
+    }
+    .dramatic-quote-text {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 48px;
+      color: #ffffff;
+      line-height: 1.25;
+      font-weight: 400;
+      position: relative;
+      z-index: 1;
+      margin: 0 0 2rem;
+    }
+    .dramatic-quote-rule {
+      width: 80px;
+      height: 2px;
+      background: var(--gold);
+      margin-left: auto;
+      margin-bottom: 1rem;
+    }
+    .dramatic-quote-attr {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+      text-align: right;
+      line-height: 1.6;
+    }
+
+    /* ── Bigger Picture — stat callouts ─────────────────── */
+    .bp-section { padding: 4rem 1.5rem; background: var(--white); }
+    .bp-inner { max-width: 800px; margin: 0 auto; }
+    .bp-inner h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--navy);
+    }
+    .bp-prose {
+      color: var(--text-light);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+    .bp-stat-callout {
+      background: linear-gradient(135deg, #1a2332, #243044);
+      padding: 40px 2rem;
+      margin: 2rem -1.5rem;
+      border-left: 4px solid var(--gold);
+      text-align: center;
+    }
+    .bp-stat-number {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 72px;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .bp-stat-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* ── Timeline Strip ────────────────────────────────── */
+    .timeline-strip {
+      background: var(--bg-alt);
+      padding: 60px 1.5rem;
+    }
+    .timeline-strip-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .timeline-strip-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .timeline-track {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+    }
+    /* Horizontal connecting line */
+    .timeline-track::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      height: 2px;
+      background: var(--gold);
+      opacity: 0.4;
+    }
+    .timeline-event {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      padding: 0 0.75rem;
+    }
+    .timeline-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin: 0 auto 1rem;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 0 4px var(--bg-alt);
+    }
+    .timeline-year {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--navy);
+      margin-bottom: 0.35rem;
+    }
+    .timeline-desc {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ── Responsive ────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .dramatic-quote { padding: 60px 1.5rem; }
+      .dramatic-quote-text { font-size: 32px; }
+      .dramatic-quote-mark { font-size: 120px; top: -45px; left: -10px; }
+
+      .bp-stat-callout { margin: 2rem -0.5rem; padding: 30px 1.5rem; }
+      .bp-stat-number { font-size: 52px; }
+
+      .timeline-track {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 24px;
+      }
+      .timeline-track::before {
+        top: 8px;
+        bottom: 8px;
+        left: 7px;
+        right: auto;
+        width: 2px;
+        height: auto;
+      }
+      .timeline-event {
+        text-align: left;
+        padding: 0 0 2rem 2rem;
+        position: relative;
+      }
+      .timeline-event:last-child { padding-bottom: 0; }
+      .timeline-dot {
+        position: absolute;
+        left: -24px;
+        top: 2px;
+        margin: 0;
+        box-shadow: 0 0 0 4px var(--bg-alt);
+      }
+    }
+    @media (max-width: 480px) {
+      .dramatic-quote-text { font-size: 26px; }
+      .bp-stat-number { font-size: 44px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -20,15 +213,30 @@
   </div>
 </section>
 
-<!-- The Bigger Picture -->
-<section class="pillar-bigger">
-  <div class="pillar-bigger-inner">
+<!-- The Bigger Picture — with stat callouts -->
+<section class="bp-section">
+  <div class="bp-inner">
     <h2>The Bigger Picture</h2>
-    <div class="pillar-bigger-cols">
-      <p>LAUSD is not a broke school district. It is the second-largest school district in the country with an $18 billion annual budget and $5 billion in reserves. When the district says it cannot afford to pay teachers or fund classrooms, that is a choice &mdash; not a fact.</p>
-      <p>Since 2022, LAUSD committed $6.7 billion to private contracts, including $1.6 billion to education technology companies &mdash; an 84% jump in a single year. 86% of new digital instruction contracts went to private equity or venture capital-backed companies. Nearly 70% of those vendors were paid more than their original contract amounts.</p>
-      <p>This is not mismanagement. It is a procurement culture that consistently chose vendors over students.</p>
-    </div>
+
+    <p class="bp-prose">LAUSD is not a broke school district. It is the second-largest school district in the country with an $18 billion annual budget and $5 billion in reserves. When the district says it cannot afford to pay teachers or fund classrooms, that is a choice &mdash; not a fact.</p>
+  </div>
+
+  <div class="bp-stat-callout">
+    <div class="bp-stat-number">$1.6B</div>
+    <div class="bp-stat-label">committed to ed-tech companies since 2022 &mdash; an 84% jump in a single year</div>
+  </div>
+
+  <div class="bp-inner">
+    <p class="bp-prose">86% of new digital instruction contracts went to private equity or venture capital-backed companies. Nearly 70% of those vendors were paid more than their original contract amounts.</p>
+  </div>
+
+  <div class="bp-stat-callout">
+    <div class="bp-stat-number">86%</div>
+    <div class="bp-stat-label">of new ed-tech contracts go to private equity-backed companies</div>
+  </div>
+
+  <div class="bp-inner">
+    <p class="bp-prose">This is not mismanagement. It is a procurement culture that consistently chose vendors over students.</p>
   </div>
 </section>
 
@@ -40,11 +248,40 @@
     <p>Investigators found text messages. In one, the vendor asked what opportunities in LAUSD they could exploit. She replied that she was on the selection committee.</p>
     <p>In March 2026, the Los Angeles County District Attorney charged both with felony money laundering. The DA called it the largest money laundering scheme in LAUSD history.</p>
     <p>The scheme ran for four years. No one caught it until an LAUSD employee heard about it at a conference.</p>
+  </div>
+</section>
 
-    <blockquote class="pillar-quote">
-      <p>&ldquo;What are the other opportunities in LAUSD that we can exploit?&rdquo;</p>
-      <cite>&mdash; Alleged text message, vendor to LAUSD employee, 2018</cite>
-    </blockquote>
+<!-- Timeline Strip -->
+<section class="timeline-strip">
+  <div class="timeline-strip-inner">
+    <div class="timeline-strip-label">How it unfolded</div>
+    <div class="timeline-track">
+      <div class="timeline-event">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2018</div>
+        <div class="timeline-desc">Scheme begins. Peng starts steering contracts to Innive.</div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2022</div>
+        <div class="timeline-desc">LAUSD employee hears of scheme at a conference. Search warrant served. Peng resigns.</div>
+      </div>
+      <div class="timeline-event">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">March 2026</div>
+        <div class="timeline-desc">DA files felony charges. &ldquo;Largest money laundering scheme in LAUSD history.&rdquo;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dramatic Pull Quote -->
+<section class="dramatic-quote">
+  <div class="dramatic-quote-inner">
+    <div class="dramatic-quote-mark">&ldquo;</div>
+    <p class="dramatic-quote-text">What are the other opportunities in LAUSD that we can exploit?</p>
+    <div class="dramatic-quote-rule"></div>
+    <div class="dramatic-quote-attr">&mdash; Alleged text message, vendor to LAUSD employee, 2018</div>
   </div>
 </section>
 
