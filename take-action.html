@@ -4,96 +4,241 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Take Action — LAUSD Contract Watch</title>
-  <meta name="description" content="Email your LAUSD board member using pre-written templates.">
+  <meta name="description" content="Five ways to make your voice heard on how LAUSD spends public money.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    .ta-hero { background: linear-gradient(135deg, #1a2332 0%, #243044 50%, #1a3a5c 100%); color: #fff; padding: 3.5rem 1.5rem; text-align: center; }
+    .ta-hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .ta-hero p { color: rgba(255,255,255,0.7); font-size: 1.05rem; max-width: 550px; margin: 0 auto; }
+
+    .ta-section { padding: 3.5rem 1.5rem; }
+    .ta-section-dark { background: linear-gradient(180deg, #1a2332, #243044); color: #fff; }
+    .ta-section-dark p, .ta-section-dark li { color: rgba(255,255,255,0.8); }
+    .ta-section-dark .ta-tip { color: rgba(255,255,255,0.4); }
+    .ta-section-dark .ta-divider { border-color: rgba(212,168,67,0.25); }
+    .ta-inner { max-width: 780px; margin: 0 auto; }
+    .ta-header { display: flex; align-items: flex-start; gap: 1.25rem; margin-bottom: 1.5rem; }
+    .ta-num { font-family: 'DM Serif Display', Georgia, serif; font-size: 3rem; color: var(--gold-light); line-height: 1; flex-shrink: 0; margin-top: -4px; }
+    .ta-header-text h2 { font-size: 1.35rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .ta-header-text .ta-icon { color: var(--gold); margin-right: 0.5rem; }
+    .ta-header-text .ta-icon svg.lucide { width: 22px; height: 22px; vertical-align: -3px; }
+    .ta-body { font-size: 1rem; line-height: 1.8; color: var(--text-light); margin-bottom: 1.5rem; }
+    .ta-body ul { padding-left: 1.25rem; margin: 1rem 0; }
+    .ta-body li { margin-bottom: 0.5rem; line-height: 1.65; }
+    .ta-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .ta-btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.2s; font-family: var(--font); }
+    .ta-btn-primary { background: var(--blue); color: #fff; }
+    .ta-btn-primary:hover { background: var(--blue-bright); color: #fff; }
+    .ta-btn-gold { background: var(--gold); color: var(--navy); font-size: 1rem; padding: 0.9rem 2rem; }
+    .ta-btn-gold:hover { background: var(--gold-light); color: var(--navy); }
+    .ta-btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+    .ta-btn-outline:hover { background: var(--navy); color: #fff; }
+    .ta-btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); }
+    .ta-btn-outline-light:hover { background: rgba(255,255,255,0.1); color: #fff; }
+    .ta-tip { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; margin-top: 0.75rem; }
+    .ta-divider { border: none; border-top: 1px solid rgba(212,168,67,0.3); margin: 0; }
+
+    /* Collapsible letter */
+    .ta-collapse-toggle { background: none; border: none; color: var(--gold); font-weight: 600; font-size: 0.9rem; cursor: pointer; padding: 0; font-family: var(--font); margin-top: 1rem; }
+    .ta-collapse-toggle:hover { color: var(--gold-light); }
+    .ta-collapse-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .ta-collapse-body.open { max-height: 2000px; }
+    .ta-letter-box { background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-top: 1rem; position: relative; font-size: 0.88rem; line-height: 1.75; white-space: pre-wrap; color: var(--text); }
+    .ta-section-dark .ta-letter-box { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); color: rgba(255,255,255,0.85); }
+    .ta-copy-btn { position: absolute; top: 0.75rem; right: 0.75rem; background: var(--navy); color: #fff; border: none; padding: 0.35rem 0.85rem; border-radius: var(--radius-sm); font-size: 0.78rem; font-weight: 600; cursor: pointer; font-family: var(--font); transition: background 0.2s; }
+    .ta-copy-btn:hover { background: var(--navy-light); }
+    .ta-copy-btn.copied { background: var(--green); }
+
+    @media (max-width: 768px) {
+      .ta-header { flex-direction: column; gap: 0.5rem; }
+      .ta-num { font-size: 2.25rem; }
+      .ta-btn-gold { width: 100%; text-align: center; }
+      .ta-buttons { flex-direction: column; }
+      .ta-btn { text-align: center; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="page-header">
-  <div class="container">
-    <h1>Take Action</h1>
-    <p>Contact your LAUSD board member directly using a pre-written email template.</p>
-  </div>
+<div class="ta-hero">
+  <h1>Take Action</h1>
+  <p>Five ways to make your voice heard on how LAUSD spends public money.</p>
 </div>
 
-<section class="section">
-  <div class="container" style="max-width:800px">
-
-    <div class="info-box" style="margin-bottom:2rem">
-      <h4>How this works</h4>
-      <p>Select your board district, choose a campaign, and click to open a pre-filled email in your email client or Gmail. The whole process takes under 5 minutes.</p>
-    </div>
-
-    <!-- Step 1: Select District -->
-    <div class="detail-card" style="margin-bottom:1.5rem">
-      <h3>Step 1: Find Your District</h3>
-      <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:1rem">
-        Not sure which district you're in? <a href="https://www.lausd.net/Page/1287" target="_blank" rel="noopener">Look up your board district &rarr;</a>
-      </p>
-      <div class="filter-row">
-        <div class="filter-group">
-          <label for="selectDistrict">Your Board District</label>
-          <select id="selectDistrict">
-            <option value="">— Select your district —</option>
-            <option value="1">District 1</option>
-            <option value="2">District 2</option>
-            <option value="3">District 3</option>
-            <option value="4">District 4</option>
-            <option value="5">District 5</option>
-            <option value="6">District 6</option>
-            <option value="7">District 7</option>
-          </select>
-        </div>
-        <div class="filter-group">
-          <label for="selectCampaign">Campaign</label>
-          <select id="selectCampaign">
-            <option value="">— Select a campaign —</option>
-          </select>
-        </div>
+<!-- 1. Research -->
+<section class="ta-section">
+  <div class="ta-inner">
+    <div class="ta-header">
+      <span class="ta-num">1</span>
+      <div class="ta-header-text">
+        <h2><span class="ta-icon"><i data-lucide="search"></i></span>Research the Contracts</h2>
       </div>
     </div>
-
-    <!-- Step 2: Board Member Info -->
-    <div class="detail-card" id="boardMemberCard" style="display:none;margin-bottom:1.5rem">
-      <h3>Step 2: Your Board Member</h3>
-      <div id="boardMemberInfo"></div>
+    <p class="ta-body">Every contract on this site links to primary sources &mdash; board meeting records, vendor filings, and news reporting. Start with the contracts flagged as Red Flag or Questions Raised. Look up the vendor. Search their name alongside &ldquo;private equity&rdquo; or &ldquo;lawsuit&rdquo; or &ldquo;school district.&rdquo; You may find things we haven&rsquo;t documented yet.</p>
+    <div class="ta-buttons">
+      <a href="/search.html" class="ta-btn ta-btn-primary">&rarr; Search the contract database</a>
+      <a href="/search.html?finding=significant" class="ta-btn ta-btn-outline">&rarr; Filter by Red Flag contracts</a>
     </div>
+    <p class="ta-tip">Tip: California&rsquo;s Public Records Act requires LAUSD to respond within 10 business days. If they don&rsquo;t, that is itself a story worth sharing.</p>
+  </div>
+</section>
 
-    <!-- Step 3: Email Preview & Send -->
-    <div class="detail-card" id="emailCard" style="display:none">
-      <h3>Step 3: Send Your Email</h3>
-      <div style="margin-bottom:1rem">
-        <label style="font-size:0.85rem;font-weight:600;color:var(--text-light);display:block;margin-bottom:0.25rem">Subject</label>
-        <div id="emailSubjectPreview" style="font-size:0.9rem;font-weight:600;padding:0.5rem 0.75rem;background:var(--bg);border-radius:4px;border:1px solid var(--border)"></div>
-      </div>
-      <div style="margin-bottom:1.25rem">
-        <label style="font-size:0.85rem;font-weight:600;color:var(--text-light);display:block;margin-bottom:0.25rem">Email Body Preview</label>
-        <div id="emailBodyPreview" style="font-size:0.85rem;line-height:1.7;white-space:pre-wrap;padding:1rem;background:var(--bg);border-radius:4px;border:1px solid var(--border);max-height:300px;overflow-y:auto;color:var(--text)"></div>
-      </div>
-      <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
-        <a id="btnMailto" href="#" class="btn btn-primary"><i data-lucide="mail"></i> Open in Email App</a>
-        <a id="btnGmail" href="#" target="_blank" rel="noopener" class="btn btn-secondary"><i data-lucide="mail"></i> Open in Gmail</a>
-        <button id="btnCopyEmail" class="btn btn-outline"><i data-lucide="clipboard"></i> Copy Email Text</button>
+<hr class="ta-divider">
+
+<!-- 2. Email the Board -->
+<section class="ta-section ta-section-dark">
+  <div class="ta-inner">
+    <div class="ta-header">
+      <span class="ta-num">2</span>
+      <div class="ta-header-text">
+        <h2 style="color:#fff"><span class="ta-icon"><i data-lucide="mail"></i></span>Email the Board</h2>
       </div>
     </div>
+    <p class="ta-body">Seven elected board members control LAUSD&rsquo;s $18 billion budget. They approve contracts, set priorities, and answer to voters. A direct email from a parent in their district gets attention &mdash; especially when hundreds send the same message. We&rsquo;ve written the email for you. It takes less than two minutes.</p>
+    <div class="ta-buttons">
+      <a href="https://lausd.clodhost.com/campaign/2" target="_blank" rel="noopener" class="ta-btn ta-btn-gold">&rarr; Send a pre-written email to your board member</a>
+    </div>
+    <p class="ta-tip">Find your board member at lausd.net or email all seven at once using our campaign tool.</p>
+  </div>
+</section>
 
-    <!-- Board Member Directory -->
-    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)">
-      <h2 class="section-title" style="font-size:1.3rem">All Board Member Contacts</h2>
-      <div id="allBoardContacts" class="board-grid">
-        <p style="color:var(--text-muted)">Loading…</p>
+<hr class="ta-divider">
+
+<!-- 3. State Representatives -->
+<section class="ta-section">
+  <div class="ta-inner">
+    <div class="ta-header">
+      <span class="ta-num">3</span>
+      <div class="ta-header-text">
+        <h2><span class="ta-icon"><i data-lucide="landmark"></i></span>Write to Your State Representatives</h2>
       </div>
     </div>
+    <div class="ta-body">
+      <p>LAUSD is the second-largest school district in California. State legislators control education funding, procurement law, and oversight authority. A letter from a constituent asking for contract transparency legislation gets read &mdash; especially from a parent in an election year.</p>
+      <p><strong>What to ask for:</strong></p>
+      <ul>
+        <li>Mandatory public disclosure of all vendor contracts over $100,000</li>
+        <li>Independent audit authority for school district ed-tech spending</li>
+        <li>Outcomes-based contracting requirements before renewing ed-tech licenses</li>
+        <li>Response requirements for CPRA requests from school districts</li>
+      </ul>
+    </div>
+    <div class="ta-buttons">
+      <a href="https://findyourrep.legislature.ca.gov/" target="_blank" rel="noopener" class="ta-btn ta-btn-primary">&rarr; Find your Assembly member</a>
+      <a href="https://findyourrep.legislature.ca.gov/" target="_blank" rel="noopener" class="ta-btn ta-btn-outline">&rarr; Find your state Senator</a>
+    </div>
+    <p class="ta-tip">Tip: Reference specific contracts when you write. &ldquo;LAUSD paid $6.2M for an AI chatbot whose founder was indicted for fraud&rdquo; is more effective than a general complaint about spending.</p>
+    <button class="ta-collapse-toggle" onclick="this.nextElementSibling.classList.toggle('open')">See a sample letter &rarr;</button>
+    <div class="ta-collapse-body">
+      <div class="ta-letter-box" id="letterState">
+        <button class="ta-copy-btn" onclick="copyLetter(this, 'letterState')">Copy</button>Dear [Representative Name],
 
+I am a constituent and parent of children in the Los Angeles Unified School District writing to request your support for stronger oversight of school district technology vendor contracts.
+
+Since 2022, LAUSD has committed $6.7 billion to private contracts — including $1.6 billion to education technology companies — while claiming it cannot afford to pay teachers fairly or reduce class sizes. The superintendent who oversaw this spending is now on paid leave following an FBI raid. A former employee faces felony charges in a $22 million pay-to-play scheme.
+
+I am asking you to support legislation that would require:
+— Mandatory public disclosure of all school district vendor contracts over $100,000
+— Independent audit authority for ed-tech spending
+— Outcomes-based contracting before renewing any ed-tech license
+
+California's children deserve a school district that spends their money on them — not on private companies with no accountability.
+
+Sincerely,
+[Your Name]
+[Your City]</div>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- 4. Letter to the Editor -->
+<section class="ta-section ta-section-dark">
+  <div class="ta-inner">
+    <div class="ta-header">
+      <span class="ta-num">4</span>
+      <div class="ta-header-text">
+        <h2 style="color:#fff"><span class="ta-icon"><i data-lucide="pencil"></i></span>Write a Letter to the Editor</h2>
+      </div>
+    </div>
+    <div class="ta-body">
+      <p>Local news coverage shapes what elected officials respond to. A published letter from a parent &mdash; citing specific contracts and specific outcomes &mdash; is more powerful than a social media post and more likely to be read by people in power. Most outlets publish letters under 200 words.</p>
+      <p><strong style="color:rgba(255,255,255,0.9)">Publications:</strong></p>
+      <ul>
+        <li>LAist: <a href="mailto:letters@laist.com" style="color:var(--gold-light)">letters@laist.com</a></li>
+        <li>LA Times: <a href="mailto:letters@latimes.com" style="color:var(--gold-light)">letters@latimes.com</a></li>
+        <li>LA School Report: <a href="mailto:info@laschoolreport.com" style="color:var(--gold-light)">info@laschoolreport.com</a></li>
+        <li>The 74: <a href="mailto:tips@the74million.org" style="color:var(--gold-light)">tips@the74million.org</a></li>
+        <li>Your neighborhood paper</li>
+      </ul>
+      <p><strong style="color:rgba(255,255,255,0.9)">What to include:</strong></p>
+      <ul>
+        <li>One specific contract (name the vendor and the amount)</li>
+        <li>One specific outcome (test scores, class sizes, or a fraud case)</li>
+        <li>One specific ask (audit, transparency law, board accountability)</li>
+      </ul>
+    </div>
+    <button class="ta-collapse-toggle" onclick="this.nextElementSibling.classList.toggle('open')">See a sample letter &rarr;</button>
+    <div class="ta-collapse-body">
+      <div class="ta-letter-box" id="letterEditor">
+        <button class="ta-copy-btn" onclick="copyLetter(this, 'letterEditor')">Copy</button>To the editor:
+
+Los Angeles Unified School District has spent $1.6 billion on education technology since 2022. In that same period, the percentage of students meeting math standards has not improved. The superintendent who oversaw this spending is now on paid leave following an FBI raid connected to a $6.2 million AI chatbot contract. A former employee faces felony charges in a $22 million pay-to-play scheme.
+
+The board approved all of it — unanimously, without public discussion.
+
+LAUSD parents are asking one question: where did the money go? We've started tracking the contracts at lausdcontractwatch.org. We could use your help.
+
+[Your Name]
+[Your City and School]</div>
+    </div>
+  </div>
+</section>
+
+<hr class="ta-divider">
+
+<!-- 5. Run for School Board -->
+<section class="ta-section">
+  <div class="ta-inner">
+    <div class="ta-header">
+      <span class="ta-num">5</span>
+      <div class="ta-header-text">
+        <h2><span class="ta-icon"><i data-lucide="users"></i></span>Run for School Board</h2>
+      </div>
+    </div>
+    <div class="ta-body">
+      <p>Three of the seven LAUSD board seats are up for election in 2026 &mdash; Districts 1, 4, and 6. School board members are elected directly by district voters and serve four-year terms. They control an $18 billion budget, hire and fire the superintendent, and approve every contract on this site.</p>
+      <p>If you live in District 1 (Sherlett Hendy Newbill), District 4 (Nick Melvoin), or District 6 (Kelly Gonez), you can run to replace them.</p>
+    </div>
+    <div class="ta-buttons">
+      <a href="https://www.lausd.org/boe" target="_blank" rel="noopener" class="ta-btn ta-btn-primary">&rarr; Find your LAUSD board district</a>
+      <a href="https://ethics.lacity.org" target="_blank" rel="noopener" class="ta-btn ta-btn-outline">&rarr; Candidate filing information</a>
+    </div>
+    <p class="ta-tip">Not ready to run? Attending board meetings and speaking during public comment are meaningful forms of participation. Board meetings are open to the public. Sign up to speak at <a href="https://lausd.legistar.com" target="_blank" rel="noopener" style="color:var(--gold)">lausd.legistar.com</a></p>
   </div>
 </section>
 
 <script src="/js/layout.js"></script>
-<script src="/js/take-action.js"></script>
-<script>lucide.createIcons();</script>
+<script>
+initLayout();
+lucide.createIcons();
+
+function copyLetter(btn, id) {
+  var el = document.getElementById(id);
+  var text = el.textContent.replace(/^Copy/, '').trim();
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = 'Copy';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
 </body>
 </html>
