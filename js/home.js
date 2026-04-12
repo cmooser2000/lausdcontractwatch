@@ -74,8 +74,12 @@ function buildComparisons(amount, equivs) {
   }
   // Sort by priority, take top 2
   items.sort(function(a, b) { return a.priority - b.priority; });
-  return items.slice(0, 2).map(function(e) {
-    return '<div class="spotlight-pays">This contract could fund <strong>' + e.n.toLocaleString() + ' ' + e.label + '</strong></div>';
+  var top2 = items.slice(0, 2);
+  return top2.map(function(e, i) {
+    if (i === 0) {
+      return '<div class="spotlight-pays">This contract could fund <strong>' + e.n.toLocaleString() + ' ' + e.label + '</strong></div>';
+    }
+    return '<div class="spotlight-pays">Or buy <strong>' + e.n.toLocaleString() + ' ' + e.label + '</strong></div>';
   }).join('');
 }
 
