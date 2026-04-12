@@ -126,7 +126,7 @@
       <a href="/take-action.html" class="btn btn-outline-light btn-lg">Take Action</a>
     </div>
 
-    <p class="hero-meta">Last updated April 2026 &middot; 251 contracts tracked</p>
+    <p class="hero-meta">Last updated April 2026 &middot; <span id="contractCount">&ndash;</span> contracts tracked</p>
   </div>
 </section>
 
@@ -267,6 +267,12 @@
 
 <script src="/js/layout.js"></script>
 <script src="/js/home.js"></script>
-<script>lucide.createIcons();</script>
+<script>
+lucide.createIcons();
+loadData().then(function(d) {
+  var el = document.getElementById('contractCount');
+  if (el && d.contracts) el.textContent = d.contracts.length;
+});
+</script>
 </body>
 </html>
