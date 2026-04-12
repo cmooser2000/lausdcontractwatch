@@ -3,9 +3,9 @@
 // ── Utilities ────────────────────────────────────────────────
 
 function formatMoney(n) {
-  if (n == null || n === '') return '—';
+  if (n == null || n === '') return '<span class="amount-undisclosed">Amount not disclosed</span>';
   const num = parseFloat(n);
-  if (isNaN(num)) return '—';
+  if (isNaN(num) || num === 0) return '<span class="amount-undisclosed">Amount not disclosed</span>';
   if (num >= 1_000_000_000) return '$' + (num / 1_000_000_000).toFixed(1).replace(/\.0$/, '') + 'B';
   if (num >= 1_000_000)     return '$' + (num / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
   if (num >= 1_000)         return '$' + (num / 1_000).toFixed(0) + 'K';
@@ -13,9 +13,9 @@ function formatMoney(n) {
 }
 
 function formatMoneyFull(n) {
-  if (n == null || n === '') return '—';
+  if (n == null || n === '') return '<span class="amount-undisclosed">Amount not disclosed</span>';
   const num = parseFloat(n);
-  if (isNaN(num)) return '—';
+  if (isNaN(num) || num === 0) return '<span class="amount-undisclosed">Amount not disclosed</span>';
   return '$' + num.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 }
 
