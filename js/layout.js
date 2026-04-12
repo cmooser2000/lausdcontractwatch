@@ -67,6 +67,21 @@ function statusBadge(status) {
   return `<span class="badge ${cls}">${escapeHtml(status || 'Unknown')}</span>`;
 }
 
+function findingLabel(level) {
+  return { significant: 'Red Flag', medium: 'Questions Raised', minor: 'Monitor', none: 'Appears Legitimate' }[level] || '';
+}
+
+function findingBadgeHtml(level) {
+  if (!level || level === 'none') return '';
+  const colors = {
+    significant: 'background:#c0392b;color:#fff',
+    medium:      'background:#d4a843;color:#1a2332',
+    minor:       'background:#607d8b;color:#fff'
+  };
+  const style = colors[level] || 'background:#dce1e8;color:#5a6478';
+  return '<span class="badge" style="' + style + '">' + escapeHtml(findingLabel(level)) + '</span>';
+}
+
 function verificationBadge(v) {
   const map = {
     'verified':   'badge-verified',

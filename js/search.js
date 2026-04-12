@@ -222,7 +222,7 @@ function renderTable() {
         <div class="contract-num">${escapeHtml(c.contract_number || '')}</div>
       </td>
       <td>${escapeHtml(c.vendor_name || '—')}</td>
-      <td>${categoryTag(c.category)}</td>
+      <td>${categoryTag(c.category)} ${findingBadgeHtml(c.finding_level)}</td>
       <td class="col-right amount-cell">${formatMoney(c.amount)}</td>
       <td>${statusBadge(c.status)}</td>
       <td class="date-cell">${formatDate(c.approval_date)}</td>

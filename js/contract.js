@@ -49,8 +49,7 @@ function renderHeader(c) {
       ${categoryTag(c.category)}
       ${statusBadge(c.status)}
       ${verificationBadge(c.verification_status)}
-      ${c.finding_level && c.finding_level !== 'none'
-        ? `<span class="badge" style="background:#f8d7da;color:#721c24"><i data-lucide="alert-triangle"></i> ${escapeHtml(c.finding_level)} finding</span>` : ''}
+      ${findingBadgeHtml(c.finding_level)}
     </div>
     <h1 style="font-size:1.5rem;font-weight:800;margin:0.25rem 0">${escapeHtml(c.title)}</h1>
     <div class="vendor-name-large">${escapeHtml(c.vendor_name || '')}</div>`;

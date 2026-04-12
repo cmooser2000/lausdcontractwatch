@@ -15,9 +15,8 @@ loadData().then(data => {
   const tbody = document.getElementById('techTbody');
 
   tbody.innerHTML = sorted.map(c => {
-    const findingBadge = c.finding_level && c.finding_level !== 'none'
-      ? `<span class="badge" style="background:${findingColor(c.finding_level)};color:#fff">${escapeHtml(c.finding_level)}</span>`
-      : '<span style="color:var(--text-muted);font-size:0.8rem">—</span>';
+    const findingBadge = findingBadgeHtml(c.finding_level)
+      || '<span style="color:var(--text-muted);font-size:0.8rem">\u2014</span>';
     return `
       <tr class="clickable-row" onclick="location.href='/contract.html?id=${c.id}'">
         <td><a class="contract-link" href="/contract.html?id=${c.id}">${escapeHtml(c.title)}</a>
@@ -31,6 +30,3 @@ loadData().then(data => {
   }).join('');
 });
 
-function findingColor(level) {
-  return { significant: '#c0392b', medium: '#e67e22', minor: '#f39c12' }[level] || '#95a5a6';
-}
