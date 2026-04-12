@@ -155,7 +155,6 @@ function injectNav() {
           </div>
         </div>
         <a href="/board-members.html">Board Profiles</a>
-        <a href="/sources.html">Sources</a>
         <a href="/take-action.html">Take Action</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">

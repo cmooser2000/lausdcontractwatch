@@ -2,7 +2,7 @@
 
 initLayout({ newsAlert: true });
 
-const SPOTLIGHT_IDS = [77, 85, 57]; // AllHere, Yondr, IT Infrastructure — high-profile contracts
+const SPOTLIGHT_IDS = [81, 85, 43]; // iReady, ContinuumCloud, CDW Hotspot — contracts with hook text
 
 loadData().then(data => {
   const contracts = data.contracts;
@@ -31,14 +31,20 @@ function renderSpotlight(contracts, costEquivs) {
     const card = document.createElement('div');
     card.className = 'spotlight-card';
     const comparisons = buildComparisons(parseFloat(c.amount) || 0, costEquivs);
+    const bodyText = c.hook || c.plain_english || c.description || 'No description available.';
+    const isPE = (c.keywords || '').toLowerCase().includes('battery ventures') ||
+                 (c.keywords || '').toLowerCase().includes('private equity') ||
+                 (c.notes || '').toLowerCase().includes('pe-backed') ||
+                 (c.notes || '').toLowerCase().includes('private equity') ||
+                 (c.ai_analysis || '').toLowerCase().includes('pe-backed');
     card.innerHTML = `
-      <div class="spotlight-icon">${categoryIcon(c.category)}</div>
+      ${findingBadgeHtml(c.finding_level) ? '<div style="margin-bottom:0.75rem">' + findingBadgeHtml(c.finding_level) + '</div>' : ''}
       <div class="spotlight-title-row">
         <h3><a href="/contract.html?id=${c.id}">${escapeHtml(c.title)}</a></h3>
         <span class="spotlight-amount">${formatMoney(c.amount)}</span>
-        <a class="spotlight-vendor" href="/vendors.html">${escapeHtml(c.vendor_name || '')}</a>
+        <span class="spotlight-vendor">${escapeHtml(c.vendor_name || '')}${isPE ? ' <span style="display:inline-block;font-size:0.68rem;border:1px solid rgba(0,0,0,0.2);border-radius:50px;padding:0.1rem 0.5rem;color:var(--text-muted);vertical-align:middle;margin-left:0.35rem">PE-backed</span>' : ''}</span>
       </div>
-      <p>${escapeHtml(truncate(c.plain_english || c.description || 'No description available.', 160))}</p>
+      <p>${escapeHtml(truncate(bodyText, 200))}</p>
       ${comparisons ? `<div class="spotlight-comparison">${comparisons}</div>` : ''}
       <a class="spotlight-cta" href="/contract.html?id=${c.id}">View full details &rarr;</a>`;
     grid.insertBefore(card, more);
@@ -47,12 +53,14 @@ function renderSpotlight(contracts, costEquivs) {
 
 function buildComparisons(amount, equivs) {
   if (!amount || !equivs) return '';
-  const picks = equivs.slice(0, 3);
-  return picks.map(e => {
+  // Calculate all, sort by largest number, pick top 2
+  const all = equivs.map(e => {
     const n = Math.floor(amount / parseFloat(e.unit_cost));
-    if (!n) return '';
-    return `<div class="spotlight-pays">This contract = <strong>${n.toLocaleString()} ${e.unit_label}</strong></div>`;
-  }).filter(Boolean).join('');
+    return { n, label: e.unit_label };
+  }).filter(e => e.n > 0).sort((a, b) => b.n - a.n).slice(0, 2);
+  return all.map(e =>
+    `<div class="spotlight-pays">This contract = <strong>${e.n.toLocaleString()} ${e.label}</strong></div>`
+  ).join('');
 }
 
 // ── Ed-Tech Chart ────────────────────────────────────────────
