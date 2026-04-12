@@ -156,7 +156,6 @@ function injectNav() {
         </div>
         <a href="/board-members.html">Board Profiles</a>
         <a href="/sources.html">Sources</a>
-        <a href="/about.html">About</a>
         <a href="/take-action.html">Take Action</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
@@ -232,8 +231,8 @@ function injectFooter() {
         <h4>About</h4>
         <ul>
           <li><a href="/about.html">Our Mission</a></li>
-          <li><a href="/sources.html">Data Sources</a></li>
-          <li><a href="/about.html#faq">FAQ</a></li>
+          <li><a href="https://lausd.clodhost.com/documents/" target="_blank" rel="noopener">Data Sources</a></li>
+          <li><a href="mailto:lausdcontractwatch@gmail.com">Contact</a></li>
         </ul>
       </div>
     </div>

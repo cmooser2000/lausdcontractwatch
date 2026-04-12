@@ -4,106 +4,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — LAUSD Contract Watch</title>
-  <meta name="description" content="About the LAUSD Contract Watch project — mission, methodology, and data sources.">
+  <meta name="description" content="About LAUSD Contract Watch — a parent-led transparency project tracking LAUSD contracts and vendor relationships.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <style>
+    .about-body { max-width: 720px; margin: 0 auto; }
+    .about-body p { font-size: 1rem; line-height: 1.8; color: var(--text-light); margin-bottom: 1.25rem; }
+    .about-body h2 { font-family: 'DM Serif Display', Georgia, serif; font-size: 1.4rem; font-weight: 400; color: var(--navy); margin: 2.5rem 0 1rem; }
+    .about-body h2:first-child { margin-top: 0; }
+    .about-dash-list { list-style: none; padding: 0; margin: 1rem 0 1.25rem 1rem; }
+    .about-dash-list li { font-size: 1rem; line-height: 1.8; color: var(--text-light); margin-bottom: 0.5rem; padding-left: 1.5rem; text-indent: -1.5rem; }
+    .about-dash-list li::before { content: '\2014\00a0'; color: var(--gold); font-weight: 700; }
+
+    /* FAQ Accordion */
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 0; cursor: pointer; background: none; border: none; width: 100%; text-align: left; font-family: var(--font); font-size: 1rem; font-weight: 600; color: var(--text); line-height: 1.5; }
+    .faq-q:hover { color: var(--blue); }
+    .faq-toggle { flex-shrink: 0; font-size: 1.25rem; color: var(--text-muted); margin-left: 1rem; transition: transform 0.2s; }
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-item.open .faq-a { max-height: 1200px; }
+    .faq-a-inner { padding: 0 0 1.25rem; font-size: 0.95rem; line-height: 1.75; color: var(--text-light); }
+    .faq-a-inner a { color: var(--gold); font-weight: 600; }
+
+    /* Contact footer */
+    .about-contact { background: var(--navy); padding: 3rem 1.5rem; text-align: center; color: rgba(255,255,255,0.7); }
+    .about-contact p { margin-bottom: 0.75rem; font-size: 1rem; }
+    .about-contact a { color: var(--gold-light); font-size: 1.15rem; font-weight: 700; }
+    .about-contact a:hover { color: #fff; }
+  </style>
 </head>
 <body>
 
 <div class="page-header">
   <div class="container">
-    <h1>About This Project</h1>
-    <p>Who we are, why we built this, and how the data works.</p>
+    <h1>About LAUSD Contract Watch</h1>
   </div>
 </div>
 
 <section class="section">
-  <div class="container" style="max-width:820px">
-    <div class="context-grid" style="margin-bottom:3rem">
-      <div class="context-card">
-        <div class="context-icon"><i data-lucide="school"></i></div>
-        <h3>Built by Parents &amp; Teachers</h3>
-        <p>This site was built by a teacher and parent in LAUSD using Claude Code as an AI partner to process public records at scale. It is not affiliated with LAUSD.</p>
+  <div class="container about-body">
+
+    <p>The Los Angeles Unified School District serves over 420,000 students across more than 1,000 schools. Every year, billions of dollars flow from the district to private companies. According to United Teachers Los Angeles, LAUSD has committed $6.7 billion to private multi-year contracts since 2022, including $1.6 billion to outside tech companies. That&rsquo;s roughly $1 million per school in tech spending alone.</p>
+
+    <p>The urgency of this work became undeniable in February 2026 when the FBI raided Superintendent Carvalho&rsquo;s home and office in connection with a $6.2 million AI contract with a company whose founder was arrested for fraud. Carvalho was placed on paid administrative leave &mdash; but many dubious contracts are still in place.</p>
+
+    <p>I am a parent of two students in LAUSD. I couldn&rsquo;t find a place that made LAUSD&rsquo;s private contracts searchable and understandable, so I made one.</p>
+
+    <h2>Our Mission</h2>
+
+    <p>LAUSD Contract Watch exists to make public spending on private contracts searchable and understandable. We believe every dollar sent to a private company should be justified by clear student benefit &mdash; and that communities deserve access to the tools to find that information.</p>
+
+    <h2>What This Site Is</h2>
+
+    <p>A searchable database of LAUSD contracts, built from publicly available board records. Every contract links to its original source document so anyone can verify the data and flag errors.</p>
+
+    <p>The database currently covers contracts approved at board meetings in 2025 &mdash; the only records publicly available through LAUSD&rsquo;s Legistar system. Contracts approved in prior years require a public records request. We filed two. LAUSD did not respond to either.</p>
+
+    <p>The site also includes:</p>
+
+    <ul class="about-dash-list">
+      <li>Analysis of key vendors: ownership structure, red flags, and questions worth asking</li>
+      <li>Board member profiles and vote records sourced from Legistar</li>
+      <li>Five thematic investigations connecting contracts to student outcomes</li>
+      <li>A sources page linking everything to primary documents</li>
+    </ul>
+
+    <p>This is a starting point for investigation, not a final verdict. We say that often and we mean it.</p>
+
+    <h2>About the Data</h2>
+
+    <p>The contract data on this site comes from publicly available LAUSD Board of Education records. Under California&rsquo;s Public Records Act (Government Code &sect;6250), public agencies are required to make records of government business available to the public. Every contract over $250,000 requires board approval and is documented in board meeting agendas and attachment reports published through LAUSD&rsquo;s Legistar system &mdash; the same platform used by hundreds of local governments nationwide.</p>
+
+    <p>Only one year of records is required to be posted online. Any contract that began before 2025 requires a records request. Those requests have been filed. Once we receive that information we will add it to the site.</p>
+
+    <p>Information about companies comes from publicly available sources including company websites, news coverage, SEC filings, bankruptcy court records, and corporate databases.</p>
+
+    <p>Board member disclosures are based on Form 700 filings &mdash; required annually from all California public officials who make or influence government decisions. Board members and senior administrators must disclose their investments, income sources, business positions, and gifts received. These are public documents under California&rsquo;s Political Reform Act (Government Code &sect;81000).</p>
+
+    <p>You can find links to all our sources on the <a href="/sources.html">Sources page</a>.</p>
+
+    <h2>How I Built This</h2>
+
+    <p>I am a parent of two students at LAUSD who cares deeply about threats to public education from private companies. I wanted the information about how public money is allocated at LAUSD to be easier for people like me to find. I used Claude Code, an AI coding tool, to turn that vision into a working website.</p>
+
+    <p>I used it to help find, download, and extract information from the data I needed &mdash; a task that would have taken one person months to do manually. I did spot checks to verify the numbers, revised the process when errors were found, and made judgment calls about when the information was accurate enough to publish. I shared the site with others to help find errors and make changes.</p>
+
+    <p>Every contract on this site links directly to its original source document so anyone can verify the data themselves and flag errors if they find them.</p>
+
+    <h2>On Using AI for This</h2>
+
+    <p>Although I am wary of tech companies using AI to consolidate power and profits, I also believe we are in a moment where these tools can and should be used for the greater good. Whether you are an artist, a writer, or someone who has posted pictures online, these companies have used your material &mdash; copyrighted or not &mdash; to train their models. Some people choose to boycott these companies for that reason. Personally, I believe that&rsquo;s even more reason we should be using these tools to help us achieve our goals.</p>
+
+    <p>I am also aware of the huge environmental cost of AI data centers. I believe this is a systemic problem that requires systemic solutions. Some countries are already ahead of the US &mdash; Iceland and Denmark use data center waste heat to warm homes and buildings. Sweden has data centers that feed into district heating networks. These aren&rsquo;t futuristic ideas; they&rsquo;re operating today. The US has been slow to adopt similar approaches, and that&rsquo;s a policy failure worth fighting. In the meantime, I don&rsquo;t think the answer is to cede this technology to the corporations and government officials who will use it to consolidate power. Unilateral disarmament helps no one.</p>
+
+    <p>What AI is genuinely good at is processing large amounts of publicly available information that is technically accessible but practically impossible for one person to get through. LAUSD has hundreds of board meeting documents, dozens of Form 700 filings, and contracts spanning years. An AI agent can find, download, and extract data from all of it in hours &mdash; a task that I, as a working mom, could never have done on my own.</p>
+
+    <p>Ultimately, this site is for identifying which contracts might warrant a closer look. It does not decide what action to take, what conclusions to draw, or what is and isn&rsquo;t wrongdoing. I am using AI to help others decide where to focus our limited time and energy &mdash; which public records requests to file, where to ask harder questions, and what to bring to journalists and board meetings.</p>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if I find an error? <span class="faq-toggle">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Email us at <a href="mailto:lausdcontractwatch@gmail.com">lausdcontractwatch@gmail.com</a> or use the contact link on any contract detail page. Nothing is automatically added to the site &mdash; everything goes to a human first.</div></div>
       </div>
-      <div class="context-card">
-        <div class="context-icon"><i data-lucide="folder-open"></i></div>
-        <h3>Public Records Only</h3>
-        <p>All contract data comes from official LAUSD board reports and Legistar, the district's public meeting system. Form 700 disclosures are public documents required by California law.</p>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Where did the data come from? <span class="faq-toggle">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Every contract on this site comes from LAUSD Board of Education records published through the Legistar system. Under California&rsquo;s Public Records Act, public agencies must make records of government business available to the public. Every contract over $250,000 requires board approval and is documented in board meeting agendas published through Legistar.<br><br>Only records from 2025 onward are currently available online. Contracts from prior years require a formal records request &mdash; which we filed and which LAUSD did not respond to.<br><br>Information about companies comes from publicly available sources including company websites, news coverage, SEC filings, bankruptcy court records, and corporate databases.</div></div>
       </div>
-      <div class="context-card">
-        <div class="context-icon"><i data-lucide="unlock"></i></div>
-        <h3>Fully Open</h3>
-        <p>This site has no login, no paywall, and no tracking beyond basic analytics. All data is freely available to download and use.</p>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">What are the Form 700 references? <span class="faq-toggle">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Form 700 filings are required annually from all California public officials who make or influence government decisions. Board members and senior administrators must disclose their investments, income sources, business positions, and gifts received. These are public documents under California&rsquo;s Political Reform Act and are searchable at the <a href="https://www.fppc.ca.gov/transparency/form-700-filed-by-public-officials/form700-search.html" target="_blank" rel="noopener">FPPC portal</a>.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I use this data? <span class="faq-toggle">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Everything on this site is sourced from public records. We ask that you link back to the original source documents and to this site if you publish or share the data. If you&rsquo;re a journalist working on a story, email us at <a href="mailto:lausdcontractwatch@gmail.com">lausdcontractwatch@gmail.com</a> &mdash; we may have additional documentation.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is this affiliated with LAUSD? <span class="faq-toggle">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">No. LAUSD Contract Watch is not affiliated with, endorsed by, or funded by the Los Angeles Unified School District or any of its employees.</div></div>
       </div>
     </div>
 
-    <div class="about-content">
-
-      <h2 id="mission">Our Mission</h2>
-      <p>Los Angeles Unified School District is the second-largest school district in the United States. It spends billions of dollars each year on contracts with private companies — technology vendors, consultants, construction firms, and more.</p>
-      <p>Most of this spending is technically public. Board reports are posted online. Form 700 financial disclosures are filed every year. But the data is scattered across hundreds of PDFs, buried in bureaucratic language, and nearly impossible for a working parent or teacher to navigate.</p>
-      <p>We built this site to change that. Our goal is simple: make LAUSD's contract spending as easy to search and understand as possible, so parents, educators, and journalists can hold the district accountable.</p>
-
-      <h2 id="methodology">Methodology</h2>
-      <p>Contract data was extracted from LAUSD board reports published via the Legistar public meeting system. Each contract was reviewed and cross-referenced with the original board report PDF.</p>
-      <p>The <strong>"High Priority"</strong> finding levels are assigned based on a combination of:</p>
-      <ul>
-        <li>Public reporting (news coverage of scandals, investigations, or failures)</li>
-        <li>Federal or state investigations</li>
-        <li>Known data breaches involving student or staff data</li>
-        <li>Board member financial connections via Form 700 disclosures</li>
-        <li>Cost analysis and comparisons to market rates or public alternatives</li>
-      </ul>
-      <p><strong>These are not legal findings.</strong> They are starting points for community scrutiny, not conclusions of wrongdoing.</p>
-
-      <h2 id="conflicts">Conflicts of Interest Methodology</h2>
-      <p>California's Form 700 Statement of Economic Interests requires public officials to disclose financial interests, including investments, business positions, income sources, and real property. We obtained Form 700 filings for LAUSD board members from the FPPC's public portal.</p>
-      <p>We then cross-referenced company names in those disclosures with LAUSD vendor names using fuzzy matching. Matches are rated by confidence level:</p>
-      <ul>
-        <li><strong>High:</strong> Direct name match between disclosed company and LAUSD vendor, with overlapping time periods</li>
-        <li><strong>Medium:</strong> Strong name match, but no confirmed time overlap</li>
-        <li><strong>Low:</strong> Partial or indirect match (e.g., parent company relationship)</li>
-      </ul>
-      <p><strong>Important caveat:</strong> Many matches involve publicly-traded stocks (AT&T, Apple, etc.) held through mutual funds or brokerage accounts. These are required to be disclosed but generally do not represent a material conflict. We flag them for completeness and mark them as "Public Stock."</p>
-
-      <h2 id="data">Data Sources</h2>
-      <ul>
-        <li><strong>Contract data:</strong> LAUSD Board of Education meeting agendas and reports via Legistar (laschools.legistar.com)</li>
-        <li><strong>Form 700 disclosures:</strong> California Fair Political Practices Commission (FPPC) public portal</li>
-        <li><strong>Board member information:</strong> LAUSD Board of Education official website</li>
-        <li><strong>School data:</strong> LAUSD school listings and enrollment data</li>
-        <li><strong>News coverage:</strong> The 74, LA Times, LA County District Attorney press releases</li>
-      </ul>
-
-      <h2 id="faq">Frequently Asked Questions</h2>
-
-      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Is this data accurate?</h3>
-      <p>We verify contracts against original board report PDFs. Some contracts are marked "estimated" when amounts could not be confirmed from the source document. We mark all data with verification status. If you find an error, please let us know.</p>
-
-      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Why does the total amount seem so high?</h3>
-      <p>Contract amounts represent the <em>maximum authorized value</em> over the full contract period, not annual spending. A 5-year $50M contract represents $10M/year in actual spending. We display full contract values for comparability.</p>
-
-      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Are you affiliated with LAUSD?</h3>
-      <p>No. This is an independent parent-led project. We have no connection to LAUSD, UTLA, or any political organization.</p>
-
-      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Are you trying to get rid of technology in schools?</h3>
-      <p>No. Our concern is <em>accountability</em>, not technology itself. We believe students deserve thoughtful, evidence-based technology decisions — not contracts driven by vendor relationships or rushed procurement. LAUSD Contract Watch specifically calls for <em>intentional</em> technology use, not a ban.</p>
-
-      <h3 style="font-size:1rem;margin-top:1.5rem;margin-bottom:0.4rem">Can I use this data?</h3>
-      <p>Yes. All data on this site comes from public records. You are welcome to use, share, and build on it. Please cite your sources — including the original LAUSD board reports.</p>
-
-      <h2 id="contact">Contact</h2>
-      <p>Found an error? Have data to share? Want to get involved? Reach us at <a href="mailto:lausdcontractwatch@gmail.com">lausdcontractwatch@gmail.com</a></p>
-
-    </div>
   </div>
 </section>
 
+<!-- Contact Footer -->
+<div class="about-contact">
+  <p>Found an error? Have data to share? Want to get involved?</p>
+  <a href="mailto:lausdcontractwatch@gmail.com">lausdcontractwatch@gmail.com</a>
+</div>
+
 <script src="/js/layout.js"></script>
-<script>initLayout();</script>
-<script>lucide.createIcons();</script>
+<script>initLayout(); lucide.createIcons();</script>
 </body>
 </html>
