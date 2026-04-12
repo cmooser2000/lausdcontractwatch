@@ -135,10 +135,7 @@ function injectNav() {
           <div class="nav-dropdown-menu" id="navDropdownMenu">
             <a href="/search.html">All Contracts</a>
             <a href="/high-priority.html">High Priority</a>
-            <a href="/vendors.html">Vendor Analysis</a>
             <a href="/tech-vendors.html">Tech Spending</a>
-            <div class="nav-dropdown-divider"></div>
-            <a href="/board.html">Board Members</a>
           </div>
         </div>
         <div class="nav-dropdown" id="navDropdownWhy">
