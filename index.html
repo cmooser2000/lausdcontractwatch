@@ -57,100 +57,56 @@
     }
     .edtech-source-line a:hover { color: var(--gold-light); }
 
-    .edtech-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    .edtech-pills {
+      display: flex;
+      justify-content: center;
       gap: 1.25rem;
-      margin-bottom: 3rem;
+      flex-wrap: wrap;
     }
-    .edtech-card {
+    .edtech-pill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
       background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(212,168,67,0.3);
-      border-radius: var(--radius);
-      padding: 40px;
-      transition: border-color 0.25s;
+      border: 1px solid rgba(212,168,67,0.35);
+      border-radius: 60px;
+      padding: 1.75rem 2rem 1.5rem;
+      min-width: 160px;
     }
-    .edtech-card:hover {
-      border-color: var(--gold);
-    }
-    .edtech-card--outcome {
-      border-color: rgba(192,57,43,0.35);
-    }
-    .edtech-card--outcome:hover {
-      border-color: rgba(192,57,43,0.7);
-    }
-    .edtech-card-number {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: 60px;
+    .edtech-pill-icon {
       color: var(--gold-light);
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-    .edtech-card--outcome .edtech-card-number {
-      color: var(--gold-light);
-    }
-    .edtech-card-label {
-      color: rgba(255,255,255,0.85);
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 0.75rem;
-    }
-    .edtech-card-divider {
-      width: 40px;
-      height: 1px;
-      background: rgba(255,255,255,0.15);
       margin-bottom: 0.6rem;
     }
-    .edtech-card-source {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.35);
-      line-height: 1.5;
+    .edtech-pill-icon svg.lucide {
+      width: 28px;
+      height: 28px;
+      stroke-width: 1.5;
     }
-    .edtech-card-source a {
-      color: rgba(255,255,255,0.45);
-      text-decoration: underline;
-    }
-    .edtech-card-source a:hover { color: var(--gold-light); }
-
-    .edtech-bottom {
-      text-align: center;
-    }
-    .edtech-bottom-headline {
+    .edtech-pill-number {
       font-family: 'DM Serif Display', Georgia, serif;
-      font-size: 28px;
-      font-weight: 400;
+      font-size: 2rem;
       color: var(--gold-light);
-      line-height: 1.35;
-      margin-bottom: 0.75rem;
+      line-height: 1;
+      margin-bottom: 0.3rem;
     }
-    .edtech-bottom-link {
-      font-size: 1rem;
-      color: rgba(255,255,255,0.8);
-    }
-    .edtech-bottom-link a {
-      color: #ffffff;
-      font-weight: 600;
-      text-decoration: underline;
-      text-decoration-color: rgba(255,255,255,0.4);
-    }
-    .edtech-bottom-link a:hover {
-      color: var(--gold-light);
-      text-decoration-color: var(--gold-light);
+    .edtech-pill-label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.4;
     }
 
     @media (max-width: 768px) {
       .edtech-section { padding: 60px 1.5rem; }
       .edtech-headline,
       .edtech-headline-gold { font-size: 1.75rem; }
-      .edtech-grid { grid-template-columns: 1fr; }
-      .edtech-card { padding: 30px; }
-      .edtech-card-number { font-size: 48px; }
-      .edtech-bottom-headline { font-size: 22px; }
+      .edtech-pills { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 400px; margin: 0 auto; }
     }
     @media (max-width: 480px) {
       .edtech-headline,
       .edtech-headline-gold { font-size: 1.4rem; }
-      .edtech-card-number { font-size: 40px; }
+      .edtech-pill { padding: 1.25rem 1rem 1rem; min-width: 0; }
+      .edtech-pill-number { font-size: 1.6rem; }
     }
   </style>
 </head>
@@ -220,48 +176,27 @@
     <p class="edtech-subhead">Since 2022, LAUSD committed $1.6 billion to education technology companies. Here is what that money could have bought instead.</p>
     <p class="edtech-source-line">Source: UTLA research / <a href="https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/" target="_blank" rel="noopener">Private Equity Stakeholder Project, 2025</a></p>
 
-    <div class="edtech-grid">
-      <div class="edtech-card">
-        <div class="edtech-card-number">20,000</div>
-        <div class="edtech-card-label">Teachers hired for one year at $77,000 starting salary</div>
-        <div class="edtech-card-divider"></div>
-        <div class="edtech-card-source">Based on April 2026 UTLA tentative agreement</div>
+    <div class="edtech-pills">
+      <div class="edtech-pill">
+        <div class="edtech-pill-icon"><i data-lucide="user"></i></div>
+        <div class="edtech-pill-number">20,000</div>
+        <div class="edtech-pill-label">Teachers for a year</div>
       </div>
-      <div class="edtech-card">
-        <div class="edtech-card-number">16,000</div>
-        <div class="edtech-card-label">School nurses hired for one year</div>
-        <div class="edtech-card-divider"></div>
-        <div class="edtech-card-source">Based on LAUSD nurse salary data</div>
+      <div class="edtech-pill">
+        <div class="edtech-pill-icon"><i data-lucide="heart-pulse"></i></div>
+        <div class="edtech-pill-number">16,000</div>
+        <div class="edtech-pill-label">School nurses for a year</div>
       </div>
-      <div class="edtech-card">
-        <div class="edtech-card-number">53</div>
-        <div class="edtech-card-label">Years of iReady contracts &mdash; the tool LAUSD&rsquo;s own memo says isn&rsquo;t required</div>
-        <div class="edtech-card-divider"></div>
-        <div class="edtech-card-source">At current $20M/year contract rate</div>
+      <div class="edtech-pill">
+        <div class="edtech-pill-icon"><i data-lucide="book-open"></i></div>
+        <div class="edtech-pill-number">160M</div>
+        <div class="edtech-pill-label">New textbooks</div>
       </div>
-      <div class="edtech-card edtech-card--outcome">
-        <div class="edtech-card-number">46%</div>
-        <div class="edtech-card-label">Students meeting reading standards in 2025 &mdash; an all-time high after $1.6B in ed-tech spending</div>
-        <div class="edtech-card-divider"></div>
-        <div class="edtech-card-source">California CAASPP 2025</div>
+      <div class="edtech-pill">
+        <div class="edtech-pill-icon"><i data-lucide="tree-pine"></i></div>
+        <div class="edtech-pill-number">714K</div>
+        <div class="edtech-pill-label">Shade trees on campuses</div>
       </div>
-      <div class="edtech-card edtech-card--outcome">
-        <div class="edtech-card-number">37%</div>
-        <div class="edtech-card-label">Students meeting math standards in 2025 &mdash; also an all-time high</div>
-        <div class="edtech-card-divider"></div>
-        <div class="edtech-card-source">California CAASPP 2025</div>
-      </div>
-      <div class="edtech-card">
-        <div class="edtech-card-number">67%</div>
-        <div class="edtech-card-label">Of ed-tech licenses go unused nationally &mdash; districts pay full price</div>
-        <div class="edtech-card-divider"></div>
-        <div class="edtech-card-source"><a href="https://gem-report-2023.unesco.org/" target="_blank" rel="noopener">UNESCO Global Education Monitoring Report, 2023</a></div>
-      </div>
-    </div>
-
-    <div class="edtech-bottom">
-      <p class="edtech-bottom-headline">More spending on technology.<br>No improvement in outcomes.</p>
-      <p class="edtech-bottom-link"><a href="/edtech.html">The research explains why.</a></p>
     </div>
   </div>
 </section>
