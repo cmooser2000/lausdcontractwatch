@@ -2849,17 +2849,17 @@
       "notes": "Board Report: 220-22/23. Requester: Carlen Powell. Three one-year renewal options. Manually verified from board document. Extracted from Legistar API on 2026-03-15 Curriculum Associates acquired by Warburg Pincus (private equity) in 2014.",
       "source_url": "/documents/C81_Curriculum_Associates_iReady.jpg",
       "verification_status": "verified",
-      "keywords": "iReady, i-Ready, assessment, reading, math, diagnostic, Curriculum Associates, edtech, private equity, Warburg Pincus, PE-backed",
+      "keywords": "iReady, i-Ready, assessment, reading, math, diagnostic, Curriculum Associates, edtech, private equity, Berkshire Partners, PE-backed",
       "flag_count": 0,
       "created_at": "2026-03-15 17:54:25",
       "updated_at": "2026-03-25 22:51:31",
-      "ai_analysis": "## Ownership",
+      "ai_analysis": "## Ownership\n\nCurriculum Associates is owned by Berkshire Partners, a Boston-based private equity firm. Teachers widely report that iReady assessments are disruptive to learning and prefer the free alternative diagnostic assessments available through California's CAASPP/SBAC system. An independent analysis of three controlled studies found a mean effect size of .04 to .10 \u2014 below the .20 threshold considered educationally meaningful by researchers. The majority of research cited by Curriculum Associates in support of iReady is funded by Curriculum Associates itself.",
       "questions_to_ask": null,
       "red_flags": null,
       "sources": null,
       "finding_level": "significant",
       "ai_analysis_date": null,
-      "hook": "$20M for a tool LAUSD's own internal memo says isn't required. A free state alternative exists. The contract was renewed anyway."
+      "hook": "PE-owned by Berkshire Partners. Teachers report it disrupts learning and prefer the free state alternative. Independent research found effect sizes below the threshold considered educationally meaningful. Most studies cited by the company are funded by the company."
     },
     {
       "id": 82,
