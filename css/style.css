@@ -320,8 +320,40 @@ img { max-width: 100%; }
     margin-top: 2px;
 }
 
-/* Hero CTA Boxes */
-/* Spotlight Cards */
+/* ── Spotlight Section ─────────────────────────────────────────
+   Extends the dark hero block downward so the cards feel like
+   part of one intentional panel, not a floated element. The
+   bottom of this section transitions cleanly to the light page. */
+.spotlight-section {
+    background: linear-gradient(180deg, #1a2332 0%, #1e2a3d 100%);
+    padding: 3.75rem 1.5rem 4.5rem;
+}
+.spotlight-section-header {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+.spotlight-section-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold-light);
+    background: rgba(212,168,67,0.12);
+    border: 1px solid rgba(212,168,67,0.25);
+    border-radius: 50px;
+    padding: 0.3rem 1rem;
+    margin-bottom: 0.6rem;
+}
+.spotlight-section-sub {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Spotlight card grid */
 .hero-spotlight {
     max-width: 1100px;
     margin: 0 auto;
@@ -329,7 +361,10 @@ img { max-width: 100%; }
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     text-align: left;
+    align-items: stretch; /* ensure all cards fill the row height */
 }
+
+/* Each card is a flex column so the CTA pins to the bottom */
 .spotlight-card {
     display: flex;
     flex-direction: column;
@@ -337,12 +372,12 @@ img { max-width: 100%; }
     border-radius: 14px;
     padding: 2rem;
     color: var(--text);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.22);
 }
 .spotlight-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+    box-shadow: 0 20px 48px rgba(0,0,0,0.32);
 }
 .spotlight-icon {
     font-size: 2rem;
@@ -354,10 +389,11 @@ img { max-width: 100%; }
 }
 .spotlight-title-row h3 {
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 700;
     color: #1a2332;
     margin-bottom: 0.3rem;
     line-height: 1.35;
+    font-family: var(--font); /* keep Inter for card titles — DM Serif is too large here */
 }
 .spotlight-title-row h3 a {
     color: #1a2332;
@@ -369,7 +405,7 @@ img { max-width: 100%; }
 }
 .spotlight-amount {
     font-family: var(--mono);
-    font-weight: 800;
+    font-weight: 700;
     color: #c0392b;
     font-size: 1rem;
     white-space: nowrap;
@@ -385,10 +421,13 @@ img { max-width: 100%; }
     color: var(--blue);
     text-decoration: underline;
 }
+
+/* The description paragraph takes all remaining vertical space,
+   which pushes the comparison box and CTA to the bottom. */
 .spotlight-card p {
     font-size: 0.88rem;
     color: #5a6a7a;
-    line-height: 1.7;
+    line-height: 1.75;
     margin-bottom: 1.25rem;
     flex: 1;
 }
@@ -396,38 +435,49 @@ img { max-width: 100%; }
     display: flex;
     flex-direction: column;
     gap: 0.35rem;
-    margin-bottom: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
     font-size: 0.82rem;
     color: #6c7a89;
-    background: #f5f6f8;
+    background: var(--bg);
     border-radius: 8px;
     padding: 0.75rem 1rem;
 }
 .spotlight-pays strong { color: #c0392b; }
 .spotlight-alt strong { color: #27ae60; }
 .spotlight-savings strong { color: #8a6d00; }
+
+/* CTA is always the last child — pinned to card bottom by flex layout.
+   margin-top: auto is a safety net when comparison is absent. */
 .spotlight-cta {
-    display: inline-block;
-    font-size: 0.9rem;
+    display: block;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.88rem;
     font-weight: 700;
-    color: #2980b9;
+    color: var(--blue);
     text-decoration: none;
     transition: color 0.2s;
 }
 .spotlight-cta:hover {
-    color: #1a6da0;
+    color: var(--blue-bright);
     text-decoration: underline;
 }
+
+/* "More links" row below the cards */
 .spotlight-more {
     grid-column: 1 / -1;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
 }
 .spotlight-more a {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.55);
     font-size: 0.85rem;
     text-decoration: none;
     transition: color 0.2s;
@@ -437,6 +487,10 @@ img { max-width: 100%; }
 /* Sections */
 .section { padding: 4rem 1.5rem; }
 .section-alt { background: var(--bg-alt); }
+/* First light section after the dark spotlight — subtle inner shadow for depth */
+.spotlight-section + .section-alt {
+    box-shadow: inset 0 4px 16px rgba(0,0,0,0.05);
+}
 .container { max-width: 1200px; margin: 0 auto; }
 .section-title {
     font-size: 2rem;
@@ -1903,6 +1957,7 @@ textarea.search-input { resize: vertical; }
     .hero { padding: 2.5rem 1rem; }
     .hero h1 { font-size: 2.25rem; }
     .hero-subtitle { font-size: 1rem; }
+    .spotlight-section { padding: 2.5rem 1rem 3rem; }
     .hero-spotlight { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
     .hero-stats { gap: 0.5rem; }
     .stat-pill { min-width: 130px; padding: 0.5rem 0.75rem; }
