@@ -6,10 +6,11 @@
   <title>LAUSD Contract Watch — Follow the Money</title>
   <meta name="description" content="Tracking LAUSD contracts, vendor spending, and conflicts of interest. A parent-led transparency project.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 </head>
 <body>
 
@@ -18,86 +19,108 @@
 <!-- Hero -->
 <section class="hero">
   <div class="hero-inner">
-    <h1>Follow the Money<br>at LAUSD</h1>
-    <p class="hero-subtitle">Tracking billions of dollars in LAUSD contracts so parents and educators can hold the district accountable.</p>
+    <h1 class="hero-headline">LAUSD is spending billions on private companies while saying there&rsquo;s no money for schools.</h1>
+    <p class="hero-subtitle">We tracked the contracts. Here&rsquo;s what we found.</p>
 
-    <div class="hero-search">
-      <form class="search-form-hero" action="/search.html" method="get" role="search" autocomplete="off">
-        <input type="text" name="q" id="heroSearchInput" class="search-input-hero"
-               placeholder="Search contracts, vendors, keywords…" aria-label="Search contracts">
-        <button type="submit" class="btn btn-primary btn-search">Search</button>
-        <div class="search-dropdown" id="heroDropdown" role="listbox"></div>
-      </form>
+    <div class="hero-buttons">
+      <a href="#stats-section" class="btn btn-primary btn-lg">See the Evidence</a>
+      <a href="/take-action.html" class="btn btn-outline-light btn-lg">Take Action</a>
     </div>
 
-    <div class="hero-stats" id="heroStats">
-      <div class="stat-pill"><span class="stat-number" id="statContracts">244</span><span class="stat-label">Contracts Tracked</span></div>
-      <div class="stat-pill"><span class="stat-number" id="statTotal">$6.7B+</span><span class="stat-label">Total Value</span></div>
-      <div class="stat-pill"><span class="stat-number" id="statActive">—</span><span class="stat-label">Active Contracts</span></div>
-      <div class="stat-pill"><span class="stat-number" id="statConflicts">58</span><span class="stat-label">Conflict Flags</span></div>
+    <p class="hero-meta">Last updated April 2026 &middot; 251 contracts tracked</p>
+  </div>
+</section>
+
+<!-- Five Stats -->
+<section class="stats-section" id="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <a href="/private-companies.html" class="stat-card">
+        <span class="stat-card-number">$6.7B</span>
+        <span class="stat-card-label">Committed to private companies since 2022</span>
+      </a>
+      <a href="/edtech.html" class="stat-card">
+        <span class="stat-card-number">67%</span>
+        <span class="stat-card-label">Of ed-tech licenses go unused &mdash; your money, wasted</span>
+      </a>
+      <a href="/teachers.html" class="stat-card">
+        <span class="stat-card-number">99%</span>
+        <span class="stat-card-label">Of support staff can&rsquo;t afford rent in Los Angeles</span>
+      </a>
+      <a href="/students.html" class="stat-card">
+        <span class="stat-card-number">37%</span>
+        <span class="stat-card-label">Of students meet math standards &mdash; at an all-time high</span>
+      </a>
+      <a href="/transparency.html" class="stat-card">
+        <span class="stat-card-number">$29M+</span>
+        <span class="stat-card-label">Lost to active fraud investigations</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- Spotlight: High-Priority Contracts -->
+<!-- Take Action Bar -->
+<section class="action-bar">
+  <div class="container">
+    <div class="action-bar-inner">
+      <a href="/campaigns.html">&rarr; Email the board: Demand an independent audit</a>
+      <a href="/take-action.html">&rarr; Email your state legislator</a>
+      <button class="action-bar-share" onclick="shareThisPage()">&rarr; Share this page</button>
+    </div>
+  </div>
+</section>
+
+<!-- Chart: Ed-Tech Spending vs. Student Outcomes -->
+<section class="chart-section">
+  <div class="container">
+    <h2 class="section-title chart-section-title">Ed-Tech Spending vs. Student Outcomes</h2>
+    <div class="chart-wrapper">
+      <canvas id="edtechChart"></canvas>
+    </div>
+    <p class="chart-caption">More spending on technology. No improvement in outcomes. <a href="/edtech.html">The research explains why.</a></p>
+    <p class="chart-disclaimer">Ed-tech spending figures approximate, derived from LAUSD board records and UTLA research. Student outcome data from California CAASPP assessments. <a href="/sources.html">Sources &rarr;</a></p>
+  </div>
+</section>
+
+<!-- This Didn't Happen By Accident -->
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">This Didn&rsquo;t Happen By Accident</h2>
+    <div class="context-grid">
+      <div class="context-card">
+        <div class="context-icon"><i data-lucide="trending-up"></i></div>
+        <h3>The Cash Grab</h3>
+        <p>LAUSD is the second-largest school district in the country &mdash; and private equity firms treat it like a market. 86% of new digital instruction contracts go to PE or VC-backed companies. Nearly 70% of those vendors were paid more than their contracted amounts. This is not mismanagement. It is a system working as designed.</p>
+        <a class="card-link" href="/private-companies.html">See the contracts &rarr;</a>
+      </div>
+      <div class="context-card">
+        <div class="context-icon"><i data-lucide="dollar-sign"></i></div>
+        <h3>The Misplaced Priorities</h3>
+        <p>The district holds $5 billion in reserves while claiming it cannot afford to pay teachers fairly. Hours before a strike deadline, it found money for raises it said for months were impossible. 99% of support staff can&rsquo;t afford a one-bedroom apartment in Los Angeles. The money exists. The priorities are wrong.</p>
+        <a class="card-link" href="/teachers.html">See the evidence &rarr;</a>
+      </div>
+      <div class="context-card">
+        <div class="context-icon"><i data-lucide="alert-triangle"></i></div>
+        <h3>The Accountability Gap</h3>
+        <p>The superintendent who oversaw $6.7 billion in private contracts is on paid leave following an FBI raid. A former employee faces felony charges in a $22 million pay-to-play scheme. Public records requests go unanswered. This is what happens when no one is watching.</p>
+        <a class="card-link" href="/transparency.html">Follow the money &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contract Database -->
 <section class="spotlight-section">
   <div class="spotlight-section-header">
+    <p class="contracts-intro">Every contract below was approved by the school board &mdash; often without public discussion. Click any to see what we found.</p>
     <span class="spotlight-section-label">High-Priority Contracts</span>
-    <p class="spotlight-section-sub">Three contracts the board approved — and every parent should know about.</p>
   </div>
   <div class="hero-spotlight" id="spotlightGrid">
     <!-- Injected by home.js -->
     <div class="spotlight-more">
       <a href="/high-priority.html">View all high-priority findings &rarr;</a>
-      <a href="/search.html">Browse all 244 contracts &rarr;</a>
+      <a href="/search.html">Browse all contracts &rarr;</a>
       <a href="/vendors.html">Vendor spending analysis &rarr;</a>
-    </div>
-  </div>
-</section>
-
-<!-- What We Found -->
-<section class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">What We Found</h2>
-    <p class="section-subtitle">Digging through board reports so you don't have to.</p>
-    <div class="context-grid">
-      <div class="context-card">
-        <div class="context-icon"><i data-lucide="banknote"></i></div>
-        <h3>Billions in Private Contracts</h3>
-        <p>LAUSD has approved hundreds of millions in technology contracts while simultaneously claiming it cannot afford to pay teachers fairly. We tracked every dollar approved by the board.</p>
-      </div>
-      <div class="context-card">
-        <div class="context-icon"><i data-lucide="link-2"></i></div>
-        <h3>Board Member Connections</h3>
-        <p>Cross-referencing Form 700 financial disclosures with contract approvals reveals board members with financial ties to LAUSD vendors — sometimes voting on the very contracts that benefit them.</p>
-      </div>
-      <div class="context-card">
-        <div class="context-icon"><i data-lucide="alert-triangle"></i></div>
-        <h3>Federal Investigations</h3>
-        <p>The FBI raided the LAUSD Superintendent's home and office in February 2026. The AllHere AI chatbot contract — $6.2M to a company whose CEO was arrested for fraud — was approved with board support.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Spending by Category -->
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Spending by Category</h2>
-    <p class="section-subtitle">Where LAUSD contract dollars go — click any bar to explore.</p>
-    <div class="category-bars" id="categoryBars">
-      <!-- Injected by home.js -->
-    </div>
-  </div>
-</section>
-
-<!-- News / Recent Findings -->
-<section class="section section-alt">
-  <div class="container">
-    <h2 class="section-title">In the News</h2>
-    <p class="section-subtitle">Recent coverage of LAUSD contracting and accountability.</p>
-    <div id="newsGrid" class="cta-grid">
-      <!-- Injected by home.js -->
     </div>
   </div>
 </section>
@@ -106,7 +129,7 @@
 <section class="section">
   <div class="container">
     <h2 class="section-title">Take Action</h2>
-    <p class="section-subtitle">Your voice matters. Here's how to get involved.</p>
+    <p class="section-subtitle">Your voice matters. Here&rsquo;s how to get involved.</p>
     <div class="cta-grid">
       <div class="cta-card">
         <h3><i data-lucide="mail"></i> Email Your Board Member</h3>
@@ -115,12 +138,12 @@
       </div>
       <div class="cta-card">
         <h3><i data-lucide="megaphone"></i> Join a Campaign</h3>
-        <p>Organized parent campaigns are making a difference. See what's active and add your voice.</p>
+        <p>Organized parent campaigns are making a difference. See what&rsquo;s active and add your voice.</p>
         <a href="/campaigns.html" class="btn btn-secondary">View Campaigns</a>
       </div>
       <div class="cta-card">
         <h3><i data-lucide="search"></i> Dig Into the Data</h3>
-        <p>Search all 244 contracts, filter by category and amount, and share what you find with your community.</p>
+        <p>Search all contracts, filter by category and amount, and share what you find with your community.</p>
         <a href="/search.html" class="btn btn-outline">Search Contracts</a>
       </div>
     </div>

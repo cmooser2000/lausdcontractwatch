@@ -126,10 +126,24 @@ function injectNav() {
             <a href="/board.html">Board Members</a>
           </div>
         </div>
+        <div class="nav-dropdown" id="navDropdownWhy">
+          <button class="nav-dropdown-trigger" id="navDropdownWhyBtn" aria-expanded="false">
+            Why It Matters
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:4px"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown-menu" id="navDropdownWhyMenu">
+            <a href="/private-companies.html">Private Companies</a>
+            <a href="/edtech.html">EdTech</a>
+            <a href="/teachers.html">Teachers</a>
+            <a href="/students.html">Students</a>
+            <a href="/transparency.html">Transparency</a>
+          </div>
+        </div>
         <a href="/campaigns.html">Campaigns</a>
-        <a href="/take-action.html">Take Action</a>
+        <a href="/board-members.html">Board Profiles</a>
         <a href="/sources.html">Sources</a>
         <a href="/about.html">About</a>
+        <a href="/take-action.html">Take Action</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -140,15 +154,25 @@ function injectNav() {
   if (existing) existing.replaceWith(nav);
   else document.body.prepend(nav);
 
-  // Dropdown
-  const btn = nav.querySelector('#navDropdownBtn');
-  const dd  = nav.querySelector('#navDropdown');
-  btn.addEventListener('click', e => {
-    e.stopPropagation();
-    dd.classList.toggle('open');
-    btn.setAttribute('aria-expanded', dd.classList.contains('open'));
+  // Dropdowns
+  nav.querySelectorAll('.nav-dropdown').forEach(dd => {
+    const btn = dd.querySelector('.nav-dropdown-trigger');
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      // Close other dropdowns
+      nav.querySelectorAll('.nav-dropdown').forEach(other => {
+        if (other !== dd) {
+          other.classList.remove('open');
+          other.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false');
+        }
+      });
+      dd.classList.toggle('open');
+      btn.setAttribute('aria-expanded', dd.classList.contains('open'));
+    });
   });
-  document.addEventListener('click', () => dd.classList.remove('open'));
+  document.addEventListener('click', () => {
+    nav.querySelectorAll('.nav-dropdown').forEach(dd => dd.classList.remove('open'));
+  });
 
   // Mobile toggle
   const toggle = nav.querySelector('#navToggle');
@@ -211,14 +235,11 @@ function injectFooter() {
 
 // ── News Alert Banner ─────────────────────────────────────────
 
-function injectNewsAlert(newsItems) {
-  if (!newsItems || !newsItems.length) return;
-  const latest = newsItems.find(n => n.active);
-  if (!latest) return;
+function injectNewsAlert() {
   const banner = document.createElement('div');
   banner.className = 'news-alert';
-  banner.innerHTML = `<div class="container"><strong>Breaking:</strong> ${escapeHtml(latest.title)}
-    <a href="${escapeHtml(latest.url)}" target="_blank" rel="noopener">Read more &rarr;</a></div>`;
+  banner.innerHTML = `<div class="container"><strong>Update:</strong> LAUSD reached a tentative agreement with UTLA hours before the April 14 strike deadline &mdash; agreeing to raises it said for months it couldn&rsquo;t afford. The contracts below show where the money was going instead.
+    <a href="https://edsource.org/2026/utla-reaches-tentative-agreement-with-lausd-following-months-of-negotiations/755728" target="_blank" rel="noopener">Read more &rarr;</a></div>`;
   const nav = document.querySelector('.main-nav');
   if (nav) nav.after(banner);
 }
@@ -229,6 +250,6 @@ function initLayout(options = {}) {
   injectNav();
   injectFooter();
   if (options.newsAlert) {
-    loadData().then(d => injectNewsAlert(d.news_items));
+    injectNewsAlert();
   }
 }

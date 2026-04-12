@@ -6,30 +6,14 @@ const SPOTLIGHT_IDS = [77, 85, 57]; // AllHere, Yondr, IT Infrastructure — hig
 
 loadData().then(data => {
   const contracts = data.contracts;
-  renderStats(contracts, data.conflicts_of_interest);
   renderSpotlight(contracts, data.cost_equivalents);
-  renderCategoryBars(contracts);
-  renderNews(data.news_items);
-  initHeroSearch(contracts);
-  lucide.createIcons(); // initialise all icons injected by the render functions above
+  renderEdtechChart();
+  lucide.createIcons();
 });
-
-// ── Stats ─────────────────────────────────────────────────────
-
-function renderStats(contracts, conflicts) {
-  const active = contracts.filter(c => c.status === 'Active').length;
-  document.getElementById('statActive').textContent = active;
-
-  const total = contracts.reduce((s, c) => s + (parseFloat(c.amount) || 0), 0);
-  document.getElementById('statTotal').textContent = formatMoney(total);
-  document.getElementById('statContracts').textContent = contracts.length;
-  document.getElementById('statConflicts').textContent = conflicts.length;
-}
 
 // ── Spotlight Cards ───────────────────────────────────────────
 
 function renderSpotlight(contracts, costEquivs) {
-  // Try IDs first; fall back to top significant-finding contracts
   let picks = SPOTLIGHT_IDS.map(id => contracts.find(c => c.id === id)).filter(Boolean);
   if (picks.length < 3) {
     const sig = contracts.filter(c => c.finding_level === 'significant' && !picks.includes(c));
@@ -71,104 +55,169 @@ function buildComparisons(amount, equivs) {
   }).filter(Boolean).join('');
 }
 
-// ── Category Bars ─────────────────────────────────────────────
+// ── Ed-Tech Chart ────────────────────────────────────────────
 
-function renderCategoryBars(contracts) {
-  const totals = {};
-  const counts = {};
-  contracts.forEach(c => {
-    const cat = c.category || 'Other';
-    totals[cat] = (totals[cat] || 0) + (parseFloat(c.amount) || 0);
-    counts[cat] = (counts[cat] || 0) + 1;
-  });
+function renderEdtechChart() {
+  const ctx = document.getElementById('edtechChart');
+  if (!ctx) return;
 
-  const sorted = Object.entries(totals).sort((a, b) => b[1] - a[1]);
-  const max = sorted[0][1];
-  const container = document.getElementById('categoryBars');
+  const years = ['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+  const spending = [45, 52, 61, 89, 380, 290, 245, 210];
+  const math = [33.5, 33.5, null, null, 28.5, 32.8, 32.8, 36.8];
+  const reading = [44.1, 44.1, null, null, 41.7, 43.1, 43.1, 46.5];
 
-  sorted.forEach(([cat, total]) => {
-    const pct = Math.max(2, Math.round((total / max) * 100));
-    const row = document.createElement('div');
-    row.className = 'category-bar-row';
-    row.innerHTML = `
-      <div class="category-bar-label">
-        ${categoryTag(cat)}
-        <span class="category-bar-count">${counts[cat]} contract${counts[cat] !== 1 ? 's' : ''}</span>
-      </div>
-      <div class="category-bar-track">
-        <a href="/search.html?category=${encodeURIComponent(cat)}" style="width:0;background:${categoryColor(cat)}" class="category-bar-fill" data-pct="${pct}">
-          <span class="category-bar-amount">${formatMoney(total)}</span>
-        </a>
-      </div>`;
-    container.appendChild(row);
-  });
+  // COVID bars get muted color
+  const barColors = spending.map((_, i) =>
+    i === 2 || i === 3 ? 'rgba(150, 150, 150, 0.4)' : 'rgba(212, 168, 67, 0.6)'
+  );
+  const barBorders = spending.map((_, i) =>
+    i === 2 || i === 3 ? 'rgba(150, 150, 150, 0.6)' : 'rgba(212, 168, 67, 0.9)'
+  );
 
-  // Animate bars on scroll
-  const bars = container.querySelectorAll('.category-bar-fill');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        el.style.width = el.dataset.pct + '%';
-        observer.unobserve(el);
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [
+        {
+          label: 'Ed-Tech Spending ($M)',
+          data: spending,
+          backgroundColor: barColors,
+          borderColor: barBorders,
+          borderWidth: 1,
+          yAxisID: 'y',
+          order: 2
+        },
+        {
+          label: 'Math Proficiency (%)',
+          data: math,
+          type: 'line',
+          borderColor: '#ffffff',
+          backgroundColor: '#ffffff',
+          pointBackgroundColor: '#ffffff',
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+          tension: 0.3,
+          spanGaps: false,
+          yAxisID: 'y1',
+          order: 1
+        },
+        {
+          label: 'Reading Proficiency (%)',
+          data: reading,
+          type: 'line',
+          borderColor: '#7ec8e3',
+          backgroundColor: '#7ec8e3',
+          pointBackgroundColor: '#7ec8e3',
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+          tension: 0.3,
+          spanGaps: false,
+          yAxisID: 'y1',
+          order: 1
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: {
+        mode: 'index',
+        intersect: false
+      },
+      plugins: {
+        legend: {
+          labels: {
+            color: 'rgba(255,255,255,0.8)',
+            font: { family: "'Inter', sans-serif", size: 13 },
+            padding: 20,
+            usePointStyle: true,
+            pointStyle: 'circle'
+          }
+        },
+        tooltip: {
+          backgroundColor: 'rgba(26, 35, 50, 0.95)',
+          titleFont: { family: "'Inter', sans-serif", size: 14 },
+          bodyFont: { family: "'Inter', sans-serif", size: 13 },
+          padding: 12,
+          cornerRadius: 8,
+          callbacks: {
+            label: function(context) {
+              if (context.dataset.label === 'Ed-Tech Spending ($M)') {
+                if (context.dataIndex === 2 || context.dataIndex === 3) {
+                  return 'Ed-Tech Spending: $' + context.raw + 'M (No Testing — COVID)';
+                }
+                return 'Ed-Tech Spending: $' + context.raw + 'M';
+              }
+              if (context.raw === null) return context.dataset.label + ': No data (COVID)';
+              return context.dataset.label + ': ' + context.raw + '%';
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: 'rgba(255,255,255,0.7)',
+            font: { family: "'Inter', sans-serif", size: 13 }
+          },
+          grid: { color: 'rgba(255,255,255,0.06)' }
+        },
+        y: {
+          position: 'left',
+          title: {
+            display: true,
+            text: 'Spending ($M)',
+            color: 'rgba(255,255,255,0.6)',
+            font: { family: "'Inter', sans-serif", size: 12 }
+          },
+          ticks: {
+            color: 'rgba(255,255,255,0.6)',
+            font: { family: "'Inter', sans-serif" },
+            callback: v => '$' + v + 'M'
+          },
+          grid: { color: 'rgba(255,255,255,0.06)' },
+          beginAtZero: true
+        },
+        y1: {
+          position: 'right',
+          title: {
+            display: true,
+            text: '% Meeting Standards',
+            color: 'rgba(255,255,255,0.6)',
+            font: { family: "'Inter', sans-serif", size: 12 }
+          },
+          ticks: {
+            color: 'rgba(255,255,255,0.6)',
+            font: { family: "'Inter', sans-serif" },
+            callback: v => v + '%'
+          },
+          grid: { drawOnChartArea: false },
+          min: 20,
+          max: 55
+        }
       }
-    });
-  }, { threshold: 0.1 });
-  bars.forEach(b => observer.observe(b));
-}
-
-// ── News ──────────────────────────────────────────────────────
-
-function renderNews(news) {
-  const grid = document.getElementById('newsGrid');
-  const active = (news || []).filter(n => n.active);
-  if (!active.length) { grid.innerHTML = '<p style="color:var(--text-light)">No news items available.</p>'; return; }
-  active.forEach(n => {
-    const card = document.createElement('div');
-    card.className = 'cta-card';
-    card.innerHTML = `
-      <h3 style="font-size:1rem;margin-bottom:0.5rem">${escapeHtml(n.title)}</h3>
-      <p style="font-size:0.85rem">${escapeHtml(n.summary || '')}</p>
-      <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.75rem">${escapeHtml(n.source)} &mdash; ${formatDate(n.published_date)}</div>
-      <a href="${escapeHtml(n.url)}" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem;padding:0.5rem 1rem">Read Article &rarr;</a>`;
-    grid.appendChild(card);
-  });
-}
-
-// ── Hero Search Autocomplete ──────────────────────────────────
-
-function initHeroSearch(contracts) {
-  const input = document.getElementById('heroSearchInput');
-  const dropdown = document.getElementById('heroDropdown');
-  let debounce;
-
-  input.addEventListener('input', () => {
-    clearTimeout(debounce);
-    debounce = setTimeout(() => {
-      const q = input.value.trim().toLowerCase();
-      if (q.length < 2) { dropdown.style.display = 'none'; return; }
-      const results = contracts.filter(c =>
-        (c.title || '').toLowerCase().includes(q) ||
-        (c.vendor_name || '').toLowerCase().includes(q) ||
-        (c.keywords || '').toLowerCase().includes(q) ||
-        (c.category || '').toLowerCase().includes(q)
-      ).slice(0, 6);
-
-      if (!results.length) { dropdown.style.display = 'none'; return; }
-      dropdown.innerHTML = results.map(c => `
-        <a class="search-dropdown-item" href="/contract.html?id=${c.id}">
-          <span class="sdi-title">${escapeHtml(c.title)}</span>
-          <span class="sdi-meta">${escapeHtml(c.vendor_name || '')} &mdash; ${formatMoney(c.amount)}</span>
-        </a>`).join('') +
-        `<a class="search-dropdown-item search-dropdown-all" href="/search.html?q=${encodeURIComponent(input.value.trim())}">
-          See all results &rarr;
-        </a>`;
-      dropdown.style.display = 'block';
-    }, 150);
-  });
-
-  document.addEventListener('click', e => {
-    if (!e.target.closest('.search-form-hero')) dropdown.style.display = 'none';
+    },
+    plugins: [{
+      // COVID label plugin
+      afterDraw: function(chart) {
+        const meta = chart.getDatasetMeta(0);
+        const ctx = chart.ctx;
+        [2, 3].forEach(i => {
+          const bar = meta.data[i];
+          if (!bar) return;
+          ctx.save();
+          ctx.fillStyle = 'rgba(255,255,255,0.5)';
+          ctx.font = "11px 'Inter', sans-serif";
+          ctx.textAlign = 'center';
+          ctx.fillText('No Testing', bar.x, bar.y - 8);
+          ctx.fillText('(COVID)', bar.x, bar.y + 4);
+          ctx.restore();
+        });
+      }
+    }]
   });
 }
 
@@ -195,5 +244,22 @@ function categoryIcon(cat) {
 
 function truncate(str, len) {
   if (!str || str.length <= len) return str || '';
-  return str.slice(0, len).replace(/\s+\S*$/, '') + '…';
+  return str.slice(0, len).replace(/\s+\S*$/, '') + '\u2026';
+}
+
+// ── Share ────────────────────────────────────────────────────
+
+function shareThisPage() {
+  if (navigator.share) {
+    navigator.share({ title: document.title, url: window.location.href });
+  } else {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      const btn = document.querySelector('.action-bar-share');
+      if (btn) {
+        const orig = btn.textContent;
+        btn.textContent = 'Link copied!';
+        setTimeout(() => { btn.textContent = orig; }, 2000);
+      }
+    });
+  }
 }
