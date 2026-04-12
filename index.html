@@ -152,6 +152,148 @@
 
 <script src="/js/layout.js"></script>
 <script src="/js/home.js"></script>
+<script>
+// Override chart — dual-line, no bars
+renderEdtechChart = function() {
+  const ctx = document.getElementById('edtechChart');
+  if (!ctx) return;
+
+  const years = ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
+  const spending = [12, 15, 18, 45, 52, 61, 89, 380, 290, 245, 210];
+  const proficiency = [36.1, 37.0, 37.9, 38.8, 38.8, null, null, 35.1, 38.0, 38.0, 41.7];
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [
+        {
+          label: 'Ed-Tech Spending ($M)',
+          data: spending,
+          borderColor: '#F5A623',
+          backgroundColor: '#F5A623',
+          pointBackgroundColor: '#F5A623',
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+          tension: 0.3,
+          yAxisID: 'y'
+        },
+        {
+          label: 'Student Proficiency (% meeting standards)',
+          data: proficiency,
+          borderColor: '#ffffff',
+          backgroundColor: '#ffffff',
+          pointBackgroundColor: '#ffffff',
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+          tension: 0.3,
+          spanGaps: false,
+          yAxisID: 'y1'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          position: 'top',
+          align: 'center',
+          labels: {
+            color: 'rgba(255,255,255,0.8)',
+            font: { family: "'Inter', sans-serif", size: 13 },
+            padding: 20,
+            usePointStyle: true,
+            pointStyle: 'circle'
+          }
+        },
+        tooltip: {
+          backgroundColor: 'rgba(26, 35, 50, 0.95)',
+          titleFont: { family: "'Inter', sans-serif", size: 14 },
+          bodyFont: { family: "'Inter', sans-serif", size: 13 },
+          padding: 12,
+          cornerRadius: 8,
+          callbacks: {
+            label: function(context) {
+              if (context.dataset.yAxisID === 'y') {
+                return 'Ed-Tech Spending: $' + context.raw + 'M';
+              }
+              if (context.raw === null) return 'Student Proficiency: No data (COVID)';
+              return 'Student Proficiency: ' + context.raw + '%';
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: 'rgba(255,255,255,0.7)', font: { family: "'Inter', sans-serif", size: 13 } },
+          grid: { color: 'rgba(255,255,255,0.06)' }
+        },
+        y: {
+          position: 'left',
+          title: { display: true, text: 'Ed-Tech Spending ($M)', color: '#F5A623', font: { family: "'Inter', sans-serif", size: 12 } },
+          ticks: { color: '#F5A623', font: { family: "'Inter', sans-serif" }, callback: function(v) { return '$' + v + 'M'; } },
+          grid: { color: 'rgba(255,255,255,0.06)' },
+          min: 0,
+          max: 400
+        },
+        y1: {
+          position: 'right',
+          title: { display: true, text: '% Meeting Standards', color: 'rgba(255,255,255,0.8)', font: { family: "'Inter', sans-serif", size: 12 } },
+          ticks: {
+            color: 'rgba(255,255,255,0.8)',
+            font: { family: "'Inter', sans-serif" },
+            callback: function(v) { return v + '%'; },
+            stepSize: 20
+          },
+          grid: { drawOnChartArea: false },
+          min: 0,
+          max: 100
+        }
+      }
+    },
+    plugins: [{
+      afterDraw: function(chart) {
+        var xScale = chart.scales.x;
+        var yScale = chart.scales.y;
+        var cctx = chart.ctx;
+
+        // COVID gap label — position between 2020 and 2021
+        var x2020 = xScale.getPixelForValue(5);
+        var x2021 = xScale.getPixelForValue(6);
+        var xMid = (x2020 + x2021) / 2;
+        cctx.save();
+        cctx.fillStyle = 'rgba(255,255,255,0.4)';
+        cctx.font = "11px 'Inter', sans-serif";
+        cctx.textAlign = 'center';
+        cctx.fillText('No testing', xMid, yScale.top + 30);
+        cctx.fillText('(COVID)', xMid, yScale.top + 43);
+        cctx.restore();
+
+        // Vertical marker at 2022 (index 7)
+        var x2022 = xScale.getPixelForValue(7);
+        cctx.save();
+        cctx.beginPath();
+        cctx.setLineDash([6, 4]);
+        cctx.strokeStyle = 'rgba(220, 120, 60, 0.5)';
+        cctx.lineWidth = 1.5;
+        cctx.moveTo(x2022, yScale.top);
+        cctx.lineTo(x2022, yScale.bottom);
+        cctx.stroke();
+        cctx.setLineDash([]);
+        cctx.fillStyle = 'rgba(220, 120, 60, 0.7)';
+        cctx.font = "10px 'Inter', sans-serif";
+        cctx.textAlign = 'center';
+        cctx.fillText('Ed-tech spending jumps 84%', x2022, yScale.top - 6);
+        cctx.restore();
+      }
+    }]
+  });
+};
+</script>
 <script>lucide.createIcons();</script>
 </body>
 </html>

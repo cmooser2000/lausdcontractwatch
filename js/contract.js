@@ -112,6 +112,50 @@ function descriptionCard(c) {
   </div>`;
 }
 
+function renderMd(text) {
+  if (!text) return '';
+  if (typeof marked !== 'undefined' && marked.parse) {
+    // Make links open in new tab
+    var renderer = new marked.Renderer();
+    renderer.link = function(href, title, text) {
+      var t = title ? ' title="' + title + '"' : '';
+      return '<a href="' + href + '" target="_blank" rel="noopener"' + t + '>' + text + '</a>';
+    };
+    return marked.parse(text, { renderer: renderer });
+  }
+  return escapeHtml(text);
+}
+
+function questionsToChecklist(text) {
+  if (!text) return '';
+  var md = renderMd(text);
+  // Parse the rendered markdown and convert list items or lines into checklist items
+  var tmp = document.createElement('div');
+  tmp.innerHTML = md;
+  var items = [];
+  // If markdown produced a list, use its items
+  var lis = tmp.querySelectorAll('li');
+  if (lis.length) {
+    lis.forEach(function(li) { items.push(li.innerHTML); });
+  } else {
+    // Split on line breaks / paragraphs
+    var ps = tmp.querySelectorAll('p');
+    if (ps.length > 1) {
+      ps.forEach(function(p) { items.push(p.innerHTML); });
+    } else {
+      // Split plain text on numbered patterns or newlines
+      var raw = tmp.innerHTML;
+      var parts = raw.split(/(?:<br\s*\/?>|\n)+/).map(function(s) { return s.replace(/^\d+[\.\)]\s*/, '').trim(); }).filter(Boolean);
+      items = parts;
+    }
+  }
+  if (!items.length) return '<div class="md-prose">' + md + '</div>';
+  return '<ul class="questions-checklist">' +
+    items.map(function(item) {
+      return '<li><span class="q-icon"><i data-lucide="circle"></i></span><span>' + item + '</span></li>';
+    }).join('') + '</ul>';
+}
+
 function aiAnalysisCard(c) {
   if (!c.ai_analysis && !c.red_flags && !c.questions_to_ask) return '';
   return `<div class="detail-card">
@@ -119,13 +163,13 @@ function aiAnalysisCard(c) {
     ${c.red_flags ? `
       <div style="background:#fff5f5;border:1px solid #f5c6cb;border-radius:6px;padding:1rem;margin-bottom:1rem">
         <strong style="color:var(--red);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em"><i data-lucide="alert-triangle"></i> Red Flags</strong>
-        <p style="font-size:0.9rem;margin-top:0.5rem;line-height:1.7">${escapeHtml(c.red_flags)}</p>
+        <div class="md-prose md-prose-flags" style="margin-top:0.5rem">${renderMd(c.red_flags)}</div>
       </div>` : ''}
-    ${c.ai_analysis ? `<p style="font-size:0.9rem;line-height:1.7;margin-bottom:1rem">${escapeHtml(c.ai_analysis)}</p>` : ''}
+    ${c.ai_analysis ? `<div class="md-prose" style="margin-bottom:1rem">${renderMd(c.ai_analysis)}</div>` : ''}
     ${c.questions_to_ask ? `
       <div style="background:#f0f4ff;border:1px solid #c5d3f5;border-radius:6px;padding:1rem">
-        <strong style="color:var(--blue);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em">Questions to Ask</strong>
-        <p style="font-size:0.9rem;margin-top:0.5rem;line-height:1.7">${escapeHtml(c.questions_to_ask)}</p>
+        <strong style="color:var(--blue);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em"><i data-lucide="circle"></i> Questions to Ask</strong>
+        ${questionsToChecklist(c.questions_to_ask)}
       </div>` : ''}
   </div>`;
 }
