@@ -88,18 +88,16 @@
   </div>
 </section>
 
-<!-- The One Split Vote -->
-<section class="section section-alt">
-  <div class="container">
-    <div class="bm-callout">
-      <h2>The Only Contested Vote</h2>
-      <p>In the available public record, the board voted unanimously on every item — including $500 million in bonds approved without public discussion — except one. On December 16, 2025, the board voted 6-1 on a resolution addressing immigration enforcement and community safety. Board member Sherlett Hendy Newbill (District 1) cast the only dissenting vote.</p>
-    </div>
+<!-- Vote Context -->
+<section class="section" style="padding-top:1rem;padding-bottom:1rem">
+  <div class="container" style="max-width:700px;text-align:center">
+    <p style="font-size:0.95rem;line-height:1.7;color:var(--text-muted)">LAUSD&rsquo;s public vote records only go back to June 2025 &mdash; earlier votes on contracts like AllHere, iReady, and the teacher contract are not in the public database. In the available record, every vote was unanimous except one: on December 16, 2025, board member Sherlett Hendy Newbill (District 1) voted No on a resolution addressing immigration enforcement and community safety. It is the only documented dissent in six months of public records. <a href="#profiles" style="color:var(--gold);font-weight:600">Scroll down to see how each member voted.</a></p>
+    <p style="font-size:0.78rem;line-height:1.6;color:var(--text-muted);opacity:0.6;font-style:italic;margin-top:0.75rem">Vote records sourced from LAUSD Legistar (June 2025&ndash;present). LAUSD Contract Watch filed 2 public records requests for complete voting histories. LAUSD did not respond to either.</p>
   </div>
 </section>
 
 <!-- Board Member Profiles -->
-<section class="section">
+<section class="section" id="profiles">
   <div class="container">
     <div id="boardProfiles">
       <p style="color:var(--text-muted)">Loading board member profiles...</p>
@@ -153,11 +151,12 @@
       // Header
       const header = document.createElement('div');
       header.className = 'bm-profile-header';
+      const electionNote = member.termEnds === 2026 ? ' <span style="color:rgba(192,57,43,0.7);font-size:0.75rem">(up for election this year)</span>' : '';
       header.innerHTML = `
         <div>
           <h3>${escapeHtml(member.name)}</h3>
           <span class="bm-district">District ${member.district}</span>
-          <span class="bm-term">Term ends ${member.termEnds}</span>
+          <span class="bm-term" style="color:var(--gold);font-size:0.8rem">Term ends ${member.termEnds}${electionNote}</span>
         </div>
         <a href="mailto:${escapeHtml(member.email)}" class="bm-email-link">
           <i data-lucide="mail"></i> Contact this board member &rarr;
