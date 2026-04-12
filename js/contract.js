@@ -1,5 +1,20 @@
 /* LAUSD Contract Watch — Contract Detail Page */
 
+function formatCompact(n) {
+  if (n >= 1000000000) {
+    var b = n / 1000000000;
+    return (b % 1 === 0 ? b.toFixed(0) : b.toFixed(1).replace(/\.0$/, '')) + 'B';
+  }
+  if (n >= 1000000) {
+    var m = n / 1000000;
+    return (m % 1 === 0 ? m.toFixed(0) : m.toFixed(1).replace(/\.0$/, '')) + 'M';
+  }
+  if (n >= 1000) {
+    return Math.round(n / 1000).toLocaleString() + 'K';
+  }
+  return n.toLocaleString();
+}
+
 initLayout();
 
 const contractId = parseInt(new URLSearchParams(location.search).get('id'));
@@ -236,7 +251,7 @@ function equivalentsCard(c, equivs) {
         const n = Math.floor(amt / parseFloat(e.unit_cost));
         return `<div class="equivalent-card">
           <div class="eq-icon">${equivIcon(e.icon)}</div>
-          <div class="eq-count">${n >= 1000 ? (n/1000).toFixed(0)+'K' : n.toLocaleString()}</div>
+          <div class="eq-count">${formatCompact(n)}</div>
           <div class="eq-label">${escapeHtml(e.unit_label)}</div>
         </div>`;
       }).join('')}
