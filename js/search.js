@@ -6,15 +6,100 @@ const PER_PAGE = 25;
 let allContracts = [];
 let filtered = [];
 let currentPage = 1;
+let searchIndex = [];   // pre-built enriched search index
 
 const $ = id => document.getElementById(id);
 
 loadData().then(data => {
   allContracts = data.contracts;
+  buildSearchIndex(data);
   readUrlParams();
   applyFilters();
   bindEvents();
 });
+
+// ── Search Index ──────────────────────────────────────────────
+// Pre-build an enriched, normalized text blob for every contract.
+// Includes: all contract text fields + matching vendor profile data
+// (parent company, controversies). Stored in two forms:
+//   .text      — lowercased original
+//   .stripped  — lowercased with hyphens/dashes removed
+// This lets "iready" find "i-Ready" and "battery ventures" find
+// ContinuumCloud contracts via the vendor profile connection.
+
+function normalize(str) {
+  return (str || '').toLowerCase();
+}
+
+function strip(str) {
+  // Remove hyphens, en-dashes, em-dashes so "iready" matches "i-Ready"
+  return normalize(str).replace(/[-–—]/g, '');
+}
+
+function buildSearchIndex(data) {
+  const profiles = data.vendor_profiles || [];
+
+  searchIndex = data.contracts.map(c => {
+    const vn = normalize(c.vendor_name);
+    const vnFirst = vn.split(/[\s,]/)[0]; // first word of vendor name
+
+    // Find vendor profiles that are connected to this contract:
+    // 1. Profile vendor_name overlaps with contract vendor_name
+    // 2. Profile controversies text mentions the contract's vendor name (whole-word match only)
+    const matchingProfiles = profiles.filter(p => {
+      const pn = normalize(p.vendor_name);
+      if (!vn || !pn) return false;
+      if (vn.includes(pn) || pn.includes(vn) || pn.includes(vnFirst)) return true;
+      // Also match if the profile's controversies mention this vendor as a whole word.
+      // Use word-boundary check to avoid "best" matching inside "CBEST" etc.
+      if (vnFirst.length >= 6) {
+        const contr = normalize(p.controversies || '');
+        const wordRe = new RegExp('\\b' + vnFirst.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b');
+        if (wordRe.test(contr)) return true;
+      }
+      return false;
+    });
+
+    const profileText = matchingProfiles.map(p =>
+      [p.vendor_name, p.parent_company, p.company_type, p.controversies]
+        .filter(Boolean).join(' ')
+    ).join(' ');
+
+    // Combine all contract text fields + profile text
+    const raw = [
+      c.title,
+      c.short_name,
+      c.vendor_name,
+      c.vendor_list,
+      c.description,
+      c.plain_english,
+      c.ai_analysis,
+      c.red_flags,
+      c.questions_to_ask,
+      c.keywords,
+      c.department,
+      c.notes,
+      c.contract_number,
+      c.funding_source,
+      c.sources,
+      c.contract_type,
+      c.category,
+      profileText,
+    ].filter(Boolean).join(' ');
+
+    return {
+      id: c.id,
+      text:     normalize(raw),
+      stripped: strip(raw),
+    };
+  });
+}
+
+// Match a single query word against a search index entry.
+// Tries both the original form and the hyphen-stripped form.
+function wordMatches(word, entry) {
+  return entry.text.includes(word) || entry.stripped.includes(strip(word));
+}
 
 // ── URL Params ────────────────────────────────────────────────
 
@@ -62,20 +147,23 @@ function applyFilters() {
   const mn  = parseFloat($('filterAmountMin').value) || 0;
   const mx  = parseFloat($('filterAmountMax').value) || Infinity;
 
+  // Split query into words; each word must appear somewhere in the entry
+  const queryWords = q ? q.split(/\s+/).filter(Boolean) : [];
+
   filtered = allContracts.filter(c => {
     if (cat && c.category !== cat) return false;
     if (st  && c.status   !== st)  return false;
     if (fnd && c.finding_level !== fnd) return false;
     const amt = parseFloat(c.amount) || 0;
     if (amt < mn || amt > mx) return false;
-    if (q) {
-      const haystack = [c.title, c.vendor_name, c.vendor_list, c.description,
-                        c.plain_english, c.keywords, c.department, c.notes,
-                        c.contract_number]
-        .filter(Boolean).join(' ').toLowerCase();
-      // support multi-word: all words must appear
-      if (!q.split(/\s+/).every(word => haystack.includes(word))) return false;
+
+    if (queryWords.length) {
+      const entry = searchIndex.find(s => s.id === c.id);
+      if (!entry) return false;
+      // All query words must match (supports multi-word phrases)
+      if (!queryWords.every(word => wordMatches(word, entry))) return false;
     }
+
     return true;
   });
 
@@ -112,11 +200,16 @@ function renderTable() {
     ${filtered.length < allContracts.length ? `&nbsp;<span style="color:var(--text-muted)">(of ${allContracts.length} total, ${formatMoney(total)})</span>` : ''}`;
 
   if (!page.length) {
+    const q = $('searchInput').value.trim();
     tbody.innerHTML = `<tr><td colspan="6">
       <div class="empty-state">
         <div class="empty-icon">🔍</div>
         <h3>No contracts found</h3>
-        <p>Try broadening your search or clearing some filters.</p>
+        <p>Try broader search terms or clear some filters.</p>
+        ${q ? `<p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem">
+          Some vendors tracked in our reports may not yet have individual contracts in our database.
+          Check the <a href="/vendors">Vendor Analysis</a> page or <a href="/sources">Sources</a> for more context.
+        </p>` : ''}
       </div></td></tr>`;
     return;
   }
