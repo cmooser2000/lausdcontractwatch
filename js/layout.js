@@ -153,6 +153,16 @@ function injectNav() {
         </div>
         <a href="/board-members.html">Board Profiles</a>
         <a href="/take-action.html">Take Action</a>
+        <div class="nav-dropdown" id="navDropdownAbout">
+          <button class="nav-dropdown-trigger" id="navDropdownAboutBtn" aria-expanded="false">
+            About
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:4px"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown-menu" id="navDropdownAboutMenu">
+            <a href="/about.html">Our Mission</a>
+            <a href="/sources.html">Sources</a>
+          </div>
+        </div>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
         <span></span><span></span><span></span>
