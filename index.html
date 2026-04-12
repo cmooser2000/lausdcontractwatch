@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -62,17 +63,17 @@
     <p class="section-subtitle">Digging through board reports so you don't have to.</p>
     <div class="context-grid">
       <div class="context-card">
-        <div class="context-icon">💸</div>
+        <div class="context-icon"><i data-lucide="banknote"></i></div>
         <h3>Billions in Private Contracts</h3>
         <p>LAUSD has approved hundreds of millions in technology contracts while simultaneously claiming it cannot afford to pay teachers fairly. We tracked every dollar approved by the board.</p>
       </div>
       <div class="context-card">
-        <div class="context-icon">🔗</div>
+        <div class="context-icon"><i data-lucide="link-2"></i></div>
         <h3>Board Member Connections</h3>
         <p>Cross-referencing Form 700 financial disclosures with contract approvals reveals board members with financial ties to LAUSD vendors — sometimes voting on the very contracts that benefit them.</p>
       </div>
       <div class="context-card">
-        <div class="context-icon">🚨</div>
+        <div class="context-icon"><i data-lucide="alert-triangle"></i></div>
         <h3>Federal Investigations</h3>
         <p>The FBI raided the LAUSD Superintendent's home and office in February 2026. The AllHere AI chatbot contract — $6.2M to a company whose CEO was arrested for fraud — was approved with board support.</p>
       </div>
@@ -109,17 +110,17 @@
     <p class="section-subtitle">Your voice matters. Here's how to get involved.</p>
     <div class="cta-grid">
       <div class="cta-card">
-        <h3>📧 Email Your Board Member</h3>
+        <h3><i data-lucide="mail"></i> Email Your Board Member</h3>
         <p>Use our pre-written email templates to contact your LAUSD board representative in under 5 minutes.</p>
         <a href="/take-action.html" class="btn btn-primary">Write to Your Board Member</a>
       </div>
       <div class="cta-card">
-        <h3>📣 Join a Campaign</h3>
+        <h3><i data-lucide="megaphone"></i> Join a Campaign</h3>
         <p>Organized parent campaigns are making a difference. See what's active and add your voice.</p>
         <a href="/campaigns.html" class="btn btn-secondary">View Campaigns</a>
       </div>
       <div class="cta-card">
-        <h3>🔍 Dig Into the Data</h3>
+        <h3><i data-lucide="search"></i> Dig Into the Data</h3>
         <p>Search all 244 contracts, filter by category and amount, and share what you find with your community.</p>
         <a href="/search.html" class="btn btn-outline">Search Contracts</a>
       </div>
@@ -129,5 +130,6 @@
 
 <script src="/js/layout.js"></script>
 <script src="/js/home.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

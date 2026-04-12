@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -74,9 +75,9 @@
         <div id="emailBodyPreview" style="font-size:0.85rem;line-height:1.7;white-space:pre-wrap;padding:1rem;background:var(--bg);border-radius:4px;border:1px solid var(--border);max-height:300px;overflow-y:auto;color:var(--text)"></div>
       </div>
       <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
-        <a id="btnMailto" href="#" class="btn btn-primary">📧 Open in Email App</a>
-        <a id="btnGmail" href="#" target="_blank" rel="noopener" class="btn btn-secondary">✉ Open in Gmail</a>
-        <button id="btnCopyEmail" class="btn btn-outline">📋 Copy Email Text</button>
+        <a id="btnMailto" href="#" class="btn btn-primary"><i data-lucide="mail"></i> Open in Email App</a>
+        <a id="btnGmail" href="#" target="_blank" rel="noopener" class="btn btn-secondary"><i data-lucide="mail"></i> Open in Gmail</a>
+        <button id="btnCopyEmail" class="btn btn-outline"><i data-lucide="clipboard"></i> Copy Email Text</button>
       </div>
     </div>
 
@@ -93,5 +94,6 @@
 
 <script src="/js/layout.js"></script>
 <script src="/js/take-action.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

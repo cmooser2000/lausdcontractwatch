@@ -6,20 +6,23 @@ const contractId = parseInt(new URLSearchParams(location.search).get('id'));
 
 if (!contractId) {
   document.getElementById('contractBody').innerHTML =
-    `<div class="empty-state"><div class="empty-icon">❌</div><h3>No contract specified</h3>
+    `<div class="empty-state"><div class="empty-icon"><i data-lucide="x-circle"></i></div><h3>No contract specified</h3>
      <p><a href="/search.html">Browse all contracts</a></p></div>`;
+  lucide.createIcons();
 } else {
   loadData().then(data => {
     const c = data.contracts.find(x => x.id === contractId);
     if (!c) {
       document.getElementById('contractBody').innerHTML =
-        `<div class="empty-state"><div class="empty-icon">🔍</div><h3>Contract not found</h3>
+        `<div class="empty-state"><div class="empty-icon"><i data-lucide="search"></i></div><h3>Contract not found</h3>
          <p><a href="/search.html">Browse all contracts</a></p></div>`;
+      lucide.createIcons();
       return;
     }
     document.title = `${c.title} — LAUSD Contract Watch`;
     renderHeader(c);
     renderBody(c, data);
+    lucide.createIcons();
   });
 }
 
@@ -32,7 +35,7 @@ function renderHeader(c) {
       ${statusBadge(c.status)}
       ${verificationBadge(c.verification_status)}
       ${c.finding_level && c.finding_level !== 'none'
-        ? `<span class="badge" style="background:#f8d7da;color:#721c24">⚠ ${escapeHtml(c.finding_level)} finding</span>` : ''}
+        ? `<span class="badge" style="background:#f8d7da;color:#721c24"><i data-lucide="alert-triangle"></i> ${escapeHtml(c.finding_level)} finding</span>` : ''}
     </div>
     <h1 style="font-size:1.5rem;font-weight:800;margin:0.25rem 0">${escapeHtml(c.title)}</h1>
     <div class="vendor-name-large">${escapeHtml(c.vendor_name || '')}</div>`;
@@ -73,10 +76,10 @@ function renderBody(c, data) {
 
 function verificationBanner(v) {
   const map = {
-    verified:   ['vb-verified',   '✓ Verified against primary LAUSD board documents.'],
-    reported:   ['vb-reported',   'ℹ Reported: sourced from news coverage, not independently verified.'],
-    estimated:  ['vb-estimated',  '~ Estimated: based on comparable contracts. Verify against source.'],
-    unverified: ['vb-unverified', '⚠ Unverified: requires verification against source documents.'],
+    verified:   ['vb-verified',   '<i data-lucide="check-circle"></i> Verified against primary LAUSD board documents.'],
+    reported:   ['vb-reported',   '<i data-lucide="info"></i> Reported: sourced from news coverage, not independently verified.'],
+    estimated:  ['vb-estimated',  '<i data-lucide="help-circle"></i> Estimated: based on comparable contracts. Verify against source.'],
+    unverified: ['vb-unverified', '<i data-lucide="alert-triangle"></i> Unverified: requires verification against source documents.'],
   };
   const [cls, msg] = map[v] || map.unverified;
   return `<div class="verification-banner ${cls}">${msg}</div>`;
@@ -115,7 +118,7 @@ function aiAnalysisCard(c) {
     <h3>Analysis &amp; Concerns</h3>
     ${c.red_flags ? `
       <div style="background:#fff5f5;border:1px solid #f5c6cb;border-radius:6px;padding:1rem;margin-bottom:1rem">
-        <strong style="color:var(--red);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em">⚠ Red Flags</strong>
+        <strong style="color:var(--red);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em"><i data-lucide="alert-triangle"></i> Red Flags</strong>
         <p style="font-size:0.9rem;margin-top:0.5rem;line-height:1.7">${escapeHtml(c.red_flags)}</p>
       </div>` : ''}
     ${c.ai_analysis ? `<p style="font-size:0.9rem;line-height:1.7;margin-bottom:1rem">${escapeHtml(c.ai_analysis)}</p>` : ''}
@@ -240,9 +243,17 @@ function sourceCard(c) {
 
 function equivIcon(key) {
   const map = {
-    book: '📚', tree: '🌳', art: '🎨', music: '🎵',
-    textbook: '📖', playground: '🛝', counselor: '🧑‍💼',
-    medical: '🏥', afterschool: '🏫', person: '👤',
+    book:       'book-open',
+    tree:       'tree-pine',
+    art:        'palette',
+    music:      'music',
+    textbook:   'book',
+    playground: 'sun',
+    counselor:  'user',
+    medical:    'stethoscope',
+    afterschool:'school',
+    person:     'user',
   };
-  return map[key] || '📦';
+  const icon = map[key] || 'package';
+  return `<i data-lucide="${icon}"></i>`;
 }

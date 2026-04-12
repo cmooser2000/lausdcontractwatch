@@ -11,6 +11,7 @@ loadData().then(data => {
   renderCategoryBars(contracts);
   renderNews(data.news_items);
   initHeroSearch(contracts);
+  lucide.createIcons(); // initialise all icons injected by the render functions above
 });
 
 // ── Stats ─────────────────────────────────────────────────────
@@ -175,12 +176,21 @@ function initHeroSearch(contracts) {
 
 function categoryIcon(cat) {
   const map = {
-    'Technology': '💻', 'Facilities': '🏗️', 'Transportation': '🚌',
-    'Food Services': '🍎', 'Professional Services': '📋', 'Construction': '🔨',
-    'Consulting': '📊', 'Curriculum': '📚', 'Special Education': '🎓',
-    'Security': '🔒', 'Maintenance': '🔧', 'Other': '📄',
+    'Technology':            'monitor',
+    'Facilities':            'hard-hat',
+    'Transportation':        'bus',
+    'Food Services':         'apple',
+    'Professional Services': 'briefcase',
+    'Construction':          'hammer',
+    'Consulting':            'bar-chart-2',
+    'Curriculum':            'book-open',
+    'Special Education':     'graduation-cap',
+    'Security':              'lock',
+    'Maintenance':           'wrench',
+    'Other':                 'file-text',
   };
-  return map[cat] || '📄';
+  const icon = map[cat] || 'file-text';
+  return `<i data-lucide="${icon}"></i>`;
 }
 
 function truncate(str, len) {

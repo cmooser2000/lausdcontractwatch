@@ -29,11 +29,13 @@ function renderList(level) {
     .sort((a, b) => (parseFloat(b.amount) || 0) - (parseFloat(a.amount) || 0));
 
   if (!items.length) {
-    list.innerHTML = `<div class="empty-state"><div class="empty-icon">✅</div><h3>No contracts at this level</h3></div>`;
+    list.innerHTML = `<div class="empty-state"><div class="empty-icon"><i data-lucide="check-circle"></i></div><h3>No contracts at this level</h3></div>`;
+    lucide.createIcons();
     return;
   }
 
   list.innerHTML = items.map((c, i) => priorityCard(c, i + 1, level)).join('');
+  lucide.createIcons();
 }
 
 function priorityCard(c, rank, level) {

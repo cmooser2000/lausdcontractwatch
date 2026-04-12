@@ -84,8 +84,12 @@ function update() {
   copyBtn.onclick = () => {
     const text = `To: ${email}\nSubject: ${subject}\n\n${body}`;
     navigator.clipboard.writeText(text).then(() => {
-      copyBtn.textContent = '✓ Copied!';
-      setTimeout(() => { copyBtn.textContent = '📋 Copy Email Text'; }, 2000);
+      copyBtn.innerHTML = '<i data-lucide="check"></i> Copied!';
+      lucide.createIcons();
+      setTimeout(() => {
+        copyBtn.innerHTML = '<i data-lucide="clipboard"></i> Copy Email Text';
+        lucide.createIcons();
+      }, 2000);
     });
   };
 

@@ -11,11 +11,13 @@ function renderCampaigns(campaigns, templates, boardMembers) {
   const active = campaigns.filter(c => c.active);
 
   if (!active.length) {
-    list.innerHTML = `<div class="empty-state"><div class="empty-icon">📣</div><h3>No active campaigns</h3><p>Check back soon.</p></div>`;
+    list.innerHTML = `<div class="empty-state"><div class="empty-icon"><i data-lucide="megaphone"></i></div><h3>No active campaigns</h3><p>Check back soon.</p></div>`;
+    lucide.createIcons();
     return;
   }
 
   list.innerHTML = active.map(campaign => {
+
     const campTemplates = templates.filter(t => String(t.campaign_id) === String(campaign.id));
     return `
       <div class="detail-card" style="margin-bottom:2rem">
@@ -29,7 +31,7 @@ function renderCampaigns(campaigns, templates, boardMembers) {
         ${campaign.pdf_file ? `
           <div style="margin-bottom:1.5rem">
             <a href="${escapeHtml(campaign.pdf_file)}" target="_blank" rel="noopener" class="btn btn-outline">
-              📄 ${escapeHtml(campaign.pdf_button_text || 'View Document')}
+              <i data-lucide="file-text"></i> ${escapeHtml(campaign.pdf_button_text || 'View Document')}
             </a>
           </div>` : ''}
 
@@ -46,6 +48,7 @@ function renderCampaigns(campaigns, templates, boardMembers) {
           <a href="/take-action.html" class="btn btn-primary">Write to Your Board Member &rarr;</a>`}
       </div>`;
   }).join('');
+  lucide.createIcons();
 }
 
 function buildDistrictButtons(templates, boardMembers) {

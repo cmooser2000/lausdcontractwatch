@@ -56,7 +56,8 @@ function renderConflicts() {
     &mdash; <span style="color:var(--text-muted);font-size:0.85rem">Many involve publicly-traded stock and are not confirmed conflicts.</span>`;
 
   if (!filtered.length) {
-    list.innerHTML = `<div class="empty-state"><div class="empty-icon">🔍</div><h3>No matches found</h3><p>Try adjusting your filters.</p></div>`;
+    list.innerHTML = `<div class="empty-state"><div class="empty-icon"><i data-lucide="search"></i></div><h3>No matches found</h3><p>Try adjusting your filters.</p></div>`;
+    lucide.createIcons();
     return;
   }
 
@@ -87,6 +88,7 @@ function renderConflicts() {
         </div>
       </div>`;
   }).join('');
+  lucide.createIcons();
 }
 
 function conflictRow(cf) {
@@ -101,7 +103,7 @@ function conflictRow(cf) {
           <span style="display:inline-block;background:${confBg};color:${confColor};font-size:0.72rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:3px;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.35rem">
             ${escapeHtml(cf.match_confidence || 'Low')} confidence
           </span>
-          ${cf.year_overlap ? `<span style="display:inline-block;background:#fff3cd;color:#856404;font-size:0.72rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:3px;margin-left:0.25rem;margin-bottom:0.35rem">⚠ Year Overlap</span>` : ''}
+          ${cf.year_overlap ? `<span style="display:inline-block;background:#fff3cd;color:#856404;font-size:0.72rem;font-weight:700;padding:0.15rem 0.5rem;border-radius:3px;margin-left:0.25rem;margin-bottom:0.35rem"><i data-lucide="alert-triangle"></i> Year Overlap</span>` : ''}
           ${cf.is_public_stock ? `<span style="display:inline-block;background:#e2e3e5;color:#383d41;font-size:0.72rem;padding:0.15rem 0.5rem;border-radius:3px;margin-left:0.25rem;margin-bottom:0.35rem">Public Stock</span>` : ''}
           <div style="font-weight:600;font-size:0.9rem">${escapeHtml(cf.company_disclosed || '—')}</div>
           <div style="font-size:0.8rem;color:var(--text-muted)">${escapeHtml(cf.schedule_type || '')} &mdash; ${escapeHtml(cf.amount_range || '')} &mdash; Filed: ${escapeHtml(cf.filing_year || '')}</div>

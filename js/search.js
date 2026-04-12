@@ -183,6 +183,7 @@ function applyFilters() {
   pushUrlParams();
   renderTable();
   renderPagination();
+  lucide.createIcons();
 }
 
 // ── Render ────────────────────────────────────────────────────
@@ -203,7 +204,7 @@ function renderTable() {
     const q = $('searchInput').value.trim();
     tbody.innerHTML = `<tr><td colspan="6">
       <div class="empty-state">
-        <div class="empty-icon">🔍</div>
+        <div class="empty-icon"><i data-lucide="search"></i></div>
         <h3>No contracts found</h3>
         <p>Try broader search terms or clear some filters.</p>
         ${q ? `<p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem">

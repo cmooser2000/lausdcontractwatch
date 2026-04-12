@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -23,17 +24,17 @@
   <div class="container" style="max-width:820px">
     <div class="context-grid" style="margin-bottom:3rem">
       <div class="context-card">
-        <div class="context-icon">🏫</div>
+        <div class="context-icon"><i data-lucide="school"></i></div>
         <h3>Built by Parents &amp; Teachers</h3>
         <p>This site was built by a teacher and parent in LAUSD using Claude Code as an AI partner to process public records at scale. It is not affiliated with LAUSD.</p>
       </div>
       <div class="context-card">
-        <div class="context-icon">📂</div>
+        <div class="context-icon"><i data-lucide="folder-open"></i></div>
         <h3>Public Records Only</h3>
         <p>All contract data comes from official LAUSD board reports and Legistar, the district's public meeting system. Form 700 disclosures are public documents required by California law.</p>
       </div>
       <div class="context-card">
-        <div class="context-icon">🔓</div>
+        <div class="context-icon"><i data-lucide="unlock"></i></div>
         <h3>Fully Open</h3>
         <p>This site has no login, no paywall, and no tracking beyond basic analytics. All data is freely available to download and use.</p>
       </div>
@@ -103,5 +104,6 @@
 
 <script src="/js/layout.js"></script>
 <script>initLayout();</script>
+<script>lucide.createIcons();</script>
 </body>
 </html>

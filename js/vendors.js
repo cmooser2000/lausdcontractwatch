@@ -40,7 +40,8 @@ function renderVendors(contracts) {
 function renderTable(vendors) {
   const tbody = document.getElementById('vendorsTbody');
   if (!vendors.length) {
-    tbody.innerHTML = `<tr><td colspan="6"><div class="empty-state"><div class="empty-icon">📋</div><h3>No vendors found</h3></div></td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="6"><div class="empty-state"><div class="empty-icon"><i data-lucide="list"></i></div><h3>No vendors found</h3></div></td></tr>`;
+    lucide.createIcons();
     return;
   }
 

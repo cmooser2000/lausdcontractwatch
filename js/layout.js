@@ -108,7 +108,7 @@ function injectNav() {
   nav.innerHTML = `
     <div class="nav-inner">
       <a href="/" class="nav-brand">
-        <span class="nav-icon">🏫</span>
+        <span class="nav-icon"><i data-lucide="school"></i></span>
         <span class="nav-title">LAUSD Contract Watch</span>
       </a>
       <div class="nav-links" id="navLinks">
