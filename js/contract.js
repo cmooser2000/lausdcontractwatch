@@ -41,7 +41,6 @@ function renderHeader(c) {
 // ── Main Body ─────────────────────────────────────────────────
 
 function renderBody(c, data) {
-  const conflicts = (data.conflicts_of_interest || []).filter(cf => cf.contract_id === contractId);
   const vendorConns = (data.vendor_connections || []).filter(vc =>
     (c.vendor_name || '').toLowerCase().includes((vc.vendor_name || '').toLowerCase()) ||
     (vc.vendor_name || '').toLowerCase().includes((c.vendor_name || '').split(/[\s,]/)[0].toLowerCase())
@@ -58,7 +57,6 @@ function renderBody(c, data) {
         ${plainEnglishCard(c)}
         ${descriptionCard(c)}
         ${aiAnalysisCard(c)}
-        ${conflictsCard(conflicts, data.board_members || [])}
         ${boardConnectionsCard(vendorConns, data.board_members || [])}
       </div>
       <aside class="contract-sidebar">
@@ -126,41 +124,6 @@ function aiAnalysisCard(c) {
         <strong style="color:var(--blue);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.05em">Questions to Ask</strong>
         <p style="font-size:0.9rem;margin-top:0.5rem;line-height:1.7">${escapeHtml(c.questions_to_ask)}</p>
       </div>` : ''}
-  </div>`;
-}
-
-function conflictsCard(conflicts, boardMembers) {
-  if (!conflicts.length) return '';
-  const high = conflicts.filter(cf => !cf.is_public_stock);
-  const stock = conflicts.filter(cf => cf.is_public_stock);
-  return `<div class="detail-card card-conflicts">
-    <h3>⚠ Potential Conflicts of Interest <span style="font-size:0.8rem;font-weight:400;color:#9b59b6">(${conflicts.length} flag${conflicts.length !== 1 ? 's' : ''})</span></h3>
-    <div class="conflicts-disclaimer">
-      These are potential matches between board member Form 700 financial disclosures and this contract.
-      They are not confirmed conflicts — many involve publicly-traded stock holdings.
-      <a href="/conflicts.html">Learn more about our methodology &rarr;</a>
-    </div>
-    <div class="conflicts-list">
-      ${conflicts.slice(0, 5).map(cf => `
-        <div class="conflict-item">
-          <span class="conflict-type-badge">${escapeHtml(cf.match_confidence || 'Low')} confidence match</span>
-          <div class="conflict-parties">
-            <div class="conflict-party">
-              <span class="conflict-role">Board Member</span>
-              <strong>${escapeHtml(cf.filer_name || '—')}</strong>
-              <span style="font-size:0.82rem;color:var(--text-light)">${escapeHtml(cf.filer_position || '')}</span>
-            </div>
-            <span class="conflict-arrow">⟷</span>
-            <div class="conflict-party">
-              <span class="conflict-role">Disclosed Holding</span>
-              <strong>${escapeHtml(cf.company_disclosed || '—')}</strong>
-              <span style="font-size:0.82rem;color:var(--text-light)">${escapeHtml(cf.schedule_type || '')} — ${escapeHtml(cf.amount_range || '')} — ${escapeHtml(cf.filing_year || '')}</span>
-            </div>
-          </div>
-          <p class="conflict-desc">${escapeHtml(cf.flag_reason || '')}</p>
-        </div>`).join('')}
-    </div>
-    ${conflicts.length > 5 ? `<p style="margin-top:1rem;font-size:0.85rem;color:var(--text-muted)">+${conflicts.length - 5} more — <a href="/conflicts.html">view all on conflicts page</a></p>` : ''}
   </div>`;
 }
 

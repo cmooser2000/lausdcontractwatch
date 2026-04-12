@@ -26,11 +26,11 @@
     { "source": "/contract",     "destination": "/contract.html" },
     { "source": "/vendors",      "destination": "/vendors.html" },
     { "source": "/board",        "destination": "/board.html" },
-    { "source": "/conflicts",    "destination": "/conflicts.html" },
     { "source": "/high-priority","destination": "/high-priority.html" },
     { "source": "/tech-vendors", "destination": "/tech-vendors.html" },
     { "source": "/campaigns",    "destination": "/campaigns.html" },
     { "source": "/take-action",  "destination": "/take-action.html" },
-    { "source": "/about",        "destination": "/about.html" }
+    { "source": "/about",        "destination": "/about.html" },
+    { "source": "/sources",      "destination": "/sources.html" }
   ]
 }

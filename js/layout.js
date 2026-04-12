@@ -124,11 +124,11 @@ function injectNav() {
             <a href="/tech-vendors.html">Tech Spending</a>
             <div class="nav-dropdown-divider"></div>
             <a href="/board.html">Board Members</a>
-            <a href="/conflicts.html">Conflicts of Interest</a>
           </div>
         </div>
         <a href="/campaigns.html">Campaigns</a>
         <a href="/take-action.html">Take Action</a>
+        <a href="/sources.html">Sources</a>
         <a href="/about.html">About</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
@@ -172,7 +172,7 @@ function injectFooter() {
     <div class="footer-inner">
       <div class="footer-col">
         <h4>LAUSD Contract Watch</h4>
-        <p>A parent-led transparency project tracking LAUSD contracts, vendor relationships, and potential conflicts of interest. Follow the money.</p>
+        <p>A parent-led transparency project tracking LAUSD contracts and vendor relationships. Follow the money.</p>
       </div>
       <div class="footer-col">
         <h4>Contracts</h4>
@@ -187,7 +187,6 @@ function injectFooter() {
         <h4>Accountability</h4>
         <ul>
           <li><a href="/board.html">Board Members</a></li>
-          <li><a href="/conflicts.html">Conflicts of Interest</a></li>
           <li><a href="/campaigns.html">Campaigns</a></li>
           <li><a href="/take-action.html">Take Action</a></li>
         </ul>
@@ -196,7 +195,7 @@ function injectFooter() {
         <h4>About</h4>
         <ul>
           <li><a href="/about.html">Our Mission</a></li>
-          <li><a href="/about.html#data">Data Sources</a></li>
+          <li><a href="/sources.html">Data Sources</a></li>
           <li><a href="/about.html#faq">FAQ</a></li>
         </ul>
       </div>
