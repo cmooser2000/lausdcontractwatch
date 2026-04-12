@@ -1,5 +1,15 @@
 /* Vote Detail Page Styles */
 
+.vote-subheadline {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  color: rgba(255,255,255,0.8);
+  max-width: 700px;
+  line-height: 1.65;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
 .vote-header-meta {
   display: flex;
   align-items: center;
