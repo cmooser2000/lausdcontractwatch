@@ -52,15 +52,31 @@ function renderSpotlight(contracts, costEquivs) {
 }
 
 function buildComparisons(amount, equivs) {
-  if (!amount || !equivs) return '';
-  // Calculate all, sort by largest number, pick top 2
-  const all = equivs.map(e => {
-    const n = Math.floor(amount / parseFloat(e.unit_cost));
-    return { n, label: e.unit_label };
-  }).filter(e => e.n > 0).sort((a, b) => b.n - a.n).slice(0, 2);
-  return all.map(e =>
-    `<div class="spotlight-pays">This contract = <strong>${e.n.toLocaleString()} ${e.label}</strong></div>`
-  ).join('');
+  if (!amount) return '';
+  var items = [];
+  // Always calculate teachers first
+  var teachers = Math.floor(amount / 77000);
+  if (teachers > 0) items.push({ n: teachers, label: 'teachers for one year', priority: 0 });
+  // Priority order for equivalents
+  var priorityMap = { 'library books': 1, 'school nurses': 2, 'shade trees': 3 };
+  if (equivs) {
+    equivs.forEach(function(e) {
+      var n = Math.floor(amount / parseFloat(e.unit_cost));
+      if (n > 0) {
+        var lbl = (e.unit_label || '').toLowerCase();
+        var p = 99;
+        for (var key in priorityMap) { if (lbl.includes(key)) { p = priorityMap[key]; break; } }
+        // Skip pencils unless nothing else
+        if (lbl.includes('pencil')) p = 100;
+        items.push({ n: n, label: e.unit_label, priority: p });
+      }
+    });
+  }
+  // Sort by priority, take top 2
+  items.sort(function(a, b) { return a.priority - b.priority; });
+  return items.slice(0, 2).map(function(e) {
+    return '<div class="spotlight-pays">This contract could fund <strong>' + e.n.toLocaleString() + ' ' + e.label + '</strong></div>';
+  }).join('');
 }
 
 // ── Ed-Tech Chart ────────────────────────────────────────────
