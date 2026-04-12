@@ -10,7 +10,149 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <style>
+    .edtech-section {
+      background: linear-gradient(135deg, #1a2332 0%, #243044 50%, #1a3a5c 100%);
+      padding: 80px 1.5rem;
+    }
+    .edtech-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .edtech-headline {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+    }
+    .edtech-headline-gold {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--gold-light);
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    .edtech-subhead {
+      text-align: center;
+      color: rgba(255,255,255,0.75);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 650px;
+      margin: 0 auto 0.75rem;
+    }
+    .edtech-source-line {
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 3rem;
+    }
+    .edtech-source-line a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: underline;
+    }
+    .edtech-source-line a:hover { color: var(--gold-light); }
+
+    .edtech-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+    .edtech-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,168,67,0.3);
+      border-radius: var(--radius);
+      padding: 40px;
+      transition: border-color 0.25s;
+    }
+    .edtech-card:hover {
+      border-color: var(--gold);
+    }
+    .edtech-card--outcome {
+      border-color: rgba(192,57,43,0.35);
+    }
+    .edtech-card--outcome:hover {
+      border-color: rgba(192,57,43,0.7);
+    }
+    .edtech-card-number {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 60px;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .edtech-card--outcome .edtech-card-number {
+      color: var(--gold-light);
+    }
+    .edtech-card-label {
+      color: rgba(255,255,255,0.85);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+    .edtech-card-divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(255,255,255,0.15);
+      margin-bottom: 0.6rem;
+    }
+    .edtech-card-source {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.5;
+    }
+    .edtech-card-source a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: underline;
+    }
+    .edtech-card-source a:hover { color: var(--gold-light); }
+
+    .edtech-bottom {
+      text-align: center;
+    }
+    .edtech-bottom-headline {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--gold-light);
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+    }
+    .edtech-bottom-link {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .edtech-bottom-link a {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.4);
+    }
+    .edtech-bottom-link a:hover {
+      color: var(--gold-light);
+      text-decoration-color: var(--gold-light);
+    }
+
+    @media (max-width: 768px) {
+      .edtech-section { padding: 60px 1.5rem; }
+      .edtech-headline,
+      .edtech-headline-gold { font-size: 1.75rem; }
+      .edtech-grid { grid-template-columns: 1fr; }
+      .edtech-card { padding: 30px; }
+      .edtech-card-number { font-size: 48px; }
+      .edtech-bottom-headline { font-size: 22px; }
+    }
+    @media (max-width: 480px) {
+      .edtech-headline,
+      .edtech-headline-gold { font-size: 1.4rem; }
+      .edtech-card-number { font-size: 40px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -70,15 +212,57 @@
   </div>
 </section>
 
-<!-- Chart: Ed-Tech Spending vs. Student Outcomes -->
-<section class="chart-section">
-  <div class="container">
-    <h2 class="section-title chart-section-title">Ed-Tech Spending vs. Student Outcomes</h2>
-    <div class="chart-wrapper">
-      <canvas id="edtechChart"></canvas>
+<!-- Ed-Tech Spending — Static Comparison -->
+<section class="edtech-section">
+  <div class="edtech-inner">
+    <h2 class="edtech-headline">$1.6 Billion Spent on Ed-Tech.</h2>
+    <p class="edtech-headline-gold">Zero improvement in student outcomes.</p>
+    <p class="edtech-subhead">Since 2022, LAUSD committed $1.6 billion to education technology companies. Here is what that money could have bought instead.</p>
+    <p class="edtech-source-line">Source: UTLA research / <a href="https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/" target="_blank" rel="noopener">Private Equity Stakeholder Project, 2025</a></p>
+
+    <div class="edtech-grid">
+      <div class="edtech-card">
+        <div class="edtech-card-number">20,000</div>
+        <div class="edtech-card-label">Teachers hired for one year at $77,000 starting salary</div>
+        <div class="edtech-card-divider"></div>
+        <div class="edtech-card-source">Based on April 2026 UTLA tentative agreement</div>
+      </div>
+      <div class="edtech-card">
+        <div class="edtech-card-number">16,000</div>
+        <div class="edtech-card-label">School nurses hired for one year</div>
+        <div class="edtech-card-divider"></div>
+        <div class="edtech-card-source">Based on LAUSD nurse salary data</div>
+      </div>
+      <div class="edtech-card">
+        <div class="edtech-card-number">53</div>
+        <div class="edtech-card-label">Years of iReady contracts &mdash; the tool LAUSD&rsquo;s own memo says isn&rsquo;t required</div>
+        <div class="edtech-card-divider"></div>
+        <div class="edtech-card-source">At current $20M/year contract rate</div>
+      </div>
+      <div class="edtech-card edtech-card--outcome">
+        <div class="edtech-card-number">46%</div>
+        <div class="edtech-card-label">Students meeting reading standards in 2025 &mdash; an all-time high after $1.6B in ed-tech spending</div>
+        <div class="edtech-card-divider"></div>
+        <div class="edtech-card-source">California CAASPP 2025</div>
+      </div>
+      <div class="edtech-card edtech-card--outcome">
+        <div class="edtech-card-number">37%</div>
+        <div class="edtech-card-label">Students meeting math standards in 2025 &mdash; also an all-time high</div>
+        <div class="edtech-card-divider"></div>
+        <div class="edtech-card-source">California CAASPP 2025</div>
+      </div>
+      <div class="edtech-card">
+        <div class="edtech-card-number">67%</div>
+        <div class="edtech-card-label">Of ed-tech licenses go unused nationally &mdash; districts pay full price</div>
+        <div class="edtech-card-divider"></div>
+        <div class="edtech-card-source"><a href="https://gem-report-2023.unesco.org/" target="_blank" rel="noopener">UNESCO Global Education Monitoring Report, 2023</a></div>
+      </div>
     </div>
-    <p class="chart-caption">More spending on technology. No improvement in outcomes. <a href="/edtech.html">The research explains why.</a></p>
-    <p class="chart-disclaimer">Ed-tech spending figures approximate, derived from LAUSD board records and UTLA research. Student outcome data from California CAASPP assessments. <a href="/sources.html">Sources &rarr;</a></p>
+
+    <div class="edtech-bottom">
+      <p class="edtech-bottom-headline">More spending on technology.<br>No improvement in outcomes.</p>
+      <p class="edtech-bottom-link"><a href="/edtech.html">The research explains why.</a></p>
+    </div>
   </div>
 </section>
 
@@ -152,148 +336,6 @@
 
 <script src="/js/layout.js"></script>
 <script src="/js/home.js"></script>
-<script>
-// Override chart — dual-line, no bars
-renderEdtechChart = function() {
-  const ctx = document.getElementById('edtechChart');
-  if (!ctx) return;
-
-  const years = ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
-  const spending = [12, 15, 18, 45, 52, 61, 89, 380, 290, 245, 210];
-  const proficiency = [36.1, 37.0, 37.9, 38.8, 38.8, null, null, 35.1, 38.0, 38.0, 41.7];
-
-  new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: years,
-      datasets: [
-        {
-          label: 'Ed-Tech Spending ($M)',
-          data: spending,
-          borderColor: '#F5A623',
-          backgroundColor: '#F5A623',
-          pointBackgroundColor: '#F5A623',
-          pointRadius: 5,
-          pointHoverRadius: 7,
-          borderWidth: 2.5,
-          tension: 0.3,
-          yAxisID: 'y'
-        },
-        {
-          label: 'Student Proficiency (% meeting standards)',
-          data: proficiency,
-          borderColor: '#ffffff',
-          backgroundColor: '#ffffff',
-          pointBackgroundColor: '#ffffff',
-          pointRadius: 5,
-          pointHoverRadius: 7,
-          borderWidth: 2.5,
-          tension: 0.3,
-          spanGaps: false,
-          yAxisID: 'y1'
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: {
-          position: 'top',
-          align: 'center',
-          labels: {
-            color: 'rgba(255,255,255,0.8)',
-            font: { family: "'Inter', sans-serif", size: 13 },
-            padding: 20,
-            usePointStyle: true,
-            pointStyle: 'circle'
-          }
-        },
-        tooltip: {
-          backgroundColor: 'rgba(26, 35, 50, 0.95)',
-          titleFont: { family: "'Inter', sans-serif", size: 14 },
-          bodyFont: { family: "'Inter', sans-serif", size: 13 },
-          padding: 12,
-          cornerRadius: 8,
-          callbacks: {
-            label: function(context) {
-              if (context.dataset.yAxisID === 'y') {
-                return 'Ed-Tech Spending: $' + context.raw + 'M';
-              }
-              if (context.raw === null) return 'Student Proficiency: No data (COVID)';
-              return 'Student Proficiency: ' + context.raw + '%';
-            }
-          }
-        }
-      },
-      scales: {
-        x: {
-          ticks: { color: 'rgba(255,255,255,0.7)', font: { family: "'Inter', sans-serif", size: 13 } },
-          grid: { color: 'rgba(255,255,255,0.06)' }
-        },
-        y: {
-          position: 'left',
-          title: { display: true, text: 'Ed-Tech Spending ($M)', color: '#F5A623', font: { family: "'Inter', sans-serif", size: 12 } },
-          ticks: { color: '#F5A623', font: { family: "'Inter', sans-serif" }, callback: function(v) { return '$' + v + 'M'; } },
-          grid: { color: 'rgba(255,255,255,0.06)' },
-          min: 0,
-          max: 400
-        },
-        y1: {
-          position: 'right',
-          title: { display: true, text: '% Meeting Standards', color: 'rgba(255,255,255,0.8)', font: { family: "'Inter', sans-serif", size: 12 } },
-          ticks: {
-            color: 'rgba(255,255,255,0.8)',
-            font: { family: "'Inter', sans-serif" },
-            callback: function(v) { return v + '%'; },
-            stepSize: 20
-          },
-          grid: { drawOnChartArea: false },
-          min: 0,
-          max: 100
-        }
-      }
-    },
-    plugins: [{
-      afterDraw: function(chart) {
-        var xScale = chart.scales.x;
-        var yScale = chart.scales.y;
-        var cctx = chart.ctx;
-
-        // COVID gap label — position between 2020 and 2021
-        var x2020 = xScale.getPixelForValue(5);
-        var x2021 = xScale.getPixelForValue(6);
-        var xMid = (x2020 + x2021) / 2;
-        cctx.save();
-        cctx.fillStyle = 'rgba(255,255,255,0.4)';
-        cctx.font = "11px 'Inter', sans-serif";
-        cctx.textAlign = 'center';
-        cctx.fillText('No testing', xMid, yScale.top + 30);
-        cctx.fillText('(COVID)', xMid, yScale.top + 43);
-        cctx.restore();
-
-        // Vertical marker at 2022 (index 7)
-        var x2022 = xScale.getPixelForValue(7);
-        cctx.save();
-        cctx.beginPath();
-        cctx.setLineDash([6, 4]);
-        cctx.strokeStyle = 'rgba(220, 120, 60, 0.5)';
-        cctx.lineWidth = 1.5;
-        cctx.moveTo(x2022, yScale.top);
-        cctx.lineTo(x2022, yScale.bottom);
-        cctx.stroke();
-        cctx.setLineDash([]);
-        cctx.fillStyle = 'rgba(220, 120, 60, 0.7)';
-        cctx.font = "10px 'Inter', sans-serif";
-        cctx.textAlign = 'center';
-        cctx.fillText('Ed-tech spending jumps 84%', x2022, yScale.top - 6);
-        cctx.restore();
-      }
-    }]
-  });
-};
-</script>
 <script>lucide.createIcons();</script>
 </body>
 </html>
