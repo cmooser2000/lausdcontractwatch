@@ -2824,9 +2824,9 @@ textarea.search-input { resize: vertical; }
 .bm-stat-number {
     display: block;
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--gold);
-    font-family: var(--mono);
+    font-family: var(--font);
     margin-bottom: 0.25rem;
 }
 .bm-stat-label {
@@ -3065,9 +3065,9 @@ textarea.search-input { resize: vertical; }
 .stat-card-number {
     display: block;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--gold-light);
-    font-family: var(--mono);
+    font-family: var(--font);
     margin-bottom: 0.35rem;
 }
 .stat-card-label {
@@ -3256,9 +3256,9 @@ textarea.search-input { resize: vertical; }
     z-index: 1;
 }
 .pillar-stat {
-    font-family: var(--mono);
+    font-family: var(--font);
     font-size: 5rem;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--gold-light);
     line-height: 1;
     margin-bottom: 0.5rem;
