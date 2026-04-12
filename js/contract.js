@@ -89,7 +89,7 @@ function plainEnglishCard(c) {
   if (!c.plain_english) return '';
   return `<div class="detail-card card-plain-english">
     <h3>In Plain English</h3>
-    <p class="plain-english-text">${escapeHtml(c.plain_english)}</p>
+    <div class="md-prose plain-english-text">${parseField(c.plain_english)}</div>
   </div>`;
 }
 
@@ -105,30 +105,36 @@ function descriptionCard(c) {
       <div class="detail-item"><span class="detail-label">Board Vote</span><span class="detail-value">${escapeHtml(c.board_vote || '—')}</span></div>
       <div class="detail-item"><span class="detail-label">Board Meeting</span><span class="detail-value">${formatDate(c.board_meeting_date)}</span></div>
     </div>
-    <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
-      <p style="font-size:0.9rem;line-height:1.7;color:var(--text-light)">${escapeHtml(c.description)}</p>
+    <div class="md-prose" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
+      ${parseField(c.description)}
     </div>
-    ${c.notes ? `<div style="margin-top:0.75rem;font-size:0.82rem;color:var(--text-muted);font-style:italic">${escapeHtml(c.notes)}</div>` : ''}
+    ${c.notes ? `<div class="md-prose" style="margin-top:0.75rem;font-size:0.82rem;color:var(--text-muted);font-style:italic">${parseField(c.notes)}</div>` : ''}
   </div>`;
 }
 
-function renderMd(text) {
+function parseField(text) {
   if (!text) return '';
+  // Clean literal escape sequences from JSON-stored text
+  var cleaned = text
+    .replace(/\\n/g, '\n')
+    .replace(/\\t/g, '\t');
   if (typeof marked !== 'undefined' && marked.parse) {
-    // Make links open in new tab
     var renderer = new marked.Renderer();
     renderer.link = function(href, title, text) {
       var t = title ? ' title="' + title + '"' : '';
       return '<a href="' + href + '" target="_blank" rel="noopener"' + t + '>' + text + '</a>';
     };
-    return marked.parse(text, { renderer: renderer });
+    return marked.parse(cleaned, { renderer: renderer, breaks: true });
   }
-  return escapeHtml(text);
+  return escapeHtml(cleaned).replace(/\n/g, '<br>');
 }
+
+// Alias for backward compat
+var renderMd = parseField;
 
 function questionsToChecklist(text) {
   if (!text) return '';
-  var md = renderMd(text);
+  var md = parseField(text);
   // Parse the rendered markdown and convert list items or lines into checklist items
   var tmp = document.createElement('div');
   tmp.innerHTML = md;
@@ -198,7 +204,7 @@ function boardConnectionsCard(conns, boardMembers) {
                 <strong>${escapeHtml(vc.vendor_name)}</strong>
               </div>
             </div>
-            <p class="conn-desc">${escapeHtml(vc.description || '')}</p>
+            <div class="conn-desc md-prose">${parseField(vc.description || '')}</div>
           </div>
         </div>`;
       }).join('')}
@@ -244,7 +250,7 @@ function vendorProfileCard(profile) {
     <h4>Vendor Profile</h4>
     ${profile.parent_company ? `<div style="margin-bottom:0.5rem"><span style="font-size:0.75rem;color:var(--text-muted)">Parent Company</span><div style="font-size:0.9rem;font-weight:600">${escapeHtml(profile.parent_company)}</div></div>` : ''}
     ${profile.company_type ? `<div style="margin-bottom:0.5rem"><span style="font-size:0.75rem;color:var(--text-muted)">Type</span><div style="font-size:0.9rem">${escapeHtml(profile.company_type)}</div></div>` : ''}
-    ${profile.controversies ? `<div style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border);font-size:0.82rem;color:var(--text-light);line-height:1.5">${escapeHtml(profile.controversies)}</div>` : ''}
+    ${profile.controversies ? `<div class="md-prose" style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border);font-size:0.82rem;color:var(--text-light);line-height:1.5">${parseField(profile.controversies)}</div>` : ''}
   </div>`;
 }
 
