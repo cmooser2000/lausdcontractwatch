@@ -96,7 +96,10 @@ function verificationBanner(v) {
     unverified: ['vb-unverified', '<i data-lucide="alert-triangle"></i> Unverified: requires verification against source documents.'],
   };
   const [cls, msg] = map[v] || map.unverified;
-  return `<div class="verification-banner ${cls}">${msg}</div>`;
+  return `<div class="verification-banner ${cls}">${msg}</div>
+    <div class="verification-banner vb-factcheck" style="background:#eef2f7;border-left:3px solid var(--blue);color:var(--text-light);font-size:0.82rem;padding:0.6rem 1rem;margin-bottom:1rem;border-radius:var(--radius-sm);line-height:1.5">
+      AI-assisted data extraction &mdash; actively fact-checking. Errors are possible. <a href="#sourceCard" style="color:var(--blue);font-weight:600">View source document to verify.</a> Found an error? <a href="mailto:lausdcontractwatch@gmail.com" style="color:var(--blue);font-weight:600">Tell us &rarr;</a>
+    </div>`;
 }
 
 function plainEnglishCard(c) {
@@ -292,7 +295,7 @@ function relatedContractsCard(c, contracts) {
 function sourceCard(c) {
   if (!c.source_url) return '';
   const isLocal = c.source_url.startsWith('/');
-  return `<div class="sidebar-card sidebar-card-alert">
+  return `<div class="sidebar-card sidebar-card-alert" id="sourceCard">
     <h4>Source Document</h4>
     <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:0.75rem">
       This contract was extracted from official LAUSD board records.

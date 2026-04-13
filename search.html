@@ -35,6 +35,19 @@
       </div>
     </div>
 
+    <!-- Fact-Check Alert -->
+    <div class="search-alert" id="factCheckAlert" style="display:none">
+      <div class="search-alert-inner" style="background:linear-gradient(135deg,#f0f4ff 0%,#e8edf5 100%);border-color:#a0b4d0;border-left-color:var(--blue)">
+        <div class="search-alert-icon" style="color:var(--blue)"><i data-lucide="shield-check"></i></div>
+        <div class="search-alert-body">
+          <strong style="color:var(--blue)">Fact-Checking in Progress</strong>
+          <p>This database was built using AI-assisted extraction from official LAUSD board documents. We are actively reviewing contract data for accuracy with the help of readers and community experts. Some contract details may contain errors. Every contract links to its original source document &mdash; please verify before acting on any information here.</p>
+          <div style="margin-top:0.75rem;font-size:0.85rem"><a href="mailto:lausdcontractwatch@gmail.com">Found an error? Tell us &rarr;</a></div>
+        </div>
+        <button class="search-alert-close" onclick="document.getElementById('factCheckAlert').style.display='none';sessionStorage.setItem('factCheckDismissed','1')" aria-label="Dismiss">&times;</button>
+      </div>
+    </div>
+
     <!-- Filters -->
     <div class="search-filters">
       <div class="filter-row">
@@ -177,6 +190,9 @@
   // Show alert if not dismissed this session
   if (!sessionStorage.getItem('searchAlertDismissed')) {
     document.getElementById('searchAlert').style.display = 'block';
+  }
+  if (!sessionStorage.getItem('factCheckDismissed')) {
+    document.getElementById('factCheckAlert').style.display = 'block';
   }
 </script>
 </body>
