@@ -4467,56 +4467,9 @@
       "created_at": "2026-03-13 17:23:36",
       "email": "sherlett.newbill@lausd.net",
       "phone": "(213) 241-6382"
-    },
-    {
-      "id": 8,
-      "name": "Andres Chait",
-      "district": null,
-      "position": "Acting Superintendent",
-      "term_start": "2022-02-14",
-      "term_end": null,
-      "active": false,
-      "photo_url": null,
-      "created_at": "2026-03-13 17:48:07",
-      "email": "andres.chait@lausd.net",
-      "phone": "(213) 241-6387"
-    },
-    {
-      "id": 9,
-      "name": "Andres Chait",
-      "district": "8",
-      "position": "Acting Superintendent",
-      "term_start": null,
-      "term_end": null,
-      "active": true,
-      "photo_url": null,
-      "created_at": "2026-04-06 18:23:14",
-      "email": "andres.chait@lausd.net",
-      "phone": null
     }
   ],
-  "vendor_connections": [
-    {
-      "id": 4,
-      "board_member_id": 4,
-      "vendor_name": "AllHere Education Inc",
-      "connection_type": "Other",
-      "description": "As Board President, Gonez voted to approve the $6.2M AllHere AI contract. FBI investigation ongoing as of March 2026.",
-      "source_url": null,
-      "verified": true,
-      "created_at": "2026-03-13 17:43:04"
-    },
-    {
-      "id": 5,
-      "board_member_id": 8,
-      "vendor_name": "AllHere Education Inc",
-      "connection_type": "Other",
-      "description": "FBI raided Carvalho home and LAUSD office Feb 25, 2026. Investigation linked to $6.2M AllHere AI contract. Former AllHere salesperson Debra Kerr (ties to Carvalho from Miami-Dade) claimed $630K commission for brokering deal. Also raided same day. Carvalho on paid leave since Feb 28, 2026. AllHere founder Smith-Griffin arrested Nov 2024 for fraud.",
-      "source_url": null,
-      "verified": true,
-      "created_at": "2026-03-13 17:48:07"
-    }
-  ],
+  "vendor_connections": [],
   "conflicts_of_interest": [
     {
       "id": 167,
