@@ -4,114 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contract Detail — LAUSD Contract Watch</title>
-  <meta name="description" content="Detailed information about an LAUSD contract.">
+  <meta name="description" content="Contract detail page — currently undergoing fact-checking.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
-  <style>
-    /* Parsed markdown prose */
-    .md-prose h2 {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: 1.25rem;
-      font-weight: 400;
-      color: var(--navy);
-      margin: 1.5rem 0 0.75rem;
-      line-height: 1.3;
-    }
-    .md-prose h3 {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: var(--navy);
-      margin: 1.25rem 0 0.5rem;
-      line-height: 1.3;
-    }
-    .md-prose h2:first-child,
-    .md-prose h3:first-child { margin-top: 0; }
-    .md-prose p {
-      font-size: 0.9rem;
-      line-height: 1.75;
-      margin-bottom: 0.75rem;
-      color: var(--text-light);
-    }
-    .md-prose strong {
-      color: var(--red);
-      font-weight: 700;
-    }
-    .md-prose ul, .md-prose ol {
-      padding-left: 1.25rem;
-      margin-bottom: 0.75rem;
-    }
-    .md-prose li {
-      font-size: 0.9rem;
-      line-height: 1.75;
-      color: var(--text-light);
-      margin-bottom: 0.35rem;
-    }
-    .md-prose a {
-      color: var(--gold);
-      font-weight: 600;
-      text-decoration: underline;
-      text-decoration-color: rgba(212,168,67,0.4);
-    }
-    .md-prose a:hover { color: var(--gold-light); }
-
-    /* Red flags markdown */
-    .md-prose-flags strong { color: var(--red); }
-
-    /* Questions to Ask — checklist */
-    .questions-checklist {
-      list-style: none;
-      padding: 0;
-      margin: 0.5rem 0 0;
-    }
-    .questions-checklist li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      padding: 0.6rem 0;
-      border-bottom: 1px solid rgba(197, 211, 245, 0.4);
-      font-size: 0.9rem;
-      line-height: 1.65;
-      color: var(--text-light);
-    }
-    .questions-checklist li:last-child { border-bottom: none; }
-    .questions-checklist .q-icon {
-      flex-shrink: 0;
-      margin-top: 2px;
-      color: var(--blue-light);
-    }
-    .questions-checklist .q-icon svg.lucide {
-      width: 18px;
-      height: 18px;
-      stroke-width: 1.75;
-    }
-    .questions-checklist li strong { color: var(--blue); }
-  </style>
 </head>
 <body>
 
-<!-- Page header injected by contract.js -->
-<div class="page-header" id="pageHeader">
+<div class="page-header">
   <div class="container">
-    <a href="/search.html" class="back-link">&larr; Back to contracts</a>
-    <div id="pageHeaderContent"><p style="color:rgba(255,255,255,0.5)">Loading…</p></div>
+    <h1>Contract Detail</h1>
+    <p>Fact-checking in progress.</p>
   </div>
 </div>
 
 <section class="section">
-  <div class="container">
-    <div id="contractBody">
-      <div style="text-align:center;padding:4rem 0;color:var(--text-muted)">Loading contract data…</div>
-    </div>
+  <div class="container" style="max-width:700px;text-align:center;padding:4rem 1.5rem">
+    <div style="margin-bottom:2rem"><i data-lucide="shield-check" style="width:56px;height:56px;color:var(--blue-light);stroke-width:1.25"></i></div>
+    <h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:1.75rem;font-weight:400;margin-bottom:1rem;color:var(--navy)">This page is temporarily offline for fact-checking.</h2>
+    <p style="font-size:1.05rem;line-height:1.8;color:var(--text-light);margin-bottom:2rem">We are verifying contract data against original board documents. Individual contract pages will return once verification is complete.</p>
+    <p style="font-size:0.85rem;color:var(--text-muted)">In the meantime, you can explore our research on the <a href="/private-companies.html">pillar pages</a>, view <a href="/board-members.html">board member profiles</a>, or read the <a href="/sources.html">source documents</a>.</p>
   </div>
 </section>
 
 <script src="/js/layout.js"></script>
-<script src="/js/contract.js"></script>
-<script>lucide.createIcons();</script>
+<script>initLayout(); lucide.createIcons();</script>
 </body>
 </html>

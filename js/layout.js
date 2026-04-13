@@ -133,9 +133,7 @@ function injectNav() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:4px"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="nav-dropdown-menu" id="navDropdownMenu">
-            <a href="/search.html">All Contracts</a>
-            <a href="/high-priority.html">High Priority</a>
-            <a href="/tech-vendors.html">Tech Spending</a>
+            <a href="/search.html">Contract Database</a>
           </div>
         </div>
         <div class="nav-dropdown" id="navDropdownWhy">
