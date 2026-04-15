@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contract Database — LAUSD Contract Watch</title>
-  <meta name="description" content="LAUSD contract database — currently undergoing fact-checking and verification.">
+  <title>Search Contracts — LAUSD Contract Watch</title>
+  <meta name="description" content="Search and filter all LAUSD contracts by vendor, category, amount, and status.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -15,26 +15,169 @@
 
 <div class="page-header">
   <div class="container">
-    <h1>Contract Database</h1>
-    <p>Fact-checking in progress.</p>
+    <h1>Search Contracts</h1>
+    <p><span id="searchContractCount">&ndash;</span> contracts from 2025 board meetings &mdash; the only records publicly available online. Older contracts were requested. LAUSD has not responded.</p>
   </div>
 </div>
 
 <section class="section">
-  <div class="container" style="max-width:700px;text-align:center;padding:4rem 1.5rem">
-    <div style="margin-bottom:2rem"><i data-lucide="shield-check" style="width:56px;height:56px;color:var(--blue-light);stroke-width:1.25"></i></div>
-    <h2 style="font-family:'DM Serif Display',Georgia,serif;font-size:1.75rem;font-weight:400;margin-bottom:1rem;color:var(--navy)">We&rsquo;re fact-checking the contract data.</h2>
-    <p style="font-size:1.05rem;line-height:1.8;color:var(--text-light);margin-bottom:1.5rem">This database was built using limited publicly available information from official LAUSD board documents. Community reviewers have identified errors in some contract entries, including amounts incorrectly attributed to the wrong agenda items. We are checking numbers against source documents before making the database searchable again.</p>
-    <p style="font-size:1.05rem;line-height:1.8;color:var(--text-light);margin-bottom:2rem">Every contract on this site links to its original board report, which is the only information the board makes public. The actual contracts (including pricing details and vendor obligations) are only available through public records requests, which we have filed but have gone unanswered. Although this was always intended as a starting point for further questioning, our goal is to be as accurate as possible, so we are taking the database offline temporarily.</p>
-    <div style="background:var(--bg-alt);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:var(--radius);padding:1.25rem 1.5rem;text-align:left;margin-bottom:2rem">
-      <strong style="color:var(--navy);font-size:0.95rem">Want to help?</strong>
-      <p style="font-size:0.9rem;color:var(--text-light);margin-top:0.35rem;line-height:1.65">If you have expertise in LAUSD board records, procurement, or contract administration, we&rsquo;d welcome your review. Email us at <a href="mailto:lausdcontractwatch@gmail.com" style="color:var(--gold);font-weight:600">lausdcontractwatch@gmail.com</a></p>
+  <div class="container">
+
+    <!-- Transparency Alert -->
+    <div class="search-alert" id="searchAlert" style="display:none">
+      <div class="search-alert-inner">
+        <div class="search-alert-icon"><i data-lucide="alert-triangle"></i></div>
+        <div class="search-alert-body">
+          <strong>These are only the contracts we know about.</strong>
+          <p>This database contains contracts approved at LAUSD board meetings in 2025 &mdash; the only records the district makes publicly available online. LAUSD Contract Watch filed public records requests for all active contracts predating 2025. The district has not responded to either request. Under California law, a response was required within 10 business days.</p>
+        </div>
+        <button class="search-alert-close" onclick="document.getElementById('searchAlert').style.display='none';sessionStorage.setItem('searchAlertDismissed','1')" aria-label="Dismiss">&times;</button>
+      </div>
     </div>
-    <p style="font-size:0.85rem;color:var(--text-muted)">In the meantime, you can still explore our research on the <a href="/private-companies.html">pillar pages</a>, view <a href="/board-members.html">board member profiles</a>, or read the <a href="/sources.html">source documents</a>.</p>
+
+    <!-- Filters -->
+    <div class="search-filters">
+      <div class="filter-row">
+        <div class="filter-group filter-main">
+          <label for="searchInput">Search</label>
+          <input type="text" id="searchInput" class="search-input" placeholder="Contract title, vendor, keyword…">
+        </div>
+        <div class="filter-group">
+          <label for="filterCategory">Category</label>
+          <select id="filterCategory">
+            <option value="">All Categories</option>
+            <option>Technology</option>
+            <option>Facilities</option>
+            <option>Transportation</option>
+            <option>Food Services</option>
+            <option>Professional Services</option>
+            <option>Construction</option>
+            <option>Consulting</option>
+            <option>Curriculum</option>
+            <option>Special Education</option>
+            <option>Security</option>
+            <option>Maintenance</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterStatus">Status</label>
+          <select id="filterStatus">
+            <option value="">All Statuses</option>
+            <option>Active</option>
+            <option>Expired</option>
+            <option>Pending</option>
+            <option>Cancelled</option>
+            <option>Amended</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterSort">Sort By</label>
+          <select id="filterSort">
+            <option value="amount_desc">Amount (High → Low)</option>
+            <option value="amount_asc">Amount (Low → High)</option>
+            <option value="date_desc">Date (Newest)</option>
+            <option value="date_asc">Date (Oldest)</option>
+            <option value="vendor">Vendor A–Z</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter-row filter-advanced">
+        <div class="filter-group">
+          <label for="filterAmountMin">Min Amount ($)</label>
+          <input type="number" id="filterAmountMin" placeholder="0" min="0">
+        </div>
+        <div class="filter-group">
+          <label for="filterAmountMax">Max Amount ($)</label>
+          <input type="number" id="filterAmountMax" placeholder="No limit" min="0">
+        </div>
+        <div class="filter-group">
+          <label for="filterFinding">Finding Level</label>
+          <select id="filterFinding">
+            <option value="">All</option>
+            <option value="significant">Red Flag</option>
+            <option value="medium">Questions Raised</option>
+            <option value="minor">Monitor</option>
+            <option value="none">Appears Legitimate</option>
+          </select>
+        </div>
+        <div class="filter-group" style="display:flex;align-items:flex-end">
+          <button class="btn btn-outline" id="btnClearFilters">Clear Filters</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Summary -->
+    <div class="results-summary" id="resultsSummary">Loading contracts…</div>
+
+    <!-- Table -->
+    <div class="contracts-table-wrap">
+      <table class="contracts-table" id="contractsTable">
+        <thead>
+          <tr>
+            <th>Contract</th>
+            <th>Vendor</th>
+            <th>Category</th>
+            <th class="col-right">Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="contractsTbody">
+          <tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+
   </div>
 </section>
 
+<style>
+  .search-alert { margin-bottom: 1.5rem; }
+  .search-alert-inner {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #fff5f5 0%, #fff8e1 100%);
+    border: 1px solid #e8a838;
+    border-left: 4px solid var(--red);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text-light);
+    position: relative;
+  }
+  .search-alert-icon { flex-shrink: 0; color: var(--red); margin-top: 2px; }
+  .search-alert-icon svg.lucide { width: 24px; height: 24px; }
+  .search-alert-body strong { display: block; font-size: 0.95rem; color: var(--red); margin-bottom: 0.35rem; }
+  .search-alert-body p { margin: 0; }
+  .search-alert-body a { color: var(--blue); font-weight: 600; }
+  .search-alert-close {
+    position: absolute; top: 0.75rem; right: 0.75rem;
+    background: none; border: none; font-size: 1.25rem;
+    color: var(--text-muted); cursor: pointer; padding: 0 0.25rem;
+    line-height: 1;
+  }
+  .search-alert-close:hover { color: var(--text); }
+</style>
 <script src="/js/layout.js"></script>
-<script>initLayout(); lucide.createIcons();</script>
+<script src="/js/search.js"></script>
+<script>
+  lucide.createIcons();
+  // Dynamic contract count
+  loadData().then(function(d) {
+    var el = document.getElementById('searchContractCount');
+    if (el && d.contracts) el.textContent = d.contracts.length;
+  });
+  // Show alert if not dismissed this session
+  if (!sessionStorage.getItem('searchAlertDismissed')) {
+    document.getElementById('searchAlert').style.display = 'block';
+  }
+</script>
 </body>
 </html>
