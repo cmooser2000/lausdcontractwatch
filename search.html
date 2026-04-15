@@ -28,8 +28,8 @@
       <div class="search-alert-inner">
         <div class="search-alert-icon"><i data-lucide="alert-triangle"></i></div>
         <div class="search-alert-body">
-          <strong>These are only the contracts we know about.</strong>
-          <p>This database contains contracts approved at LAUSD board meetings in 2025 &mdash; the only records the district makes publicly available online. LAUSD Contract Watch filed public records requests for all active contracts predating 2025. The district has not responded to either request. Under California law, a response was required within 10 business days.</p>
+          <strong>This is the best we can find based on limited information from LAUSD.</strong>
+          <p>This database contains contracts information from LAUSD board meetings in 2025, the only records the district makes publicly available online. Please <a href="mailto:lausdcontractwatch@gmail.com" style="color:var(--gold);font-weight:600">contact us</a> if you notice errors or have additional context to add.</p>
         </div>
         <button class="search-alert-close" onclick="document.getElementById('searchAlert').style.display='none';sessionStorage.setItem('searchAlertDismissed','1')" aria-label="Dismiss">&times;</button>
       </div>
@@ -47,7 +47,6 @@
           <select id="filterCategory">
             <option value="">All Categories</option>
             <option>Technology</option>
-            <option>Facilities</option>
             <option>Transportation</option>
             <option>Food Services</option>
             <option>Professional Services</option>
@@ -119,13 +118,14 @@
             <th>Contract</th>
             <th>Vendor</th>
             <th>Category</th>
-            <th class="col-right">Amount</th>
+            <th class="col-right">Cost Estimate</th>
             <th>Status</th>
             <th>Date</th>
+            <th>Source</th>
           </tr>
         </thead>
         <tbody id="contractsTbody">
-          <tr><td colspan="6" style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</td></tr>
+          <tr><td colspan="7" style="text-align:center;padding:2rem;color:var(--text-muted)">Loading…</td></tr>
         </tbody>
       </table>
     </div>

@@ -202,7 +202,7 @@ function renderTable() {
 
   if (!page.length) {
     const q = $('searchInput').value.trim();
-    tbody.innerHTML = `<tr><td colspan="6">
+    tbody.innerHTML = `<tr><td colspan="7">
       <div class="empty-state">
         <div class="empty-icon"><i data-lucide="search"></i></div>
         <h3>No contracts found</h3>
@@ -226,6 +226,7 @@ function renderTable() {
       <td class="col-right amount-cell">${formatMoney(c.amount)}</td>
       <td>${statusBadge(c.status)}</td>
       <td class="date-cell">${formatDate(c.approval_date)}</td>
+      <td>${c.source_url ? `<a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:0.8rem;font-weight:600;white-space:nowrap"><i data-lucide="file-text" style="width:14px;height:14px;vertical-align:-2px"></i> View</a>` : '<span style="color:var(--text-muted)">—</span>'}</td>
     </tr>`).join('');
 }
 
