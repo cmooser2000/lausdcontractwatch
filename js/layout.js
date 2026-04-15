@@ -108,7 +108,11 @@ function loadData() {
   if (_dataPromise) return _dataPromise;
   _dataPromise = fetch('/data/contracts.json')
     .then(r => { if (!r.ok) throw new Error('Failed to load data'); return r.json(); })
-    .then(d => { _data = d; return d; });
+    .then(d => {
+      if (d.contracts) d.contracts = d.contracts.filter(c => c.category !== 'Facilities');
+      _data = d;
+      return d;
+    });
   return _dataPromise;
 }
 
@@ -127,15 +131,6 @@ function injectNav() {
         <span class="nav-title">LAUSD Contract Watch</span>
       </a>
       <div class="nav-links" id="navLinks">
-        <div class="nav-dropdown" id="navDropdown">
-          <button class="nav-dropdown-trigger" id="navDropdownBtn" aria-expanded="false">
-            View Contracts
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:4px"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="nav-dropdown-menu" id="navDropdownMenu">
-            <a href="/search.html">Contract Database</a>
-          </div>
-        </div>
         <div class="nav-dropdown" id="navDropdownWhy">
           <button class="nav-dropdown-trigger" id="navDropdownWhyBtn" aria-expanded="false">
             Why It Matters
@@ -216,18 +211,9 @@ function injectFooter() {
         <p>A parent-led transparency project tracking LAUSD contracts and vendor relationships. Follow the money.</p>
       </div>
       <div class="footer-col">
-        <h4>Contracts</h4>
-        <ul>
-          <li><a href="/search.html">Search All Contracts</a></li>
-          <li><a href="/high-priority.html">High Priority</a></li>
-          <li><a href="/vendors.html">Vendor Analysis</a></li>
-          <li><a href="/tech-vendors.html">Tech Spending</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
         <h4>Accountability</h4>
         <ul>
-          <li><a href="/board.html">Board Members</a></li>
+          <li><a href="/board-members.html">Board Profiles</a></li>
           <li><a href="/take-action.html">Take Action</a></li>
         </ul>
       </div>
@@ -254,7 +240,7 @@ function injectFooter() {
 function injectNewsAlert() {
   const banner = document.createElement('div');
   banner.className = 'news-alert';
-  banner.innerHTML = `<div class="container"><strong>Update:</strong> LAUSD reached a tentative agreement with UTLA hours before the April 14 strike deadline &mdash; agreeing to raises it said for months it couldn&rsquo;t afford. The contracts below show where the money was going instead.
+  banner.innerHTML = `<div class="container"><strong>Update:</strong> LAUSD reached a tentative agreement with unions hours before the April 14 strike deadline &mdash; agreeing to raises it said for months it couldn&rsquo;t afford. The contracts below show where the money was going instead.
     <a href="https://edsource.org/2026/utla-reaches-tentative-agreement-with-lausd-following-months-of-negotiations/755728" target="_blank" rel="noopener">Read more &rarr;</a></div>`;
   const nav = document.querySelector('.main-nav');
   if (nav) nav.after(banner);
