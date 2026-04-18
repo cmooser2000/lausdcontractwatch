@@ -226,7 +226,7 @@ function renderTable() {
       <td class="col-right amount-cell">${formatMoney(c.amount)}</td>
       <td>${statusBadge(c.status)}</td>
       <td class="date-cell">${formatDate(c.approval_date)}</td>
-      <td>${c.source_url ? `<a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:0.8rem;font-weight:600;white-space:nowrap"><i data-lucide="file-text" style="width:14px;height:14px;vertical-align:-2px"></i> View</a>` : '<span style="color:var(--text-muted)">—</span>'}</td>
+      <td>${c.source_url && c.source_url.startsWith('/') ? `<a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:0.8rem;font-weight:600;white-space:nowrap"><i data-lucide="file-text" style="width:14px;height:14px;vertical-align:-2px"></i> View</a>` : '<span style="color:var(--text-muted)">—</span>'}</td>
     </tr>`).join('');
 }
 
