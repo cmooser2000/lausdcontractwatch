@@ -1,6 +1,6 @@
 /* LAUSD Contract Watch — Home Page */
 
-initLayout({ newsAlert: true });
+initLayout();
 
 const SPOTLIGHT_IDS = [81, 85, 43]; // iReady, ContinuumCloud, CDW Hotspot — contracts with hook text
 
