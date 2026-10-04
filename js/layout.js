@@ -154,7 +154,7 @@ function companyAboutHtml(p) {
   if (!p || (!p.what_they_do && !p.service_explained)) return '';
   return `<div class="detail-card company-about">
     <h3>What is this?</h3>
-    ${p.service_explained ? `<h4>What LAUSD is buying</h4><p>${escapeHtml(p.service_explained)}</p>` : ''}
+    ${p.service_explained ? `<h4>What LAUSD buys from this company</h4><p>${escapeHtml(p.service_explained)}</p>` : ''}
     ${p.what_they_do ? `<h4>About ${escapeHtml(p.display_name || p.vendor_name)}</h4><p>${escapeHtml(p.what_they_do)}</p>` : ''}
   </div>`;
 }
