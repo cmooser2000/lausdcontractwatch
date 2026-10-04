@@ -39,7 +39,7 @@
 <div class="page-header">
   <div class="container">
     <h1>Meet the Board That Approved $6.7 Billion in Private Contracts</h1>
-    <p>Seven elected members. Unanimous on almost every vote in the public record.</p>
+    <p>Seven elected members. Unanimous on nearly every contract and bond vote in the public record.</p>
   </div>
 </div>
 
@@ -50,7 +50,7 @@
       <div class="bm-alert-icon"><i data-lucide="alert-triangle"></i></div>
       <div>
         <strong>Transparency Gap</strong>
-        <p>LAUSD's Legistar system only contains roll-call vote records from June 2025 onward. Key votes — including the AllHere AI chatbot contract, iReady renewals, and teacher contract approvals — are not publicly accessible in the digital record. LAUSD Contract Watch filed 2 public records requests for complete voting histories. LAUSD did not respond to either.</p>
+        <p>LAUSD's Legistar system only contains roll-call vote records from June 2025 onward, and it is missing most 2026 meetings &mdash; it has no recorded votes from January through June 2026, and official minutes run years behind. Votes from that period shown here come from news reports, linked on each vote. Key votes — including the AllHere AI chatbot contract, iReady renewals, and teacher contract approvals — are not publicly accessible in the digital record. LAUSD Contract Watch filed 2 public records requests for complete voting histories. LAUSD did not respond to either.</p>
       </div>
     </div>
   </div>
@@ -68,9 +68,9 @@
       </div>
       <div class="bm-stat-box">
         <span class="bm-stat-number">7-0</span>
-        <span class="bm-stat-label">Every vote unanimous except one</span>
+        <span class="bm-stat-label">On every bond and procurement contract package we could find</span>
         <div class="bm-stat-divider"></div>
-        <span class="bm-stat-desc">In over six months of available voting records, the board has never pushed back on a contract, a bond, or a spending decision. A board that never disagrees is not providing oversight.</span>
+        <span class="bm-stat-desc">Of 17 documented votes since June 2025, 12 were unanimous, including $6.6 billion in bonds and every procurement contracts package. The board split on layoffs and budget cuts, an immigration resolution, and one facilities contracts package.</span>
       </div>
       <div class="bm-stat-box">
         <span class="bm-stat-number">84%</span>
@@ -91,8 +91,8 @@
 <!-- Vote Context -->
 <section class="section" style="padding-top:1rem;padding-bottom:1rem">
   <div class="container" style="max-width:700px;text-align:center">
-    <p style="font-size:0.95rem;line-height:1.7;color:var(--text-muted)">LAUSD&rsquo;s public vote records only go back to June 2025 &mdash; earlier votes on contracts like AllHere, iReady, and the teacher contract are not in the public database. In the available record, every vote was unanimous except one: on December 16, 2025, board member Sherlett Hendy Newbill (District 1) voted No on a resolution addressing immigration enforcement and community safety. It is the only documented dissent in six months of public records. <a href="#profiles" style="color:var(--gold);font-weight:600">Scroll down to see how each member voted.</a></p>
-    <p style="font-size:0.78rem;line-height:1.6;color:var(--text-muted);opacity:0.6;font-style:italic;margin-top:0.75rem">Vote records sourced from LAUSD Legistar (June 2025&ndash;present). LAUSD Contract Watch filed 2 public records requests for complete voting histories. LAUSD did not respond to either.</p>
+    <p style="font-size:0.95rem;line-height:1.7;color:var(--text-muted)">LAUSD&rsquo;s public vote records only go back to June 2025 &mdash; earlier votes on contracts like AllHere, iReady, and the teacher contract are not in the public database. Of the 17 votes we could document, 12 were unanimous. The exceptions: Sherlett Hendy Newbill (District 1) voted No on a December 2025 immigration enforcement resolution; the board split 4&ndash;3 and 5&ndash;2 on 2026 layoffs and 5&ndash;2 on the June fiscal stabilization plan; and on September 15, 2026, Scott Schmerelson (District 3) cast the lone No vote on a facilities contracts package. Every bond and procurement contracts package passed 7&ndash;0. <a href="#profiles" style="color:var(--gold);font-weight:600">Scroll down to see how each member voted.</a></p>
+    <p style="font-size:0.78rem;line-height:1.6;color:var(--text-muted);opacity:0.6;font-style:italic;margin-top:0.75rem">Vote records sourced from LAUSD Legistar (June 2025&ndash;present) and, for January&ndash;June 2026 votes missing from Legistar, news reports. LAUSD Contract Watch filed 2 public records requests for complete voting histories. LAUSD did not respond to either.</p>
   </div>
 </section>
 
@@ -193,10 +193,12 @@
           } else {
             voteCell = '<span class="bm-vote-absent" title="' + escapeHtml(vote) + '">&mdash;</span>';
           }
-          const detailUrl = VOTE_SLUGS[v.label] || v.legistar_url;
+          const detailUrl = VOTE_SLUGS[v.label] || v.legistar_url || v.source_url;
           const isExternal = detailUrl && detailUrl.startsWith('http');
           const url = detailUrl ? ' href="' + escapeHtml(detailUrl) + '"' + (isExternal ? ' target="_blank" rel="noopener"' : '') : '';
-          rows += '<tr><td class="date-cell">' + date + '</td><td><a' + url + ' class="bm-vote-link">' + escapeHtml(label) + '</a></td><td class="bm-vote-cell">' + voteCell + '</td></tr>';
+          const src = v.source_url ? ' <a href="' + escapeHtml(v.source_url) + '" target="_blank" rel="noopener" title="Source: ' + escapeHtml(v.source) + '" style="font-size:0.7rem;color:var(--text-muted)">(news)</a>' : '';
+          const tally = v.tally && v.tally !== 'Unanimous' ? ' <span style="font-size:0.7rem;color:var(--text-muted)">' + escapeHtml(v.tally) + '</span>' : '';
+          rows += '<tr><td class="date-cell">' + date + '</td><td><a' + url + ' class="bm-vote-link">' + escapeHtml(label) + '</a>' + tally + src + '</td><td class="bm-vote-cell">' + voteCell + '</td></tr>';
         });
         tableWrap.innerHTML = `
           <table class="bm-vote-table">
@@ -215,7 +217,7 @@
       // Data gap note
       const gap = document.createElement('p');
       gap.className = 'bm-data-gap';
-      gap.textContent = 'Vote records shown are from the LAUSD Legistar public database (June 2025\u2013present). Earlier votes are not publicly accessible in the digital record.';
+      gap.textContent = 'Vote records are from the LAUSD Legistar public database (June 2025\u2013present). January\u2013June 2026 votes, missing from Legistar, come from news reports (marked \u201cnews\u201d). Earlier votes are not publicly accessible in the digital record.';
       card.appendChild(gap);
 
       // External links

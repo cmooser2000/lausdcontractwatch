@@ -6,7 +6,9 @@ const SPOTLIGHT_IDS = [81, 85, 43]; // iReady, ContinuumCloud, CDW Hotspot — c
 
 loadData().then(data => {
   const contracts = data.contracts;
-  renderSpotlight(contracts, data.cost_equivalents);
+  const countEl = document.getElementById('contractCount');
+  if (countEl) countEl.textContent = contracts.length;
+  if (document.getElementById('spotlightGrid')) renderSpotlight(contracts, data.cost_equivalents);
   renderEdtechChart();
   lucide.createIcons();
 });

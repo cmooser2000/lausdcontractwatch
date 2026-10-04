@@ -127,7 +127,7 @@ function pushUrlParams() {
   if (q)   p.set('q', q);
   if (cat) p.set('category', cat);
   if (st)  p.set('status', st);
-  if (srt && srt !== 'amount_desc') p.set('sort', srt);
+  if (srt && srt !== 'lausd_report') p.set('sort', srt);
   if (fnd) p.set('finding', fnd);
   if (mn)  p.set('min', mn);
   if (mx)  p.set('max', mx);
@@ -175,7 +175,11 @@ function applyFilters() {
       case 'date_asc':    return (a.approval_date||'').localeCompare(b.approval_date||'');
       case 'vendor':      return (a.vendor_name||'').localeCompare(b.vendor_name||'');
       case 'title':       return (a.title||'').localeCompare(b.title||'');
-      default:            return (parseFloat(b.amount)||0) - (parseFloat(a.amount)||0);
+      case 'amount_desc': return (parseFloat(b.amount)||0) - (parseFloat(a.amount)||0);
+      default:
+        // Contracts from LAUSD's Sept 2026 classroom technology report first, then by amount
+        return (b.report_table ? 1 : 0) - (a.report_table ? 1 : 0)
+          || (parseFloat(b.amount)||0) - (parseFloat(a.amount)||0);
     }
   });
 
@@ -222,7 +226,7 @@ function renderTable() {
         <div class="contract-num">${escapeHtml(c.contract_number || '')}</div>
       </td>
       <td>${escapeHtml(c.vendor_name || '—')}</td>
-      <td>${categoryTag(c.category)} ${findingBadgeHtml(c.finding_level)}</td>
+      <td>${categoryTag(c.category)} ${c.report_table ? verificationBadge(c.verification_status) : ''} ${findingBadgeHtml(c.finding_level)}</td>
       <td class="col-right amount-cell">${formatMoney(c.amount)}</td>
       <td>${statusBadge(c.status)}</td>
       <td class="date-cell">${formatDate(c.approval_date)}</td>
