@@ -75,12 +75,12 @@ function renderBody(c, data) {
       <div class="contract-main">
         ${plainEnglishCard(c)}
         ${descriptionCard(c)}
+        ${equivalentsCard(c, equivs)}
         ${aiAnalysisCard(c)}
         ${boardConnectionsCard(vendorConns, data.board_members || [])}
       </div>
       <aside class="contract-sidebar">
         ${quickFactsCard(c)}
-        ${equivalentsCard(c, equivs)}
         ${vendorProfileCard(profile)}
         ${relatedContractsCard(c, data.contracts)}
         ${sourceCard(c)}
@@ -286,8 +286,8 @@ function equivalentsCard(c, equivs) {
   if (!equivs.length || !c.amount) return '';
   const amt = parseFloat(c.amount) || 0;
   const picks = equivs.slice(0, 6);
-  return `<div class="sidebar-card">
-    <h4>What This Could Buy</h4>
+  return `<div class="detail-card">
+    <h3>What This Could Buy</h3>
     <div class="equivalents-grid">
       ${picks.map(e => {
         const n = Math.floor(amt / parseFloat(e.unit_cost));

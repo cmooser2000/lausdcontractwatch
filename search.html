@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="/css/style.css?v=20261004d">
+  <link rel="stylesheet" href="/css/style.css?v=20261004e">
   <script src="https://unpkg.com/lucide@1.51.0/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -24,17 +24,6 @@
   <div class="container">
 
     <!-- Transparency Alert -->
-    <div class="search-alert" id="searchAlert" style="display:none">
-      <div class="search-alert-inner">
-        <div class="search-alert-icon"><i data-lucide="alert-triangle"></i></div>
-        <div class="search-alert-body">
-          <strong>This is the best we can find based on limited information from LAUSD.</strong>
-          <p>This database contains contracts information from LAUSD board meetings in 2025, the only records the district makes publicly available online. Please <a href="mailto:lausdcontractwatch@gmail.com" style="color:var(--gold);font-weight:600">contact us</a> if you notice errors or have additional context to add.</p>
-        </div>
-        <button class="search-alert-close" onclick="document.getElementById('searchAlert').style.display='none';sessionStorage.setItem('searchAlertDismissed','1')" aria-label="Dismiss">&times;</button>
-      </div>
-    </div>
-
     <!-- Filters -->
     <div class="search-filters">
       <div class="filter-row">
@@ -166,8 +155,8 @@
   }
   .search-alert-close:hover { color: var(--text); }
 </style>
-<script src="/js/layout.js?v=20261004d"></script>
-<script src="/js/search.js?v=20261004d"></script>
+<script src="/js/layout.js?v=20261004e"></script>
+<script src="/js/search.js?v=20261004e"></script>
 <script>
   lucide.createIcons();
   // Dynamic contract count
@@ -175,10 +164,6 @@
     var el = document.getElementById('searchContractCount');
     if (el && d.contracts) el.textContent = d.contracts.length;
   });
-  // Show alert if not dismissed this session
-  if (!sessionStorage.getItem('searchAlertDismissed')) {
-    document.getElementById('searchAlert').style.display = 'block';
-  }
 </script>
 </body>
 </html>
