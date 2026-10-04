@@ -2896,7 +2896,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "The 74: AllHere met with LAUSD leaders before landing $6.2M deal",
+          "url": "https://www.the74million.org/article/allhere-set-meeting-with-lausd-leaders-months-before-landing-6-2m-chatbot-deal/"
+        }
+      ]
     },
     {
       "id": 83,
@@ -2966,7 +2972,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LA County District Attorney press release",
+          "url": "https://da.lacounty.gov/media/news/felony-charges-filed-against-former-lausd-employee-and-vendor-owner-alleged-22-million"
+        }
+      ]
     },
     {
       "id": 85,
@@ -3004,7 +3016,13 @@
       "ai_analysis_date": null,
       "cheaper_alternative": "Several open-source and nonprofit electronic health record platforms serve school districts at significantly lower cost. California's statewide student health data systems may offer an alternative worth evaluating.",
       "overlap_note": "Kokomo24/7 also manages health and safety data for LAUSD including immunization tracking. There may be overlap between what ContinuumCloud/Welligent does and what Kokomo does. The district should document which system holds which data.",
-      "hook": "$19.8M to a company owned by the same investment firm that backed Paragon \u2014 spyware used by ICE to surveil immigrants. The board voted to cut ties with ICE-connected vendors. This contract is still active."
+      "hook": "$19.8M to a company owned by the same investment firm that backed Paragon \u2014 spyware used by ICE to surveil immigrants. The board voted to cut ties with ICE-connected vendors. This contract is still active.",
+      "source_links": [
+        {
+          "label": "LA Public Press (Mar. 2026): LAUSD vendors with ties to ICE",
+          "url": "https://lapublicpress.org/2026/03/lausd-votes-cuts-ties-ice-immigration-contracts-defense-tech/"
+        }
+      ]
     },
     {
       "id": 86,
@@ -3039,7 +3057,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LA Public Press (Mar. 2026): LAUSD vendors with ties to ICE",
+          "url": "https://lapublicpress.org/2026/03/lausd-votes-cuts-ties-ice-immigration-contracts-defense-tech/"
+        }
+      ]
     },
     {
       "id": 108,
@@ -3112,7 +3136,13 @@
       "finding_level": "medium",
       "ai_analysis_date": null,
       "cheaper_alternative": "Not applicable \u2014 Kokomo already replaced a more expensive system and cut costs by 50%. The question is consolidation with other health contracts, not replacement.",
-      "overlap_note": "ContinuumCloud/Welligent manages behavioral health and special education records. LACOE has a mental health infrastructure contract. All three touch student health data \u2014 the district should document which system holds which data and whether consolidation is possible."
+      "overlap_note": "ContinuumCloud/Welligent manages behavioral health and special education records. LACOE has a mental health infrastructure contract. All three touch student health data \u2014 the district should document which system holds which data and whether consolidation is possible.",
+      "source_links": [
+        {
+          "label": "LAUSD Page 19344",
+          "url": "https://www.lausd.org/Page/19344"
+        }
+      ]
     },
     {
       "id": 110,
@@ -3184,7 +3214,17 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAist: The Big Winners From LAUSD\u2019s Emergency Coronavirus Spending",
+          "url": "https://laist.com/news/coronavirus-lausd-emergency-spending-tech-contracts-ipads-apple-chromebooks"
+        },
+        {
+          "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
+          "url": "https://dot.la/lausd-tech--2655314684.html"
+        }
+      ]
     },
     {
       "id": 112,
@@ -3219,7 +3259,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
+          "url": "https://dot.la/lausd-tech--2655314684.html"
+        }
+      ]
     },
     {
       "id": 113,
@@ -3254,7 +3300,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
+          "url": "https://dot.la/lausd-tech--2655314684.html"
+        }
+      ]
     },
     {
       "id": 114,
@@ -3324,7 +3376,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
+          "url": "https://dot.la/lausd-tech--2655314684.html"
+        }
+      ]
     },
     {
       "id": 116,
@@ -3412,7 +3470,17 @@
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "significant",
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases)."
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases).",
+      "source_links": [
+        {
+          "label": "Amplify: LAUSD page",
+          "url": "https://amplify.com/lausd"
+        },
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 118,
@@ -3448,7 +3516,13 @@
       "sources": null,
       "finding_level": "medium",
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases)."
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases).",
+      "source_links": [
+        {
+          "label": "Seesaw: LAUSD partnership page",
+          "url": "https://seesaw.com/lausd-and-seesaw-partnership"
+        }
+      ]
     },
     {
       "id": 119,
@@ -3553,7 +3627,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
+          "url": "https://dot.la/lausd-tech--2655314684.html"
+        }
+      ]
     },
     {
       "id": 122,
@@ -3588,7 +3668,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 123,
@@ -3623,7 +3709,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 124,
@@ -3658,7 +3750,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 125,
@@ -3693,7 +3791,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 126,
@@ -3728,7 +3832,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 127,
@@ -3763,7 +3873,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 128,
@@ -3798,7 +3914,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 129,
@@ -3833,7 +3955,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 130,
@@ -3868,7 +3996,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 131,
@@ -3903,7 +4037,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 132,
@@ -3938,7 +4078,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 133,
@@ -3973,7 +4119,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 134,
@@ -4008,7 +4160,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 135,
@@ -4043,7 +4201,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 136,
@@ -4078,7 +4242,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 137,
@@ -4113,7 +4283,13 @@
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 138,
@@ -4165,7 +4341,13 @@
       "delegated_purchases_amount": 29946,
       "delegated_purchases_desc": "Pilot Site License / T4-Age of Learning",
       "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,501,946 committed / $3,497,000 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term through 6/9/2027), plus $29,946 in delegated school/office purchases. The LAUSD figure is used here.",
-      "overlap_group": "reading-literacy"
+      "overlap_group": "reading-literacy",
+      "source_links": [
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 139,
@@ -4201,7 +4383,13 @@
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "significant",
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence."
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence.",
+      "source_links": [
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 140,
@@ -4252,7 +4440,13 @@
       },
       "delegated_purchases_amount": 33876,
       "delegated_purchases_desc": "1 Year Digital Access / Other Materials",
-      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $4,189,147 committed / $4,096,172 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $7,992,344 expended through 6/30/26 under bench contract C3433 (term through 6/9/2027), nearly double the PESP spending figure, plus $33,876 in delegated purchases. The LAUSD figure is used here."
+      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $4,189,147 committed / $4,096,172 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $7,992,344 expended through 6/30/26 under bench contract C3433 (term through 6/9/2027), nearly double the PESP spending figure, plus $33,876 in delegated purchases. The LAUSD figure is used here.",
+      "source_links": [
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 141,
@@ -4304,7 +4498,13 @@
       "delegated_purchases_amount": 23050,
       "delegated_purchases_desc": "Licenses",
       "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,553,075 committed / $3,533,626 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,468,144 expended through 6/30/26 under bench contract C3194 (term through 6/9/2027), plus $23,050 in delegated purchases. The LAUSD figure is used here.",
-      "overlap_group": "reading-literacy"
+      "overlap_group": "reading-literacy",
+      "source_links": [
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 142,
@@ -4356,7 +4556,13 @@
       "delegated_purchases_amount": 28722,
       "delegated_purchases_desc": "Site License / Amira Reading Awareness and tutor",
       "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $2,129,988 committed / $2,109,888 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $2,109,888 expended through 6/30/26 under bench contract C3175 (term through 6/9/2027), plus $28,722 in delegated purchases. The spending figures match; the end date and status differ. The LAUSD figure is used here.",
-      "overlap_group": "reading-literacy"
+      "overlap_group": "reading-literacy",
+      "source_links": [
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 143,
@@ -4392,7 +4598,13 @@
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "none",
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence."
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence.",
+      "source_links": [
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 144,
@@ -4430,7 +4642,13 @@
       "ai_analysis_date": null,
       "cheaper_alternative": "PBLWorks \u2014 the gold-standard nonprofit for project-based learning \u2014 offers free curriculum frameworks, lesson plans, and teacher professional development. A district this size could purchase PBLWorks professional development at a fraction of the cost of a software platform.",
       "overlap_note": "Likely overlaps with the STEM enrichment bench (33 vendors, $10M) and other curriculum contracts. Total LAUSD spending on curriculum supplemental materials is not publicly consolidated.",
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases)."
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases).",
+      "source_links": [
+        {
+          "label": "PESP report (April 2026)",
+          "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        }
+      ]
     },
     {
       "id": 145,

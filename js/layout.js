@@ -122,6 +122,13 @@ function vendorUrl(name) {
   return '/vendor.html?v=' + encodeURIComponent(vendorKey(name));
 }
 
+// Clickable web sources attached to a contract (news articles, reports, vendor pages)
+function sourceLinksHtml(c) {
+  if (!c.source_links || !c.source_links.length) return '';
+  return `<ul class="source-link-list">${c.source_links.map(l =>
+    `<li><a href="${escapeHtml(l.url)}" target="_blank" rel="noopener">${escapeHtml(l.label)} &rarr;</a></li>`).join('')}</ul>`;
+}
+
 // Button label for a local source document, by file type
 function docLabel(path, isReport) {
   if (isReport) return 'View LAUSD Report (PDF)';

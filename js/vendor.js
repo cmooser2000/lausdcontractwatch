@@ -103,15 +103,21 @@ function sourcesCard(contracts, delegated) {
           <a href="${escapeHtml(s)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.9rem">${label}</a>`);
       } else if (/^https?:/.test(s)) {
         items.push(`<a href="${escapeHtml(s)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.9rem">View Source &rarr;</a>`);
-      } else {
+      } else if (!c.source_links) {
         items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.9rem">Source: ${escapeHtml(s)}</p>`);
       }
     }
-    if (!s && c.sources && !seen.has(c.sources)) {
+    if (!s && c.sources && !c.source_links && !seen.has(c.sources)) {
       seen.add(c.sources);
       items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.9rem">Source: ${escapeHtml(c.sources)}</p>`);
     }
   });
+  // Web sources (news articles, reports, vendor pages), deduplicated across contracts
+  const webLinks = [];
+  contracts.forEach(c => (c.source_links || []).forEach(l => {
+    if (!seen.has(l.url)) { seen.add(l.url); webLinks.push(l); }
+  }));
+  if (webLinks.length) items.push(sourceLinksHtml({ source_links: webLinks }));
   if (delegated.length && !contracts.some(c => c.report_table)) {
     items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.4rem">Delegated purchases: LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026), Table 5.</p>
       <a href="/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.9rem">View LAUSD Report (PDF)</a>`);
