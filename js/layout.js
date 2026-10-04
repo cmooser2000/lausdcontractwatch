@@ -122,6 +122,14 @@ function vendorUrl(name) {
   return '/vendor.html?v=' + encodeURIComponent(vendorKey(name));
 }
 
+// Button label for a local source document, by file type
+function docLabel(path, isReport) {
+  if (isReport) return 'View LAUSD Report (PDF)';
+  if (/\.docx?$/i.test(path)) return 'View Board Report (Word)';
+  if (/\.(jpe?g|png|webp)$/i.test(path)) return 'View Board Report (Image)';
+  return 'View Board Report (PDF)';
+}
+
 function loadData() {
   if (_dataPromise) return _dataPromise;
   _dataPromise = fetch('/data/contracts.json')

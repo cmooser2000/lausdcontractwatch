@@ -7,7 +7,7 @@
       "date": "2026-09-15",
       "category": "private_interest",
       "agenda_title": "Approval of Procurement Actions Procurement Services Department",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8105&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8200264&GUID=75FE9D85-F961-4911-B323-FA36ED9BCCB5&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-012-26/27",
       "member_votes": {
         "Nick Melvoin": "Yes",
@@ -17,7 +17,8 @@
         "Sherlett Hendy Newbill": "Yes",
         "Scott Schmerelson": "Yes",
         "Karla Griego": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/86701/votes"
     },
     {
       "label": "Approved facilities contracts actions",
@@ -26,7 +27,7 @@
       "date": "2026-09-15",
       "category": "private_interest",
       "agenda_title": "Approval of Facilities Contracts Actions Procurement Services Department - Facilities Contracts",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8104&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8200263&GUID=F4AECF16-7611-4A96-9B13-1DE2A28B8143&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-011-26/27",
       "member_votes": {
         "Nick Melvoin": "Yes",
@@ -36,7 +37,8 @@
         "Sherlett Hendy Newbill": "Yes",
         "Scott Schmerelson": "No",
         "Karla Griego": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/86702/votes"
     },
     {
       "label": "Increased contract capacity for nonpublic school/agency (NPS/A) special education master contracts",
@@ -45,7 +47,7 @@
       "date": "2026-09-15",
       "category": "private_interest",
       "agenda_title": "Request for Increased Aggregate Contract Capacity for Nonpublic School/Agency (NPS/A) Master Contracts Division of Special Education Medical Services Division",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8158&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8200278&GUID=BD226560-E62B-4181-8679-6F124EAD984E&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-065-26/27",
       "member_votes": {
         "Nick Melvoin": "Yes",
@@ -55,7 +57,8 @@
         "Sherlett Hendy Newbill": "Yes",
         "Scott Schmerelson": "Yes",
         "Karla Griego": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/86710/votes"
     },
     {
       "label": "Approved bond funds for purchase of 50 electric school buses",
@@ -64,7 +67,7 @@
       "date": "2026-09-15",
       "category": "private_interest",
       "agenda_title": "Approval of the Use of Bond Program Funds to Support the Purchase of 50 Electric School Buses, and Amend the Transportation Services Branch\u2019s Strategic Execution Plan to Incorporate Therein Transportation Services Branch",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8123&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8200269&GUID=A54FEB85-234C-4291-8435-5A0B07B93F42&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-030-26/27",
       "member_votes": {
         "Nick Melvoin": "Yes",
@@ -74,7 +77,8 @@
         "Sherlett Hendy Newbill": "Yes",
         "Scott Schmerelson": "Yes",
         "Karla Griego": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/86700/votes"
     },
     {
       "label": "Approved 2025-26 unaudited actuals financial report",
@@ -83,7 +87,7 @@
       "date": "2026-09-15",
       "category": "private_interest",
       "agenda_title": "Unaudited Actuals Financial Report for Fiscal Year 2025-26, Multi-Year Projections and Gann Limit Resolution - PUBLIC HEARING Finance Office",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8138&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=8200276&GUID=5E79E5A3-ABEB-461C-BA5C-B201CF47D20F&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-045-26/27",
       "member_votes": {
         "Nick Melvoin": "Yes",
@@ -93,24 +97,8 @@
         "Sherlett Hendy Newbill": "Yes",
         "Scott Schmerelson": "Yes",
         "Karla Griego": "Yes"
-      }
-    },
-    {
-      "label": "Adopted 2026-27 budget and LCAP (~$21B)",
-      "date": "2026-06-23",
-      "category": "private_interest",
-      "member_votes": {
-        "Sherlett Hendy Newbill": "Yes",
-        "Dr. Rocio Rivas": "Yes",
-        "Scott Schmerelson": "Yes",
-        "Nick Melvoin": "Yes",
-        "Karla Griego": "Yes",
-        "Kelly Gonez": "Yes",
-        "Tanya Ortiz Franklin": "Yes"
       },
-      "tally": "Unanimous",
-      "source": "LAist (reported unanimous; individual roll call not published)",
-      "source_url": "https://laist.com/news/education/lausd-board-budget-vote-2026-2027-school-year"
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/86709/votes"
     },
     {
       "label": "Approved fiscal stabilization plan ($3.6B in cuts over three years)",
@@ -147,24 +135,6 @@
       "source_url": "https://laist.com/news/education/lausd-reduction-in-force-vote-may-2026-budget-preview"
     },
     {
-      "label": "Adopted Using Technology with Intention screen time resolution (Res-048-25/26)",
-      "date": "2026-04-21",
-      "category": "student_teacher_interest",
-      "matter_file": "Res-048-25/26",
-      "member_votes": {
-        "Sherlett Hendy Newbill": "Yes",
-        "Dr. Rocio Rivas": "Yes",
-        "Scott Schmerelson": "Yes",
-        "Nick Melvoin": "Yes",
-        "Karla Griego": "Yes",
-        "Kelly Gonez": "Yes",
-        "Tanya Ortiz Franklin": "Yes"
-      },
-      "tally": "Unanimous",
-      "source": "Education Week (reported unanimous; individual roll call not published)",
-      "source_url": "https://www.edweek.org/technology/nations-2nd-largest-district-moves-to-limit-student-screen-use/2026/04"
-    },
-    {
       "label": "Issued preliminary layoff notices to 657 employees",
       "date": "2026-02-17",
       "category": "student_teacher_interest",
@@ -188,7 +158,7 @@
       "date": "2025-12-16",
       "category": "private_interest",
       "agenda_title": "Amendment to the Information Technology Services Strategic Execution Plan to Approve the School Network Systems Upgrade, Phase 3 (198 Sites) Project",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7758&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7798645&GUID=5BF60518-F506-427F-A61A-5B748A5D94DB&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-196-25/26",
       "member_votes": {
         "Sherlett Hendy Newbill": "Yes",
@@ -198,7 +168,8 @@
         "Karla Griego": "Yes",
         "Kelly Gonez": "Yes",
         "Tanya Ortiz Franklin": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/85709/votes"
     },
     {
       "label": "Approved IT Infrastructure - School Network Alternative Connectivity Pilot",
@@ -207,7 +178,7 @@
       "date": "2025-12-16",
       "category": "private_interest",
       "agenda_title": "Amendment to the Information Technology Services Strategic Execution Plan to Approve the School Network Alternative Connectivity Pilot Project",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7759&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7798646&GUID=A104B335-A08B-4919-9B0B-B1777FBF1AE3&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-197-25/26",
       "member_votes": {
         "Sherlett Hendy Newbill": "Yes",
@@ -217,7 +188,8 @@
         "Karla Griego": "Yes",
         "Kelly Gonez": "Yes",
         "Tanya Ortiz Franklin": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/85710/votes"
     },
     {
       "label": "Approved IT Infrastructure - Campus Safety Systems (Intrusion) Phase 2",
@@ -226,7 +198,7 @@
       "date": "2025-12-16",
       "category": "private_interest",
       "agenda_title": "Amendment to the Information Technology Services Strategic Execution Plan to Approve the Campus Safety Systems (Intrusion Systems), Phase 2 Project",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7755&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7798644&GUID=B4241AF3-0460-4B28-9F56-FE485F55A9B0&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-193-25/26",
       "member_votes": {
         "Sherlett Hendy Newbill": "Yes",
@@ -236,7 +208,8 @@
         "Karla Griego": "Yes",
         "Kelly Gonez": "Yes",
         "Tanya Ortiz Franklin": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/85711/votes"
     },
     {
       "label": "Adopted resolution on community safety during heightened immigration enforcement",
@@ -245,7 +218,7 @@
       "date": "2025-12-16",
       "category": "student_teacher_interest",
       "agenda_title": "Ms. Griego, Ms. Ortiz Franklin, Dr. Rivas - Strengthening and Expanding Community-Based Safety Programs in Time of Heightened Immigration Enforcement (Res-025-25/26)",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7783&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7803590&GUID=2F50802D-3310-4B52-9200-EE1C375AEC05&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Res-025-25/26",
       "member_votes": {
         "Sherlett Hendy Newbill": "No",
@@ -255,7 +228,8 @@
         "Karla Griego": "Yes",
         "Kelly Gonez": "Yes",
         "Tanya Ortiz Franklin": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/85740/votes"
     },
     {
       "label": "Approved $500M judgment obligation bonds sale",
@@ -264,7 +238,7 @@
       "date": "2025-06-03",
       "category": "private_interest",
       "agenda_title": "Resolution of the Board of Education of the Los Angeles Unified School District Approving the Sales of a Previously Authorized Judgment Obligation Bonds, and Related Documents and Actions, including an Official Statement, Pursuant to the Judgment Refunding Program.",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7503&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7714917&GUID=DCA8CFBE-5141-433B-99D0-FF6ED4162E09&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-373-24/25",
       "member_votes": {
         "Sherlett Hendy Newbill": "Yes",
@@ -274,7 +248,8 @@
         "Karla Griego": "Yes",
         "Kelly Gonez": "Yes",
         "Tanya Ortiz Franklin": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/84997/votes"
     },
     {
       "label": "Approved $1B general obligation bonds issuance",
@@ -283,7 +258,7 @@
       "date": "2025-06-03",
       "category": "private_interest",
       "agenda_title": "Authorization of a Resolution of the Board of Education Approving the Sale and Issuance of Not-to-Exceed $1,000,000,000 of General Obligation Bonds and the Forms of the Documents Necessary for the Issuance of such Bonds",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7499&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7714913&GUID=8EDD712C-431A-43B2-9240-69354EAB3F4B&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-369-24/25",
       "member_votes": {
         "Sherlett Hendy Newbill": "Yes",
@@ -293,7 +268,8 @@
         "Karla Griego": "Yes",
         "Kelly Gonez": "Yes",
         "Tanya Ortiz Franklin": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/84966/votes"
     },
     {
       "label": "Approved $5.1B general obligation refunding bonds",
@@ -302,7 +278,7 @@
       "date": "2025-06-03",
       "category": "private_interest",
       "agenda_title": "Authorization of a Resolution of the Board of Education Approving the Sale and Issuance of Not-to-Exceed $5.1 Billion of General Obligation Refunding Bonds and the Forms of the Documents Necessary for the Issuance of such Bonds",
-      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7500&GUID=259AE333-137A-411E-A400-C4B6DFEFC4FF",
+      "legistar_url": "https://lausd.legistar.com/LegislationDetail.aspx?ID=7714914&GUID=46677A22-5429-443C-A28F-BCA6AF7AB9E6&G=33058515-3F29-4AE6-8A8E-1738CD521295",
       "matter_file": "Rep-370-24/25",
       "member_votes": {
         "Sherlett Hendy Newbill": "Yes",
@@ -312,7 +288,8 @@
         "Karla Griego": "Yes",
         "Kelly Gonez": "Yes",
         "Tanya Ortiz Franklin": "Yes"
-      }
+      },
+      "rollcall_url": "https://webapi.legistar.com/v1/lausd/eventitems/84974/votes"
     }
   ],
   "board_members": {

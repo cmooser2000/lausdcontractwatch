@@ -333,15 +333,22 @@ function relatedContractsCard(c, contracts) {
 }
 
 function sourceCard(c) {
-  if (!c.source_url) return '';
+  if (!c.source_url) {
+    return c.sources ? `<div class="sidebar-card sidebar-card-alert" id="sourceCard"><h4>Source</h4>
+      <p style="font-size:0.82rem;color:var(--text-light)">${escapeHtml(c.sources)}</p></div>` : '';
+  }
   const isLocal = c.source_url.startsWith('/');
+  if (!isLocal && !/^https?:/.test(c.source_url)) {
+    return `<div class="sidebar-card sidebar-card-alert" id="sourceCard"><h4>Source</h4>
+      <p style="font-size:0.82rem;color:var(--text-light)">${escapeHtml(c.source_url)}${c.sources && c.sources !== c.source_url ? `<br>${escapeHtml(c.sources)}` : ''}</p></div>`;
+  }
   return `<div class="sidebar-card sidebar-card-alert" id="sourceCard">
     <h4>Source Document</h4>
     <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:0.75rem">
       ${c.report_table ? `From LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026), ${escapeHtml(c.report_table)}.` : 'This contract was extracted from official LAUSD board records.'}
     </p>
     ${isLocal
-      ? `<a href="${escapeHtml(c.source_url)}" class="btn btn-primary btn-block" style="font-size:0.85rem">${c.report_table ? 'View LAUSD Report (PDF)' : 'View Board Report (PDF)'}</a>`
+      ? `<a href="${escapeHtml(c.source_url)}" class="btn btn-primary btn-block" style="font-size:0.85rem">${docLabel(c.source_url, c.report_table)}</a>`
       : `<a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem">View Source &rarr;</a>`}
   </div>`;
 }

@@ -75,6 +75,7 @@ loadData().then(data => {
       </div>
 
       <aside class="contract-sidebar">
+        ${sourcesCard(contracts, delegated)}
         ${direct ? profileCard(direct, 'Vendor Profile') : ''}
         ${parents.map(p => profileCard(p, `Parent Company: ${p.vendor_name}`)).join('')}
         ${!direct && !parents.length ? `<div class="sidebar-card"><h4>Vendor Profile</h4>
@@ -84,6 +85,43 @@ loadData().then(data => {
 
   lucide.createIcons();
 });
+
+// Same source documents shown on each contract page, deduplicated
+function sourcesCard(contracts, delegated) {
+  const seen = new Set();
+  const items = [];
+  contracts.forEach(c => {
+    const s = c.source_url;
+    if (s && !seen.has(s)) {
+      seen.add(s);
+      if (s.startsWith('/')) {
+        const label = docLabel(s, c.report_table);
+        const note = c.report_table
+          ? 'LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026).'
+          : `Official LAUSD board record for ${escapeHtml(c.contract_number || c.short_name || c.title)}.`;
+        items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.4rem">${note}</p>
+          <a href="${escapeHtml(s)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.9rem">${label}</a>`);
+      } else if (/^https?:/.test(s)) {
+        items.push(`<a href="${escapeHtml(s)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.9rem">View Source &rarr;</a>`);
+      } else {
+        items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.9rem">Source: ${escapeHtml(s)}</p>`);
+      }
+    }
+    if (!s && c.sources && !seen.has(c.sources)) {
+      seen.add(c.sources);
+      items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.9rem">Source: ${escapeHtml(c.sources)}</p>`);
+    }
+  });
+  if (delegated.length && !contracts.some(c => c.report_table)) {
+    items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.4rem">Delegated purchases: LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026), Table 5.</p>
+      <a href="/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.9rem">View LAUSD Report (PDF)</a>`);
+  }
+  if (!items.length) return '';
+  return `<div class="sidebar-card sidebar-card-alert">
+    <h4>Source Document${items.length > 1 ? 's' : ''}</h4>
+    ${items.join('')}
+  </div>`;
+}
 
 function statTile(value, label) {
   return `<div class="vendor-stat"><div class="vendor-stat-value">${value}</div><div class="vendor-stat-label">${label}</div></div>`;
