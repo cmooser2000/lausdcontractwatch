@@ -719,6 +719,12 @@ svg.lucide {
 .overlap-table tr.overlap-self td { background: #e9e3f8; }
 .overlap-source { font-size: 0.75rem; color: #6a5d94; margin-top: 0.5rem; }
 
+/* Vendor page */
+.vendor-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.vendor-stat { background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1rem 1.1rem; }
+.vendor-stat-value { font-size: 1.4rem; font-weight: 800; color: var(--navy); font-family: var(--mono); }
+.vendor-stat-label { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem; line-height: 1.4; }
+
 /* AI apps page */
 .ai-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
 .ai-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.2rem; }

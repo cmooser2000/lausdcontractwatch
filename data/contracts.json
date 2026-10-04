@@ -10827,7 +10827,11 @@
       "notes": "Battery Ventures is the parent company of LAUSD contractors ContinuumCloud and its subsidiary Welligent. The firm's connection to Paragon/Graphite spyware and ICE contracts is documented in the PESP April 2026 report.",
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-04-09 00:00:00"
+      "updated_at": "2026-04-09 00:00:00",
+      "portfolio_vendors": [
+        "ContinuumCloud",
+        "Welligent"
+      ]
     },
     {
       "id": 47,
@@ -10851,7 +10855,13 @@
       "notes": "Veritas Capital is the ultimate parent of Cambium Learning Group (which owns Lexia Learning and Explorelearning) and Houghton Mifflin Harcourt (which owns Amira Learning and Istation). The firm's primary business is defense and government technology, not education.",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026; PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-10-03 00:00:00"
+      "updated_at": "2026-10-03 00:00:00",
+      "portfolio_vendors": [
+        "Amira Learning",
+        "Explore Learning",
+        "Lexia Learning Systems",
+        "Istation"
+      ]
     },
     {
       "id": 48,

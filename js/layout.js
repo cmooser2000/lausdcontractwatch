@@ -106,6 +106,19 @@ function categoryTag(cat) {
 let _data = null;
 let _dataPromise = null;
 
+// Normalized vendor key so spelling variants ("Apple Inc." / "Apple, Inc.") group together
+function vendorKey(name) {
+  let n = (name || '').toLowerCase().trim();
+  if (!n.startsWith('various vendors')) n = n.replace(/\(.*?\)/g, ' ');
+  n = n.replace(/[^a-z0-9 ]/g, ' ')
+       .replace(/\b(inc|llc|ltd|corp|corporation|co|company|the|dist|lp)\b/g, ' ');
+  return n.replace(/\s+/g, '');
+}
+
+function vendorUrl(name) {
+  return '/vendor.html?v=' + encodeURIComponent(vendorKey(name));
+}
+
 function loadData() {
   if (_dataPromise) return _dataPromise;
   _dataPromise = fetch('/data/contracts.json')

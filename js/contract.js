@@ -52,7 +52,7 @@ function renderHeader(c) {
       ${findingBadgeHtml(c.finding_level)}
     </div>
     <h1 style="font-size:1.5rem;font-weight:800;margin:0.25rem 0">${escapeHtml(c.title)}</h1>
-    <div class="vendor-name-large">${escapeHtml(c.vendor_name || '')}</div>`;
+    <div class="vendor-name-large">${c.vendor_name ? `<a href="${vendorUrl(c.vendor_name)}" style="color:inherit">${escapeHtml(c.vendor_name)} &rarr;</a>` : ''}</div>`;
 }
 
 // ── Main Body ─────────────────────────────────────────────────

@@ -6,25 +6,35 @@ let activeTab = 'active';
 
 loadData().then(data => {
   const contracts = data.contracts;
+  delegated = data.delegated_purchases || [];
   renderVendors(contracts);
   bindTabs(contracts);
 });
 
-function buildVendorMap(contracts) {
+let delegated = [];
+
+function buildVendorMap(contracts, includeDelegatedOnly) {
   const map = {};
   contracts.forEach(c => {
     const name = (c.vendor_name || 'Unknown').trim();
-    if (!map[name]) map[name] = { name, contracts: [], total: 0, categories: new Set(), statuses: new Set() };
-    map[name].contracts.push(c);
-    map[name].total += parseFloat(c.amount) || 0;
-    map[name].categories.add(c.category);
-    map[name].statuses.add(c.status);
+    const key = vendorKey(name);
+    if (!map[key]) map[key] = { name, contracts: [], total: 0, categories: new Set(), statuses: new Set() };
+    map[key].contracts.push(c);
+    map[key].total += parseFloat(c.amount) || 0;
+    map[key].categories.add(c.category);
+    map[key].statuses.add(c.status);
   });
+  if (includeDelegatedOnly) {
+    delegated.forEach(p => {
+      const key = vendorKey(p.vendor_name);
+      if (!map[key]) map[key] = { name: p.vendor_name, contracts: [], total: 0, categories: new Set(), statuses: new Set(), delegatedOnly: true };
+    });
+  }
   return Object.values(map).sort((a, b) => b.total - a.total);
 }
 
 function renderVendors(contracts) {
-  const all = buildVendorMap(contracts);
+  const all = buildVendorMap(contracts, true);
   const active = buildVendorMap(contracts.filter(c => c.status === 'Active'));
 
   document.getElementById('activeCount').textContent = active.length;
@@ -52,8 +62,8 @@ function renderTable(vendors) {
       <tr>
         <td style="color:var(--text-muted);font-weight:600;font-family:var(--mono)">${i + 1}</td>
         <td>
-          <a class="contract-link" href="/search.html?q=${encodeURIComponent(v.name)}">${escapeHtml(v.name)}</a>
-          <div class="contract-num">${v.contracts.length} contract${v.contracts.length !== 1 ? 's' : ''}</div>
+          <a class="contract-link" href="${vendorUrl(v.name)}">${escapeHtml(v.name)}</a>
+          <div class="contract-num">${v.delegatedOnly ? 'Delegated purchases only' : `${v.contracts.length} contract${v.contracts.length !== 1 ? 's' : ''}`}</div>
         </td>
         <td style="font-size:0.85rem;color:var(--text-muted)">${v.contracts.length}</td>
         <td class="col-right amount-cell">${formatMoney(v.total)}</td>
