@@ -132,7 +132,7 @@ function docLabel(path, isReport) {
 
 function loadData() {
   if (_dataPromise) return _dataPromise;
-  _dataPromise = fetch('/data/contracts.json')
+  _dataPromise = fetch('/data/contracts.json', { cache: 'no-cache' })
     .then(r => { if (!r.ok) throw new Error('Failed to load data'); return r.json(); })
     .then(d => {
       if (d.contracts) d.contracts = d.contracts.filter(c => c.category !== 'Facilities');
