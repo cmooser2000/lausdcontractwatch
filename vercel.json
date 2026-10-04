@@ -5,40 +5,103 @@
     {
       "source": "/data/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
       "source": "/css/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
       "source": "/js/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     }
   ],
   "rewrites": [
-    { "source": "/search",       "destination": "/search.html" },
-    { "source": "/contract",     "destination": "/contract.html" },
-    { "source": "/vendors",      "destination": "/vendors.html" },
-    { "source": "/vendor",       "destination": "/vendor.html" },
-    { "source": "/board",        "destination": "/board.html" },
-    { "source": "/high-priority","destination": "/high-priority.html" },
-    { "source": "/tech-vendors", "destination": "/tech-vendors.html" },
-    { "source": "/campaigns",    "destination": "/campaigns.html" },
-    { "source": "/take-action",  "destination": "/take-action.html" },
-    { "source": "/about",        "destination": "/about.html" },
-    { "source": "/sources",            "destination": "/sources.html" },
-    { "source": "/private-companies",  "destination": "/private-companies.html" },
-    { "source": "/edtech",             "destination": "/edtech.html" },
-    { "source": "/ai-apps",            "destination": "/ai-apps.html" },
-    { "source": "/teachers",           "destination": "/teachers.html" },
-    { "source": "/students",           "destination": "/students.html" },
-    { "source": "/transparency",       "destination": "/transparency.html" },
-    { "source": "/board-members",      "destination": "/board-members.html" }
+    {
+      "source": "/search",
+      "destination": "/search.html"
+    },
+    {
+      "source": "/contract",
+      "destination": "/contract.html"
+    },
+    {
+      "source": "/vendors",
+      "destination": "/vendors.html"
+    },
+    {
+      "source": "/vendor",
+      "destination": "/vendor.html"
+    },
+    {
+      "source": "/board",
+      "destination": "/board.html"
+    },
+    {
+      "source": "/high-priority",
+      "destination": "/high-priority.html"
+    },
+    {
+      "source": "/tech-vendors",
+      "destination": "/tech-vendors.html"
+    },
+    {
+      "source": "/campaigns",
+      "destination": "/campaigns.html"
+    },
+    {
+      "source": "/take-action",
+      "destination": "/take-action.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/sources",
+      "destination": "/sources.html"
+    },
+    {
+      "source": "/private-companies",
+      "destination": "/private-companies.html"
+    },
+    {
+      "source": "/edtech",
+      "destination": "/edtech.html"
+    },
+    {
+      "source": "/ai-apps",
+      "destination": "/ai-apps.html"
+    },
+    {
+      "source": "/teachers",
+      "destination": "/teachers.html"
+    },
+    {
+      "source": "/students",
+      "destination": "/students.html"
+    },
+    {
+      "source": "/transparency",
+      "destination": "/transparency.html"
+    },
+    {
+      "source": "/board-members",
+      "destination": "/board-members.html"
+    }
   ]
 }

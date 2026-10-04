@@ -103,6 +103,9 @@ function categoryTag(cat) {
 
 // ── Data Layer ───────────────────────────────────────────────
 
+// If the icon library fails to load, keep pages working without icons
+if (!window.lucide) window.lucide = { createIcons() {} };
+
 let _data = null;
 let _dataPromise = null;
 

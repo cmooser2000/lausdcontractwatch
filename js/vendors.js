@@ -9,6 +9,10 @@ loadData().then(data => {
   delegated = data.delegated_purchases || [];
   renderVendors(contracts);
   bindTabs(contracts);
+}).catch(() => {
+  document.getElementById('vendorSummary').innerHTML =
+    'Couldn\u2019t load vendor data. <a href="" onclick="location.reload(true);return false">Reload the page</a>.';
+  document.getElementById('vendorsTbody').innerHTML = '';
 });
 
 let delegated = [];
