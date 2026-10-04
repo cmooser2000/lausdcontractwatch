@@ -12746,39 +12746,76 @@
       "created_at": "2026-10-04 00:00:00"
     },
     {
-      "what_they_do": "TeacherMade is a small education-software company whose website lets teachers turn paper worksheets, PDFs and quizzes into online activities that students fill out on a computer and that can grade themselves automatically. It launched in September 2020, during COVID-era remote learning, and has since rebranded as Classwork.com, which it now pitches to whole districts as well as to individual teachers.",
-      "service_explained": "LAUSD's contract covers TeacherMade's web-based teacher productivity tool. Day to day, a teacher can upload an existing worksheet or test, add answer boxes, multiple-choice or drag-and-drop questions, and assign it online. Students complete it on their school device, and the teacher gets automatic scoring and can leave feedback. For students, this means more classwork and homework done online in place of paper.",
-      "founded": "2020",
-      "headquarters": null,
-      "company_type": "Private",
-      "ownership": "Co-founded by Laura Bresko (CEO) and Brad Smith, per the company's About page. The product now operates under the name Classwork.com. One founder-interview site (Starter Story) says TeacherMade was 'acquired' in 2025 and rebranded as Classwork.com, but the buyer was never named and the company's own site describes it only as an evolution or rebrand. No private-equity or venture-capital ownership was found.",
-      "leadership": "Laura Bresko, Co-Founder and CEO",
-      "scale": "In a founder interview on Starter Story, the company reported about $75,000/month (~$900K/year) in revenue, 12 employees plus 2 founders, and more than 100,000 users by the end of its first year. These figures are self-reported.",
+      "what_they_do": "TeacherMade, now called Classwork.com, is online software for K-12 teachers. Teachers upload worksheets or PDFs and turn them into interactive digital assignments that students complete on a computer, with automatic grading and data dashboards. It is a small Florida-based company started in 2020 by a former classroom co-teacher.",
+      "service_explained": "LAUSD placed TeacherMade on its Supplemental Instructional Digital Tools 'bench' (contract C3852), a pre-approved list schools can buy from. As of 6/30/26 no money had been spent, so no LAUSD school appears to be paying for it yet; if a school did buy it, teachers would use it to convert paper worksheets into online assignments that students do on their devices and that grade themselves.",
+      "founded": "2020. Classwork.com About page says the platform launched September 8, 2020; Starter Story interview also says September 2020. The legal entity, Work On Learning, Inc., is an older Delaware corporation (Delaware file no. 3045553); its incorporation date was not viewable.",
+      "headquarters": "Fernandina Beach, Florida. Florida branch registration and LinkedIn list 726 Geiger Rd, Fernandina Beach, FL 32034. A 2024 New York district data-privacy agreement lists 463688 SR 200, Fernandina Beach, FL 32097. The company is legally incorporated in Delaware and registered in Florida as a foreign corporation, which explains the earlier Delaware vs. Florida conflict.",
+      "company_type": "Private, for-profit company. Legal entity: Work On Learning, Inc. (doing business as TeacherMade, now Classwork.com). Delaware corporation (no. 3045553, registered agent Resident Agents Inc., Dover DE) with an active Florida foreign-corporation registration (no. F20000005675; registered agent Bradley L Smith).",
+      "ownership": "Privately held. Starter Story (2022) described it as self-funded with no outside funding mentioned. Starter Story's company page states TeacherMade was 'acquired' in 2025 and is now Classwork.com, but no acquirer is named and the company's own site and LinkedIn describe only a name change, with the same co-founders (Laura Bresko as CEO) still in charge. A change of ownership is unconfirmed.",
+      "leadership": "Laura Bresko, co-founder and CEO; Brad (Bradley) Smith, co-founder (signed a 2021 data-privacy agreement as CTO; Florida registered agent). Other staff on the Classwork.com About page: Jen Chorma (Sales Director), Matt Slattery (Product Manager), Angela Burson (Marketing Director), Nathan Cofield (Customer Success), Derek Lockman, Kelly Myers.",
+      "scale": "Small company: LinkedIn lists 11-50 employees; Starter Story (Jan 2022) reported 12 employees and about $75,000/month ($900K/yr) revenue, and over 100,000 users by Christmas 2020. A 2021 EdTech Insights trade-magazine award profile claimed over 6 million users within nine months (self-reported, unverified). Classwork.com homepage names customers including Houston ISD, Amarillo ISD, Lawton Public Schools and Erie BOCES; recent product focus is Texas (TEKS-aligned readiness checks).",
       "issues": [],
-      "news": [],
+      "news": [
+        {
+          "title": "Creating A Platform For Digitizing Classroom Activities And Making $900K/Year",
+          "outlet": "Starter Story (founder interview)",
+          "date": "2022-01-18",
+          "url": "https://www.starterstory.com/stories/creating-a-platform-for-digitizing-classroom-activities-and-making-900k-year"
+        },
+        {
+          "title": "TeacherMade - Edtech Insights Award - K12 (Hottest K12 Solution Company)",
+          "outlet": "Education Technology Insights (trade magazine)",
+          "date": "2021",
+          "url": "https://www.educationtechnologyinsights.com/teachermade-edtech-insights-award-k12"
+        }
+      ],
       "source_links": [
         {
-          "label": "Classwork.com (formerly TeacherMade) - About Us / team page",
-          "url": "https://classwork.com/about-us-about-classwork-com-team/"
+          "label": "Classwork.com About Us (teachermade.com/about-us redirects here)",
+          "url": "https://classwork.com/about-us"
         },
         {
           "label": "Classwork.com homepage",
           "url": "https://classwork.com/"
         },
         {
-          "label": "Classwork.com privacy policy (still refers to TeacherMade and support@teachermade.com)",
+          "label": "Classwork.com privacy notice (California/CCPA; entity named TeacherMade; effective Aug 21, 2023)",
           "url": "https://classwork.com/privacy-policy/"
         },
         {
-          "label": "Starter Story - founder interview (Laura Bresko)",
+          "label": "Starter Story interview with Laura Bresko",
           "url": "https://www.starterstory.com/stories/creating-a-platform-for-digitizing-classroom-activities-and-making-900k-year"
         },
         {
-          "label": "Crunchbase - TeacherMade profile (search snippet only)",
-          "url": "https://www.crunchbase.com/organization/teachermade"
+          "label": "Education Technology Insights 2021 award profile",
+          "url": "https://www.educationtechnologyinsights.com/teachermade-edtech-insights-award-k12"
+        },
+        {
+          "label": "Classwork.com LinkedIn page",
+          "url": "https://www.linkedin.com/company/teachermade"
+        },
+        {
+          "label": "OpenCorporates search: WORK ON LEARNING",
+          "url": "https://opencorporates.com/companies?q=WORK+ON+LEARNING"
+        },
+        {
+          "label": "OpenCorporates: Work On Learning, Inc. (Florida foreign branch F20000005675)",
+          "url": "https://opencorporates.com/companies/us_fl/F20000005675"
+        },
+        {
+          "label": "OpenCorporates: Work On Learning, Inc. (Delaware 3045553)",
+          "url": "https://opencorporates.com/companies/us_de/3045553"
+        },
+        {
+          "label": "Illinois Student Data Privacy Agreement, Naperville CUSD 203 / Work On Learning dba TeacherMade (signed May 2021)",
+          "url": "https://sdpc.a4l.org/agreements/Teachermade_Napervlle_CUSD203.pdf"
+        },
+        {
+          "label": "Central Islip UFSD (NY) data privacy agreement with Work On Learning, Inc. (TeacherMade.com)",
+          "url": "https://resources.finalsite.net/images/v1706736259/centralislipk12nyus/itu8flk8u5eirh0kmb1m/Teachermade.pdf"
         }
       ],
-      "research_notes": "Headquarters could not be confirmed. Crunchbase lists Dover, Delaware (possibly just where it is registered), Starter Story lists Fernandina Beach, FL, and the Classwork site gives no address. Crunchbase spells the co-founder 'Laura Fresko'; the company site and Starter Story say 'Laura Bresko', and we used Bresko. Whether TeacherMade was actually acquired, or just renamed itself Classwork.com, is unclear. No LAUSD-specific news, lawsuits or privacy complaints were found. The search budget ran out before a final targeted search on LAUSD and privacy, so that check is incomplete.",
+      "research_notes": "Acquisition vs. rename: only Starter Story says 'acquired' (2025), without naming a buyer; first-party sources show the same founders and team, and the privacy notice still names 'TeacherMade' as the company, so a simple rebrand is more consistent with the evidence, but this is unresolved. Classwork.com blog posts dated 2024 exist, so the rename may predate 2025. Privacy: the company has signed state-model student data privacy agreements (Illinois NDPA with Naperville CUSD 203 in 2021; a New York agreement with Central Islip UFSD), which commit it to FERPA-style protections. Its California privacy notice (Aug 21, 2023) says it has not sold personal information in the prior 12 months, but does not mention COPPA, SOPIPA or AB 1584. I could not find TeacherMade on the Student Privacy Pledge (now sunset) or a Common Sense privacy rating (privacy.commonsense.org evaluation URL returned 404), and could not confirm whether it has signed the California Student Data Privacy Agreement with LAUSD (the SDPC/CSPA registry search was not accessible). Delaware incorporation date and current officer list are behind an OpenCorporates login; Sunbiz returned 403. User numbers are self-reported and inconsistent (100,000 vs. 6 million). No lawsuits, data breaches, complaints or critical news coverage found. EdWeek Market Brief (May 8, 2026) reported LAUSD is reviewing all ed-tech contracts for privacy safeguards and screen time, but it does not name TeacherMade.",
       "researched_at": "October 2026",
       "updated_at": "2026-10-04 00:00:00",
       "display_name": "TeacherMade (now Classwork.com)",
@@ -12787,31 +12824,59 @@
       "created_at": "2026-10-04 00:00:00"
     },
     {
-      "what_they_do": "9 To 5 Computer Supply is a small, family-owned technology reseller in Jacksonville Beach, Florida. It sells computer equipment and accessories to schools, government agencies and businesses: Chromebooks, protective cases, backpacks, headphones and earbuds, printers and networking gear, including its own 'TechProtectus' line of cases, headsets and earbuds.",
-      "service_explained": "Under two LAUSD contracts (C2687, about $7.2M, and C534, about $2.75M), the company supplies headsets and earbuds that students use for state and district testing and with their school iPads. In practice these are the low-cost wired earbuds and headsets students plug into district devices to hear audio during computer-based tests, reading and language programs, and videos.",
-      "founded": "1991",
-      "headquarters": "Jacksonville Beach, Florida",
-      "company_type": "Private, family-owned",
-      "ownership": "The company's About page describes it as 'Family owned and operated since 1991' and lists Raab family members on its team: co-founder Richard Raab, Chris Raab (Head of Sales), Kevin Raab, and Preston Raab. No private-equity or venture-capital ownership was found.",
-      "leadership": null,
-      "scale": "Small distributor. University of Toledo's supplier registry says it sells through cooperative purchasing contracts (EQUALIS, OMNIA, NCPA). It offers headsets and earbuds among other IT and audio-visual products. No employee or revenue figures were found.",
+      "what_they_do": "9 To 5 Computer Supply is a small, family-run computer and electronics reseller based in Jacksonville Beach, Florida. It sells new and refurbished technology (Chromebooks, laptops, printers, networking gear, cases, backpacks, headphones and earbuds) to schools, government agencies and businesses. It is a distributor, not a manufacturer: it resells brands such as Lenovo, HP, Dell and TechProtectus.",
+      "service_explained": "LAUSD uses this company to buy headphones, headsets and earbuds for students: one contract (C2687) covers headsets/earbuds used during computer-based testing, and another (C534) covered earbuds that work with student iPads. Day-to-day, these are the inexpensive, durable earbuds and headsets students plug into school devices for online tests and classroom audio; the company's site lists TechProtectus-brand school earbuds and noise-cancelling headsets in the roughly $15-$60 range.",
+      "founded": "1991 (company website). Florida corporation records summarized by search results show filing on 10/02/1991, but the Sunbiz detail page itself returned 403 and could not be opened. HigherGov's federal registration profile separately lists a 'founded' date of June 24, 1988.",
+      "headquarters": "Jacksonville Beach, Florida. Company website lists mailing address 3948 3rd St S, Ste 103, Jacksonville Beach, FL 32250 and physical address 805 Bonaire Circle, Jacksonville Beach, FL 32250; phone (904) 280-2544.",
+      "company_type": "Private, for-profit Florida corporation ('9 TO 5 COMPUTER SUPPLY DISTRIBUTORS, INC.', Florida document no. S84312, status Active per OpenCorporates). Federal registration (SAM, via HigherGov): UEI QGZJVPVNBA56, CAGE 0DFK0, primary NAICS 423430 (computer equipment merchant wholesalers); no SBA small-business certifications listed.",
+      "ownership": "Family owned and operated (company About page). OpenCorporates lists registered agent Kevin C Raab. Alignable business listing names Richard Raab as owner. Exact share ownership not publicly verified.",
+      "leadership": "Per company About page: Richard Raab (co-founder, formerly IBM/Xerox), Chris Raab (Head of Sales), Kevin Raab (Sales/Accounting), Preston Raab (Sales). Kevin C Raab is the Florida registered agent (OpenCorporates). Formal officer titles in state filings could not be viewed (Sunbiz blocked; OpenCorporates officer list behind login).",
+      "scale": "Small business. Website claims 33 years serving the IT industry and 'thousands of products'. HigherGov lists it as under 500 employees and shows a most recent federal award dated September 9, 2024 (values not displayed). University of Toledo supplier registry lists it as available through cooperative purchasing groups EQUALIS, OMNIA and NCPA, and lists products including headsets, earbuds, backpacks and medical-grade PCs. Revenue not verified.",
       "issues": [],
       "news": [],
       "source_links": [
         {
-          "label": "9to5 Computer Supply - homepage (addresses, 'Established in 1991', TechProtectus headset/earbud products)",
+          "label": "9to5 Computer Supply homepage",
           "url": "https://www.9to5computer.com/"
         },
         {
-          "label": "9to5 Computer Supply - About page (family owned since 1991; Raab family team)",
+          "label": "9to5 Computer Supply About page",
           "url": "https://www.9to5computer.com/about"
         },
         {
-          "label": "University of Toledo supplier registration - 9 TO 5 Computer Supply Dist., Inc.",
+          "label": "9to5 Computer 'Headphones for Schools' (TechProtectus products)",
+          "url": "https://www.9to5computer.com/manufacturers/techprotectus/headphones"
+        },
+        {
+          "label": "OpenCorporates search: Florida entities named 9 TO 5 COMPUTER SUPPLY",
+          "url": "https://opencorporates.com/companies?q=9+TO+5+COMPUTER+SUPPLY&jurisdiction_code=us_fl"
+        },
+        {
+          "label": "OpenCorporates: 9 TO 5 COMPUTER SUPPLY DISTRIBUTORS, INC. (FL S84312)",
+          "url": "https://opencorporates.com/companies/us_fl/S84312"
+        },
+        {
+          "label": "HigherGov federal awardee profile",
+          "url": "https://www.highergov.com/awardee/9-to-5-computer-supply-distributors-inc-63945572/"
+        },
+        {
+          "label": "University of Toledo supplier registry entry",
           "url": "https://www.utoledo.edu/depts/supplychain/supplier-registration/suppliers/Details/129664"
+        },
+        {
+          "label": "Alignable listing (owner Richard Raab; TechProtectus recommendation)",
+          "url": "https://www.alignable.com/jacksonville-beach-fl/9-to-5-computer"
+        },
+        {
+          "label": "TechProtectus LinkedIn page (separate company, New York HQ)",
+          "url": "https://www.linkedin.com/company/tech-protectus"
+        },
+        {
+          "label": "LAist, LAUSD emergency COVID tech spending (May 19, 2020) - checked, does not mention this vendor",
+          "url": "https://laist.com/news/coronavirus-lausd-emergency-spending-tech-contracts-ipads-apple-chromebooks"
         }
       ],
-      "research_notes": "We could not confirm any LAUSD history beyond the contracts named in LAUSD's report, including whether it supplied headphones during COVID. The search budget ran out before LAUSD board records could be searched. Florida corporate records (Sunbiz) blocked automated access, so incorporation details, officers and the CEO/president title were not confirmed. Richard Raab is listed as 'co-founder', but the site does not name a current president or CEO. We did not confirm whether TechProtectus is the company's own house brand; the site lists it among products it sells. No lawsuits or complaints were found.",
+      "research_notes": "Reseller vs. manufacturer: TechProtectus, the brand of school headphones it sells, appears to be a separate company (LinkedIn lists HQ at 1330 6th Ave, New York, founded 2013, self-described minority woman-owned); Richard Raab posted a recommendation of TechProtectus on Alignable. 9 To 5 appears to be a reseller of TechProtectus, not its owner, but the exact business relationship is not documented. Which brand LAUSD actually receives under C2687/C534 is not confirmed. Florida Sunbiz (search.sunbiz.org) returned HTTP 403, so official officer titles, annual reports and exact filing date could not be read directly; a search-engine summary of the Sunbiz record reported filing 10/02/1991 and officers Kevin Raab (CEO), Christopher Raab (CFO), Richard C. Raab and Brenda L. Raab, but that is unverified by me. A search snippet of LAUSD's Procurement Services 'Goods & General Services' page (procurement.lausd.org/apps/pages/Goods-and-General-Services) indicated an additional LAUSD contract (SAP #4400011998, 11/1/23-10/31/26, 'TECHprotect Student Headsets... Audio Video Media Accessories'), but the page returned 403 and could not be verified. No LAUSD purchases before 2023 found; the LAist COVID-spending article names Amazon and Mergent as headphone suppliers, not this company. No lawsuits, complaints, debarments or news coverage found in searches. Other school-district contracts: only a testimonial from Staunton City Schools (VA) on the company homepage. lausd.legistar.com, boe.lausd.org board documents and USAspending were not successfully searched.",
       "researched_at": "October 2026",
       "updated_at": "2026-10-04 00:00:00",
       "id": 73,
