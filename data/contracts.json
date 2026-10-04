@@ -591,13 +591,24 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-03-15 17:07:59",
-      "updated_at": "2026-03-16 18:57:29",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": "## Ownership\\n\\nConvergeOne is a PE-backed IT services company owned by **CVC Capital Partners**. It provides network infrastructure, cybersecurity, and communications technology to large organizations.\\n\\n## Controversies\\n\\n**Bankruptcy:** ConvergeOne filed for Chapter 11 bankruptcy in April 2024 with approximately $1.8 billion in secured debt. [Sidley Austin LLP](https://www.sidley.com/) The company emerged from bankruptcy but the restructuring itself became a landmark legal case.\\n\\n**Court ruling:** In September 2025, a federal court reversed part of ConvergeOne's bankruptcy plan, finding that the company's private equity sponsor CVC Capital Partners was given preferential treatment \u2014 an exclusive opportunity to purchase discounted equity that was not offered to all creditors equally, violating the US Bankruptcy Code. [Cleary Gottlieb](https://www.clearygottlieb.com/)\\n\\n**Sources:** [Sidley Austin](https://www.sidley.com/) \u00b7 Bloomberg Law \u00b7 [Cleary Gottlieb](https://www.clearygottlieb.com/)",
       "questions_to_ask": "- Did LAUSD know ConvergeOne was emerging from bankruptcy when it awarded the $82M contract in June 2025?\\n- What financial protections are in place if ConvergeOne faces further instability?\\n- At $123.6M combined across two contracts, ConvergeOne is LAUSD's single largest named vendor in this dataset \u2014 is this level of concentration appropriate?",
       "red_flags": "- **Bankruptcy:** ConvergeOne filed for Chapter 11 in April 2024 with $1.8B in debt. LAUSD awarded it an $82M contract in June 2025 \u2014 more than a year after the filing.\\n- **PE preferential treatment:** A federal court found CVC Capital Partners received preferential treatment in the bankruptcy \u2014 discounted equity not offered to other creditors.\\n- **Vendor concentration:** At $123.6M combined across two contracts, ConvergeOne is LAUSD's single largest named vendor.",
       "sources": null,
       "finding_level": "minor",
-      "ai_analysis_date": "2026-03-15 20:19:13"
+      "ai_analysis_date": "2026-03-15 20:19:13",
+      "oversight_notes": [
+        {
+          "text": "In a June 2025 audit of how LAUSD buys IT services (OA 24-1452), the Inspector General found that for one bidder, Vector Resources, Inc., the manufacturer's price list and written proof that it was an authorized dealer were not available. The same audit found the Procurement Services Division did not send the required cost-analysis request to the Inspector General for any of the three contracts reviewed, and did not verify LAUSD received the best discounts the bidders gave other public agencies. The audit reviewed three IT contracts and does not name which ones; Vector Resources is a partner on this contract. LAUSD disagreed with the recommendation to create a vendor due-diligence policy.",
+          "links": [
+            {
+              "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+              "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 18,
@@ -1054,13 +1065,24 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-03-15 17:07:59",
-      "updated_at": "2026-03-16 18:58:00",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "oversight_notes": [
+        {
+          "text": "In a June 2025 audit of how LAUSD buys IT services (OA 24-1452), the Inspector General found that for one bidder, Vector Resources, Inc., the manufacturer's price list and written proof that it was an authorized dealer were not available. The same audit found the Procurement Services Division did not send the required cost-analysis request to the Inspector General for any of the three contracts reviewed, and did not verify LAUSD received the best discounts the bidders gave other public agencies. The audit reviewed three IT contracts and does not name which ones; Vector Resources is a partner on this contract. LAUSD disagreed with the recommendation to create a vendor due-diligence policy.",
+          "links": [
+            {
+              "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+              "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 31,
@@ -2572,13 +2594,24 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-03-15 17:07:59",
-      "updated_at": "2026-03-16 18:59:41",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "oversight_notes": [
+        {
+          "text": "Separate contract: the Inspector General's FY2025 report audited Cumming Management Group's construction management contract No. 4400007486, which began in 2019 with a $5,000,000 limit and was extended through Nov. 30, 2024 with the limit raised to $43,300,000. As of April 30, 2024, $37,750,552 had been spent. The audit (OA 24-1442) found invoices and timesheets were reviewed and approved according to District procedures.",
+          "links": [
+            {
+              "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+              "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 74,
@@ -2925,19 +2958,25 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "SOW breakdown: SOW1 $1.7M, SOW2 $8.3M, SOW3 $10.8M, SOW4 $10.5M, SOW5 $9.6M, SOW6 $5.6M. MSA extends through Dec-2025.",
-      "source_url": "LAUSD Internal Audit; CA 23-1422 court record",
+      "notes": "SOW breakdown: SOW1 $1.7M, SOW2 $8.3M, SOW3 $10.8M, SOW4 $10.5M, SOW5 $9.6M, SOW6 $5.6M. MSA extends through Dec-2025. CA 23-1422 is an Inspector General audit of Infosys Limited issued May 28, 2024 (not a court record); the Inspector General's FY2025 Annual Report lists both of its recommendations as implemented.",
+      "source_url": "LAUSD Office of the Inspector General audit CA 23-1422 (May 28, 2024)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:42:30",
-      "updated_at": "2026-04-09 14:42:30",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
       "sources": null,
       "finding_level": "none",
-      "ai_analysis_date": null
+      "ai_analysis_date": null,
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ]
     },
     {
       "id": 84,
@@ -3657,22 +3696,22 @@
       "funding_source": null,
       "status": "Active",
       "notes": "Specific LAUSD contract amounts not publicly disclosed per contract. OIG conducted incurred cost audit Dec-2025. Active vendor.",
-      "source_url": "LAUSD OIG FY2025 Annual Report; Balfour Beatty press releases",
+      "source_url": "https://media.edlio.net/594f6250/19e0b246/e73cb9c3/7e7c75e1359d49c5bd5e9aeebe11c808?_=26-1004%20Incurred%20Cost%20Audit%20-%20Balfour%20Beatty%20Construction%20LLC.%20Contract%204400011969.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:34",
-      "updated_at": "2026-04-09 20:21:34",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
-      "sources": null,
+      "sources": "LAUSD Office of the Inspector General audit report",
       "finding_level": "medium",
       "ai_analysis_date": null,
       "source_links": [
         {
-          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
-          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+          "label": "OIG Incurred Cost Audit 26-1004: Balfour Beatty Construction (PDF)",
+          "url": "https://media.edlio.net/594f6250/19e0b246/e73cb9c3/7e7c75e1359d49c5bd5e9aeebe11c808?_=26-1004%20Incurred%20Cost%20Audit%20-%20Balfour%20Beatty%20Construction%20LLC.%20Contract%204400011969.pdf"
         }
       ]
     },
@@ -3698,22 +3737,22 @@
       "funding_source": null,
       "status": "Active",
       "notes": "OIG audit completed Dec-12-2025. Contract 4400013173. Individual contract value not publicly disclosed.",
-      "source_url": "LAUSD OIG FY2025 Annual Report; LAUSD document ID072700",
+      "source_url": "https://media.edlio.net/594f6250/a686376c/55627808/5a884ec6149f44e38db4c4f67baefc2d?_=26-1022%20Incurred%20Cost%20Audit%20Prime%20Axis%20General%20Builder%20Inc.%20Contract%204400013173.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
-      "sources": null,
+      "sources": "LAUSD Office of the Inspector General audit report",
       "finding_level": "medium",
       "ai_analysis_date": null,
       "source_links": [
         {
-          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
-          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+          "label": "OIG Incurred Cost Audit 26-1022: Prime Axis General Builder (PDF)",
+          "url": "https://media.edlio.net/594f6250/a686376c/55627808/5a884ec6149f44e38db4c4f67baefc2d?_=26-1022%20Incurred%20Cost%20Audit%20Prime%20Axis%20General%20Builder%20Inc.%20Contract%204400013173.pdf"
         }
       ]
     },
@@ -3739,22 +3778,22 @@
       "funding_source": null,
       "status": "Active",
       "notes": "OIG audit completed Dec-10-2025. Contract 4400010429. Also known as Air Plus Contract. >$50M in completed public projects per company profile.",
-      "source_url": "LAUSD OIG FY2025 Annual Report; LAUSD webcenter docs",
+      "source_url": "https://media.edlio.net/594f6250/058f0e93/77873b3e/d6006faac98346b78e60e3481274c5a4?_=CA%2026-1006%20AP%20Construction%20Group%20Inc.%20Contract%20No.%204400010429.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
-      "sources": null,
+      "sources": "LAUSD Office of the Inspector General audit report",
       "finding_level": "medium",
       "ai_analysis_date": null,
       "source_links": [
         {
-          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
-          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+          "label": "OIG Contract Audit CA 26-1006: AP Construction Group (PDF)",
+          "url": "https://media.edlio.net/594f6250/058f0e93/77873b3e/d6006faac98346b78e60e3481274c5a4?_=CA%2026-1006%20AP%20Construction%20Group%20Inc.%20Contract%20No.%204400010429.pdf"
         }
       ]
     },
@@ -3780,22 +3819,22 @@
       "funding_source": null,
       "status": "Active",
       "notes": "OIG audit completed Oct-22-2025. Contract 4400012532.",
-      "source_url": "LAUSD OIG FY2025 Annual Report",
+      "source_url": "https://media.edlio.net/594f6250/914625ed/b81d59d8/feaf132b2f334bf190e31f8e5e558b93?_=26-1021%20Incurred%20Cost%20Audit%20NSA%20Construction%20Group%20Inc.%20Contract%20No.%204400012532.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
-      "sources": null,
+      "sources": "LAUSD Office of the Inspector General audit report",
       "finding_level": "medium",
       "ai_analysis_date": null,
       "source_links": [
         {
-          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
-          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+          "label": "OIG Incurred Cost Audit 26-1021: NSA Construction Group (PDF)",
+          "url": "https://media.edlio.net/594f6250/914625ed/b81d59d8/feaf132b2f334bf190e31f8e5e558b93?_=26-1021%20Incurred%20Cost%20Audit%20NSA%20Construction%20Group%20Inc.%20Contract%20No.%204400012532.pdf"
         }
       ]
     },
@@ -3821,22 +3860,22 @@
       "funding_source": null,
       "status": "Active",
       "notes": "OIG audit completed Dec-4-2025. Contract 4400007320.",
-      "source_url": "LAUSD OIG FY2025 Annual Report",
+      "source_url": "https://media.edlio.net/594f6250/914625ed/b81d59d8/4dfa04fc57a64cc8b6f31f19c233d5e8?_=CA%2025-1471%20Incurred%20Cost%20STAR%20Sports%20Theatre%20Arts%20%26%20Recreation%20Cont%20No%204400007320.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
-      "sources": null,
+      "sources": "LAUSD Office of the Inspector General audit report",
       "finding_level": "medium",
       "ai_analysis_date": null,
       "source_links": [
         {
-          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
-          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+          "label": "OIG Incurred Cost Audit CA 25-1471: STAR Sports Theatre Arts & Recreation (PDF)",
+          "url": "https://media.edlio.net/594f6250/914625ed/b81d59d8/4dfa04fc57a64cc8b6f31f19c233d5e8?_=CA%2025-1471%20Incurred%20Cost%20STAR%20Sports%20Theatre%20Arts%20%26%20Recreation%20Cont%20No%204400007320.pdf"
         }
       ]
     },
@@ -3861,25 +3900,19 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Contract No. 4400007798. Audit (CA 24-1436) found $5,145 in overbilled sales tax on non-taxable software subscriptions; Mainline refunded. Volume rebates paid on time. No material exceptions.",
-      "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
+      "notes": "Contract No. 4400007798. Inspector General audit CA 24-1436 (Oct. 8, 2024): amounts billed generally reflected contract discounts, but Mainline overbilled $2,162.58 in sales tax on non-taxable software subscriptions. Mainline paid the required volume rebates, but not all payments were on time, and it owed $2,982.51 in late-payment interest. Total questioned: $5,145. Mainline refunded both amounts. The audit also noted missing or incomplete freight documents/packing slips.",
+      "source_url": "/documents/LAUSD_OIG_FY2025_Annual_Report.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
       "sources": null,
       "finding_level": "medium",
-      "ai_analysis_date": null,
-      "source_links": [
-        {
-          "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
-          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
-        }
-      ]
+      "ai_analysis_date": null
     },
     {
       "id": 128,
@@ -4012,7 +4045,7 @@
       "vendor_name": "PCN3, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Seismic retrofit of the Benjamin Franklin High School auditorium. Design-build contract including extensive scope changes: replacing damaged materials/fixtures and other significant renovations.",
+      "description": "Seismic retrofit of the Benjamin Franklin High School auditorium. Scope changes included: replacing damaged materials/fixtures and other significant renovations.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
@@ -4031,7 +4064,7 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4094,7 +4127,7 @@
       "vendor_name": "Geronimo Concrete, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Classroom Replacement Project at Wonderland Elementary School - new kindergarten building and related campus construction. Design-build contract.",
+      "description": "Classroom Replacement Project at Wonderland Elementary School - new kindergarten building and related campus construction.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
@@ -4113,7 +4146,7 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-10-04 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,

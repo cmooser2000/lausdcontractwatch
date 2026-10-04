@@ -17,7 +17,7 @@ loadData().then(data => {
 
   // Direct profile, or a parent-company profile that lists this vendor in its portfolio
   const profiles = data.vendor_profiles || [];
-  const direct = profiles.find(p => key.startsWith(vendorKey(p.vendor_name)) || vendorKey(p.vendor_name).startsWith(key));
+  const direct = findProfile(profiles, name);
   const parents = profiles.filter(p => (p.portfolio_vendors || []).some(v => key.startsWith(vendorKey(v))));
 
   const total = contracts.reduce((s, c) => s + (parseFloat(c.amount) || 0), 0);
@@ -47,12 +47,15 @@ loadData().then(data => {
 
     ${overlaps.map(g => overlapBlock(g, key, data.contracts)).join('')}
 
+    ${oversightNotesHtml([].concat(...contracts.map(c => c.oversight_notes || [])).filter((n, i, a) => a.findIndex(m => m.text === n.text) === i))}
+
     ${discrepancies.length ? `<div class="data-discrepancy"><strong>Data discrepancies</strong>
       ${discrepancies.map(c => `<p style="margin:0.35rem 0"><a href="/contract.html?id=${c.id}">${escapeHtml(c.contract_number || c.title)}</a>: ${escapeHtml(c.data_discrepancy)}</p>`).join('')}
     </div>` : ''}
 
     <div class="contract-detail-grid">
       <div class="contract-main">
+        ${companyAboutHtml(direct)}
         <div class="detail-card">
           <h3>Contracts</h3>
           ${contracts.length ? `<div class="contracts-table-wrap"><table class="contracts-table">
@@ -96,8 +99,8 @@ function sourcesCard(contracts, delegated) {
       seen.add(s);
       if (s.startsWith('/')) {
         const label = docLabel(s, c.report_table);
-        const note = c.report_table
-          ? 'LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026).'
+        const note = c.report_table || /OIG|Inspector/i.test(s)
+          ? docNote(c)
           : `Official LAUSD board record for ${escapeHtml(c.contract_number || c.short_name || c.title)}.`;
         items.push(`<p style="font-size:0.82rem;color:var(--text-light);margin:0 0 0.4rem">${note}</p>
           <a href="${escapeHtml(s)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.9rem">${label}</a>`);
@@ -169,15 +172,5 @@ function overlapBlock(g, key, allContracts) {
 }
 
 function profileCard(p, heading) {
-  const field = (label, val) => val ? `<div style="margin-bottom:0.6rem"><span style="font-size:0.75rem;color:var(--text-muted)">${label}</span><div style="font-size:0.85rem;line-height:1.5">${escapeHtml(val)}</div></div>` : '';
-  return `<div class="sidebar-card">
-    <h4>${escapeHtml(heading)}</h4>
-    ${field('Parent company', p.parent_company)}
-    ${field('Type', p.company_type)}
-    ${field('Key executives', p.key_executives)}
-    ${field('Spending', p.cost_analysis)}
-    ${field('Concerns', p.controversies)}
-    ${field('Notes', p.notes)}
-    ${p.sources ? `<div style="font-size:0.72rem;color:var(--text-muted);margin-top:0.5rem">Sources: ${escapeHtml(p.sources)}</div>` : ''}
-  </div>`;
+  return companyFactsHtml(p, heading);
 }

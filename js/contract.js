@@ -62,19 +62,19 @@ function renderBody(c, data) {
     (c.vendor_name || '').toLowerCase().includes((vc.vendor_name || '').toLowerCase()) ||
     (vc.vendor_name || '').toLowerCase().includes((c.vendor_name || '').split(/[\s,]/)[0].toLowerCase())
   );
-  const profile = (data.vendor_profiles || []).find(vp =>
-    (c.vendor_name || '').toLowerCase().includes((vp.vendor_name || '').toLowerCase())
-  );
+  const profile = findProfile(data.vendor_profiles, c.vendor_name);
   const equivs = data.cost_equivalents || [];
 
   document.getElementById('contractBody').innerHTML = `
     ${verificationBanner(c.verification_status)}
     ${discrepancyCard(c)}
     ${overlapCard(c, data)}
+    ${oversightNotesHtml(c.oversight_notes)}
     <div class="contract-detail-grid">
       <div class="contract-main">
         ${plainEnglishCard(c)}
         ${descriptionCard(c)}
+        ${companyAboutHtml(profile)}
         ${equivalentsCard(c, equivs)}
         ${aiAnalysisCard(c)}
         ${boardConnectionsCard(vendorConns, data.board_members || [])}
@@ -302,13 +302,7 @@ function equivalentsCard(c, equivs) {
 }
 
 function vendorProfileCard(profile) {
-  if (!profile) return '';
-  return `<div class="sidebar-card">
-    <h4>Vendor Profile</h4>
-    ${profile.parent_company ? `<div style="margin-bottom:0.5rem"><span style="font-size:0.75rem;color:var(--text-muted)">Parent Company</span><div style="font-size:0.9rem;font-weight:600">${escapeHtml(profile.parent_company)}</div></div>` : ''}
-    ${profile.company_type ? `<div style="margin-bottom:0.5rem"><span style="font-size:0.75rem;color:var(--text-muted)">Type</span><div style="font-size:0.9rem">${escapeHtml(profile.company_type)}</div></div>` : ''}
-    ${profile.controversies ? `<div class="md-prose" style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border);font-size:0.82rem;color:var(--text-light);line-height:1.5">${parseField(profile.controversies)}</div>` : ''}
-  </div>`;
+  return companyFactsHtml(profile, 'Company Profile');
 }
 
 function relatedContractsCard(c, contracts) {
@@ -341,7 +335,7 @@ function sourceCard(c) {
   return `<div class="sidebar-card sidebar-card-alert" id="sourceCard">
     <h4>Source${local || links ? ' Documents' : ''}</h4>
     ${local ? `<p style="font-size:0.82rem;color:var(--text-light);margin-bottom:0.75rem">
-      ${c.report_table ? `From LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026), ${escapeHtml(c.report_table)}.` : 'This contract was extracted from official LAUSD board records.'}
+      ${docNote(c)}
     </p>
     <a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.75rem">${docLabel(c.source_url, c.report_table)}</a>` : ''}
     ${web ? `<a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem;margin-bottom:0.75rem">View Source &rarr;</a>` : ''}

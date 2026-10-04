@@ -102,6 +102,10 @@
     {
       "source": "/board-members",
       "destination": "/board-members.html"
+    },
+    {
+      "source": "/oversight",
+      "destination": "/oversight.html"
     }
   ]
 }

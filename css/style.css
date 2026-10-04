@@ -724,6 +724,40 @@ svg.lucide {
 .source-link-list li:first-child { border-top: 0; }
 .source-link-list a { font-weight: 600; }
 
+.oversight-card {
+    background: #eef4fb;
+    border: 1px solid #c9dcf0;
+    border-left: 4px solid #2f6db3;
+    color: #1d3553;
+    padding: 0.85rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+.oversight-card > strong { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.35rem; color: #24548c; }
+.oversight-card > strong svg { width: 16px; height: 16px; }
+.oversight-card p { margin: 0.4rem 0; }
+.oversight-card a { font-weight: 600; font-size: 0.82rem; }
+.oversight-more { margin-top: 0.5rem; }
+
+.oversight-toc { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; padding: 0.75rem 1rem; background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 1.5rem; font-size: 0.85rem; font-weight: 600; }
+.oversight-docs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; margin: 1rem 0 1.5rem; font-size: 0.88rem; }
+.oversight-page h3 { font-size: 1.02rem; color: var(--navy); margin: 1.5rem 0 0.4rem; }
+.oversight-page { max-width: 900px; }
+
+.company-about h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin: 0.9rem 0 0.3rem; }
+.company-about h4:first-of-type { margin-top: 0.5rem; }
+.company-about p { font-size: 0.95rem; line-height: 1.65; color: var(--text-light); margin: 0; }
+.company-facts .cf-row { margin-bottom: 0.7rem; }
+.company-facts .cf-label { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; color: var(--text-muted); margin-bottom: 0.15rem; }
+.company-facts .cf-value { font-size: 0.85rem; line-height: 1.5; }
+.company-facts .source-link-list li { font-size: 0.8rem; }
+.company-facts .link-meta { color: var(--text-muted); font-weight: 400; font-size: 0.75rem; }
+.cf-sources { font-size: 0.8rem; margin-top: 0.5rem; }
+.cf-sources summary { cursor: pointer; color: var(--text-muted); font-weight: 600; }
+.cf-legacy-sources { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.5rem; line-height: 1.5; }
+
 /* Vendor page */
 .vendor-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
 .vendor-stat { background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1rem 1.1rem; }
