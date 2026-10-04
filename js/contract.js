@@ -268,9 +268,9 @@ function quickFactsCard(c) {
     <h4>Quick Facts</h4>
     <div class="quick-fact"><span class="qf-label">Amount</span><span class="qf-value">${formatMoneyFull(c.amount)}</span></div>
     ${c.amount_basis ? `<div class="quick-fact"><span class="qf-label">Amount basis</span><span class="qf-value" style="font-size:0.75rem">${escapeHtml(c.amount_basis)}</span></div>` : ''}
-    ${c.authorized_capacity != null ? `<div class="quick-fact"><span class="qf-label">Board-authorized</span><span class="qf-value">${formatMoneyFull(c.authorized_capacity)}</span></div>` : ''}
+    ${c.authorized_capacity != null ? `<div class="quick-fact"><span class="qf-label">Board-authorized limit</span><span class="qf-value">${formatMoneyFull(c.authorized_capacity)}</span></div>` : ''}
     ${c.expended_amount != null ? `<div class="quick-fact"><span class="qf-label">Expended (thru 6/30/26)</span><span class="qf-value">${formatMoneyFull(c.expended_amount)}</span></div>` : ''}
-    ${c.bench ? `<div class="quick-fact"><span class="qf-label">Bench</span><span class="qf-value" style="font-size:0.75rem">${escapeHtml(c.bench.name)} &mdash; ${formatMoneyFull(c.bench.capacity)} shared</span></div>` : ''}
+    ${c.bench ? `<div class="quick-fact"><span class="qf-label">Bench spending limit</span><span class="qf-value" style="font-size:0.75rem">${formatMoneyFull(c.bench.capacity)} ceiling shared by all vendors on the ${escapeHtml(c.bench.name)} (a limit, not money spent)</span></div>` : ''}
     ${c.delegated_purchases_amount != null ? `<div class="quick-fact"><span class="qf-label">Delegated purchases (6/23&ndash;6/26)</span><span class="qf-value">${formatMoneyFull(c.delegated_purchases_amount)}</span></div>` : ''}
     ${c.pods_approved ? `<div class="quick-fact"><span class="qf-label">UDIPP/PoDS approved</span><span class="qf-value">${c.pods_approved === 'Y' ? 'Yes' : 'No'}</span></div>` : ''}
     <div class="quick-fact"><span class="qf-label">Category</span><span class="qf-value">${escapeHtml(c.category || '—')}</span></div>
