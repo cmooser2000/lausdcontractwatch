@@ -3375,7 +3375,8 @@
       },
       "delegated_purchases_amount": 986001,
       "delegated_purchases_desc": "Licenses",
-      "data_discrepancy": "Earlier record listed no contract amount (\"not available in public board records\") and a 2019 start date from PR Newswire / IXL's LAUSD hub. LAUSD reports $6,971,250 expended through 6/30/26 under bench contract C3177 (term 6/10/2024\u20136/9/2027), plus $986,001 in delegated purchases. The LAUSD figure is used here."
+      "data_discrepancy": "Earlier record listed no contract amount (\"not available in public board records\") and a 2019 start date from PR Newswire / IXL's LAUSD hub. LAUSD reports $6,971,250 expended through 6/30/26 under bench contract C3177 (term 6/10/2024\u20136/9/2027), plus $986,001 in delegated purchases. The LAUSD figure is used here.",
+      "overlap_group": "reading-literacy"
     },
     {
       "id": 117,
@@ -10988,8 +10989,8 @@
     },
     {
       "source": "LAUSD Classroom Technology Contracts Report, Sept 2026",
-      "title": "Nine overlapping reading & literacy vendors",
-      "detail": "LAUSD's report lists at least nine vendors selling reading, literacy, or reading-assessment tools (Amira, Age of Learning, i-Ready, Istation, Lexia Voyager Sopris, Lexia Learning Systems, Beable, Newsela, ThinkCERCA), with $14,613,524 spent across bench and delegated purchases through June 30, 2026, plus a separate $20.2M i-Ready board contract.",
+      "title": "Ten overlapping reading & literacy vendors",
+      "detail": "LAUSD's report lists at least ten vendors selling reading, literacy, or reading-assessment tools (Amira, Age of Learning, i-Ready, Istation, IXL, Lexia Voyager Sopris, Lexia Learning Systems, Beable, Newsela, ThinkCERCA), with $22,570,775 spent across bench and delegated purchases through June 30, 2026, plus a separate $20.2M i-Ready board contract.",
       "verified": true
     }
   ],
@@ -11273,10 +11274,10 @@
     {
       "id": "reading-literacy",
       "title": "Overlapping reading & literacy tools",
-      "summary": "LAUSD pays at least nine vendors for reading, literacy, or reading-assessment tools with overlapping purposes. Per LAUSD's Sept 29, 2026 report, these vendors received $12,065,332 through the Digital Tools Bench and $2,548,192 through delegated school/office purchases ($14,613,524 combined), not counting the separate $20.2M i-Ready board contract. Several descriptions explicitly overlap: Amira covers \u201cfluency practice, assessment, and reading intervention\u201d; Lexia Voyager covers \u201cintensive intervention for secondary students needing foundational literacy support\u201d; Age of Learning covers \u201cfoundational skill instruction, intervention\u201d for reading; and i-Ready and Amira both provide reading assessment. This overlap is based on LAUSD's own product descriptions. It does not show how many students use each tool.",
+      "summary": "LAUSD pays at least ten vendors for reading, literacy, or reading-assessment tools with overlapping purposes. Per LAUSD's Sept 29, 2026 report, these vendors received $19,036,582 through the Digital Tools Bench and $3,534,193 through delegated school/office purchases ($22,570,775 combined), not counting the separate $20.2M i-Ready board contract. Several descriptions explicitly overlap: Amira covers \u201cfluency practice, assessment, and reading intervention\u201d; Lexia Voyager covers \u201cintensive intervention for secondary students needing foundational literacy support\u201d; Age of Learning covers \u201cfoundational skill instruction, intervention\u201d for reading; and i-Ready and Amira both provide reading assessment. This overlap is based on LAUSD's own product descriptions. It does not show how many students use each tool.",
       "source": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts', Sept. 29, 2026, Tables 1 and 5",
-      "total_expended": 12065332,
-      "total_delegated": 2548192,
+      "total_expended": 19036582,
+      "total_delegated": 3534193,
       "members": [
         {
           "vendor_name": "Amira Learning",
@@ -11313,6 +11314,15 @@
           "lausd_description": "Used to support instruction in Reading, Math, and Spanish",
           "expended": 0,
           "delegated": 0
+        },
+        {
+          "vendor_name": "IXL Learning",
+          "contract_number": "C3177",
+          "record_id": 116,
+          "function": "Math & reading skills practice, intervention",
+          "lausd_description": "Used for personalized practice during independent work, small group instruction, intervention, or enrichment to reinforce math and reading skills",
+          "expended": 6971250,
+          "delegated": 986001
         },
         {
           "vendor_name": "Lexia Voyager Sopris",
