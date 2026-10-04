@@ -34,6 +34,7 @@
     { "source": "/sources",            "destination": "/sources.html" },
     { "source": "/private-companies",  "destination": "/private-companies.html" },
     { "source": "/edtech",             "destination": "/edtech.html" },
+    { "source": "/ai-apps",            "destination": "/ai-apps.html" },
     { "source": "/teachers",           "destination": "/teachers.html" },
     { "source": "/students",           "destination": "/students.html" },
     { "source": "/transparency",       "destination": "/transparency.html" },

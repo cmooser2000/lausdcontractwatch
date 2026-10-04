@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI in Classrooms — LAUSD Contract Watch</title>
+  <meta name="description" content="Student-facing apps LAUSD has approved that include generative AI, from the district's September 2026 classroom technology report.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="container">
+    <h1>AI in LAUSD Classrooms</h1>
+    <p>Student-facing apps LAUSD has approved that include generative AI, as listed in the district&rsquo;s own report.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="verification-banner vb-verified">
+      <i data-lucide="check-circle"></i> From LAUSD&rsquo;s <a href="/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf" target="_blank" rel="noopener">Comprehensive Report of Classroom Technology Contracts</a> (Sept. 29, 2026), Table 4, a follow-up to Board Resolution 048-25/26, <em>Using Technology with Intention</em>.
+    </div>
+
+    <p id="aiSummary" style="font-size:1.05rem;color:var(--text-light)">Loading…</p>
+
+    <div class="ai-grid" id="aiGrid"></div>
+
+    <div class="ai-prose">
+      <h2>Other AI tools in LAUSD contracts</h2>
+      <ul id="aiRelated"></ul>
+
+      <h2>What LAUSD says about this list</h2>
+      <p>The district calls this list <strong>non-exhaustive</strong>. It is built from what vendors disclose about their own products, so it may leave out tools that schools or individual staff got directly, whether free or paid.</p>
+      <p>The report also says:</p>
+      <ul>
+        <li>Vendors can add, change, or turn on AI features <strong>after</strong> a product has passed district review, and features can vary by version, license, user role, age, or admin settings.</li>
+        <li>Approving an app does not necessarily mean approving every AI feature the vendor adds later.</li>
+        <li>Web filtering sorts sites by their main purpose, so it may not catch AI features built into an otherwise-approved app.</li>
+        <li>Platforms whose main purpose is generative AI are generally blocked for students unless they have been reviewed and approved, for example through PoDS.</li>
+        <li>District Chromebooks get the strictest filtering. Windows, iPad, and Mac devices are still being moved to the same model and currently get baseline CIPA-compliant filtering.</li>
+      </ul>
+
+      <h2>How apps get approved: the PoDS review</h2>
+      <p>Before a digital instructional tool can be used in Pre-K&ndash;12, vendors must complete <strong>Procurement of Digital Solutions (PoDS)</strong> review, formerly called UDIPP. The review covers nine areas:</p>
+      <ol>
+        <li>Instructional Use (Division of Instruction)</li>
+        <li>Artificial Intelligence (DOI-AI)</li>
+        <li>Single Sign-On Integration (ITS)</li>
+        <li>Learning Management System Integration (ITS)</li>
+        <li>Security Level 1 (ITS)</li>
+        <li>Security Level 2 (ITS)</li>
+        <li>Security Level 3 (ITS)</li>
+        <li>Data Use and Related Protocols (Office of Data and Accountability)</li>
+        <li>Accessibility / 508 Compliance (Office of the General Counsel)</li>
+      </ol>
+      <p>When a vendor reports a generative AI component, the review also looks at how the AI is trained, which models and datasets it uses, data collection and storage, privacy and security, third-party data sharing, consent, and data lifecycle.</p>
+
+      <h2>Questions worth asking</h2>
+      <ul>
+        <li>How often does LAUSD re-review approved apps for newly added AI features, and who does it?</li>
+        <li>Which AI features in these apps are turned on for students, and at what ages?</li>
+        <li>How are families told when a classroom app adds generative AI?</li>
+        <li>How many AI-enabled tools are in use at school sites without going through PoDS?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script src="/js/layout.js"></script>
+<script src="/js/ai-apps.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

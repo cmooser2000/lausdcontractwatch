@@ -85,12 +85,14 @@ function findingBadgeHtml(level) {
 function verificationBadge(v) {
   const map = {
     'verified':   'badge-verified',
+    'needs_verification': 'badge-needs-verification',
     'reported':   'badge-reported',
     'estimated':  'badge-estimated',
     'unverified': 'badge-unverified',
   };
   const cls = map[v] || 'badge-unverified';
-  const label = v ? v.charAt(0).toUpperCase() + v.slice(1) : 'Unverified';
+  const labels = { needs_verification: 'Needs Verification' };
+  const label = labels[v] || (v ? v.charAt(0).toUpperCase() + v.slice(1) : 'Unverified');
   return `<span class="badge ${cls}">${escapeHtml(label)}</span>`;
 }
 
@@ -139,6 +141,7 @@ function injectNav() {
           <div class="nav-dropdown-menu" id="navDropdownWhyMenu">
             <a href="/private-companies.html">Private Companies</a>
             <a href="/edtech.html">EdTech</a>
+            <a href="/ai-apps.html">AI in Classrooms</a>
             <a href="/teachers.html">Teachers</a>
             <a href="/students.html">Students</a>
             <a href="/transparency.html">Transparency</a>

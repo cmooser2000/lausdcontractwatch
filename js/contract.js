@@ -69,6 +69,8 @@ function renderBody(c, data) {
 
   document.getElementById('contractBody').innerHTML = `
     ${verificationBanner(c.verification_status)}
+    ${discrepancyCard(c)}
+    ${overlapCard(c, data)}
     <div class="contract-detail-grid">
       <div class="contract-main">
         ${plainEnglishCard(c)}
@@ -90,7 +92,8 @@ function renderBody(c, data) {
 
 function verificationBanner(v) {
   const map = {
-    verified:   ['vb-verified',   '<i data-lucide="check-circle"></i> Verified against primary LAUSD board documents.'],
+    verified:   ['vb-verified',   '<i data-lucide="check-circle"></i> Verified against LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026).'],
+    needs_verification: ['vb-needs-verification', '<i data-lucide="alert-circle"></i> Needs verification: extracted from LAUSD board documents, not yet confirmed against LAUSD\u2019s Sept. 2026 contract report.'],
     reported:   ['vb-reported',   '<i data-lucide="info"></i> Reported: sourced from news coverage, not independently verified.'],
     estimated:  ['vb-estimated',  '<i data-lucide="help-circle"></i> Estimated: based on comparable contracts. Verify against source.'],
     unverified: ['vb-unverified', '<i data-lucide="alert-triangle"></i> Unverified: requires verification against source documents.'],
@@ -100,6 +103,37 @@ function verificationBanner(v) {
     <div class="verification-banner vb-factcheck" style="background:#eef2f7;border-left:3px solid var(--blue);color:var(--text-light);font-size:0.82rem;padding:0.6rem 1rem;margin-bottom:1rem;border-radius:var(--radius-sm);line-height:1.5">
       AI-assisted data extraction &mdash; actively fact-checking. Errors are possible. <a href="#sourceCard" style="color:var(--blue);font-weight:600">View source document to verify.</a> Found an error? <a href="mailto:lausdcontractwatch@gmail.com" style="color:var(--blue);font-weight:600">Tell us &rarr;</a>
     </div>`;
+}
+
+function discrepancyCard(c) {
+  if (!c.data_discrepancy) return '';
+  return `<div class="data-discrepancy"><strong>Data discrepancy</strong>${escapeHtml(c.data_discrepancy)}</div>`;
+}
+
+function overlapCard(c, data) {
+  const g = (data.service_overlaps || []).find(o => o.id === c.overlap_group);
+  if (!g) return '';
+  const rows = g.members.map(m => {
+    const self = m.record_id === c.id;
+    const name = m.record_id && !self
+      ? `<a href="/contract.html?id=${m.record_id}">${escapeHtml(m.vendor_name)}</a>`
+      : `<strong>${escapeHtml(m.vendor_name)}</strong>`;
+    const spent = (m.expended || 0) + (m.delegated || 0);
+    return `<tr${self ? ' class="overlap-self"' : ''}>
+      <td>${name}${m.contract_number ? ` <span class="contract-num">${escapeHtml(m.contract_number)}</span>` : ''}</td>
+      <td>${escapeHtml(m.function)}</td>
+      <td class="col-right">${spent ? formatMoneyFull(spent) : '$0'}</td>
+    </tr>`;
+  }).join('');
+  return `<div class="overlap-card">
+    <strong><i data-lucide="layers"></i> ${escapeHtml(g.title)}</strong>
+    <p>${escapeHtml(g.summary)}</p>
+    <div class="table-wrap"><table class="overlap-table">
+      <thead><tr><th>Vendor</th><th>What LAUSD says it\u2019s used for</th><th class="col-right">Bench + delegated spend</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    <div class="overlap-source">Source: ${escapeHtml(g.source)}</div>
+  </div>`;
 }
 
 function plainEnglishCard(c) {
@@ -233,12 +267,18 @@ function quickFactsCard(c) {
   return `<div class="sidebar-card sidebar-card-highlight">
     <h4>Quick Facts</h4>
     <div class="quick-fact"><span class="qf-label">Amount</span><span class="qf-value">${formatMoneyFull(c.amount)}</span></div>
+    ${c.amount_basis ? `<div class="quick-fact"><span class="qf-label">Amount basis</span><span class="qf-value" style="font-size:0.75rem">${escapeHtml(c.amount_basis)}</span></div>` : ''}
+    ${c.authorized_capacity != null ? `<div class="quick-fact"><span class="qf-label">Board-authorized</span><span class="qf-value">${formatMoneyFull(c.authorized_capacity)}</span></div>` : ''}
+    ${c.expended_amount != null ? `<div class="quick-fact"><span class="qf-label">Expended (thru 6/30/26)</span><span class="qf-value">${formatMoneyFull(c.expended_amount)}</span></div>` : ''}
+    ${c.bench ? `<div class="quick-fact"><span class="qf-label">Bench</span><span class="qf-value" style="font-size:0.75rem">${escapeHtml(c.bench.name)} &mdash; ${formatMoneyFull(c.bench.capacity)} shared</span></div>` : ''}
+    ${c.delegated_purchases_amount != null ? `<div class="quick-fact"><span class="qf-label">Delegated purchases (6/23&ndash;6/26)</span><span class="qf-value">${formatMoneyFull(c.delegated_purchases_amount)}</span></div>` : ''}
+    ${c.pods_approved ? `<div class="quick-fact"><span class="qf-label">UDIPP/PoDS approved</span><span class="qf-value">${c.pods_approved === 'Y' ? 'Yes' : 'No'}</span></div>` : ''}
     <div class="quick-fact"><span class="qf-label">Category</span><span class="qf-value">${escapeHtml(c.category || '—')}</span></div>
     <div class="quick-fact"><span class="qf-label">Status</span><span class="qf-value">${escapeHtml(c.status || '—')}</span></div>
     <div class="quick-fact"><span class="qf-label">Approved</span><span class="qf-value">${formatDate(c.approval_date)}</span></div>
     <div class="quick-fact"><span class="qf-label">Start</span><span class="qf-value">${formatDate(c.start_date)}</span></div>
     <div class="quick-fact"><span class="qf-label">End</span><span class="qf-value">${formatDate(c.end_date)}</span></div>
-    <div class="quick-fact"><span class="qf-label">Verification</span><span class="qf-value" style="font-size:0.75rem">${escapeHtml(c.verification_status || 'unverified')}</span></div>
+    <div class="quick-fact"><span class="qf-label">Verification</span><span class="qf-value" style="font-size:0.75rem">${verificationBadge(c.verification_status)}</span></div>
   </div>`;
 }
 
@@ -298,10 +338,10 @@ function sourceCard(c) {
   return `<div class="sidebar-card sidebar-card-alert" id="sourceCard">
     <h4>Source Document</h4>
     <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:0.75rem">
-      This contract was extracted from official LAUSD board records.
+      ${c.report_table ? `From LAUSD\u2019s Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026), ${escapeHtml(c.report_table)}.` : 'This contract was extracted from official LAUSD board records.'}
     </p>
     ${isLocal
-      ? `<a href="${escapeHtml(c.source_url)}" class="btn btn-primary btn-block" style="font-size:0.85rem">View Board Report (PDF)</a>`
+      ? `<a href="${escapeHtml(c.source_url)}" class="btn btn-primary btn-block" style="font-size:0.85rem">${c.report_table ? 'View LAUSD Report (PDF)' : 'View Board Report (PDF)'}</a>`
       : `<a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="font-size:0.85rem">View Source &rarr;</a>`}
   </div>`;
 }

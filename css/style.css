@@ -657,6 +657,7 @@ svg.lucide {
 .badge-reported   { background: #cce5ff; color: #004085; }
 .badge-estimated  { background: #fff3cd; color: #856404; }
 .badge-unverified { background: #f8d7da; color: #721c24; }
+.badge-needs-verification { background: #ffe5cc; color: #8a4b08; }
 
 /* Verification banner */
 .verification-banner {
@@ -681,6 +682,55 @@ svg.lucide {
     border: 1px solid #b8daff;
     color: #004085;
 }
+.verification-banner.vb-needs-verification {
+    background: #fff4e8;
+    border: 1px solid #ffd2a6;
+    color: #8a4b08;
+}
+.data-discrepancy {
+    background: #fff4e8;
+    border: 1px solid #ffd2a6;
+    border-left: 4px solid #e8913a;
+    color: #5c3a10;
+    padding: 0.85rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+.overlap-card {
+    background: #f3f0fb;
+    border: 1px solid #d9d0f0;
+    border-left: 4px solid #6c4fc4;
+    color: #2e2450;
+    padding: 0.85rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+.overlap-card > strong { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.35rem; color: #4a3592; }
+.overlap-card > strong svg { width: 16px; height: 16px; }
+.overlap-card .table-wrap { overflow-x: auto; }
+.overlap-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; font-size: 0.82rem; }
+.overlap-table th, .overlap-table td { text-align: left; padding: 0.4rem 0.5rem; border-bottom: 1px solid #e2dbf3; vertical-align: top; }
+.overlap-table th { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; color: #6a5d94; }
+.overlap-table .col-right { text-align: right; white-space: nowrap; }
+.overlap-table tr.overlap-self td { background: #e9e3f8; }
+.overlap-source { font-size: 0.75rem; color: #6a5d94; margin-top: 0.5rem; }
+
+/* AI apps page */
+.ai-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
+.ai-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.2rem; }
+.ai-card h3 { font-size: 1.05rem; margin: 0 0 0.15rem; color: var(--navy); }
+.ai-card .ai-vendor { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.6rem; }
+.ai-card p { font-size: 0.88rem; color: var(--text-light); line-height: 1.55; margin: 0; }
+.ai-card .ai-note { margin-top: 0.7rem; padding-top: 0.6rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+.ai-prose { max-width: 800px; }
+.ai-prose h2 { font-size: 1.25rem; color: var(--navy); margin: 2rem 0 0.6rem; }
+.ai-prose p, .ai-prose li { color: var(--text-light); line-height: 1.7; font-size: 0.95rem; }
+.ai-prose ol { padding-left: 1.3rem; }
+.data-discrepancy strong { display: block; margin-bottom: 0.25rem; color: #8a4b08; }
 .verification-banner.vb-verified {
     background: #eaf7ed;
     border: 1px solid #c3e6cb;
