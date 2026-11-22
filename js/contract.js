@@ -111,29 +111,7 @@ function discrepancyCard(c) {
 }
 
 function overlapCard(c, data) {
-  const g = (data.service_overlaps || []).find(o => o.id === c.overlap_group);
-  if (!g) return '';
-  const rows = g.members.map(m => {
-    const self = m.record_id === c.id;
-    const name = m.record_id && !self
-      ? `<a href="/contract.html?id=${m.record_id}">${escapeHtml(m.vendor_name)}</a>`
-      : `<strong>${escapeHtml(m.vendor_name)}</strong>`;
-    const spent = (m.expended || 0) + (m.delegated || 0);
-    return `<tr${self ? ' class="overlap-self"' : ''}>
-      <td>${name}${m.contract_number ? ` <span class="contract-num">${escapeHtml(m.contract_number)}</span>` : ''}</td>
-      <td>${escapeHtml(m.function)}</td>
-      <td class="col-right">${spent ? formatMoneyFull(spent) : '$0'}</td>
-    </tr>`;
-  }).join('');
-  return `<div class="overlap-card">
-    <strong><i data-lucide="layers"></i> ${escapeHtml(g.title)}</strong>
-    <p>${escapeHtml(g.summary)}</p>
-    <div class="table-wrap"><table class="overlap-table">
-      <thead><tr><th>Vendor</th><th>What LAUSD says it\u2019s used for</th><th class="col-right">Bench + delegated spend</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table></div>
-    <div class="overlap-source">Source: ${escapeHtml(g.source)}</div>
-  </div>`;
+  return overlapGroupsFor(data, [c.id]).map(g => overlapGroupHtml(g, { contracts: data.contracts, selfIds: [c.id], showMore: true })).join('');
 }
 
 function plainEnglishCard(c) {

@@ -31,8 +31,7 @@ loadData().then(data => {
     <h1>${escapeHtml(name)}</h1>
     <p>${contracts.length} contract${contracts.length !== 1 ? 's' : ''} on this site &middot; ${active} active</p>`;
 
-  const overlapIds = new Set(contracts.map(c => c.overlap_group).filter(Boolean));
-  const overlaps = (data.service_overlaps || []).filter(g => overlapIds.has(g.id) ||
+  const overlaps = (data.service_overlaps || []).filter(g => overlapGroupsFor(data, contracts.map(c => c.id)).includes(g) ||
     g.members.some(m => !m.record_id && vendorKey(m.vendor_name) === key));
   const aiApps = (data.ai_student_apps || []).filter(a => key.startsWith(vendorKey(a.vendor_name)));
   const discrepancies = contracts.filter(c => c.data_discrepancy);
@@ -45,7 +44,7 @@ loadData().then(data => {
       ${statTile(String(contracts.length), 'Contracts')}
     </div>
 
-    ${overlaps.map(g => overlapBlock(g, key, data.contracts)).join('')}
+    ${overlaps.map(g => overlapGroupHtml(g, { contracts: data.contracts, selfIds: contracts.map(c => c.id), showMore: true })).join('')}
 
     ${oversightNotesHtml([].concat(...contracts.map(c => c.oversight_notes || [])).filter((n, i, a) => a.findIndex(m => m.text === n.text) === i))}
 
@@ -147,29 +146,6 @@ function contractRow(c) {
   </tr>`;
 }
 
-function overlapBlock(g, key, allContracts) {
-  const rows = g.members.map(m => {
-    // Link by the contract record's vendor name so it matches that vendor's page key
-    const rec = m.record_id && allContracts.find(c => c.id === m.record_id);
-    const linkName = rec ? rec.vendor_name : m.vendor_name;
-    const self = vendorKey(linkName) === key;
-    const spent = (m.expended || 0) + (m.delegated || 0);
-    return `<tr${self ? ' class="overlap-self"' : ''}>
-      <td><a href="${vendorUrl(linkName)}">${escapeHtml(m.vendor_name)}</a></td>
-      <td>${escapeHtml(m.function)}</td>
-      <td class="col-right">${spent ? formatMoneyFull(spent) : '$0'}</td>
-    </tr>`;
-  }).join('');
-  return `<div class="overlap-card">
-    <strong><i data-lucide="layers"></i> ${escapeHtml(g.title)}</strong>
-    <p>${escapeHtml(g.summary)}</p>
-    <div class="table-wrap"><table class="overlap-table">
-      <thead><tr><th>Vendor</th><th>What LAUSD says it’s used for</th><th class="col-right">Bench + delegated spend</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table></div>
-    <div class="overlap-source">Source: ${escapeHtml(g.source)}</div>
-  </div>`;
-}
 
 function profileCard(p, heading) {
   return companyFactsHtml(p, heading);

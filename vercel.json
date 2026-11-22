@@ -106,6 +106,10 @@
     {
       "source": "/oversight",
       "destination": "/oversight.html"
+    },
+    {
+      "source": "/redundancies",
+      "destination": "/redundancies.html"
     }
   ]
 }

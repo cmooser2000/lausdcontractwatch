@@ -37,7 +37,8 @@
       "funding_categories": [
         "Other"
       ],
-      "source_page": 2
+      "source_page": 2,
+      "overlap_groups": []
     },
     {
       "id": 2,
@@ -76,7 +77,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": []
     },
     {
       "id": 3,
@@ -115,7 +117,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 4,
@@ -154,7 +157,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 5,
@@ -193,7 +197,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 2
+      "source_page": 2,
+      "overlap_groups": []
     },
     {
       "id": 6,
@@ -232,7 +237,8 @@
       "funding_categories": [
         "Bonds"
       ],
-      "source_page": 4
+      "source_page": 4,
+      "overlap_groups": []
     },
     {
       "id": 7,
@@ -271,7 +277,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 8,
@@ -310,7 +317,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 3
+      "source_page": 3,
+      "overlap_groups": []
     },
     {
       "id": 9,
@@ -351,7 +359,10 @@
       "funding_categories": [
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "it-staffing"
+      ]
     },
     {
       "id": 10,
@@ -392,7 +403,8 @@
       "funding_categories": [
         "COPs (borrowing repaid from general fund)"
       ],
-      "source_page": 7
+      "source_page": 7,
+      "overlap_groups": []
     },
     {
       "id": 11,
@@ -431,7 +443,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 9
+      "source_page": 9,
+      "overlap_groups": []
     },
     {
       "id": 12,
@@ -470,7 +483,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 11
+      "source_page": 11,
+      "overlap_groups": []
     },
     {
       "id": 13,
@@ -509,7 +523,8 @@
       "funding_categories": [
         "Insurance/benefits funds"
       ],
-      "source_page": 13
+      "source_page": 13,
+      "overlap_groups": []
     },
     {
       "id": 14,
@@ -550,7 +565,8 @@
       "funding_categories": [
         "Revenue (paid to LAUSD)"
       ],
-      "source_page": 15
+      "source_page": 15,
+      "overlap_groups": []
     },
     {
       "id": 15,
@@ -589,7 +605,8 @@
       "funding_categories": [
         "Bonds"
       ],
-      "source_page": 17
+      "source_page": 17,
+      "overlap_groups": []
     },
     {
       "id": 16,
@@ -628,7 +645,8 @@
       "funding_categories": [
         "Cafeteria fund"
       ],
-      "source_page": 18
+      "source_page": 18,
+      "overlap_groups": []
     },
     {
       "id": 17,
@@ -680,7 +698,8 @@
       "funding_categories": [
         "Bonds"
       ],
-      "source_page": 21
+      "source_page": 21,
+      "overlap_groups": []
     },
     {
       "id": 18,
@@ -721,7 +740,10 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 23
+      "source_page": 23,
+      "overlap_groups": [
+        "monitoring"
+      ]
     },
     {
       "id": 19,
@@ -762,7 +784,8 @@
       "funding_categories": [
         "Bonds"
       ],
-      "source_page": 25
+      "source_page": 25,
+      "overlap_groups": []
     },
     {
       "id": 20,
@@ -803,7 +826,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 27
+      "source_page": 27,
+      "overlap_groups": []
     },
     {
       "id": 21,
@@ -842,7 +866,8 @@
       "funding_categories": [
         "Other"
       ],
-      "source_page": 30
+      "source_page": 30,
+      "overlap_groups": []
     },
     {
       "id": 22,
@@ -883,7 +908,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 32
+      "source_page": 32,
+      "overlap_groups": []
     },
     {
       "id": 23,
@@ -924,7 +950,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 34
+      "source_page": 34,
+      "overlap_groups": []
     },
     {
       "id": 24,
@@ -963,7 +990,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 25,
@@ -1002,7 +1030,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 2
+      "source_page": 2,
+      "overlap_groups": []
     },
     {
       "id": 26,
@@ -1041,7 +1070,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 27,
@@ -1080,7 +1110,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 3
+      "source_page": 3,
+      "overlap_groups": []
     },
     {
       "id": 28,
@@ -1119,7 +1150,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": []
     },
     {
       "id": 29,
@@ -1159,7 +1191,8 @@
         "Federal funds"
       ],
       "data_discrepancy": "Vendor description corrected from \"Various Vendors (7 IT managed services contracts)\" to match the board report.",
-      "source_page": 7
+      "source_page": 7,
+      "overlap_groups": []
     },
     {
       "id": 30,
@@ -1209,7 +1242,8 @@
       "funding_categories": [
         "Bonds"
       ],
-      "source_page": 10
+      "source_page": 10,
+      "overlap_groups": []
     },
     {
       "id": 31,
@@ -1248,7 +1282,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 12
+      "source_page": 12,
+      "overlap_groups": []
     },
     {
       "id": 32,
@@ -1288,7 +1323,8 @@
         "Federal funds"
       ],
       "data_discrepancy": "Vendor description corrected from \"Various Vendors (14 IT professional services contracts)\" to match the board report.",
-      "source_page": 15
+      "source_page": 15,
+      "overlap_groups": []
     },
     {
       "id": 33,
@@ -1327,7 +1363,8 @@
       "funding_categories": [
         "Other"
       ],
-      "source_page": 18
+      "source_page": 18,
+      "overlap_groups": []
     },
     {
       "id": 34,
@@ -1366,7 +1403,8 @@
       "funding_categories": [
         "Bonds"
       ],
-      "source_page": 20
+      "source_page": 20,
+      "overlap_groups": []
     },
     {
       "id": 35,
@@ -1405,7 +1443,8 @@
       "funding_categories": [
         "Bonds"
       ],
-      "source_page": 22
+      "source_page": 22,
+      "overlap_groups": []
     },
     {
       "id": 36,
@@ -1444,7 +1483,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 24
+      "source_page": 24,
+      "overlap_groups": []
     },
     {
       "id": 37,
@@ -1483,7 +1523,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 26
+      "source_page": 26,
+      "overlap_groups": []
     },
     {
       "id": 38,
@@ -1522,7 +1563,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 28
+      "source_page": 28,
+      "overlap_groups": []
     },
     {
       "id": 39,
@@ -1561,7 +1603,8 @@
       "funding_categories": [
         "Other"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 40,
@@ -1603,7 +1646,10 @@
         "School/office budgets (various)"
       ],
       "data_discrepancy": "Vendor description corrected from \"Various Vendors (33 hazardous materials contracts)\" to match the board report.",
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": [
+        "tutoring"
+      ]
     },
     {
       "id": 41,
@@ -1645,7 +1691,10 @@
         "COPs (borrowing repaid from general fund)",
         "General fund"
       ],
-      "source_page": 4
+      "source_page": 4,
+      "overlap_groups": [
+        "it-staffing"
+      ]
     },
     {
       "id": 42,
@@ -1685,7 +1734,8 @@
       "funding_categories": [
         "COPs (borrowing repaid from general fund)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": []
     },
     {
       "id": 43,
@@ -1728,7 +1778,8 @@
       "funding_categories": [
         "Federal funds"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "id": 44,
@@ -1769,7 +1820,8 @@
       "funding_categories": [
         "Revenue (paid to LAUSD)"
       ],
-      "source_page": 10
+      "source_page": 10,
+      "overlap_groups": []
     },
     {
       "id": 45,
@@ -1808,7 +1860,8 @@
       "funding_categories": [
         "Revenue (paid to LAUSD)"
       ],
-      "source_page": 12
+      "source_page": 12,
+      "overlap_groups": []
     },
     {
       "id": 46,
@@ -1847,7 +1900,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 14
+      "source_page": 14,
+      "overlap_groups": []
     },
     {
       "id": 47,
@@ -1888,7 +1942,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 17
+      "source_page": 17,
+      "overlap_groups": []
     },
     {
       "id": 48,
@@ -1927,7 +1982,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 19
+      "source_page": 19,
+      "overlap_groups": []
     },
     {
       "id": 49,
@@ -1966,7 +2022,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 21
+      "source_page": 21,
+      "overlap_groups": []
     },
     {
       "id": 50,
@@ -2005,7 +2062,8 @@
       "funding_categories": [
         "Other"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 51,
@@ -2044,7 +2102,8 @@
       "funding_categories": [
         "Other"
       ],
-      "source_page": 2
+      "source_page": 2,
+      "overlap_groups": []
     },
     {
       "id": 52,
@@ -2083,7 +2142,8 @@
       "funding_categories": [
         "General fund"
       ],
-      "source_page": 1
+      "source_page": 1,
+      "overlap_groups": []
     },
     {
       "id": 53,
@@ -2122,7 +2182,8 @@
       "funding_categories": [
         "Other"
       ],
-      "source_page": 3
+      "source_page": 3,
+      "overlap_groups": []
     },
     {
       "id": 54,
@@ -2164,7 +2225,10 @@
       "funding_categories": [
         "COPs (borrowing repaid from general fund)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "it-staffing"
+      ]
     },
     {
       "id": 55,
@@ -2203,7 +2267,8 @@
       "funding_categories": [
         "Revenue (paid to LAUSD)"
       ],
-      "source_page": 7
+      "source_page": 7,
+      "overlap_groups": []
     },
     {
       "id": 56,
@@ -2244,7 +2309,8 @@
       "funding_categories": [
         "State funds"
       ],
-      "source_page": 10
+      "source_page": 10,
+      "overlap_groups": []
     },
     {
       "id": 58,
@@ -2284,7 +2350,8 @@
       "overlap_note": "SAP Ariba now manages vendor onboarding and purchase orders \u2014 functions that may overlap with the district's separate procurement staffing and contract administration workforce.",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 59,
@@ -2322,7 +2389,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 60,
@@ -2360,7 +2428,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 61,
@@ -2398,7 +2467,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 62,
@@ -2436,7 +2506,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 63,
@@ -2474,7 +2545,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 64,
@@ -2512,7 +2584,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 65,
@@ -2522,11 +2595,11 @@
       "vendor_name": "Various Vendors (35 high-dosage tutoring contracts)",
       "vendor_list": "Braintrust Tutors, Intervene K-12, Mainstream Development Educational Group, Mundo Academy, Reading Futures, Scholars Collective, Southeast Community Foundation, Springboard Collaborative, K12 Tutoring, Inc , LLC dba Stride Tutoring, Varsity Tutors, A Yancy Life Transition Center, A Better Tomorrow Education, A Tree of Knowledge Educational Services, Inc, Air Tutors, Amplify, Axiom Learning, BookNook, Brainfuse, Carnegie Learning, Cignition, Creative Brain Learning, HeyTutors.com, Learn-It Systems, One on One Learning, Paper Education Company, Inc., Proximity Learning, Inc., Student Nest, Inc., Study Smart Tutors, Inc., Sylvan Learning Center (SCAL Learning Ctr.), TPR Education, LLC, dba The Princeton Review, Thrive Academic, Inc., Total Education Solutions, Tutor Me Education, Tutored by Teachers, Woodcraft Rangers.",
       "vendor_id": null,
-      "description": null,
+      "description": "Authorization to increase the capacity of a bench of 35 formally competed contracts to provide tutoring services for grades K-12 by $35,000,000, to a new aggregate value of $285,000,000. Providers emphasize high-dose tutoring supplementing classroom instruction, particularly for students with disabilities, English Learners, foster youth and homeless youth.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Service",
-      "amount": 35000000,
+      "amount": 285000000,
       "start_date": "2022-06-22",
       "end_date": "2027-06-21",
       "approval_date": "2025-09-16",
@@ -2541,7 +2614,7 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-03-15 17:07:59",
-      "updated_at": "2026-03-16 18:59:23",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -2550,6 +2623,11 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
+      ],
+      "data_discrepancy": "Amount corrected from $35,000,000 to $285,000,000: the board report authorizes a $35,000,000 capacity increase, bringing this bench of 35 tutoring contracts to an aggregate value of $285,000,000.",
+      "amount_basis": "Aggregate Board-authorized capacity (35 contracts); this action added $35M",
+      "overlap_groups": [
+        "tutoring"
       ]
     },
     {
@@ -2588,7 +2666,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 67,
@@ -2626,7 +2705,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 68,
@@ -2664,7 +2744,8 @@
       "ai_analysis_date": "2026-03-15 20:19:13",
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 69,
@@ -2702,7 +2783,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 70,
@@ -2742,7 +2824,8 @@
       "overlap_note": "Appears on both the IT master services bench and as a standalone contract \u2014 the specific services provided under each and whether they overlap is not publicly disclosed.",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 71,
@@ -2780,7 +2863,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 72,
@@ -2818,7 +2902,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 73,
@@ -2867,7 +2952,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 74,
@@ -2905,7 +2991,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 75,
@@ -2943,7 +3030,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 76,
@@ -2981,7 +3069,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 77,
@@ -3019,7 +3108,8 @@
       "ai_analysis_date": "2026-03-15 20:19:13",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 78,
@@ -3057,7 +3147,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 79,
@@ -3095,7 +3186,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 80,
@@ -3133,7 +3225,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 81,
@@ -3171,7 +3264,6 @@
       "ai_analysis_date": null,
       "hook": "PE-owned by Berkshire Partners. Teachers report it disrupts learning and prefer the free state alternative. Independent research found effect sizes below the threshold considered educationally meaningful. Most studies cited by the company are funded by the company.",
       "data_discrepancy": "LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts does not list this $20,182,130 district-wide i-Ready contract (Board Report 220-22/23). The report lists Curriculum Associates only under the Supplemental Instructional Digital Tools Bench, contract C3432: $3,265,300 expended through 6/30/26, plus $256,932 in delegated purchases (PD / i-Ready materials). The LAUSD report figures are the verified numbers; this board-document amount needs verification.",
-      "overlap_group": "reading-literacy",
       "oversight_notes": [
         {
           "text": "On Oct. 6, 2026 the Board approved (6-0, Gonez absent) raising this digital tools bench from $30,000,000 to $37,887,697 for the 2026-27 school year, specifically so the District can centrally fund purchases from Curriculum Associates (i-Ready), Generation Esports (High School Esports League), IXL Learning and Soundtrap. Source of funds: Title I (42%), Title IV (17%), ELOP (14%), various school/office budgets (27%). The item was also listed in the Sept. 15, 2026 procurement report. The original $30M bench was approved in Board Report 268-23/24.",
@@ -3185,6 +3277,10 @@
       ],
       "funding_categories": [
         "General fund"
+      ],
+      "overlap_groups": [
+        "math",
+        "assessment"
       ]
     },
     {
@@ -3229,7 +3325,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 83,
@@ -3277,6 +3374,9 @@
       ],
       "funding_categories": [
         "Unknown"
+      ],
+      "overlap_groups": [
+        "it-staffing"
       ]
     },
     {
@@ -3321,7 +3421,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 85,
@@ -3368,6 +3469,9 @@
       ],
       "funding_categories": [
         "Unknown"
+      ],
+      "overlap_groups": [
+        "health-records"
       ]
     },
     {
@@ -3412,6 +3516,9 @@
       ],
       "funding_categories": [
         "Unknown"
+      ],
+      "overlap_groups": [
+        "health-records"
       ]
     },
     {
@@ -3461,7 +3568,8 @@
           "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
           "url": "https://dot.la/lausd-tech--2655314684.html"
         }
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 109,
@@ -3516,7 +3624,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "data_discrepancy": "The previously listed $800,000 amount could not be found in any source and has been removed. Contract value not publicly disclosed in sources found."
+      "data_discrepancy": "The previously listed $800,000 amount could not be found in any source and has been removed. Contract value not publicly disclosed in sources found.",
+      "overlap_groups": [
+        "health-records"
+      ]
     },
     {
       "id": 110,
@@ -3556,7 +3667,8 @@
       "overlap_note": "This project is bond-funded, not general fund. The claimed savings benefit the operating budget but the capital cost comes from voter-approved bonds.",
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 111,
@@ -3604,7 +3716,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 112,
@@ -3648,7 +3761,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 113,
@@ -3693,7 +3807,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "data_discrepancy": "Amount corrected from $2,400,000 to $3,700,000: dot.LA reports LAUSD paid T-Mobile $2.4M in March 2020 and later an additional $1.3M."
+      "data_discrepancy": "Amount corrected from $2,400,000 to $3,700,000: dot.LA reports LAUSD paid T-Mobile $2.4M in March 2020 and later an additional $1.3M.",
+      "overlap_groups": []
     },
     {
       "id": 114,
@@ -3745,7 +3860,8 @@
           "label": "Wikipedia: Deloitte (LAUSD payments total)",
           "url": "https://en.wikipedia.org/wiki/Deloitte"
         }
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 115,
@@ -3794,7 +3910,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "data_discrepancy": "Previously listed as an unnamed vendor; LAist and dot.LA name Amazon and Mergent."
+      "data_discrepancy": "Previously listed as an unnamed vendor; LAist and dot.LA name Amazon and Mergent.",
+      "overlap_groups": []
     },
     {
       "id": 116,
@@ -3846,7 +3963,6 @@
       "delegated_purchases_amount": 986001,
       "delegated_purchases_desc": "Licenses",
       "data_discrepancy": "Earlier record listed no contract amount (\"not available in public board records\") and a 2019 start date from PR Newswire / IXL's LAUSD hub. LAUSD reports $6,971,250 expended through 6/30/26 under bench contract C3177 (term 6/10/2024\u20136/9/2027), plus $986,001 in delegated purchases. The LAUSD figure is used here.",
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
@@ -3869,7 +3985,11 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": [
+        "reading-literacy",
+        "math"
+      ]
     },
     {
       "id": 117,
@@ -3922,6 +4042,10 @@
       ],
       "funding_categories": [
         "Unknown"
+      ],
+      "overlap_groups": [
+        "assessment",
+        "tutoring"
       ]
     },
     {
@@ -3967,7 +4091,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 119,
@@ -4005,7 +4130,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 120,
@@ -4043,7 +4169,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 121,
@@ -4088,7 +4215,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "data_discrepancy": "Amount added: dot.LA reports LAUSD agreed to pay Verizon up to $4.6M in March 2020 and later paid another $1.5M, $6.1M total."
+      "data_discrepancy": "Amount added: dot.LA reports LAUSD agreed to pay Verizon up to $4.6M in March 2020 and later paid another $1.5M, $6.1M total.",
+      "overlap_groups": []
     },
     {
       "id": 122,
@@ -4132,7 +4260,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 123,
@@ -4176,7 +4305,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 124,
@@ -4220,7 +4350,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 125,
@@ -4264,7 +4395,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 126,
@@ -4308,7 +4440,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 127,
@@ -4346,7 +4479,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 128,
@@ -4390,6 +4524,9 @@
       ],
       "funding_categories": [
         "Unknown"
+      ],
+      "overlap_groups": [
+        "tutoring"
       ]
     },
     {
@@ -4434,7 +4571,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 130,
@@ -4478,7 +4616,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 131,
@@ -4537,7 +4676,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 132,
@@ -4581,7 +4721,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 133,
@@ -4625,7 +4766,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 134,
@@ -4669,7 +4811,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 135,
@@ -4713,7 +4856,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 136,
@@ -4757,7 +4901,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 137,
@@ -4801,7 +4946,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 138,
@@ -4853,7 +4999,6 @@
       "delegated_purchases_amount": 29946,
       "delegated_purchases_desc": "Pilot Site License / T4-Age of Learning",
       "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,501,946 spent / $3,497,000 in active commitments as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term through 6/9/2027), plus $29,946 in delegated school/office purchases. The LAUSD figure is used here. Correction: PESP's table lists $3,501,946 as \"Total Spent within Commitment Dates\" and $3,497,000 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "PESP report (April 2026)",
@@ -4873,7 +5018,11 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "reading-literacy",
+        "math"
+      ]
     },
     {
       "id": 139,
@@ -4922,7 +5071,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 140,
@@ -4993,7 +5143,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": []
     },
     {
       "id": 141,
@@ -5045,7 +5196,6 @@
       "delegated_purchases_amount": 23050,
       "delegated_purchases_desc": "Licenses",
       "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,553,075 spent / $3,533,626 in active commitments as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,468,144 expended through 6/30/26 under bench contract C3194 (term through 6/9/2027), plus $23,050 in delegated purchases. The LAUSD figure is used here. Correction: PESP's table lists $3,553,075 as \"Total Spent within Commitment Dates\" and $3,533,626 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "PESP report (April 2026)",
@@ -5065,7 +5215,10 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": [
+        "reading-literacy"
+      ]
     },
     {
       "id": 142,
@@ -5117,7 +5270,6 @@
       "delegated_purchases_amount": 28722,
       "delegated_purchases_desc": "Site License / Amira Reading Awareness and tutor",
       "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $2,129,988 spent / $2,109,888 in active commitments as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $2,109,888 expended through 6/30/26 under bench contract C3175 (term through 6/9/2027), plus $28,722 in delegated purchases. LAUSD's expended figure ($2,109,888) equals the amount PESP lists as the active commitment; the end date and status also differ. The LAUSD figure is used here. Correction: PESP's table lists $2,129,988 as \"Total Spent within Commitment Dates\" and $2,109,888 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "PESP report (April 2026)",
@@ -5137,7 +5289,11 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "reading-literacy",
+        "assessment"
+      ]
     },
     {
       "id": 143,
@@ -5186,6 +5342,9 @@
       ],
       "funding_categories": [
         "Unknown"
+      ],
+      "overlap_groups": [
+        "assessment"
       ]
     },
     {
@@ -5237,7 +5396,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "id": 145,
@@ -5277,7 +5437,8 @@
         "Insurance/benefits funds",
         "General fund",
         "Bonds"
-      ]
+      ],
+      "overlap_groups": []
     },
     {
       "contract_number": "C3408",
@@ -5328,7 +5489,6 @@
       "finding_level": null,
       "ai_analysis_date": null,
       "notes": null,
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
@@ -5340,7 +5500,10 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "reading-literacy"
+      ]
     },
     {
       "contract_number": "C3429",
@@ -5402,7 +5565,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3430",
@@ -5464,7 +5628,11 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "math",
+        "tutoring"
+      ]
     },
     {
       "contract_number": "C3431",
@@ -5526,7 +5694,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3432",
@@ -5578,7 +5747,6 @@
       "finding_level": null,
       "ai_analysis_date": null,
       "notes": null,
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
@@ -5601,7 +5769,12 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "reading-literacy",
+        "math",
+        "assessment"
+      ]
     },
     {
       "contract_number": "C3435",
@@ -5664,7 +5837,10 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "math"
+      ]
     },
     {
       "contract_number": "C3170",
@@ -5737,7 +5913,10 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 5
+      "source_page": 5,
+      "overlap_groups": [
+        "esports"
+      ]
     },
     {
       "contract_number": "C3830",
@@ -5786,7 +5965,6 @@
       "finding_level": null,
       "ai_analysis_date": null,
       "notes": null,
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
@@ -5799,7 +5977,11 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": [
+        "reading-literacy",
+        "math"
+      ]
     },
     {
       "contract_number": "C3834",
@@ -5850,7 +6032,6 @@
       "finding_level": null,
       "ai_analysis_date": null,
       "notes": null,
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
@@ -5862,7 +6043,10 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": [
+        "reading-literacy"
+      ]
     },
     {
       "contract_number": "C3835",
@@ -5924,7 +6108,10 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": [
+        "monitoring"
+      ]
     },
     {
       "contract_number": "C3842",
@@ -5984,7 +6171,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3843",
@@ -6046,7 +6234,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3847",
@@ -6106,7 +6295,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3176",
@@ -6177,7 +6367,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3849",
@@ -6228,7 +6419,6 @@
       "finding_level": null,
       "ai_analysis_date": null,
       "notes": null,
-      "overlap_group": "reading-literacy",
       "source_links": [
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
@@ -6240,7 +6430,10 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 6
+      "source_page": 6,
+      "overlap_groups": [
+        "reading-literacy"
+      ]
     },
     {
       "contract_number": "C3850",
@@ -6300,7 +6493,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 7
+      "source_page": 7,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3851",
@@ -6360,7 +6554,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 7
+      "source_page": 7,
+      "overlap_groups": []
     },
     {
       "contract_number": "C3852",
@@ -6420,7 +6615,8 @@
         "State funds",
         "School/office budgets (various)"
       ],
-      "source_page": 7
+      "source_page": 7,
+      "overlap_groups": []
     },
     {
       "contract_number": "C2687",
@@ -6469,7 +6665,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "contract_number": "C534",
@@ -6516,7 +6713,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "contract_number": "C9968",
@@ -6563,7 +6761,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "contract_number": "C1948",
@@ -6612,7 +6811,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": [
+        "devices"
+      ]
     },
     {
       "contract_number": "C296",
@@ -6659,7 +6861,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "contract_number": "C1332",
@@ -6706,7 +6909,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "contract_number": "C450",
@@ -6753,7 +6957,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "contract_number": "C10728",
@@ -6800,7 +7005,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": [
+        "esports"
+      ]
     },
     {
       "contract_number": "C3882",
@@ -6849,7 +7057,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 8
+      "source_page": 8,
+      "overlap_groups": []
     },
     {
       "contract_number": "C1016",
@@ -6896,7 +7105,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 9
+      "source_page": 9,
+      "overlap_groups": [
+        "assessment"
+      ]
     },
     {
       "contract_number": "C7713",
@@ -6949,7 +7161,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 9
+      "source_page": 9,
+      "overlap_groups": []
     },
     {
       "contract_number": "C509",
@@ -6996,7 +7209,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 9
+      "source_page": 9,
+      "overlap_groups": [
+        "monitoring"
+      ]
     },
     {
       "contract_number": "C290",
@@ -7052,7 +7268,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 10
+      "source_page": 10,
+      "overlap_groups": [
+        "devices"
+      ]
     },
     {
       "contract_number": "C2713",
@@ -7108,7 +7327,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 10
+      "source_page": 10,
+      "overlap_groups": [
+        "devices"
+      ]
     },
     {
       "contract_number": "C2714",
@@ -7164,7 +7386,10 @@
       "funding_categories": [
         "Unknown"
       ],
-      "source_page": 10
+      "source_page": 10,
+      "overlap_groups": [
+        "devices"
+      ]
     }
   ],
   "board_members": [
@@ -15067,6 +15292,376 @@
           "lausd_description": "Used to support reading, writing, and critical thinking through scaffolded argumentative and analytical writing assignments",
           "expended": 0,
           "delegated": 81884
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "title": "Overlapping math practice and instruction tools",
+      "summary": "LAUSD pays at least six vendors whose LAUSD-described purpose includes math practice or instruction. Several also cover reading. Descriptions are LAUSD's own, from its Sept. 2026 classroom technology report and board records.",
+      "source": "LAUSD, Comprehensive Report of Classroom Technology Contracts (Sept. 29, 2026), Table 1; Board Report 220-22/23",
+      "members": [
+        {
+          "vendor_name": "IXL Learning",
+          "contract_number": "C3177",
+          "record_id": 116,
+          "function": "Personalized practice to reinforce math and reading skills",
+          "amount": 6971250,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Curriculum Associates, LLC",
+          "contract_number": "C3432",
+          "record_id": 150,
+          "function": "i-Ready diagnostic in reading and math",
+          "amount": 3265300,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Curriculum Associates LLC",
+          "contract_number": "4400011011",
+          "record_id": 81,
+          "function": "District-wide i-Ready reading and math assessment platform",
+          "amount": 20182130,
+          "amount_basis": "Board-authorized amount",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Age of Learning, Inc",
+          "contract_number": "C3196",
+          "record_id": 138,
+          "function": "Foundational reading and math practice, intervention",
+          "amount": 3222000,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Carnegie Learning, Inc.",
+          "contract_number": "C3430",
+          "record_id": 148,
+          "function": "Personalized math instruction, small-group intervention",
+          "amount": 0,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Istation",
+          "contract_number": "C3830",
+          "record_id": 153,
+          "function": "Instruction in reading, math and Spanish",
+          "amount": 0,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Explore Learning, LLC",
+          "contract_number": "C3435",
+          "record_id": 151,
+          "function": "Science and math simulations (Gizmos)",
+          "amount": 0,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        }
+      ]
+    },
+    {
+      "id": "assessment",
+      "title": "Overlapping student assessment and testing platforms",
+      "summary": "LAUSD pays for several platforms that test or assess students. The 2023 board report for i-Ready says it would replace Renaissance STAR, DIBELS and Edulastic assessments, yet LAUSD also paid PowerSchool $10.6M for a separate \"District-wide Assessment Platform\" (2022-2026), and Amira and Amplify's products also include student assessment.",
+      "source": "Board Report 220-22/23 (i-Ready); LAUSD Sept. 2026 tech report, Tables 1-2; PESP (April 2026)",
+      "members": [
+        {
+          "vendor_name": "Curriculum Associates LLC",
+          "contract_number": "4400011011",
+          "record_id": 81,
+          "function": "i-Ready computer-adaptive reading and math assessment, TK-12",
+          "amount": 20182130,
+          "amount_basis": "Board-authorized amount",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Curriculum Associates, LLC",
+          "contract_number": "C3432",
+          "record_id": 150,
+          "function": "i-Ready diagnostic assessment (bench)",
+          "amount": 3265300,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "PowerSchool Group LLC",
+          "contract_number": "C1016",
+          "record_id": 173,
+          "function": "District-wide Assessment Platform",
+          "amount": 10569748,
+          "amount_basis": "Board-authorized capacity",
+          "status": "Expired"
+        },
+        {
+          "vendor_name": "Amira Learning, Inc",
+          "contract_number": "C3175",
+          "record_id": 142,
+          "function": "Reading fluency practice and assessment",
+          "amount": 2109888,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Amplify Education",
+          "contract_number": null,
+          "record_id": 117,
+          "function": "Includes mCLASS early literacy assessment",
+          "amount": 225207363,
+          "amount_basis": "As reported",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Renaissance Learning, Inc",
+          "contract_number": null,
+          "record_id": 143,
+          "function": "Digital assessment tools (expired)",
+          "amount": 3157579,
+          "amount_basis": "As reported",
+          "status": "Expired"
+        }
+      ]
+    },
+    {
+      "id": "monitoring",
+      "title": "Overlapping student device monitoring and filtering",
+      "summary": "LAUSD pays CDW $1.71M for GoGuardian content filtering on about 365,000 Chromebooks (C9314), and separately holds a contract directly with Liminex, Inc. dba GoGuardian (C3835) for student engagement and monitoring. It also paid Zayo Education for \"Student Device Analytics\" (C509, $885K spent of $4.6M).",
+      "source": "Board Report 325-24/25 (C9314); LAUSD Sept. 2026 tech report, Tables 1-2",
+      "members": [
+        {
+          "vendor_name": "CDW Government LLC",
+          "contract_number": "C9314",
+          "record_id": 18,
+          "function": "GoGuardian content filtering for ~365,000 Chromebooks (via CDW)",
+          "amount": 1710000,
+          "amount_basis": "Board-authorized amount",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Liminex, Inc.",
+          "contract_number": "C3835",
+          "record_id": 155,
+          "function": "GoGuardian (Liminex): student engagement, real-time feedback, monitoring",
+          "amount": 0,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Zayo Education, LLC",
+          "contract_number": "C509",
+          "record_id": 175,
+          "function": "Student Device Analytics",
+          "amount": 4600000,
+          "amount_basis": "Board-authorized capacity",
+          "status": "Expired"
+        }
+      ]
+    },
+    {
+      "id": "devices",
+      "title": "Multiple contracts for computers and tablets",
+      "summary": "Two separate Board-approved contract routes buy student and staff devices at the same time: the $330M Digital Device bench (Chromebooks, laptops, desktops for students and staff, 2024-2029) and a $125M Apple contract (various products and parts, 2024-2029). About $97M had been spent under them through June 30, 2026.",
+      "source": "LAUSD Sept. 2026 tech report, Tables 2-3",
+      "members": [
+        {
+          "vendor_name": "Arey Jones Educational Solutions",
+          "contract_number": "C290",
+          "record_id": 176,
+          "function": "Chromebooks, laptops and desktops for students and staff",
+          "amount": 57673553,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "CDW Government, LLC",
+          "contract_number": "C2714",
+          "record_id": 178,
+          "function": "Chromebooks, laptops and desktops for students and staff",
+          "amount": 154142,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Blumm USA, Inc.",
+          "contract_number": "C2713",
+          "record_id": 177,
+          "function": "Chromebooks, laptops and desktops for students and staff",
+          "amount": 48448,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Apple, Inc.",
+          "contract_number": "C1948",
+          "record_id": 167,
+          "function": "Various Apple products and parts",
+          "amount": 125000000,
+          "amount_basis": "Board-authorized capacity",
+          "status": "Active"
+        }
+      ]
+    },
+    {
+      "id": "it-staffing",
+      "title": "Overlapping IT staffing and consulting benches",
+      "summary": "LAUSD has two large benches for outside IT staff: 56 IT master services agreements ($204M aggregate) and 35 cybersecurity staff augmentation contracts ($101.2M), whose described specialties overlap (software development, MiSiS, SAP, cloud, data center, enterprise reporting). At least 15 companies hold contracts on both benches: Acnovate, CCS Global Tech, CDW Government, Chakrabarti (CMCI), Infojini, Infosys, Interface Human (Assanotech), Kokomo Solutions, Microsoft, Satwic, Stergion Group, Sybyte Technologies, Talent & Acquisition (Stand8) and Trinus. Insight Global is on the cybersecurity bench and also has a separate $20M IT staffing contract; Infosys is on both benches and had a separate $46.5M MiSiS contract.",
+      "source": "Board Reports 325-24/25 (IT master services), 211-24/25 (cybersecurity staffing), 142-24/25 (Insight Global); OIG audit CA 23-1422 (Infosys)",
+      "members": [
+        {
+          "vendor_name": "Various Vendors (56 IT master services agreements)",
+          "contract_number": "C2613",
+          "record_id": 9,
+          "function": "IT master services: application modernization, enterprise reporting, ERP, network projects",
+          "amount": 204000000,
+          "amount_basis": "Aggregate Board-authorized capacity (56 contracts)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Various Vendors (35 cybersecurity COPs contracts)",
+          "contract_number": "C8527",
+          "record_id": 41,
+          "function": "Cybersecurity staff augmentation: software development, MiSiS, SAP, cloud, data center",
+          "amount": 101200000,
+          "amount_basis": "Board-authorized amount",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Insight Global LLC",
+          "contract_number": "C7613",
+          "record_id": 54,
+          "function": "IT project managers and network engineers (staff augmentation)",
+          "amount": 20000000,
+          "amount_basis": "Board-authorized amount",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Infosys Limited",
+          "contract_number": null,
+          "record_id": 83,
+          "function": "MiSiS software development and support (expired)",
+          "amount": 46493398,
+          "amount_basis": "As reported",
+          "status": "Expired"
+        }
+      ]
+    },
+    {
+      "id": "tutoring",
+      "title": "Overlapping tutoring contracts",
+      "summary": "LAUSD's $285M tutoring bench (35 vendors) includes HeyTutor, Amplify, Carnegie Learning and Study Smart Tutors, each of which also appears on other LAUSD contracts or benches: HeyTutor has a separately audited tutoring contract, Amplify and Carnegie Learning hold digital instruction contracts, and Study Smart Tutors is also on the STEM enrichment bench and a $14.7M Black Student Achievement Plan contract.",
+      "source": "Board report for C9791 (tutoring bench); OIG audit CA 24-1449 (HeyTutor); OIG audit 26-1018 (Study Smart Tutors, C168)",
+      "members": [
+        {
+          "vendor_name": "Various Vendors (35 high-dosage tutoring contracts)",
+          "contract_number": "C9791",
+          "record_id": 65,
+          "function": "High-dose tutoring, grades K-12 (35 vendors)",
+          "amount": 285000000,
+          "amount_basis": "Aggregate Board-authorized capacity (35 contracts); this action added $35M",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "HeyTutor, Inc.",
+          "contract_number": null,
+          "record_id": 128,
+          "function": "On-demand tutoring platform (also on the tutoring bench)",
+          "amount": null,
+          "amount_basis": "As reported",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Various Vendors (33 STEM enrichment contracts)",
+          "contract_number": "C7691",
+          "record_id": 40,
+          "function": "STEM enrichment bench (includes Study Smart Tutors and tablet tutoring vendors)",
+          "amount": 10000000,
+          "amount_basis": "Board-authorized amount",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Carnegie Learning, Inc.",
+          "contract_number": "C3430",
+          "record_id": 148,
+          "function": "Math instruction (also on the tutoring bench)",
+          "amount": 0,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Amplify Education",
+          "contract_number": null,
+          "record_id": 117,
+          "function": "Curriculum and assessment (also on the tutoring bench)",
+          "amount": 225207363,
+          "amount_basis": "As reported",
+          "status": "Active"
+        }
+      ]
+    },
+    {
+      "id": "health-records",
+      "title": "Overlapping student health records systems",
+      "summary": "Two vendors run student health data systems for LAUSD: ContinuumCloud (cloud-hosted management of district data including special education plans and health records, $19.8M through March 2029) and Kokomo24/7 (LAUSD's student health data system since July 2023, plus telehealth). Welligent, a ContinuumCloud subsidiary, held a $7.5M records contract starting in 2019.",
+      "source": "LA Public Press (March 2026); AWS case study (Kokomo); EdSource",
+      "members": [
+        {
+          "vendor_name": "ContinuumCloud",
+          "contract_number": null,
+          "record_id": 85,
+          "function": "Cloud-hosted special education plans and health records",
+          "amount": 19800000,
+          "amount_basis": "As reported",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Kokomo24/7",
+          "contract_number": null,
+          "record_id": 109,
+          "function": "Student health data system and telehealth",
+          "amount": null,
+          "amount_basis": "As reported",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "Welligent (ContinuumCloud subsidiary)",
+          "contract_number": null,
+          "record_id": 86,
+          "function": "Behavioral health and special education records (expired)",
+          "amount": 7500000,
+          "amount_basis": "As reported",
+          "status": "Expired"
+        }
+      ]
+    },
+    {
+      "id": "esports",
+      "title": "Two esports contracts",
+      "summary": "LAUSD pays High School Esports League (Generation Esports) for esports and game design ($1.12M on the bench plus $1.50M in school purchases), and separately has a no-cost agreement with GG Circuit for esports management.",
+      "source": "LAUSD Sept. 2026 tech report, Tables 1, 2 and 5",
+      "members": [
+        {
+          "vendor_name": "High School Esports League, Inc.",
+          "contract_number": "C3170",
+          "record_id": 152,
+          "function": "Esports and game design for STEM skills",
+          "amount": 1120400,
+          "amount_basis": "Expended through 6/30/26 (bench share)",
+          "status": "Active"
+        },
+        {
+          "vendor_name": "GG Circuit LLC",
+          "contract_number": "C10728",
+          "record_id": 171,
+          "function": "IT esports management and services (no-cost MOU)",
+          "amount": 0,
+          "amount_basis": "Board-authorized capacity",
+          "status": "Active"
         }
       ]
     }

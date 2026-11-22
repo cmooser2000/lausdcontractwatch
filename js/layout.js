@@ -129,6 +129,46 @@ function sourceLinksHtml(c) {
     `<li><a href="${escapeHtml(l.url)}" target="_blank" rel="noopener">${escapeHtml(l.label)} &rarr;</a></li>`).join('')}</ul>`;
 }
 
+// ── Possible redundancies (overlap groups) ───────────────────
+
+function overlapGroupsFor(data, contractIds) {
+  const ids = new Set(contractIds);
+  return (data.service_overlaps || []).filter(g => g.members.some(m => m.record_id != null && ids.has(m.record_id)));
+}
+
+function overlapGroupHtml(g, opts = {}) {
+  const contracts = opts.contracts || [];
+  const rows = g.members.map(m => {
+    const rec = m.record_id != null ? contracts.find(c => c.id === m.record_id) : null;
+    const self = opts.selfIds && m.record_id != null && opts.selfIds.includes(m.record_id);
+    const href = m.record_id != null ? `/contract.html?id=${m.record_id}` : vendorUrl(m.vendor_name);
+    const name = self ? `<strong>${escapeHtml(m.vendor_name)}</strong>` : `<a href="${href}">${escapeHtml(m.vendor_name)}</a>`;
+    let amt, basis;
+    if (m.expended != null || m.delegated != null) {
+      const v = (m.expended || 0) + (m.delegated || 0);
+      amt = v ? formatMoneyFull(v) : '$0'; basis = 'Spent through 6/30/26, incl. school purchases (LAUSD report)';
+    } else {
+      const v = rec ? rec.amount : m.amount;
+      amt = v ? formatMoneyFull(v) : (v === 0 ? '$0' : '—'); basis = (rec && rec.amount_basis) || m.amount_basis || '';
+    }
+    const status = rec ? rec.status : m.status;
+    return `<tr${self ? ' class="overlap-self"' : ''}>
+      <td>${name}${m.contract_number ? ` <span class="contract-num">${escapeHtml(m.contract_number)}</span>` : ''}${status === 'Expired' ? ' <span class="contract-num">(expired)</span>' : ''}</td>
+      <td>${escapeHtml(m.function)}</td>
+      <td class="col-right" title="${escapeHtml(basis)}">${amt}</td>
+    </tr>`;
+  }).join('');
+  return `<div class="overlap-card" id="overlap-${escapeHtml(g.id)}">
+    <strong><i data-lucide="layers"></i> Possible redundancy: ${escapeHtml(g.title)}</strong>
+    <p>${escapeHtml(g.summary)}</p>
+    <div class="table-wrap"><table class="overlap-table">
+      <thead><tr><th>Vendor / contract</th><th>What LAUSD says it’s used for</th><th class="col-right">Amount</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    <div class="overlap-source">Source: ${escapeHtml(g.source)}${opts.showMore ? ' &middot; <a href="/redundancies.html">See all possible redundancies &rarr;</a>' : ''}</div>
+  </div>`;
+}
+
 // ── Vendor profiles ──────────────────────────────────────────
 
 function findProfile(profiles, vendorName) {
@@ -250,6 +290,7 @@ function injectNav() {
             <a href="/edtech.html">EdTech</a>
             <a href="/ai-apps.html">AI in Classrooms</a>
             <a href="/oversight.html">Audits &amp; Oversight</a>
+            <a href="/redundancies.html">Possible Redundancies</a>
             <a href="/teachers.html">Teachers</a>
             <a href="/students.html">Students</a>
             <a href="/transparency.html">Transparency</a>
