@@ -22,7 +22,7 @@
       "funding_source": "(100%)",
       "status": "Active",
       "notes": "Board Report: 118-25/26. NOTE: Some fields could not be parsed with full confidence \u2014 verify against source PDF. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C10138_Commissioning_Services_16_vendors.pdf",
+      "source_url": "/documents/C10138_Commissioning_Services_16_vendors.pdf#page=2",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -36,7 +36,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Other"
-      ]
+      ],
+      "source_page": 2
     },
     {
       "id": 2,
@@ -60,7 +61,7 @@
       "funding_source": null,
       "status": "Active",
       "notes": "Board Report: 057-25/26. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C10092_HZS_Construction_Services.pdf",
+      "source_url": "/documents/C10092_HZS_Construction_Services.pdf#page=5",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -74,7 +75,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "id": 3,
@@ -98,7 +100,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 006-25/26. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9166_Fire_Life_Safety_Training.pdf",
+      "source_url": "/documents/C9166_Fire_Life_Safety_Training.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -112,7 +114,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 4,
@@ -136,7 +139,7 @@
       "funding_source": null,
       "status": "Active",
       "notes": "Board Report: 288-24/25. Requester: Issam Dahdul. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9332_FilmLA_Permit_Management.pdf",
+      "source_url": "/documents/C9332_FilmLA_Permit_Management.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -150,7 +153,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 5,
@@ -174,7 +178,7 @@
       "funding_source": "Unrestricted (85%)",
       "status": "Active",
       "notes": "Board Report: 288-24/25. Requester: Chris Alejo. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9153_Grant_Writing_Services.pdf",
+      "source_url": "/documents/C9153_Grant_Writing_Services.pdf#page=2",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -188,7 +192,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 2
     },
     {
       "id": 6,
@@ -212,7 +217,7 @@
       "funding_source": "Bond Funds",
       "status": "Active",
       "notes": "Board Report: 288-24/25. Requester: Chris Alejo. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9331_SFP_Grant_Closeout_Audit.pdf",
+      "source_url": "/documents/C9331_SFP_Grant_Closeout_Audit.pdf#page=4",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -226,7 +231,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "source_page": 4
     },
     {
       "id": 7,
@@ -250,7 +256,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Ernie Thomas. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9495_LACOE_BEST_Financial_System.pdf",
+      "source_url": "/documents/C9495_LACOE_BEST_Financial_System.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -264,7 +270,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 8,
@@ -288,7 +295,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Francisco J. Serrato. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9444_Teach_for_America_Recruitment.pdf",
+      "source_url": "/documents/C9444_Teach_for_America_Recruitment.pdf#page=3",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -302,7 +309,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 3
     },
     {
       "id": 9,
@@ -326,7 +334,7 @@
       "funding_source": "Various per requesting school or office (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C2613_IT_Master_Services_56_vendors.pdf",
+      "source_url": "/documents/C2613_IT_Master_Services_56_vendors.pdf#page=5",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -342,7 +350,8 @@
       "amount_basis": "Aggregate Board-authorized capacity (56 contracts)",
       "funding_categories": [
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "id": 10,
@@ -366,7 +375,7 @@
       "funding_source": "General Funds (Cybersecurity COPs) (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8495_Cybersecurity_Software_15_vendors.pdf",
+      "source_url": "/documents/C8495_Cybersecurity_Software_15_vendors.pdf#page=7",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -382,7 +391,8 @@
       "overlap_note": "Direct overlap with cybersecurity line items in the $250M IT master services bench and the $222M cybersecurity staffing bench. Total cybersecurity-adjacent spending across these three contracts could exceed $550M.",
       "funding_categories": [
         "COPs (borrowing repaid from general fund)"
-      ]
+      ],
+      "source_page": 7
     },
     {
       "id": 11,
@@ -406,7 +416,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Dr. Smita Malhotra. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9469_LACOE_Medi-Cal_Processing.pdf",
+      "source_url": "/documents/C9469_LACOE_Medi-Cal_Processing.pdf#page=9",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -420,7 +430,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 9
     },
     {
       "id": 12,
@@ -444,7 +455,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Alexander Molina. Renewal: 9296 one-year renewal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9294_Court_Reporting_Services.pdf",
+      "source_url": "/documents/C9294_Court_Reporting_Services.pdf#page=11",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -458,7 +469,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 11
     },
     {
       "id": 13,
@@ -482,7 +494,7 @@
       "funding_source": "Liability Self-Insurance Fund (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Renewal: 9317 one-year renewal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9315_Insurance_Brokerage_Services.pdf",
+      "source_url": "/documents/C9315_Insurance_Brokerage_Services.pdf#page=13",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -496,7 +508,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Insurance/benefits funds"
-      ]
+      ],
+      "source_page": 13
     },
     {
       "id": 14,
@@ -520,7 +533,7 @@
       "funding_source": "Revenue contract (money paid to LAUSD)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Dr. Smita Malhotra. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9346_LACOE_Mental_Health_Infrastructure.pdf",
+      "source_url": "/documents/C9346_LACOE_Mental_Health_Infrastructure.pdf#page=15",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -536,7 +549,8 @@
       "overlap_note": "Potential overlap with Kokomo24/7 ($800K health platform) and ContinuumCloud ($19.8M behavioral health records). District should document which system provides which service.",
       "funding_categories": [
         "Revenue (paid to LAUSD)"
-      ]
+      ],
+      "source_page": 15
     },
     {
       "id": 15,
@@ -560,7 +574,7 @@
       "funding_source": "Bond Funds (80%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Mark Cho. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9326_Crane_Services.pdf",
+      "source_url": "/documents/C9326_Crane_Services.pdf#page=17",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -574,7 +588,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "source_page": 17
     },
     {
       "id": 16,
@@ -598,7 +613,7 @@
       "funding_source": "Cafeteria Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Manish Singh. Renewal: 44347 one-year renewal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C44342_Farm_to_School_Produce.pdf",
+      "source_url": "/documents/C44342_Farm_to_School_Produce.pdf#page=18",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -612,7 +627,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Cafeteria fund"
-      ]
+      ],
+      "source_page": 18
     },
     {
       "id": 17,
@@ -636,7 +652,7 @@
       "funding_source": "Bond Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C6814_School_Network_Upgrades.pdf",
+      "source_url": "/documents/C6814_School_Network_Upgrades.pdf#page=21",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -663,7 +679,8 @@
       "amount_basis": "Board-authorized amount",
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "source_page": 21
     },
     {
       "id": 18,
@@ -687,7 +704,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9314_CDW_Chromebook_Content_Filtering.pdf",
+      "source_url": "/documents/C9314_CDW_Chromebook_Content_Filtering.pdf#page=23",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -703,7 +720,8 @@
       "overlap_note": "CDW also holds the $72M hotspot contract and appears on the IT master services bench. This content filtering contract likely overlaps with Google Workspace for Education licenses LAUSD already pays for.",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 23
     },
     {
       "id": 19,
@@ -727,7 +745,7 @@
       "funding_source": "Bond Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7687_ConvergeOne_Network_Modernization.pdf",
+      "source_url": "/documents/C7687_ConvergeOne_Network_Modernization.pdf#page=25",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -743,7 +761,8 @@
       "overlap_note": "Network modernization likely overlaps with the IT master services bench ($250M), school network upgrade votes (December 2025), and other IT infrastructure contracts. Total network infrastructure spend across contracts is not publicly consolidated.",
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "source_page": 25
     },
     {
       "id": 20,
@@ -767,7 +786,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Daniel Kang. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9329_Synovia_Bus_GPS_Tracking.pdf",
+      "source_url": "/documents/C9329_Synovia_Bus_GPS_Tracking.pdf#page=27",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -783,7 +802,8 @@
       "overlap_note": "No direct overlap with other contracts but the GPS data feeds into the LAUSD app's parent portal \u2014 which has separate technology contracts. The integration should be documented.",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 27
     },
     {
       "id": 21,
@@ -807,7 +827,7 @@
       "funding_source": "(100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Mark Cho. NOTE: Some fields could not be parsed with full confidence \u2014 verify against source PDF. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C92425_Electric_Truck_Van_Purchase.pdf",
+      "source_url": "/documents/C92425_Electric_Truck_Van_Purchase.pdf#page=30",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -821,7 +841,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Other"
-      ]
+      ],
+      "source_page": 30
     },
     {
       "id": 22,
@@ -845,7 +866,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9321_AT_T_Telecom_Services.pdf",
+      "source_url": "/documents/C9321_AT_T_Telecom_Services.pdf#page=32",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -861,7 +882,8 @@
       "amount_basis": "Board-authorized amount",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 32
     },
     {
       "id": 23,
@@ -885,7 +907,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 325-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9322_AWS_Cloud_Hosting.pdf",
+      "source_url": "/documents/C9322_AWS_Cloud_Hosting.pdf#page=34",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -901,7 +923,8 @@
       "overlap_note": "Check ConvergeOne, Kokomo24/7, CDW, and the IT Infrastructure master services bench \u2014 all likely have AWS costs embedded in their pricing, creating potential double-payment.",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 34
     },
     {
       "id": 24,
@@ -925,7 +948,7 @@
       "funding_source": "Kitchen Infrastructure and Training Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 214-24/25. Requester: Manish Singh. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9127_Combi_Oven_Installation.pdf",
+      "source_url": "/documents/C9127_Combi_Oven_Installation.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -939,7 +962,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "State funds"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 25,
@@ -963,7 +987,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 214-24/25. Requester: Issam Dahdul. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9128_Employee_Housing_Advisory.pdf",
+      "source_url": "/documents/C9128_Employee_Housing_Advisory.pdf#page=2",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -977,7 +1001,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 2
     },
     {
       "id": 26,
@@ -1001,7 +1026,7 @@
       "funding_source": "Related Supplemental Instruction (RSI) (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8565_Apprenticeship_Training_14_vendors.pdf",
+      "source_url": "/documents/C8565_Apprenticeship_Training_14_vendors.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1015,7 +1040,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "State funds"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 27,
@@ -1039,7 +1065,7 @@
       "funding_source": "A-G Success Grant Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: John Vladovic. Renewal: includes one (1) one-year renewal option. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C3777_UCLA_AP_Readiness_Program.pdf",
+      "source_url": "/documents/C3777_UCLA_AP_Readiness_Program.pdf#page=3",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1053,7 +1079,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "State funds"
-      ]
+      ],
+      "source_page": 3
     },
     {
       "id": 28,
@@ -1077,7 +1104,7 @@
       "funding_source": "Kitchen Infrastructure and Training Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Manish P. Singh. Renewal: includes two (2) one-year renewal options. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C3134_Heartland_Cafeteria_Software.pdf",
+      "source_url": "/documents/C3134_Heartland_Cafeteria_Software.pdf#page=5",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1091,14 +1118,15 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "State funds"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "id": 29,
       "contract_number": "C9137",
       "title": "Professional Development (7 vendors)",
       "short_name": "Professional Development (7 vendors)",
-      "vendor_name": "Various Vendors (7 IT managed services contracts)",
+      "vendor_name": "Various Vendors (7 private-school professional development contracts)",
       "vendor_list": "Catapult Learning, Diana Warnock, FACTS Education Solutions, InnovatED, Mount Saint Mary\u2019s University, SOS Education, Yeshiva Educational Services",
       "vendor_id": null,
       "description": "Approval of formally competed bench of seven (7) contracts, procured through a Request for Proposals (RFP) process, to provide Title II Part A, Supplemental Professional Development Services for non-profit Private School teachers, principals, and other school leaders for which the District serves as the Local Education Agency (LEA). The selected vendors\u2019 areas of expertise focus on increasing student achievement consistent with the challenging state academic standards; increasing the number of teachers, principals, and other school leaders who are effective in improving student academic achievement in schools; improving the quality and effectiveness of teachers, principals, and other school leaders; and providing low- income and minority students greater access to effective teachers, principals, and other school leaders. The authority to increase or decrease the amounts of these contracts will be limited to the aggregate value of $16,000,000. Professional development supported with Title II, Part A funds benefiting non-profit private school educators must meet the requirements of Title II, Part A. Elementary and Secondary Education Act of 1965 (ESEA) Section 2101 states that activities carried out for non-profit private school personnel must be based on a review of scientifically-based research, must be expected to improve student academic achievement, and provide supplemental activities that strengthen the quality and effectiveness of teachers, principals, and other school leaders. The schools and students\u2019 services will vary by year as it depends on the number of private schools that opt to participate. The 2025/2026 school year has a total of 174 private schools participating.",
@@ -1115,7 +1143,7 @@
       "funding_source": "Title II, Part A Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Francisco Serrato. Extracted from Legistar API on 2026-03-15 Note: $16M amount shares identical value with ID 36 (Combi Oven Purchase) from the same board meeting. Both amounts sourced from board documents but independent verification has not been completed.",
-      "source_url": "/documents/C9137_Professional_Development_7_vendors.pdf",
+      "source_url": "/documents/C9137_Professional_Development_7_vendors.pdf#page=7",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1129,7 +1157,9 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Federal funds"
-      ]
+      ],
+      "data_discrepancy": "Vendor description corrected from \"Various Vendors (7 IT managed services contracts)\" to match the board report.",
+      "source_page": 7
     },
     {
       "id": 30,
@@ -1153,7 +1183,7 @@
       "funding_source": "Bond Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9141_School_PA_Network_Upgrade.pdf",
+      "source_url": "/documents/C9141_School_PA_Network_Upgrade.pdf#page=10",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1178,7 +1208,8 @@
       ],
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "source_page": 10
     },
     {
       "id": 31,
@@ -1202,7 +1233,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Nolberto Delgadillo Deputy Chief Financial Officer. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9165_Heartland_Electronic_Payments.pdf",
+      "source_url": "/documents/C9165_Heartland_Electronic_Payments.pdf#page=12",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1216,14 +1247,15 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 12
     },
     {
       "id": 32,
       "contract_number": "C9112",
       "title": "Title I Services (14 vendors)",
       "short_name": "Title I Services (14 vendors)",
-      "vendor_name": "Various Vendors (14 IT professional services contracts)",
+      "vendor_name": "Various Vendors (14 Title I private-school student services contracts)",
       "vendor_list": "A Tree of Knowledge Educational Services, Apple iPad & Android, Catapult Learning, Cecilia Mercado, Corwin Press, FACTS Education Solutions, Learn It Systems, Lynne Arpon, Merkos L'Inyonei Chinuch, One on One Learning, SOS Education, Sylvan Learning, Wellness and Education, Yeshiva Educational Services",
       "vendor_id": null,
       "description": "Approval of formally competed bench of fourteen (14) contracts, procured through a Request for Proposals (RFP) process, to provide Title I Part A Supplemental Services that support equitable services for non-profit Private School students, their teachers, and families for which the District serves as the Local Education Agency (LEA). The selected vendors\u2019 areas of expertise centers around intervention in reading/language arts, math and/or science, academic counseling, professional development including coaching for teachers, and parent engagement activities. The authority to increase or decrease the amounts of these contracts will be limited to the aggregate value of $35,000,000. Title I, Part A section 1117 requires participating LEAs, in consultation with appropriate private school officials, to provide eligible children attending non-profit private elementary and secondary schools, their teachers, and their families with Title I funded services or other benefits that are equitable to those provided to eligible public-school children, their teachers, and their families.",
@@ -1240,7 +1272,7 @@
       "funding_source": "Title I, Part A Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Anthony Aguilar. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9112_Title_I_Services_14_vendors.pdf",
+      "source_url": "/documents/C9112_Title_I_Services_14_vendors.pdf#page=15",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1254,7 +1286,9 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Federal funds"
-      ]
+      ],
+      "data_discrepancy": "Vendor description corrected from \"Various Vendors (14 IT professional services contracts)\" to match the board report.",
+      "source_page": 15
     },
     {
       "id": 33,
@@ -1278,7 +1312,7 @@
       "funding_source": "(100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Mark Cho. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9122_Lighting_Fixtures_Parts.pdf",
+      "source_url": "/documents/C9122_Lighting_Fixtures_Parts.pdf#page=18",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1292,7 +1326,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Other"
-      ]
+      ],
+      "source_page": 18
     },
     {
       "id": 34,
@@ -1316,7 +1351,7 @@
       "funding_source": "Bond Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Issam Dahdul. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9130_NextMod_Modular_Classrooms.pdf",
+      "source_url": "/documents/C9130_NextMod_Modular_Classrooms.pdf#page=20",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1330,7 +1365,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "source_page": 20
     },
     {
       "id": 35,
@@ -1354,7 +1390,7 @@
       "funding_source": "Bond Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Issam Dahdul. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8506_Mobile_Modular_Locker_Rooms.pdf",
+      "source_url": "/documents/C8506_Mobile_Modular_Locker_Rooms.pdf#page=22",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1368,7 +1404,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Bonds"
-      ]
+      ],
+      "source_page": 22
     },
     {
       "id": 36,
@@ -1392,7 +1429,7 @@
       "funding_source": "Kitchen Infrastructure and Training Funds \u2013 Second Allotment (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Manish Singh. Extracted from Legistar API on 2026-03-15 Note: $16M amount shares identical value with ID 29 (Professional Development) from the same board meeting. Both amounts sourced from board documents but independent verification has not been completed.",
-      "source_url": "/documents/C40555_Combi_Oven_Purchase.pdf",
+      "source_url": "/documents/C40555_Combi_Oven_Purchase.pdf#page=24",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1406,7 +1443,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "State funds"
-      ]
+      ],
+      "source_page": 24
     },
     {
       "id": 37,
@@ -1430,7 +1468,7 @@
       "funding_source": "General Funds (Reserves) (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: Patricia Chambers. NOTE: Some fields could not be parsed with full confidence \u2014 verify against source PDF. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9199_Classroom_Air_Purifiers.pdf",
+      "source_url": "/documents/C9199_Classroom_Air_Purifiers.pdf#page=26",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1444,7 +1482,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 26
     },
     {
       "id": 38,
@@ -1468,7 +1507,7 @@
       "funding_source": "Expanded Learning Opportunity Program (ELOP) (100%)",
       "status": "Active",
       "notes": "Board Report: 242-24/25. Requester: John Han. NOTE: Some fields could not be parsed with full confidence \u2014 verify against source PDF. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9117_Electric_Cargo_Van_Purchase.pdf",
+      "source_url": "/documents/C9117_Electric_Cargo_Van_Purchase.pdf#page=28",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1482,7 +1521,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "State funds"
-      ]
+      ],
+      "source_page": 28
     },
     {
       "id": 39,
@@ -1506,7 +1546,7 @@
       "funding_source": "(100%)",
       "status": "Active",
       "notes": "Board Report: 177-24/25. Requester: Mark Cho. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8502_Plumbing_Repair_Services.pdf",
+      "source_url": "/documents/C8502_Plumbing_Repair_Services.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1520,14 +1560,15 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Other"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 40,
       "contract_number": "C7691",
       "title": "STEM Enrichment (33 vendors)",
       "short_name": "STEM Enrichment (33 vendors)",
-      "vendor_name": "Various Vendors (33 hazardous materials contracts)",
+      "vendor_name": "Various Vendors (33 STEM enrichment contracts)",
       "vendor_list": "9 Dots Community Learning Center, Academic Mapping, !!!Apple iPad & Android Tablet Tutoring!!!, Bluum USA, Brains & Motion Education (BAM!), BrainStorm STEM Education, CF Fitness, Inc., CodeCampus, Community Partners, Computerwisekids, Inc., Creating Creators, LLC, Daniel Ferguson, dba Los Angeles Legacy Project, Dottie Rose Consulting LLC, dba The Dot. Consulting, Forward Education, Inc., Grand Vision Foundation, Impossible Science, LLC, Kodely, LLC, Lab Rascals, LLC, Lunch Bunch Co., Mastery Coding, Northwestern University, dba FUSE, Parker-Anderson Enrichment, Prisms of Realty, Inc., Rising Stars Foundation, dba RiseUp Stars, Rocketology, LLC, Science of Sport, STEMfinity, LLC, Study Smart Tutors, Inc., Tierra Luna Engineering, LLC, The Letter K Corporation, dba Tinker the Robot, Tried & True Education, Tutor Me Education (TME), Woodcraft Rangers",
       "vendor_id": null,
       "description": "Approval of formally competed bench of thirty-three (33) contracts, procured through a Request for Proposals (RFP) process, to provide virtual and/or in person STEM/STEAM enrichment programs after school and supplemental instructional programs during the school day and beyond the school day, including for winter academy, spring academy, after school clubs, and summer school. The authority to increase or decrease the amounts of these contracts will be limited to the aggregate value of $10,000,000. Vendors on this bench provide an array of services available to all District students including STEM/STEAM education programs in culinary arts, computer science, E-sports, physical",
@@ -1544,7 +1585,7 @@
       "funding_source": "Various per requesting school or office (100%)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Dr. Frances Baez. Renewal: 7723 one-year renewal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7691_STEM_Enrichment_33_vendors.pdf",
+      "source_url": "/documents/C7691_STEM_Enrichment_33_vendors.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1560,7 +1601,9 @@
       "overlap_note": "Likely overlaps with iReady curriculum contracts, after-school program funding, and other enrichment spending across the district. Total LAUSD enrichment spend across all contracts is not publicly consolidated.",
       "funding_categories": [
         "School/office budgets (various)"
-      ]
+      ],
+      "data_discrepancy": "Vendor description corrected from \"Various Vendors (33 hazardous materials contracts)\" to match the board report.",
+      "source_page": 1
     },
     {
       "id": 41,
@@ -1584,7 +1627,7 @@
       "funding_source": "Cybersecurity COPs (57%), Cybersecurity General Funds (31%), General Funds Unrestricted (12%)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8527_Cybersecurity_Staffing_35_vendors.pdf",
+      "source_url": "/documents/C8527_Cybersecurity_Staffing_35_vendors.pdf#page=4",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1601,7 +1644,8 @@
       "funding_categories": [
         "COPs (borrowing repaid from general fund)",
         "General fund"
-      ]
+      ],
+      "source_page": 4
     },
     {
       "id": 42,
@@ -1625,7 +1669,7 @@
       "funding_source": "Cybersecurity COPs (57%) and other funds (see board report)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8482_Cybersecurity_Hardware_12_vendors.pdf",
+      "source_url": "/documents/C8482_Cybersecurity_Hardware_12_vendors.pdf#page=6",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1640,7 +1684,8 @@
       "data_discrepancy": "Funding source corrected from \"General Funds (57%)\"; the board report lists Cybersecurity COPs (57%).",
       "funding_categories": [
         "COPs (borrowing repaid from general fund)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "id": 43,
@@ -1664,7 +1709,7 @@
       "funding_source": "E-Rate Funds (90%)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15 CDW Corporation acquired by Madison Dearborn Partners (private equity LBO) in 2007.",
-      "source_url": "/documents/C8579_CDW_Hotspot_Devices.pdf",
+      "source_url": "/documents/C8579_CDW_Hotspot_Devices.pdf#page=8",
       "verification_status": "needs_verification",
       "keywords": "CDW, hotspot, devices, private equity, Madison Dearborn Partners, PE-backed, reseller",
       "flag_count": 0,
@@ -1682,7 +1727,8 @@
       "data_discrepancy": "Funding source corrected from \"General Funds (90%)\" to \"E-Rate Funds (90%)\" per the board report's Source of Funds column.",
       "funding_categories": [
         "Federal funds"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "id": 44,
@@ -1706,7 +1752,7 @@
       "funding_source": "Revenue contract (money paid to LAUSD)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Dr. Smita Malhotra. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8562_LACDMH_Medi-Cal_Reimbursement.pdf",
+      "source_url": "/documents/C8562_LACDMH_Medi-Cal_Reimbursement.pdf#page=10",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1722,7 +1768,8 @@
       "amount_basis": "Board-authorized amount",
       "funding_categories": [
         "Revenue (paid to LAUSD)"
-      ]
+      ],
+      "source_page": 10
     },
     {
       "id": 45,
@@ -1746,7 +1793,7 @@
       "funding_source": "Revenue contract (money paid to LAUSD)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Dr. Smita Malhotra. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8564_LACDPH_Children_s_Health_Outreach.pdf",
+      "source_url": "/documents/C8564_LACDPH_Children_s_Health_Outreach.pdf#page=12",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1760,7 +1807,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Revenue (paid to LAUSD)"
-      ]
+      ],
+      "source_page": 12
     },
     {
       "id": 46,
@@ -1784,7 +1832,7 @@
       "funding_source": "California Department of Food and Agriculture, Office of Farm to Fork Grant",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Manish P. Singh. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C37237_Edible_Schoolyard_Nutrition_Education.pdf",
+      "source_url": "/documents/C37237_Edible_Schoolyard_Nutrition_Education.pdf#page=14",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1798,7 +1846,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "State funds"
-      ]
+      ],
+      "source_page": 14
     },
     {
       "id": 47,
@@ -1822,7 +1871,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Daniel Kang. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8471_Refrigeration_Unit_Purchase.pdf",
+      "source_url": "/documents/C8471_Refrigeration_Unit_Purchase.pdf#page=17",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1838,7 +1887,8 @@
       "amount_basis": "Board-authorized amount",
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 17
     },
     {
       "id": 48,
@@ -1862,7 +1912,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Daniel Kang. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C8473_Fleet_Towing_Services.pdf",
+      "source_url": "/documents/C8473_Fleet_Towing_Services.pdf#page=19",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1876,7 +1926,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 19
     },
     {
       "id": 49,
@@ -1900,7 +1951,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 211-24/25. Requester: Daniel Kang. NOTE: Some fields could not be parsed with full confidence \u2014 verify against source PDF. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9120_Motorola_Radio_Equipment.pdf",
+      "source_url": "/documents/C9120_Motorola_Radio_Equipment.pdf#page=21",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1914,7 +1965,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 21
     },
     {
       "id": 50,
@@ -1938,7 +1990,7 @@
       "funding_source": "(100%)",
       "status": "Active",
       "notes": "Board Report: 141-24/25. Requester: Mark Cho. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7724_Roofing_Waterproofing_Services.pdf",
+      "source_url": "/documents/C7724_Roofing_Waterproofing_Services.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1952,7 +2004,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Other"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 51,
@@ -1976,7 +2029,7 @@
       "funding_source": "(90%)",
       "status": "Active",
       "notes": "Board Report: 141-24/25. Requester: Mark Cho. Renewal: three (3) one-year renewal options. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7651_Geotechnical_Engineering_Services.pdf",
+      "source_url": "/documents/C7651_Geotechnical_Engineering_Services.pdf#page=2",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -1990,7 +2043,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Other"
-      ]
+      ],
+      "source_page": 2
     },
     {
       "id": 52,
@@ -2014,7 +2068,7 @@
       "funding_source": "General Funds (100%)",
       "status": "Active",
       "notes": "Board Report: 142-24/25. Requester: Alexander Molina. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7728_LexisNexis_Legal_Billing_Platform.pdf",
+      "source_url": "/documents/C7728_LexisNexis_Legal_Billing_Platform.pdf#page=1",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -2028,7 +2082,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "General fund"
-      ]
+      ],
+      "source_page": 1
     },
     {
       "id": 53,
@@ -2052,7 +2107,7 @@
       "funding_source": "(100%)",
       "status": "Active",
       "notes": "Board Report: 142-24/25. Requester: Susan Stengel. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7741_Sales_Tax_Recovery_Services.pdf",
+      "source_url": "/documents/C7741_Sales_Tax_Recovery_Services.pdf#page=3",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -2066,7 +2121,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Other"
-      ]
+      ],
+      "source_page": 3
     },
     {
       "id": 54,
@@ -2090,7 +2146,7 @@
       "funding_source": "General Funds (COPs) (50%)",
       "status": "Active",
       "notes": "Board Report: 142-24/25. Requester: Soheil Katal. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7613_IT_Staff_Augmentation.pdf",
+      "source_url": "/documents/C7613_IT_Staff_Augmentation.pdf#page=5",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -2107,7 +2163,8 @@
       "data_discrepancy": "Vendor corrected from \"Department of General Services\" to Insight Global LLC: the board report approves Insight Global through a California Department of General Services piggyback contract.",
       "funding_categories": [
         "COPs (borrowing repaid from general fund)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "id": 55,
@@ -2131,7 +2188,7 @@
       "funding_source": "Revenue contract (money paid to LAUSD)",
       "status": "Active",
       "notes": "Board Report: 142-24/25. Requester: Andres E. Chait. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C6739_Student_Attendance_Support_Funding.pdf",
+      "source_url": "/documents/C6739_Student_Attendance_Support_Funding.pdf#page=7",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -2145,7 +2202,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Revenue (paid to LAUSD)"
-      ]
+      ],
+      "source_page": 7
     },
     {
       "id": 56,
@@ -2169,7 +2227,7 @@
       "funding_source": "General Funds \u2013 Restricted \u2013 ELOP (100%)",
       "status": "Active",
       "notes": "Board Report: 142-24/25. NOTE: Some fields could not be parsed with full confidence \u2014 verify against source PDF. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C7434_iDREAM_Mobile_Tech_Labs.pdf",
+      "source_url": "/documents/C7434_iDREAM_Mobile_Tech_Labs.pdf#page=10",
       "verification_status": "needs_verification",
       "keywords": null,
       "flag_count": 0,
@@ -2185,45 +2243,8 @@
       "overlap_note": "Likely overlaps with CDW Chromebook purchases and the IT master services bench device procurement. Total LAUSD spending on student device access across all contracts is not publicly consolidated.",
       "funding_categories": [
         "State funds"
-      ]
-    },
-    {
-      "id": 57,
-      "contract_number": "C9552",
-      "title": "IT Infrastructure Services",
-      "short_name": "IT Infrastructure Services",
-      "vendor_name": "Various Vendors (IT infrastructure master services)",
-      "vendor_list": null,
-      "vendor_id": null,
-      "description": null,
-      "plain_english": null,
-      "category": "Technology",
-      "contract_type": "Service",
-      "amount": null,
-      "start_date": "2026-01-01",
-      "end_date": "2030-12-31",
-      "approval_date": "2025-11-18",
-      "board_meeting_date": "2025-11-18",
-      "board_vote": null,
-      "department": null,
-      "funding_source": "General Funds",
-      "status": "Active",
-      "notes": "Board Report: Rep-107-25/26. Extracted from Legistar API on 2026-03-15",
-      "source_url": "/documents/C9552_IT_Infrastructure_Services.docx",
-      "verification_status": "needs_verification",
-      "keywords": null,
-      "flag_count": 0,
-      "created_at": "2026-03-15 17:07:59",
-      "updated_at": "2026-03-17 14:20:30",
-      "ai_analysis": "Note: The $250M figure previously shown for this contract has been corrected following reader review. That amount belongs to a separate outside legal counsel services bench (Item G on the same board agenda). We are researching the correct contract amount for IT infrastructure services and will update when verified.\n\n## What this contract is\\n\\nA 12-vendor bench approved November 18, 2025, providing IT infrastructure master services to LAUSD. Unlike the cybersecurity contract which has a clear origin story (the 2022 ransomware attack), this contract's scope \u2014 \"IT infrastructure master services\" \u2014 is broad enough to cover almost anything technology-related, making it the hardest contract in the database to evaluate for necessity or value.\\n\\n## Private equity runs through this list\\n\\nAt least three of the twelve vendors are PE-owned, meaning a portion of every dollar flows to investor returns:\\n\\n**Presidio** was acquired by Clayton Dubilier & Rice (CD&R) in April 2024, with BC Partners retaining a minority stake. This was Presidio's fourth private equity owner \u2014 it has passed through American Securities, Apollo Global Management, and BC Partners since being founded in 2003. [Presidio](https://www.presidio.com) BC Partners was exploring a sale of Presidio that could value the company at more than $4 billion including debt. [Yahoo!](https://finance.yahoo.com) Every LAUSD dollar spent with Presidio services debt from a $4 billion leveraged buyout.\\n\\n**CDW Government** is a subsidiary of CDW Corporation (NASDAQ: CDW), a publicly traded $20B+ revenue technology products reseller. It appears in this contract AND separately in contract ID 43 ($72M for hotspot devices) \u2014 meaning CDW has at least two separate LAUSD contracts running simultaneously worth a combined $72M+.\\n\\n## Digital Scepter \u2014 the smallest and least-known vendor\\n\\nDigital Scepter is a small Murrieta, California company with 98 LinkedIn followers and no significant public profile. It also appears separately in your database as contract ID 70 ($3.36M). A small local IT security firm appearing on both a $250M master services bench and holding its own separate $3.36M contract warrants a closer look at its ownership and any connections to LAUSD decision-makers. This is exactly the kind of vendor that should be researched via PRA \u2014 specifically, who at LAUSD recommended or championed this vendor.\\n\\n## vCloud Tech \u2014 flagged in federal procurement databases\\n\\nvCloud Tech is a small California-based IT reseller that has appeared on numerous government cooperative purchasing contracts. Small IT resellers on large government contracts are a known vector for markup inflation \u2014 the reseller adds a percentage on top of manufacturer prices with minimal value-add. Worth requesting the actual work orders under this contract to understand what vCloud Tech is specifically being paid to do.\\n\\n## The \"master services\" structure problem\\n\\nThis is the same accountability concern as the cybersecurity bench. With 12 vendors sharing a $250M ceiling, individual vendor spending is invisible without specific work order data. The board approved $250M but the actual allocation to each vendor is determined by LAUSD staff \u2014 specifically CIO Soheil Katal's department \u2014 without further board approval. This is standard practice for large IT organizations but means the public has no visibility into whether, say, Digital Scepter received $500K or $50M of that $250M.\\n\\n## The overlap problem\\n\\nSeveral vendors appear on both this contract AND the cybersecurity bench (contract ID 41): CDW Government and Mainline Information Systems appear on both. When the same vendors are on multiple contracts simultaneously, it raises a legitimate question: are LAUSD's IT infrastructure needs genuinely served by consolidating to fewer, more accountable vendors, or does the bench structure benefit vendors by spreading spending across overlapping contracts?\\n\\n**Sources:** [Presidio/CD&R acquisition](https://www.presidio.com) \u00b7 Reuters PE ownership history \u00b7 Presidio public sector page \u00b7 Digital Scepter: [digitalscepter.com](https://digitalscepter.com)",
-      "questions_to_ask": "- What has CDW Government been paid across both contracts combined?\\n- Who at LAUSD has a prior relationship with Digital Scepter?\\n- What specific services has each of the 12 vendors actually delivered under this contract since November 2025?\\n- Why does a $250M contract have no listed start or end dates in your database \u2014 request the actual contract term via PRA",
-      "red_flags": "- Multiple PE-owned vendors (Presidio on its 4th PE owner, servicing debt from a $4B leveraged buyout with LAUSD dollars)\\n- Digital Scepter: tiny company (98 LinkedIn followers) appearing on both a $250M bench and a separate $3.36M contract \u2014 warrants PRA into who championed this vendor\\n- vCloud Tech: small IT reseller on a large government contract \u2014 a known vector for markup inflation\\n- 12 vendors sharing a $250M ceiling with no public visibility into individual vendor spending\\n- Vendor overlap with the cybersecurity bench (contract ID 41) \u2014 CDW Government and Mainline appear on both",
-      "sources": null,
-      "finding_level": "medium",
-      "ai_analysis_date": "2026-03-15 23:48:29",
-      "funding_categories": [
-        "General fund"
-      ]
+      ],
+      "source_page": 10
     },
     {
       "id": 58,
@@ -3231,7 +3252,7 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "SOW breakdown: SOW1 $1.7M, SOW2 $8.3M, SOW3 $10.8M, SOW4 $10.5M, SOW5 $9.6M, SOW6 $5.6M. MSA extends through Dec-2025. CA 23-1422 is an Inspector General audit of Infosys Limited issued May 28, 2024 (not a court record); the Inspector General's FY2025 Annual Report lists both of its recommendations as implemented.",
+      "notes": "SOW breakdown: SOW1 $1.7M, SOW2 $8.3M, SOW3 $10.8M, SOW4 $10.5M, SOW5 $9.6M, SOW6 $5.6M. MSA extends through Dec-2025. CA 23-1422 is an Inspector General audit of Infosys Limited issued May 28, 2024 (not a court record); the Inspector General's FY2025 Annual Report lists both of its recommendations as implemented. The audit (p. 4) states the authorized amount grew from $1,850,000 to $46,493,398 and LAUSD paid Infosys a total of $46,493,398.",
       "source_url": "LAUSD Office of the Inspector General audit CA 23-1422 (May 28, 2024)",
       "verification_status": "reported",
       "keywords": null,
@@ -3248,6 +3269,10 @@
         {
           "label": "LAUSD Inspector General FY2025 Annual Report (PDF)",
           "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        },
+        {
+          "label": "LAUSD Inspector General audit CA 23-1422: Infosys Limited, Contract 4400004603 (May 28, 2024)",
+          "url": "https://my.lausd.net/eLibrary/DocView.aspx?id=91282&dbid=0&repo=eLibrary"
         }
       ],
       "funding_categories": [
@@ -3410,8 +3435,8 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "$400K contract disclosed for 2015-16 school year as part of $15M credit recovery program. Used continuously since; COVID-era contract values not separately published.",
-      "source_url": "LA School Report; LAUSD school sites",
+      "notes": "$400K contract for 2015-16 as part of a $15M credit recovery program (LA School Report). During the pandemic, dot.LA reports LAUSD paid Edgenuity $6.7M for summer-school credit recovery (30,000 high school and 40,000 middle school courses).",
+      "source_url": "LA School Report; dot.LA COVID spending report",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
@@ -3426,6 +3451,16 @@
       "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases).",
       "funding_categories": [
         "Unknown"
+      ],
+      "source_links": [
+        {
+          "label": "LA School Report: credit recovery and the $400,000 Edgenuity contract",
+          "url": "https://www.laschoolreport.com/provider-of-online-credit-recovery-courses-at-lausd-says-curriculum-is-very-rigorous-despite-criticism/"
+        },
+        {
+          "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
+          "url": "https://dot.la/lausd-tech--2655314684.html"
+        }
       ]
     },
     {
@@ -3436,11 +3471,11 @@
       "vendor_name": "Kokomo24/7",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Telehealth platform for physical health issues (minor injuries, allergies, headaches) for LAUSD students; health data management system. Funded via federal pandemic relief.",
+      "description": "Telehealth for physical health issues (minor injuries, allergies, headaches) for LAUSD students, under nurse supervision, and LAUSD's student health data system. Also built the Los Angeles Anonymous School Reporting app.",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
-      "amount": 800000,
+      "amount": null,
       "start_date": "2023-01-01",
       "end_date": null,
       "approval_date": null,
@@ -3449,8 +3484,8 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Data systems transition completed Jul-31-2023. Inspire Health Group handles mental health; Kokomo handles physical. $800K program.",
-      "source_url": "Kokomo24/7 blog; AWS case study; LAUSD Page/19344",
+      "notes": "LAUSD has contracted with Kokomo since 2018; a new contract was awarded in 2023 and LAUSD moved its health tracking and data systems to Kokomo's platform on July 31, 2023 (AWS case study). On Dec. 11, 2024, Kokomo Solutions discovered an unauthorized party accessed files tied to the telehealth program and the anonymous reporting app it runs for LAUSD (EdSource, The 74).",
+      "source_url": "AWS case study; EdSource; The 74",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
@@ -3458,7 +3493,7 @@
       "updated_at": "2026-04-09 14:47:17",
       "ai_analysis": "Kokomo24/7 is a school health and safety platform LAUSD has used since 2018. Services include anonymous incident reporting (LASAR tipline), emergency alerts for staff, health and wellness tracking, immunization management, visitor management, and telehealth. An AWS case study documenting LAUSD's Kokomo implementation states it cut health data infrastructure costs by 50% compared to the previous system. At $800K, this is one of the more defensible ed-tech contracts \u2014 it provides documented cost savings, genuine safety value, and has a multi-year track record with the district. The main questions involve overlap with ContinuumCloud's Welligent platform and whether AWS infrastructure costs are embedded in Kokomo's pricing.",
       "questions_to_ask": "- What specific health data does Kokomo hold versus what ContinuumCloud/Welligent holds and is there overlap?\n- Is AWS infrastructure cost embedded in Kokomo's pricing creating a double-payment situation?\n- What clinical outcomes has the Kokomo telehealth pilot produced?\n- Has LAUSD evaluated consolidating Kokomo and ContinuumCloud into a single health data platform?",
-      "red_flags": "- Kokomo uses AWS infrastructure \u2014 raising the question of whether LAUSD pays for AWS twice: once directly and again inside Kokomo's contract.\n- ContinuumCloud/Welligent also manages student health data for LAUSD. Overlap between the two systems should be documented.\n- Kokomo's expanding telehealth services raise the question of whether a safety platform company should be delivering clinical care.",
+      "red_flags": "- Kokomo runs on AWS infrastructure, which LAUSD also pays for directly ($27M AWS contract); whether costs overlap is not documented.\n- A December 2024 data breach exposed files from the LAUSD telehealth program and anonymous reporting app.",
       "sources": null,
       "finding_level": "medium",
       "ai_analysis_date": null,
@@ -3466,13 +3501,22 @@
       "overlap_note": "ContinuumCloud/Welligent manages behavioral health and special education records. LACOE has a mental health infrastructure contract. All three touch student health data \u2014 the district should document which system holds which data and whether consolidation is possible.",
       "source_links": [
         {
-          "label": "LAUSD Page 19344",
-          "url": "https://www.lausd.org/Page/19344"
+          "label": "AWS case study: Kokomo24/7 and LAUSD health data system",
+          "url": "https://aws.amazon.com/blogs/publicsector/aws-partner-kokomo24-7-transforms-los-angeles-unified-school-districts-health-data-system-in-one-year/"
+        },
+        {
+          "label": "EdSource: LAUSD tech vendor Kokomo Solutions data breach",
+          "url": "https://edsource.org/updates/lausd-tech-vendor-kokomo-solutions-falls-prey-to-data-breach"
+        },
+        {
+          "label": "The 74: Ed tech co. that provides telehealth to L.A. students experiences data breach",
+          "url": "https://www.the74million.org/article/ed-tech-co-that-provides-telehealth-to-l-a-students-experiences-data-breach/"
         }
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "data_discrepancy": "The previously listed $800,000 amount could not be found in any source and has been removed. Contract value not publicly disclosed in sources found."
     },
     {
       "id": 110,
@@ -3618,7 +3662,7 @@
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
-      "amount": 2400000,
+      "amount": 3700000,
       "start_date": "2020-03-01",
       "end_date": "2021-12-31",
       "approval_date": null,
@@ -3648,7 +3692,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "data_discrepancy": "Amount corrected from $2,400,000 to $3,700,000: dot.LA reports LAUSD paid T-Mobile $2.4M in March 2020 and later an additional $1.3M."
     },
     {
       "id": 114,
@@ -3671,9 +3716,9 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Historical contract. $95M initial contract + $45M+ in remediation/fixes. Payroll errors caused under/over-payments district-wide. Cautionary example cited in UTLA outside-contractor analyses. Amount confirmed: $95M initial SAP HR contract + $45M+ remediation = ~$140M total, per Francine McKenna reporting and multiple sources. Deloitte later settled, paying $8.25M back and forgoing $10M in unpaid invoices.",
-      "source_url": "UTLA reports; multiple investigative news sources",
-      "verification_status": "needs_verification",
+      "notes": "Historical contract. LAUSD paid Deloitte $95M to install the SAP payroll system, then paid again to fix it (Argonaut). Payroll errors in 2007 caused under- and over-payments district-wide (Education Week). As of Dec. 31, 2007, LAUSD had paid Deloitte a total of about $140 million (Wikipedia, citing contemporaneous reporting). In a late-2008 settlement Deloitte agreed to pay LAUSD $8.25M and forgo $10M in unpaid invoices (Argonaut).",
+      "source_url": "Argonaut; Education Week; Wikipedia",
+      "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
@@ -3686,21 +3731,35 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
+      ],
+      "source_links": [
+        {
+          "label": "Argonaut: LAUSD reaches settlement with contractor over payroll debacle",
+          "url": "https://www.argonautnews.com/news/area/l-a-unified-school-district-reaches-settlement-with-contractor-over-last-year-s-payroll-debacle/article_d7c9a261-de1c-5dde-a72c-8147bbef4c2d.html"
+        },
+        {
+          "label": "Education Week (2007): Glitches in Los Angeles payroll system spark furor",
+          "url": "https://www.edweek.org/teaching-learning/glitches-in-los-angeles-payroll-system-spark-furor/2007/06"
+        },
+        {
+          "label": "Wikipedia: Deloitte (LAUSD payments total)",
+          "url": "https://en.wikipedia.org/wiki/Deloitte"
+        }
       ]
     },
     {
       "id": 115,
       "contract_number": null,
-      "title": "Headphones vendor (unnamed, 2020)",
-      "short_name": null,
-      "vendor_name": "Headphones vendor (unnamed, 2020)",
+      "title": "Student Headphones (Amazon, Mergent)",
+      "short_name": "Student Headphones",
+      "vendor_name": "Amazon and Mergent (student headphones)",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Two emergency purchases of student headphones for remote learning: ~131,000 pairs ($1.9M, Apr-2020) and ~490,000 pairs ($8.1M, Dec-2020). Vendor name and exact amount unverified \u2014 sourced from dot.LA COVID spending report, not board documents. Possible data extraction error. Source document review needed.",
+      "description": "Emergency purchases of student headphones for remote learning: 131,000 pairs from Amazon for $1.9M about a month into the pandemic (spring 2020), and 490,000 pairs from Mergent for $8.1M in December 2020, per LAist and dot.LA.",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
-      "amount": null,
+      "amount": 10000000,
       "start_date": "2020-04-01",
       "end_date": "2020-12-01",
       "approval_date": null,
@@ -3709,9 +3768,9 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Vendor name not publicly identified in available sources. Combined ~$10M across two purchases.",
+      "notes": "Vendors identified by LAist (Amazon, $1.9M, 131,000 pairs) and dot.LA (Mergent, $8.1M, 490,000 pairs). Combined ~$10M.",
       "source_url": "dot.LA COVID spending report",
-      "verification_status": "estimated",
+      "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
@@ -3726,11 +3785,16 @@
         {
           "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
           "url": "https://dot.la/lausd-tech--2655314684.html"
+        },
+        {
+          "label": "LAist: The Big Winners From LAUSD\u2019s Emergency Coronavirus Spending",
+          "url": "https://laist.com/news/coronavirus-lausd-emergency-spending-tech-contracts-ipads-apple-chromebooks"
         }
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "data_discrepancy": "Previously listed as an unnamed vendor; LAist and dot.LA name Amazon and Mergent."
     },
     {
       "id": 116,
@@ -3754,7 +3818,7 @@
       "funding_source": "Title I (42%), Title IV (17%), ELOP (14%), Various per requesting school or office (27%) (per the Oct. 2026 capacity increase)",
       "status": "Active",
       "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Contract terms not publicly disclosed. Partnership extended Oct-2021. District-wide deployment across all LAUSD schools.",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "verification_status": "verified",
       "keywords": null,
       "flag_count": 0,
@@ -3804,7 +3868,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "id": 117,
@@ -3827,20 +3892,20 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "PESP report (April 2026, using UTLA public records data) documents $225,207,363 in total contract commitments and $164,329,349 in actual spending as of July 2025, with 1,224 days remaining on the active contract. Original board contract amounts were not publicly disclosed \u2014 this figure comes from a UTLA records request. Amplify is majority-owned by the Walton Family Foundation. IMPORTANT: The $225M figure is sourced from UTLA/PESP research, not verified against LAUSD board documents. The PESP report discusses $255M total across all PE-backed ed-tech vendors \u2014 this $225M Amplify-specific figure may conflate multiple data points. Amount should be treated as an estimate pending board document verification.",
+      "notes": "PESP report (April 2026, using UTLA public records data) lists $225,207,363 spent within commitment dates against $164,329,349 in total active commitments, with 1,224 days remaining on the active contract as of July 2025, meaning payments exceeded the active commitment by about $60.9 million. Original board contract amounts were not publicly disclosed; these figures come from a UTLA records request, not LAUSD board documents. Amplify is majority-owned by the Walton Family Foundation.",
       "source_url": "Amplify.com/lausd; LAUSD Instructional Tech pages",
       "verification_status": "estimated",
       "keywords": "Amplify, phonics, literacy, reading, curriculum, Walton Family Foundation, edtech, ELA",
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:37",
-      "updated_at": "2026-10-03 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
-      "red_flags": "Per PESP report: LAUSD committed $225M to Amplify but original contract amounts were never publicly disclosed. Amplify is majority-owned by the Walton Family Foundation, which is a major funder of school privatization. District-wide deployment creates significant vendor lock-in. Data collection on K-3 students via mCLASS assessment.",
+      "red_flags": "Per PESP's analysis of UTLA records data, LAUSD paid Amplify $225.2M against $164.3M in active contract commitments (as of July 2025). Original contract amounts were not publicly disclosed. Amplify is majority-owned by the Walton Family Foundation, a major funder of school privatization. District-wide deployment creates significant vendor lock-in. Data collection on K-3 students via mCLASS assessment.",
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "significant",
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases).",
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). Correction: PESP's table lists $225,207,363 as \"Total Spent within Commitment Dates\" and $164,329,349 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
       "source_links": [
         {
           "label": "Amplify: LAUSD page",
@@ -3849,6 +3914,10 @@
         {
           "label": "PESP report (April 2026)",
           "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
@@ -3988,7 +4057,7 @@
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
-      "amount": null,
+      "amount": 6100000,
       "start_date": "2020-03-01",
       "end_date": "2021-12-31",
       "approval_date": null,
@@ -4018,7 +4087,8 @@
       ],
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "data_discrepancy": "Amount added: dot.LA reports LAUSD agreed to pay Verizon up to $4.6M in March 2020 and later paid another $1.5M, $6.1M total."
     },
     {
       "id": 122,
@@ -4754,8 +4824,8 @@
       "department": "Division of Instruction",
       "funding_source": "Title I (42%), Title IV (17%), ELOP (14%), Various per requesting school or office (27%) (per the Oct. 2026 capacity increase)",
       "status": "Active",
-      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $3,501,946 committed, $3,497,000 spent as of July 2025. Contract had 190 days remaining as of July 2025. Connected to Debra Kerr/Carvalho AllHere network.",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $3,501,946 spent / $3,497,000 in active commitments as of July 2025. Contract had 190 days remaining as of July 2025. Connected to Debra Kerr/Carvalho AllHere network.",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "verification_status": "verified",
       "keywords": "Age of Learning, ABCmouse, edtech, early childhood, digital learning, Carvalho",
       "flag_count": 0,
@@ -4763,7 +4833,7 @@
       "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": "Did Debra Kerr facilitate this contract as she did AllHere? Was this a no-bid contract authorized under Carvalho's emergency powers?",
-      "red_flags": "Vendor followed Carvalho from Miami-Dade. Connected to Debra Kerr who facilitated the AllHere fraud contract. PESP reported $3.497M spent of a $3.502M commitment (July 2025); LAUSD\u2019s Sept 2026 report shows $3,222,000 expended under bench contract C3196 through 6/30/26. See data discrepancy note.",
+      "red_flags": "Vendor followed Carvalho from Miami-Dade. Connected to Debra Kerr who facilitated the AllHere fraud contract. PESP reported $3.50M spent against a $3.497M active commitment (July 2025); LAUSD\u2019s Sept 2026 report shows $3,222,000 expended under bench contract C3196 through 6/30/26. See data discrepancy note.",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1. Earlier source: PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "medium",
       "ai_analysis_date": null,
@@ -4782,7 +4852,7 @@
       },
       "delegated_purchases_amount": 29946,
       "delegated_purchases_desc": "Pilot Site License / T4-Age of Learning",
-      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,501,946 committed / $3,497,000 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term through 6/9/2027), plus $29,946 in delegated school/office purchases. The LAUSD figure is used here.",
+      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,501,946 spent / $3,497,000 in active commitments as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term through 6/9/2027), plus $29,946 in delegated school/office purchases. The LAUSD figure is used here. Correction: PESP's table lists $3,501,946 as \"Total Spent within Commitment Dates\" and $3,497,000 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
       "overlap_group": "reading-literacy",
       "source_links": [
         {
@@ -4792,13 +4862,18 @@
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
           "url": "https://legistar.granicus.com/lausd/attachments/439c4618-4936-4878-96c5-77550291050e.pdf"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "id": 139,
@@ -4809,7 +4884,7 @@
       "vendor_list": null,
       "vendor_id": null,
       "description": "Digital instruction / reading intervention tools. Commitment and spending data from UTLA public records request cited in PESP report.",
-      "plain_english": "LAUSD paid 95 Percent Group for reading intervention tools. The district spent more than 3x the authorized contract amount.",
+      "plain_english": "LAUSD paid 95 Percent Group for reading intervention tools: $1.38M against a $4.69M commitment, per PESP's analysis of UTLA records.",
       "category": "Technology",
       "contract_type": "Service",
       "amount": 1376715,
@@ -4821,24 +4896,28 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Per PESP report (UTLA data): $1,376,715 committed but $4,688,610 actually spent \u2014 3.4x over the contract maximum. Contract expired.",
+      "notes": "Per PESP report (UTLA data): $1,376,715 spent within commitment dates against $4,688,610 in total active commitments. Contract expired.",
       "source_url": null,
       "verification_status": "reported",
       "keywords": "edtech, reading, literacy",
       "flag_count": 0,
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-10-03 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
-      "questions_to_ask": "How did spending reach 340% of the authorized contract maximum? Was additional board approval obtained? Who authorized the overspend?",
-      "red_flags": "Actual spending ($4,688,610) was 3.4x the authorized contract commitment ($1,376,715) per UTLA records request data cited in PESP report.",
+      "questions_to_ask": null,
+      "red_flags": null,
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
-      "finding_level": "significant",
+      "finding_level": null,
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence.",
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence. Correction: PESP's table lists $1,376,715 as \"Total Spent within Commitment Dates\" and $4,688,610 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor less than its active commitment, per PESP. The previous \"spent 3.4x the contract maximum\" red flag was based on the reversed figures and has been removed.",
       "source_links": [
         {
           "label": "PESP report (April 2026)",
           "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
@@ -4866,8 +4945,8 @@
       "department": "Division of Instruction",
       "funding_source": "Title I (42%), Title IV (17%), ELOP (14%), Various per requesting school or office (27%) (per the Oct. 2026 capacity increase)",
       "status": "Active",
-      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $4,189,147 committed, $4,096,172 spent as of July 2025. Contract had 190 days remaining as of July 2025 (~January 2026, now expired). Discovery Education is a portfolio company of private equity firm Clearlake Capital.",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $4,189,147 spent / $4,096,172 in active commitments as of July 2025. Contract had 190 days remaining as of July 2025 (~January 2026, now expired). Discovery Education is a portfolio company of private equity firm Clearlake Capital.",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "verification_status": "verified",
       "keywords": "edtech, digital instruction, curriculum",
       "flag_count": 0,
@@ -4894,7 +4973,7 @@
       },
       "delegated_purchases_amount": 33876,
       "delegated_purchases_desc": "1 Year Digital Access / Other Materials",
-      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $4,189,147 committed / $4,096,172 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $7,992,344 expended through 6/30/26 under bench contract C3433 (term through 6/9/2027), nearly double the PESP spending figure, plus $33,876 in delegated purchases. The LAUSD figure is used here.",
+      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $4,189,147 spent / $4,096,172 in active commitments as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $7,992,344 expended through 6/30/26 under bench contract C3433 (term through 6/9/2027), nearly double the PESP spending figure, plus $33,876 in delegated purchases. The LAUSD figure is used here. Correction: PESP's table lists $4,189,147 as \"Total Spent within Commitment Dates\" and $4,096,172 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
       "source_links": [
         {
           "label": "PESP report (April 2026)",
@@ -4903,13 +4982,18 @@
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
           "url": "https://legistar.granicus.com/lausd/attachments/439c4618-4936-4878-96c5-77550291050e.pdf"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "id": 141,
@@ -4932,8 +5016,8 @@
       "department": "Division of Instruction",
       "funding_source": "Title I (42%), Title IV (17%), ELOP (14%), Various per requesting school or office (27%) (per the Oct. 2026 capacity increase)",
       "status": "Active",
-      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $3,553,075 committed, $3,533,626 spent as of July 2025. Contract had 190 days remaining as of July 2025 (~January 2026, now expired). Newsela is VC-backed.",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $3,553,075 spent / $3,533,626 in active commitments as of July 2025. Contract had 190 days remaining as of July 2025 (~January 2026, now expired). Newsela is VC-backed.",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "verification_status": "verified",
       "keywords": "edtech, reading, literacy, news",
       "flag_count": 0,
@@ -4960,7 +5044,7 @@
       },
       "delegated_purchases_amount": 23050,
       "delegated_purchases_desc": "Licenses",
-      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,553,075 committed / $3,533,626 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,468,144 expended through 6/30/26 under bench contract C3194 (term through 6/9/2027), plus $23,050 in delegated purchases. The LAUSD figure is used here.",
+      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $3,553,075 spent / $3,533,626 in active commitments as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $3,468,144 expended through 6/30/26 under bench contract C3194 (term through 6/9/2027), plus $23,050 in delegated purchases. The LAUSD figure is used here. Correction: PESP's table lists $3,553,075 as \"Total Spent within Commitment Dates\" and $3,533,626 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
       "overlap_group": "reading-literacy",
       "source_links": [
         {
@@ -4970,13 +5054,18 @@
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
           "url": "https://legistar.granicus.com/lausd/attachments/439c4618-4936-4878-96c5-77550291050e.pdf"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "id": 142,
@@ -4999,8 +5088,8 @@
       "department": "Division of Instruction",
       "funding_source": "Title I (42%), Title IV (17%), ELOP (14%), Various per requesting school or office (27%) (per the Oct. 2026 capacity increase)",
       "status": "Active",
-      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $2,129,988 committed, $2,109,888 spent as of July 2025. Contract had 190 days remaining as of July 2025 (~January 2026, now expired). Per PESP: contract was signed in June 2024 in the middle of the AllHere scandal. In a survey of nearly 10,000 educators in LA County, only 12% believed the district would use AI 'in a way that is safe and positive for student learning.' Amira received investments from GSV and Owl Ventures before Veritas Capital acquired it through HMH in 2024.",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "notes": "Updated from LAUSD's Sept 29, 2026 report. Previous notes: Per PESP report (UTLA data): $2,129,988 spent / $2,109,888 in active commitments as of July 2025. Contract had 190 days remaining as of July 2025 (~January 2026, now expired). Per PESP: contract was signed in June 2024 in the middle of the AllHere scandal. In a survey of nearly 10,000 educators in LA County, only 12% believed the district would use AI 'in a way that is safe and positive for student learning.' Amira received investments from GSV and Owl Ventures before Veritas Capital acquired it through HMH in 2024.",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "verification_status": "verified",
       "keywords": "edtech, AI, reading, literacy, artificial intelligence",
       "flag_count": 0,
@@ -5027,7 +5116,7 @@
       },
       "delegated_purchases_amount": 28722,
       "delegated_purchases_desc": "Site License / Amira Reading Awareness and tutor",
-      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $2,129,988 committed / $2,109,888 spent as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $2,109,888 expended through 6/30/26 under bench contract C3175 (term through 6/9/2027), plus $28,722 in delegated purchases. The spending figures match; the end date and status differ. The LAUSD figure is used here.",
+      "data_discrepancy": "Earlier figure (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)): $2,129,988 spent / $2,109,888 in active commitments as of July 2025, contract shown as expiring ~Jan 2026. LAUSD reports $2,109,888 expended through 6/30/26 under bench contract C3175 (term through 6/9/2027), plus $28,722 in delegated purchases. LAUSD's expended figure ($2,109,888) equals the amount PESP lists as the active commitment; the end date and status also differ. The LAUSD figure is used here. Correction: PESP's table lists $2,129,988 as \"Total Spent within Commitment Dates\" and $2,109,888 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
       "overlap_group": "reading-literacy",
       "source_links": [
         {
@@ -5037,13 +5126,18 @@
         {
           "label": "Board Report 027-26/27, Attachment B, Item C (Oct. 6, 2026) (PDF)",
           "url": "https://legistar.granicus.com/lausd/attachments/439c4618-4936-4878-96c5-77550291050e.pdf"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "id": 143,
@@ -5066,24 +5160,28 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Per PESP report (UTLA data): $3,157,579 committed, $2,955,000 spent as of July 2025. Contract expired. Renaissance Learning is owned by Francisco Partners, a private equity firm.",
+      "notes": "Per PESP report (UTLA data): $3,157,579 spent within commitment dates against $2,955,000 in total active commitments. Contract expired. Renaissance Learning is owned by Francisco Partners, a private equity firm.",
       "source_url": null,
       "verification_status": "reported",
       "keywords": "edtech, assessment, reading",
       "flag_count": 0,
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-10-03 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "none",
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence.",
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). This contract is shown as expired, which may explain its absence. Correction: PESP's table lists $3,157,579 as \"Total Spent within Commitment Dates\" and $2,955,000 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
       "source_links": [
         {
           "label": "PESP report (April 2026)",
           "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
@@ -5111,26 +5209,30 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Per PESP report (UTLA data): $1,352,869 committed, $786,173 spent as of July 2025. Contract had 545 days remaining as of July 2025 (~January 2027). VC-backed per PESP.",
+      "notes": "Per PESP report (UTLA data): $1,352,869 spent within commitment dates against $786,173 in total active commitments, with 545 days left as of July 2025 (~January 2027). VC-backed per PESP.",
       "source_url": null,
       "verification_status": "reported",
       "keywords": "edtech, project-based learning",
       "flag_count": 0,
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-10-03 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": "Defined Learning is a project-based learning platform providing online curriculum units connecting classroom content to career applications. Project-based learning is a well-established pedagogical approach that predates ed-tech platforms \u2014 experienced teachers implement PBL without any software. Free and lower-cost alternatives exist including PBLWorks (a nonprofit with free resources), Google Classroom-based PBL frameworks, and state-provided curriculum resources. There is no public evidence that Defined Learning was evaluated against ESSA standards for evidence-based interventions. UNESCO's 2023 review found less than 1 in 5 of the top 100 ed-tech tools used in US classrooms met ESSA evidence requirements.",
       "questions_to_ask": "- What evidence of student outcome improvement did Defined Learning provide before this contract was signed?\n- Did this contract go through LAUSD's UDIPP review process?\n- Has LAUSD evaluated free alternatives including PBLWorks resources and state-provided curriculum materials?\n- What percentage of LAUSD teachers are actively using this platform?",
-      "red_flags": "- Project-based learning is a teaching methodology that does not require a $1.4M software platform.\n- No public evidence this tool was evaluated against ESSA evidence-based intervention standards before purchase.\n- Free nonprofit alternatives including PBLWorks provide equivalent curriculum frameworks at no cost.\n- Unclear whether this contract went through LAUSD's UDIPP review process for ed-tech procurement.",
+      "red_flags": "- Project-based learning is a teaching methodology that does not require a $1.35M software platform.\n- No public evidence this tool was evaluated against ESSA evidence-based intervention standards before purchase.\n- Free nonprofit alternatives including PBLWorks provide equivalent curriculum frameworks at no cost.\n- Unclear whether this contract went through LAUSD's UDIPP review process for ed-tech procurement.",
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "medium",
       "ai_analysis_date": null,
       "cheaper_alternative": "PBLWorks \u2014 the gold-standard nonprofit for project-based learning \u2014 offers free curriculum frameworks, lesson plans, and teacher professional development. A district this size could purchase PBLWorks professional development at a fraction of the cost of a software platform.",
       "overlap_note": "Likely overlaps with the STEM enrichment bench (33 vendors, $10M) and other curriculum contracts. Total LAUSD spending on curriculum supplemental materials is not publicly consolidated.",
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases).",
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). Correction: PESP's table lists $1,352,869 as \"Total Spent within Commitment Dates\" and $786,173 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
       "source_links": [
         {
           "label": "PESP report (April 2026)",
           "url": "https://pestakeholder.org/news/as-layoffs-loom-86-of-lausd-digital-instruction-contracts-committed-to-private-equity-venture-capital-backed-companies/"
+        },
+        {
+          "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
@@ -5189,7 +5291,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5237,7 +5339,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "contract_number": "C3429",
@@ -5251,7 +5354,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5298,7 +5401,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "contract_number": "C3430",
@@ -5312,7 +5416,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5359,7 +5463,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "contract_number": "C3431",
@@ -5373,7 +5478,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5420,7 +5525,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "contract_number": "C3432",
@@ -5434,7 +5540,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5494,7 +5600,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "contract_number": "C3435",
@@ -5508,7 +5615,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5528,7 +5635,7 @@
       "status": "Active",
       "delegated_purchases_amount": 1023733,
       "delegated_purchases_desc": "Site Licenses / Gizmos for STEM Enrichment",
-      "data_discrepancy": "Veritas Capital profile previously cited $1,004,617 committed for Explorelearning (PESP (Private Equity Stakeholder Project) report, April 2026 (UTLA public records data)). LAUSD reports $0 expended under bench contract C3435 but $1,023,733 in delegated school/office purchases (6/1/23\u20136/30/26).",
+      "data_discrepancy": "PESP (April 2026, UTLA data) lists Explorelearning at $1,004,617 spent against $488,000 in active commitments. LAUSD reports $0 expended under bench contract C3435 but $1,023,733 in delegated school/office purchases (6/1/23\u20136/30/26).",
       "id": 151,
       "vendor_list": null,
       "vendor_id": null,
@@ -5556,7 +5663,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "contract_number": "C3170",
@@ -5570,7 +5678,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=5",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5628,7 +5736,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 5
     },
     {
       "contract_number": "C3830",
@@ -5642,7 +5751,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5689,7 +5798,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3834",
@@ -5703,7 +5813,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5751,7 +5861,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3835",
@@ -5765,7 +5876,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5812,7 +5923,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3842",
@@ -5826,7 +5938,7 @@
       "purchased_by": "School(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5871,7 +5983,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3843",
@@ -5885,7 +5998,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5932,7 +6045,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3847",
@@ -5946,7 +6060,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -5991,7 +6105,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3176",
@@ -6005,7 +6120,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -6061,7 +6176,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3849",
@@ -6075,7 +6191,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=6",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -6123,7 +6239,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 6
     },
     {
       "contract_number": "C3850",
@@ -6137,7 +6254,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=7",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -6182,7 +6299,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 7
     },
     {
       "contract_number": "C3851",
@@ -6196,7 +6314,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=7",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -6241,7 +6359,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 7
     },
     {
       "contract_number": "C3852",
@@ -6255,7 +6374,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=7",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 1",
       "report_table": "Table 1",
       "updated_at": "2026-11-21 00:00:00",
@@ -6300,7 +6419,8 @@
         "Federal funds",
         "State funds",
         "School/office budgets (various)"
-      ]
+      ],
+      "source_page": 7
     },
     {
       "contract_number": "C2687",
@@ -6314,7 +6434,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6348,7 +6468,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C534",
@@ -6362,7 +6483,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6394,7 +6515,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C9968",
@@ -6408,7 +6530,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6440,7 +6562,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C1948",
@@ -6454,7 +6577,7 @@
       "purchased_by": "Central office(s), School(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6488,7 +6611,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C296",
@@ -6502,7 +6626,7 @@
       "purchased_by": "Central office(s), School(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6534,7 +6658,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C1332",
@@ -6548,7 +6673,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6580,7 +6705,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C450",
@@ -6594,7 +6720,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6626,7 +6752,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C10728",
@@ -6640,7 +6767,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6672,7 +6799,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C3882",
@@ -6686,7 +6814,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=8",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6720,7 +6848,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 8
     },
     {
       "contract_number": "C1016",
@@ -6734,7 +6863,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=9",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6766,7 +6895,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 9
     },
     {
       "contract_number": "C7713",
@@ -6780,7 +6910,7 @@
       "purchased_by": "Central office(s), School(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=9",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6818,7 +6948,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 9
     },
     {
       "contract_number": "C509",
@@ -6832,7 +6963,7 @@
       "purchased_by": "Central office(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=9",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 2",
       "report_table": "Table 2",
       "updated_at": "2026-10-03 00:00:00",
@@ -6864,7 +6995,8 @@
       "ai_analysis_date": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 9
     },
     {
       "contract_number": "C290",
@@ -6878,7 +7010,7 @@
       "purchased_by": "Central office(s), School(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=10",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 3",
       "report_table": "Table 3",
       "updated_at": "2026-10-03 00:00:00",
@@ -6919,7 +7051,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 10
     },
     {
       "contract_number": "C2713",
@@ -6933,7 +7066,7 @@
       "purchased_by": "Central office(s), School(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=10",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 3",
       "report_table": "Table 3",
       "updated_at": "2026-10-03 00:00:00",
@@ -6974,7 +7107,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 10
     },
     {
       "contract_number": "C2714",
@@ -6988,7 +7122,7 @@
       "purchased_by": "Central office(s), School(s)",
       "category": "Technology",
       "verification_status": "verified",
-      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf",
+      "source_url": "/documents/LAUSD_Classroom_Technology_Contracts_Report_2026-09-29.pdf#page=10",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026, Table 3",
       "report_table": "Table 3",
       "updated_at": "2026-10-03 00:00:00",
@@ -7029,7 +7163,8 @@
       "notes": null,
       "funding_categories": [
         "Unknown"
-      ]
+      ],
+      "source_page": 10
     }
   ],
   "board_members": [
@@ -11777,15 +11912,15 @@
       "founded": "2015 (spun out of News Corp)",
       "company_type": "Private (PE-backed)",
       "ticker_symbol": null,
-      "annual_revenue": "00M+ (2023)",
+      "annual_revenue": null,
       "employee_count": null,
       "ceo_name": null,
       "ceo_compensation": null,
       "key_executives": "CEO: Larry Berger",
       "lobbying_spend": null,
       "political_donations": "Walton Family - major funders of privatization",
-      "controversies": "Walton Family ownership raises ideological concerns; News Corp origins; contract amount never disclosed despite district-wide deployment",
-      "cost_analysis": "Contract amount undisclosed; estimated 0M-0M+ based on scale; requires significant teacher training creating vendor lock-in",
+      "controversies": "Walton Family ownership raises ideological concerns; News Corp origins; original contract amounts never publicly disclosed; PESP (UTLA data) lists $225.2M paid against $164.3M in active commitments as of July 2025",
+      "cost_analysis": "Per PESP's analysis of UTLA records data: $225,207,363 spent within commitment dates against $164,329,349 in active commitments (July 2025).",
       "public_alternative": "Public curriculum alternatives exist but integration costs are barrier",
       "notes": "District-wide deployment across LAUSD via Schoology LMS with SSO integration. Products: mCLASS, Amplify CKLA, Amplify Science, Amplify Reading. Data collection on K-3 students via mCLASS. Amplify is not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts.",
       "sources": "amplify.com/lausd; LAUSD ITS Digital Learning Tools; Amplify ELA/LAUSD Program Booklet (2021)",
@@ -11837,7 +11972,7 @@
       "lobbying_spend": null,
       "political_donations": null,
       "controversies": "Per PESP report (April 2026): Veritas Capital describes itself as 'a premier technology investment firm with an in-depth knowledge and understanding that uniquely focuses on the intersection of technology and government.' Its core business is defense contractors \u2014 including Peraton, which is building HART (Homeland Advanced Recognition Technology), a DHS biometric surveillance system that can track nearly 300 million people in real time using DMV data, utility records, social media, license plates, DNA, and facial/eye scans. Veritas just closed a $15 billion fund for defense technology; the California Public Employees' Retirement System committed $400 million. Veritas acquired Cambium Learning Group for $900 million in 2018 and also owns Houghton Mifflin Harcourt (HMH). Together, Cambium and HMH claim to serve 95% and 90% of U.S. school districts respectively. Veritas-owned Anthology (Blackboard) filed for chapter 11 bankruptcy in September 2025 with more than $1 billion in liabilities, losing $80 million in revenue in the two years prior to filing.",
-      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: Explore Learning (via Cambium) \u2014 $0 expended on bench contract C3435 plus $1,023,733 in delegated purchases; Amira Learning (via HMH) \u2014 $2,109,888 expended on bench contract C3175 plus $28,722 delegated; Lexia Voyager Sopris \u2014 $0 on C3834 plus $350,019 delegated; Lexia Learning Systems \u2014 $1,771,734 delegated (no contract listed); Istation \u2014 $0 on C3830. DATA DISCREPANCY: PESP/UTLA data previously cited $1,004,617 committed for Explorelearning and $2,129,988 committed for Amira.",
+      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: Explore Learning (via Cambium) \u2014 $0 expended on bench contract C3435 plus $1,023,733 in delegated purchases; Amira Learning (via HMH) \u2014 $2,109,888 expended on bench contract C3175 plus $28,722 delegated; Lexia Voyager Sopris \u2014 $0 on C3834 plus $350,019 delegated; Lexia Learning Systems \u2014 $1,771,734 delegated (no contract listed); Istation \u2014 $0 on C3830. DATA DISCREPANCY: PESP/UTLA data (July 2025) lists $1,004,617 spent against $488,000 in active commitments for Explorelearning, and $2,129,988 spent against $2,109,888 for Amira.",
       "public_alternative": null,
       "notes": "Veritas Capital is the ultimate parent of Cambium Learning Group (which owns Lexia Learning and Explorelearning) and Houghton Mifflin Harcourt (which owns Amira Learning and Istation). The firm's primary business is defense and government technology, not education.",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026; PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
@@ -11891,7 +12026,7 @@
       "lobbying_spend": null,
       "political_donations": null,
       "controversies": "Per PESP report (April 2026): LAUSD began contracting with Age of Learning in 2023 after Carvalho became superintendent, committing $3.5 million for two years. Carvalho had previously brought Age of Learning to Miami-Dade County Public Schools starting in 2016, when Debra Kerr was Head of Sales for the company. Kerr later claimed to have facilitated the AllHere AI chatbot contract with LAUSD \u2014 the contract at the center of the federal investigation into Carvalho. This follows a pattern in which Carvalho brought Miami-Dade vendors to LAUSD.",
-      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term 6/10/2024\u20136/9/2027), plus $29,946 in delegated purchases. DATA DISCREPANCY: PESP/UTLA data previously cited $3,501,946 committed and $3,497,000 spent as of July 2025.",
+      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term 6/10/2024\u20136/9/2027), plus $29,946 in delegated purchases. DATA DISCREPANCY: PESP/UTLA data lists $3,501,946 spent against $3,497,000 in active commitments as of July 2025.",
       "public_alternative": null,
       "notes": "Connected to AllHere/Carvalho network via former employee Debra Kerr. See AllHere contract for related investigation details.",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026; PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",

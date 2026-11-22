@@ -202,12 +202,15 @@ function docNote(c) {
 }
 
 // Button label for a local source document, by file type
-function docLabel(path, isReport) {
-  if (isReport) return 'View LAUSD Report (PDF)';
-  if (/OIG|Inspector/i.test(path)) return 'View Inspector General Report (PDF)';
+function docLabel(fullPath, isReport) {
+  const m = /#page=(\d+)/.exec(fullPath || '');
+  const pg = m ? `, p. ${m[1]}` : '';
+  const path = (fullPath || '').split('#')[0];
+  if (isReport) return `View LAUSD Report (PDF${pg})`;
+  if (/OIG|Inspector/i.test(path)) return `View Inspector General Report (PDF${pg})`;
   if (/\.docx?$/i.test(path)) return 'View Board Report (Word)';
   if (/\.(jpe?g|png|webp)$/i.test(path)) return 'View Board Report (Image)';
-  return 'View Board Report (PDF)';
+  return `View Board Report (PDF${pg})`;
 }
 
 function loadData() {
