@@ -3291,7 +3291,7 @@
       "vendor_name": "AllHere Education (\"Ed\" AI Chatbot)",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Design, plan, and develop district-wide AI student chatbot (\"Ed\") \u2014 personalized learning platform integrating student records, grades, assignments, mental health referrals, and absenteeism support.",
+      "description": "Contract to plan, design and develop LAUSD's AI tool \"Ed,\" promoted as an online tool for students and parents to supplement classroom instruction and help families navigate attendance, grades, transportation and other issues (The 74). The deal began as a two-year agreement ending in July 2025, with options for three one-year renewals (The 74, June 2024).",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
@@ -3304,13 +3304,13 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "\u26a0 FRAUD PROBE \u2014 LAUSD paid $3M of $6.2M before AllHere collapsed Jun-2024. CEO arrested Nov-2024 for securities/wire fraud. FBI raided LAUSD HQ & Supt. Carvalho's home Feb-2026.",
+      "notes": "Under federal investigation: The 74 reports AllHere is being investigated by the FBI. The school board approved the contract in June 2023; LAUSD had paid AllHere $3 million of the $6.2 million contract (The 74; PESP). AllHere furloughed most of its employees on June 14, 2024, and the district deactivated the chatbot (The 74; PESP). AllHere filed for bankruptcy in September 2024. In November 2024 founder and CEO Joanna Smith-Griffin was arrested and charged with defrauding investors of nearly $10 million (allegations of securities fraud, wire fraud and aggravated identity theft); she pleaded not guilty in December 2024 (The 74). In late February 2026 federal agents searched Superintendent Alberto Carvalho's home and district office; The 74 reports the AllHere contract is widely believed to be connected, but authorities have not provided details, the warrants remain sealed, Carvalho has not been accused of wrongdoing, and he has denied any wrongdoing.",
       "source_url": "Board approval Jun-2023; The 74, EdSource, EdWeek, LAist",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:42:30",
-      "updated_at": "2026-04-09 14:42:30",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3321,12 +3321,25 @@
         {
           "label": "The 74: AllHere met with LAUSD leaders before landing $6.2M deal",
           "url": "https://www.the74million.org/article/allhere-set-meeting-with-lausd-leaders-months-before-landing-6-2m-chatbot-deal/"
+        },
+        {
+          "label": "The 74 (June 26, 2024): Turmoil surrounds LA's new AI student chatbot as tech firm furloughs staff",
+          "url": "https://www.the74million.org/article/turmoil-surrounds-las-new-ai-student-chatbot-as-tech-firm-furloughs-staff-just-3-months-after-launch/"
+        },
+        {
+          "label": "The 74 (July 9, 2024): Was Los Angeles Schools' $6 Million AI Venture a Disaster Waiting to Happen?",
+          "url": "https://www.the74million.org/article/was-los-angeles-schools-6-million-ai-venture-a-disaster-waiting-to-happen/"
+        },
+        {
+          "label": "PESP report (April 2026), pp. 3-4 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 83,
@@ -3355,7 +3368,7 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:42:30",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3377,7 +3390,8 @@
       ],
       "overlap_groups": [
         "it-staffing"
-      ]
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 84,
@@ -3387,7 +3401,7 @@
       "vendor_name": "Innive, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "IT services and software development for MiSiS student information system.",
+      "description": "Contracts primarily related to LAUSD's My Integrated Student Information System (MiSiS), awarded to Innive between 2018 and 2022 and totaling more than $22 million (LA County District Attorney).",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
@@ -3400,13 +3414,13 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "\u26a0 FRAUD \u2014 $22M in contracts allegedly steered by LAUSD IT manager Hong 'Grace' Peng; $3M+ laundered back. Felony charges filed Mar-2026. Largest alleged money-laundering in LAUSD history.",
+      "notes": "Criminal charges (allegations, not convictions): On March 26, 2026, the LA County District Attorney announced felony charges against former LAUSD technical project manager Hong \"Grace\" Peng and Innive owner Gautham Sampath. Peng is accused of illegally participating in the awarding of contracts totaling more than $22 million to Innive between 2018 and 2022. Sampath is accused of routing and laundering over $3 million back to Peng through intermediaries. The DA called it one of the largest alleged money laundering schemes in LAUSD history. Peng resigned in late 2022 after a search warrant was served. The DA states the charges are allegations and the defendants are presumed innocent unless proven guilty (case 26CJCF01762).",
       "source_url": "LA County DA press release; NBC LA; CBS LA; LAist",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:42:30",
-      "updated_at": "2026-04-09 14:42:30",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3422,7 +3436,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 85,
@@ -3432,29 +3447,29 @@
       "vendor_name": "ContinuumCloud",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Cloud-based behavioral health records management software for student health, special education services, and Medi-Cal billing.",
+      "description": "Contract with ContinuumCloud, the cloud software company Battery Ventures formed in 2021 (as Behavioral Holdings) by combining Welligent, an electronic health records software maker, and DATIS HR Cloud. Welligent is the system LAUSD uses for special education and related services records.",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
       "amount": 19800000,
-      "start_date": "2019-01-01",
-      "end_date": null,
+      "start_date": null,
+      "end_date": "2029-03-31",
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Parent company of Welligent; owned by Battery Ventures (tech PE firm with US/Israel investments). Separate contract from original Welligent deal below.",
+      "notes": "PESP (April 2026) reports that venture capital firm Battery Ventures owns ContinuumCloud and Welligent. Behavioral Health Business (Feb. 18, 2021) reports Battery formed Behavioral Holdings from Welligent and DATIS HR Cloud, which continue as separate brands; the platform was later renamed ContinuumCloud. LA Public Press (March 2026), citing an LAUSD spokesperson, reports ContinuumCloud has a $19.8 million contract with LAUSD through March 2029 for cloud-hosted management of district data, including special education plans and health records, and that the district wasn't aware of Welligent and ContinuumCloud's ties to Battery Ventures.",
       "source_url": "LA Public Press investigative report Mar-2026",
       "verification_status": "reported",
-      "keywords": "ContinuumCloud, special education, IEP, student records, Battery Ventures, behavioral health",
+      "keywords": "ContinuumCloud, Welligent, special education, IEP, student records, Battery Ventures, behavioral health",
       "flag_count": 0,
       "created_at": "2026-04-09 14:42:30",
-      "updated_at": "2026-04-09 14:42:30",
-      "ai_analysis": "ContinuumCloud is the parent company of Welligent, LAUSD's electronic health records platform for behavioral health and special education services. ContinuumCloud was formed by Battery Ventures, a PE firm, to acquire and consolidate behavioral health software companies. Battery Ventures also invested in Paragon \u2014 a spyware company founded by former Israeli intelligence officers that supplies ICE with surveillance tools. In March 2026, the LAUSD board voted to cut ties with vendors connected to immigration enforcement. The district then admitted it was unaware of this connection. It is unclear whether the review required by that resolution has been completed for this contract. Student behavioral health and special education records are among the most sensitive data a school district holds \u2014 and this data is managed by a company owned by a PE firm with investments in surveillance technology.",
-      "questions_to_ask": "- Has LAUSD completed the vendor review required by the March 2026 immigration enforcement resolution for this contract?\n- What specific student data does ContinuumCloud hold and who at Battery Ventures or its portfolio companies has access to it?\n- Is there overlap between ContinuumCloud's Welligent platform and Kokomo24/7's health tools?\n- Given the board's ICE resolution, what is the current status of this contract?",
-      "red_flags": "- ContinuumCloud is owned by Battery Ventures, which also invested in Paragon spyware used by ICE to surveil immigrants \u2014 a connection LAUSD admitted it was unaware of.\n- The board's March 2026 resolution requires review of vendors connected to immigration enforcement. It is unclear whether this contract has been reviewed.\n- Student behavioral health and special education records \u2014 among the most sensitive student data \u2014 are held by a PE-owned company with surveillance technology connections.\n- Welligent has $8M in annual revenue and 19 employees. LAUSD is paying $19.8M for a contract with a company that generates less annually than the contract itself.",
+      "updated_at": "2026-11-21 00:00:00",
+      "ai_analysis": "ContinuumCloud is the Battery Ventures-backed company that operates Welligent, the electronic health records software LAUSD uses for special education and related services records. Battery Ventures formed the company in 2021 (as Behavioral Holdings) by combining Welligent and DATIS HR Cloud. PESP reports that Battery Ventures sold its interests in spyware maker Paragon Solutions in 2024, after Paragon had secured an ICE contract in October 2024. In March 2026 the LAUSD board approved a resolution on vendors that cooperate with federal immigration enforcement. Whether this contract has been reviewed under that resolution is not documented in the sources reviewed.",
+      "questions_to_ask": "- Has LAUSD completed the vendor review called for by the board's March 2026 immigration enforcement resolution for this contract?\n- What student data does ContinuumCloud/Welligent hold for LAUSD, and who can access it?\n- Is there overlap between the Welligent platform and Kokomo24/7's health tools?\n- What is the current status and term of this contract?",
+      "red_flags": "- PESP reports that Battery Ventures, which owns ContinuumCloud and Welligent, sold its interests in Paragon Solutions (maker of Graphite spyware) to AE Industrial Partners in 2024, and that before the sale Paragon secured a contract with ICE in October 2024.\n- LA Public Press reports Battery was a former investor in spyware firm Paragon, \"which was founded by former Israeli intelligence officers and currently supplies U.S. immigration agents with sophisticated hacking tools as part of a $2 million dollar contract with ICE.\"",
       "sources": null,
       "finding_level": "significant",
       "ai_analysis_date": null,
@@ -3465,6 +3480,18 @@
         {
           "label": "LA Public Press (Mar. 2026): LAUSD vendors with ties to ICE",
           "url": "https://lapublicpress.org/2026/03/lausd-votes-cuts-ties-ice-immigration-contracts-defense-tech/"
+        },
+        {
+          "label": "PESP report (April 2026), p. 4 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "Behavioral Health Business (Feb. 18, 2021): Battery Ventures launches software platform for behavioral health providers",
+          "url": "https://bhbusiness.com/2021/02/18/battery-ventures-launches-software-platform-for-behavioral-health-providers/"
+        },
+        {
+          "label": "EdSource: Los Angeles Unified to cut ties with pro-immigration-enforcement vendors (March 2026)",
+          "url": "https://edsource.org/updates/los-angeles-unified-to-cut-ties-with-pro-immigration-enforcement-vendors"
         }
       ],
       "funding_categories": [
@@ -3472,7 +3499,8 @@
       ],
       "overlap_groups": [
         "health-records"
-      ]
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 86,
@@ -3488,20 +3516,20 @@
       "contract_type": "Other",
       "amount": 7500000,
       "start_date": "2019-01-01",
-      "end_date": "2024-12-31",
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "5-year contract expired 2024. Welligent is a subsidiary of ContinuumCloud / Battery Ventures.",
+      "notes": "LA Public Press (March 2026) reports Welligent secured a five-year, $7.5 million contract with LAUSD in 2019 to operate a cloud-based management system for the district's records for behavioral health and special education services. Welligent is a subsidiary of ContinuumCloud, which PESP and LA Public Press report is owned by Battery Ventures. Exact start and end dates not published; status inferred from the five-year term.",
       "source_url": "LA Public Press investigative report Mar-2026",
       "verification_status": "reported",
       "keywords": "Welligent, ContinuumCloud, special education, IEP, behavioral health, Battery Ventures, mental health",
       "flag_count": 0,
       "created_at": "2026-04-09 14:42:30",
-      "updated_at": "2026-04-09 14:42:30",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3512,6 +3540,14 @@
         {
           "label": "LA Public Press (Mar. 2026): LAUSD vendors with ties to ICE",
           "url": "https://lapublicpress.org/2026/03/lausd-votes-cuts-ties-ice-immigration-contracts-defense-tech/"
+        },
+        {
+          "label": "PESP report (April 2026), p. 4 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "Behavioral Health Business (Feb. 18, 2021): Battery Ventures launches software platform for behavioral health providers",
+          "url": "https://bhbusiness.com/2021/02/18/battery-ventures-launches-software-platform-for-behavioral-health-providers/"
         }
       ],
       "funding_categories": [
@@ -3519,7 +3555,8 @@
       ],
       "overlap_groups": [
         "health-records"
-      ]
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 108,
@@ -3529,12 +3566,12 @@
       "vendor_name": "Edgenuity (now Imagine Learning)",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Online credit-recovery and course-completion platform for high school students. Expanded to broader online instruction during COVID-19 remote learning.",
+      "description": "Online courses, including credit recovery, used by LAUSD high school students. The district also used the program as classes moved online during COVID-19 and continued to use it in its online independent study program (dot.LA).",
       "plain_english": null,
       "category": "Curriculum",
       "contract_type": "Other",
       "amount": 400000,
-      "start_date": "2015-01-01",
+      "start_date": null,
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -3542,13 +3579,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "$400K contract for 2015-16 as part of a $15M credit recovery program (LA School Report). During the pandemic, dot.LA reports LAUSD paid Edgenuity $6.7M for summer-school credit recovery (30,000 high school and 40,000 middle school courses).",
+      "notes": "LA School Report (Sept. 7, 2016) reported that Edgenuity signed a $400,000 contract with the district 'this school year' to provide online courses and teacher training, as part of LA Unified's $15 million credit recovery program. During the pandemic, LAUSD paid Edgenuity $6.7 million in total (March 2020-April 2021 data), including credit recovery for 30,000 high school courses and 40,000 middle school courses (dot.LA). LAist (May 2020) reported about $6.5 million in emergency spending on 70,000 credit recovery licenses. Edgenuity's parent rebranded its products under the Imagine Learning name in 2021 (PR Newswire).",
       "source_url": "LA School Report; dot.LA COVID spending report",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
-      "updated_at": "2026-10-03 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3567,9 +3604,18 @@
         {
           "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
           "url": "https://dot.la/lausd-tech--2655314684.html"
+        },
+        {
+          "label": "LAist (May 19, 2020): The Big Winners From LAUSD's Emergency Coronavirus Spending",
+          "url": "https://laist.com/news/coronavirus-lausd-emergency-spending-tech-contracts-ipads-apple-chromebooks"
+        },
+        {
+          "label": "PR Newswire (Nov. 2021): Imagine Learning becomes new brand for Weld North Education",
+          "url": "https://prnewswire.com/news-releases/imagine-learning-becomes-new-brand-for-k-12-digital-education-leader-weld-north-education-301412493.html"
         }
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 109,
@@ -3579,11 +3625,11 @@
       "vendor_name": "Kokomo24/7",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Telehealth for physical health issues (minor injuries, allergies, headaches) for LAUSD students, under nurse supervision, and LAUSD's student health data system. Also built the Los Angeles Anonymous School Reporting app.",
+      "description": "Kokomo's telehealth service for LAUSD students focuses on physical health issues, including minor injuries, allergies and headaches; Hazel Health handles virtual mental health services (The 74). Kokomo also rebuilt LAUSD's health data system on AWS (AWS) and hosts an anonymous tip line tied to the Los Angeles Schools Anonymous Reporting app launched in 2023 (The 74).",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
-      "amount": null,
+      "amount": 800000,
       "start_date": "2023-01-01",
       "end_date": null,
       "approval_date": null,
@@ -3592,16 +3638,16 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "LAUSD has contracted with Kokomo since 2018; a new contract was awarded in 2023 and LAUSD moved its health tracking and data systems to Kokomo's platform on July 31, 2023 (AWS case study). On Dec. 11, 2024, Kokomo Solutions discovered an unauthorized party accessed files tied to the telehealth program and the anonymous reporting app it runs for LAUSD (EdSource, The 74).",
+      "notes": "The 74 (Aug. 14, 2025) reports L.A. schools contracted with Kokomo in 2023 and that the telehealth program cost $800,000, funded by federal pandemic relief money. Kokomo Solutions said it discovered unauthorized access to its computer network on Dec. 11, 2024, notified the district Dec. 12, 2024, and filed a breach notice with the California attorney general on Aug. 5, 2025. A district spokesperson said an unauthorized user gained access to certain files containing personal information stored on behalf of the district, and that the breach was not connected to LAUSD's telehealth program or its student patients. The number of people affected and the types of information were not disclosed (The 74).",
       "source_url": "AWS case study; EdSource; The 74",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
-      "updated_at": "2026-04-09 14:47:17",
-      "ai_analysis": "Kokomo24/7 is a school health and safety platform LAUSD has used since 2018. Services include anonymous incident reporting (LASAR tipline), emergency alerts for staff, health and wellness tracking, immunization management, visitor management, and telehealth. An AWS case study documenting LAUSD's Kokomo implementation states it cut health data infrastructure costs by 50% compared to the previous system. At $800K, this is one of the more defensible ed-tech contracts \u2014 it provides documented cost savings, genuine safety value, and has a multi-year track record with the district. The main questions involve overlap with ContinuumCloud's Welligent platform and whether AWS infrastructure costs are embedded in Kokomo's pricing.",
-      "questions_to_ask": "- What specific health data does Kokomo hold versus what ContinuumCloud/Welligent holds and is there overlap?\n- Is AWS infrastructure cost embedded in Kokomo's pricing creating a double-payment situation?\n- What clinical outcomes has the Kokomo telehealth pilot produced?\n- Has LAUSD evaluated consolidating Kokomo and ContinuumCloud into a single health data platform?",
-      "red_flags": "- Kokomo runs on AWS infrastructure, which LAUSD also pays for directly ($27M AWS contract); whether costs overlap is not documented.\n- A December 2024 data breach exposed files from the LAUSD telehealth program and anonymous reporting app.",
+      "updated_at": "2026-11-21 00:00:00",
+      "ai_analysis": "Kokomo24/7 (Kokomo Solutions) provides physical-health telehealth for LAUSD students (an $800,000 program funded with federal pandemic relief money) and hosts an anonymous tip line connected to the Los Angeles Schools Anonymous Reporting app (The 74). An AWS blog post says Kokomo rebuilt LAUSD's health data system on AWS within a year, resulting in a 50% cost reduction (the comparison baseline is not stated). In December 2024 an unauthorized party accessed files containing personal information Kokomo stored for the district; the district said the breach was not connected to its telehealth program.",
+      "questions_to_ask": "- What personal information was in the LAUSD files accessed in the December 2024 Kokomo breach, and whose information was it?\n- What health data does Kokomo hold, and how does that differ from what ContinuumCloud/Welligent holds?\n- What is the total value and term of LAUSD's Kokomo contract(s)?\n- What outcomes has the Kokomo telehealth program produced?",
+      "red_flags": "- In December 2024 an unauthorized party accessed Kokomo's network, including files containing personal information stored on behalf of LAUSD; the company disclosed it to victims about eight months later (The 74).",
       "sources": null,
       "finding_level": "medium",
       "ai_analysis_date": null,
@@ -3619,6 +3665,10 @@
         {
           "label": "The 74: Ed tech co. that provides telehealth to L.A. students experiences data breach",
           "url": "https://www.the74million.org/article/ed-tech-co-that-provides-telehealth-to-l-a-students-experiences-data-breach/"
+        },
+        {
+          "label": "aws-news.com summary (May 22, 2024) of AWS blog on Kokomo24/7 and LAUSD health data system",
+          "url": "https://aws-news.com/article/2024-05-22-aws-partner-kokomo247-transforms-los-angeles-unified-school-districts-health-data-system-in-one-year"
         }
       ],
       "funding_categories": [
@@ -3627,7 +3677,9 @@
       "data_discrepancy": "The previously listed $800,000 amount could not be found in any source and has been removed. Contract value not publicly disclosed in sources found.",
       "overlap_groups": [
         "health-records"
-      ]
+      ],
+      "text_audited": "2026-11-21",
+      "amount_basis": "Telehealth program cost (The 74)"
     },
     {
       "id": 110,
@@ -3684,20 +3736,20 @@
       "contract_type": "Other",
       "amount": 37700000,
       "start_date": "2020-03-01",
-      "end_date": "2020-12-31",
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Purchased in March 2020; 94% of that month's $72.3M emergency spend went to tech companies. Part of $227.6M in tech spending Mar-2020-Apr-2021.",
+      "notes": "LAUSD disclosed a $37.7 million deal with Apple in mid-March 2020 to purchase 'tablets and iPads'; the memo did not say how many (LAist). dot.LA lists a $37.8 million iPad purchase with no quantity and total Apple payments of $51.3 million from March 2020 through April 2021. In March 2020, 94% of the $72.3 million LAUSD spent using emergency funds went to tech companies; $227.6 million in total went to tech companies from March 2020 to April 2021 (dot.LA).",
       "source_url": "LAist May-2020; dot.LA COVID spending report",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
-      "updated_at": "2026-04-09 14:47:17",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3717,7 +3769,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 112,
@@ -3727,26 +3780,26 @@
       "vendor_name": "CDW Government, LLC",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "1,000 video conferencing bars (hardware) for school-based distance learning and instruction.",
+      "description": "1,000 video conferencing bars purchased from CDW Government, LLC for $8.5 million during the COVID-19 emergency period (dot.LA).",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
       "amount": 8500000,
-      "start_date": "2020-01-01",
-      "end_date": "2020-12-31",
+      "start_date": null,
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Single purchase; COVID emergency procurement.",
+      "notes": "dot.LA reports LAUSD paid CDW Government $8.6 million in total from March 2020 through April 2021, including $8.5 million for 1,000 video conferencing bars.",
       "source_url": "dot.LA COVID spending report",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
-      "updated_at": "2026-04-09 14:47:17",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3762,7 +3815,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 113,
@@ -3772,26 +3826,26 @@
       "vendor_name": "T-Mobile USA",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Wireless hotspots and cellular connectivity for students and families without home internet access during COVID-19 remote learning.",
+      "description": "Mobile broadband and devices for students during COVID-19 remote learning (dot.LA).",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
       "amount": 3700000,
       "start_date": "2020-03-01",
-      "end_date": "2021-12-31",
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Ramped up from existing contract. Part of broader $227.6M COVID tech spend.",
+      "notes": "LAUSD's first pandemic purchase increased its existing T-Mobile contract for mobile broadband and devices by $500,000 to $750,000. It paid T-Mobile $2.4 million in March 2020 and later paid an additional $1.3 million, for $3.7 million in total (dot.LA). LAist (May 2020) reported LAUSD ramped up an existing T-Mobile contract to $2.4 million. Part of $227.6 million in pandemic tech spending (March 2020-April 2021).",
       "source_url": "dot.LA COVID spending report",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
-      "updated_at": "2026-04-09 14:47:17",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3802,13 +3856,18 @@
         {
           "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
           "url": "https://dot.la/lausd-tech--2655314684.html"
+        },
+        {
+          "label": "LAist (May 19, 2020): The Big Winners From LAUSD's Emergency Coronavirus Spending",
+          "url": "https://laist.com/news/coronavirus-lausd-emergency-spending-tech-contracts-ipads-apple-chromebooks"
         }
       ],
       "funding_categories": [
         "Unknown"
       ],
       "data_discrepancy": "Amount corrected from $2,400,000 to $3,700,000: dot.LA reports LAUSD paid T-Mobile $2.4M in March 2020 and later an additional $1.3M.",
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 114,
@@ -3818,26 +3877,26 @@
       "vendor_name": "Deloitte Consulting",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Implementation and remediation of SAP HR/Payroll enterprise system for LAUSD. Extensive remediation required after initial deployment caused payroll errors affecting thousands of teachers.",
+      "description": "Deloitte Consulting built and installed LAUSD's payroll system (part of the Business Tools for Schools project, built on SAP software). After it launched in January 2007, errors caused overpayments, underpayments and missed payments; on June 5, 2007, about 28,000 employees were overpaid and 4,500 received less than they were due (Education Week).",
       "plain_english": null,
       "category": "Consulting",
       "contract_type": "Other",
       "amount": 140000000,
-      "start_date": "2004-01-01",
-      "end_date": "2010-12-31",
+      "start_date": null,
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Historical contract. LAUSD paid Deloitte $95M to install the SAP payroll system, then paid again to fix it (Argonaut). Payroll errors in 2007 caused under- and over-payments district-wide (Education Week). As of Dec. 31, 2007, LAUSD had paid Deloitte a total of about $140 million (Wikipedia, citing contemporaneous reporting). In a late-2008 settlement Deloitte agreed to pay LAUSD $8.25M and forgo $10M in unpaid invoices (Argonaut).",
+      "notes": "Historical contract. Education Week (June 2007) reported the system launched in January 2007 as part of a $95 million computer modernization and that LAUSD had paid Deloitte $46 million so far. The Argonaut (Dec. 2008) reported LAUSD 'paid the company $95 million to install the payroll system.' Wikipedia states that as of Dec. 31, 2007, LAUSD had paid Deloitte a total of $140 million. In a settlement reached Dec. 3, 2008, Deloitte agreed to pay LAUSD $8.25 million and forgo $10 million in unpaid invoices (Argonaut).",
       "source_url": "Argonaut; Education Week; Wikipedia",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
-      "updated_at": "2026-04-09 14:47:17",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3861,7 +3920,8 @@
           "url": "https://en.wikipedia.org/wiki/Deloitte"
         }
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 115,
@@ -3890,7 +3950,7 @@
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:17",
-      "updated_at": "2026-04-09 14:47:17",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -3911,7 +3971,8 @@
         "Unknown"
       ],
       "data_discrepancy": "Previously listed as an unnamed vendor; LAist and dot.LA name Amazon and Mergent.",
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 116,
@@ -4012,16 +4073,16 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "PESP report (April 2026, using UTLA public records data) lists $225,207,363 spent within commitment dates against $164,329,349 in total active commitments, with 1,224 days remaining on the active contract as of July 2025, meaning payments exceeded the active commitment by about $60.9 million. Original board contract amounts were not publicly disclosed; these figures come from a UTLA records request, not LAUSD board documents. End date (~Nov. 2028) is estimated from PESP's 1,224 days remaining as of July 2025; start date unknown. Amplify's LAUSD page lists CKLA, Boost Reading, mCLASS and Amplify Science accessed through LAUSD single sign-on.",
+      "notes": "PESP report (April 2026, using a UTLA public records dataset) lists Amplify Education with $225,207,363 'total spent within commitment dates' against $164,329,349 in 'total active commitments,' with 1,224 days left on the active contract as of July 2025. PESP highlights vendors whose payments exceed their contract commitments; the difference is about $60.9 million. These figures come from UTLA's analysis of district payment data, not LAUSD board documents. End date (~Nov. 2028) is estimated from PESP's 1,224 days remaining as of July 2025; start date unknown. A June 2025 board report states Amplify 'has been doing business with the District since 2013.' Amplify's LAUSD page lists Amplify CKLA and Caminos, Amplify ELA (Grade 6), mCLASS, mCLASS Intervention, Boost Reading, Boost Lectura and Amplify Science, and says the products can be accessed via Schoology or Clever using LAUSD single sign-on.",
       "source_url": "Amplify.com/lausd; LAUSD Instructional Tech pages",
       "verification_status": "estimated",
-      "keywords": "Amplify, phonics, literacy, reading, curriculum, Walton Family Foundation, edtech, ELA",
+      "keywords": "Amplify, phonics, literacy, reading, curriculum, edtech, ELA, mCLASS, CKLA",
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:37",
       "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
-      "red_flags": "Per PESP's analysis of UTLA records data, LAUSD paid Amplify $225.2M against $164.3M in active contract commitments (as of July 2025), about $60.9M over. Original contract amounts were not publicly disclosed. Amplify is not listed in LAUSD's Sept. 2026 classroom technology report.",
+      "red_flags": "Per PESP's table (UTLA data), LAUSD's payments to Amplify within commitment dates ($225.2M) exceed its total active contract commitments ($164.3M) as of July 2025, a difference of about $60.9M.",
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "significant",
       "ai_analysis_date": null,
@@ -4046,6 +4107,10 @@
         {
           "label": "Wikipedia: Amplify (company)",
           "url": "https://en.wikipedia.org/wiki/Amplify_(company)"
+        },
+        {
+          "label": "LAUSD Board Report 325-24/25 (June 3, 2025), Attachment A: Amplify contract C9258 (mCLASS RDRS)",
+          "url": "https://legistar.granicus.com/lausd/attachments/3a6068f3-a52a-482a-b386-75c8c1accf16.pdf"
         }
       ],
       "funding_categories": [
@@ -4054,7 +4119,8 @@
       "overlap_groups": [
         "assessment",
         "tutoring"
-      ]
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 118,
@@ -4064,12 +4130,12 @@
       "vendor_name": "Seesaw Learning",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Elementary learning experience platform; digital portfolios, family communication, and classroom activities for K-6.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Elementary learning experience platform. Seesaw's LAUSD page lists Schoology integration, CKLA-aligned content, oral reading fluency and formative assessments, a Read-with-Me literacy tool, and family communication in 100+ languages; schools can purchase Seesaw through LAUSD's Digital Bench.",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
-      "amount": null,
-      "start_date": "2020-01-01",
+      "amount": 974572,
+      "start_date": null,
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -4077,13 +4143,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "LAUSD is a named Seesaw district partner. Contract terms not publicly disclosed.",
+      "notes": "Seesaw's LAUSD partnership page describes its '5th year of partnering with L.A. Unified schools' (undated) and gives no pricing or contract terms. PESP's April 2026 table (UTLA payment data) lists Seesaw Learning with $974,572 spent within commitment dates against $932,646 in total commitments, with the contract shown as expired as of July 2025.",
       "source_url": "Seesaw.com/lausd-and-seesaw-partnership",
       "verification_status": "estimated",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:37",
-      "updated_at": "2026-10-03 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4095,12 +4161,17 @@
         {
           "label": "Seesaw: LAUSD partnership page",
           "url": "https://seesaw.com/lausd-and-seesaw-partnership"
+        },
+        {
+          "label": "PESP report (April 2026), table p. 9 (PDF)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 119,
@@ -4188,26 +4259,26 @@
       "vendor_name": "Verizon",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Wireless connectivity and hotspot services for 125,000+ low-income students during COVID-19 remote learning. Became a national model for district connectivity programs.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Mobile broadband services and devices for students without home internet access during COVID-19 remote learning. LAUSD agreed in March 2020 to pay Verizon up to $4.6 million and later paid another $1.5 million for additional service and devices (dot.LA).",
       "plain_english": null,
       "category": "Technology",
       "contract_type": "Other",
       "amount": 6100000,
       "start_date": "2020-03-01",
-      "end_date": "2021-12-31",
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Specific LAUSD payment amount not publicly disclosed. Program became national framework.",
+      "notes": "When LAUSD and Verizon announced the agreement on March 23, 2020, LAUSD did not disclose terms; the district said as many as 100,000 students lacked home internet access (THE Journal). dot.LA's records (March 2020-April 2021) show $6.1 million paid to Verizon; LAist (May 2020) reported $4.6 million in emergency spending on the deal.",
       "source_url": "Verizon press release; dot.LA COVID report",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 14:47:38",
-      "updated_at": "2026-04-09 14:47:38",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4218,13 +4289,22 @@
         {
           "label": "dot.LA: How Much Tech Companies Made From LAUSD During the Pandemic",
           "url": "https://dot.la/lausd-tech--2655314684.html"
+        },
+        {
+          "label": "THE Journal (Mar. 23, 2020): LAUSD to provide internet connectivity for students who don't have access",
+          "url": "https://thejournal.com/articles/2020/03/23/lausd-to-provide-internet-connectivity-for-students-who-dont-have-access.aspx"
+        },
+        {
+          "label": "LAist (May 19, 2020): The Big Winners From LAUSD's Emergency Coronavirus Spending",
+          "url": "https://laist.com/news/coronavirus-lausd-emergency-spending-tech-contracts-ipads-apple-chromebooks"
         }
       ],
       "funding_categories": [
         "Unknown"
       ],
       "data_discrepancy": "Amount added: dot.LA reports LAUSD agreed to pay Verizon up to $4.6M in March 2020 and later paid another $1.5M, $6.1M total.",
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 122,
@@ -4234,12 +4314,12 @@
       "vendor_name": "Balfour Beatty Construction LLC",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "School construction and modernization projects. OIG performed incurred cost audit on Contract 4400011969 (Dec-2025). Also performs bond-funded school reconstruction in broader LA area.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Construction of a defined portion of the Hamilton High School Comprehensive Modernization Project: a new stadium and athletic facilities, a new parking lot, a new LADWP utility yard, and the first phase of interim housing. The District executed Contract No. 4400011969 on August 24, 2023. Original contract amount: $56,762,682; 175 change orders totaling $1,187,819 increased it 2.1% to $57,950,501.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
-      "amount": null,
-      "start_date": "2020-01-01",
+      "amount": 57950501,
+      "start_date": "2023-08-24",
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -4247,13 +4327,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Specific LAUSD contract amounts not publicly disclosed per contract. OIG conducted incurred cost audit Dec-2025. Active vendor.",
+      "notes": "Inspector General examination 26-1004 (December 4, 2025), covering work billed through April 30, 2025: Balfour Beatty invoiced $52,351,604 (90% of the contract amount); all invoiced costs were allowable and properly supported; Balfour Beatty completed the scope of work; a sample of 62 change orders ($420,617) complied with Facilities Services Division policies and procedures. The report covers only this contract, not the parts of the modernization project awarded to Hensel Phelps.",
       "source_url": "https://media.edlio.net/594f6250/19e0b246/e73cb9c3/7e7c75e1359d49c5bd5e9aeebe11c808?_=26-1004%20Incurred%20Cost%20Audit%20-%20Balfour%20Beatty%20Construction%20LLC.%20Contract%204400011969.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:34",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4269,7 +4349,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 123,
@@ -4279,12 +4360,12 @@
       "vendor_name": "Prime Axis General Builder, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "General contracting / construction services for LAUSD facilities. OIG performed incurred cost audit on Contract 4400013173 (Dec-2025).\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Quad redesign, remediation of PCB (polychlorinated biphenyl) contamination, and replacement of the courtyard at Mary McLeod Bethune Middle School. The District executed Contract No. 4400013173 on April 17, 2024. Original contract amount: $5,094,000; 23 change orders totaling $333,730 increased it 6.6% to $5,427,730.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
-      "amount": null,
-      "start_date": "2019-01-01",
+      "amount": 5427730,
+      "start_date": "2024-04-17",
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -4292,13 +4373,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "OIG audit completed Dec-12-2025. Contract 4400013173. Individual contract value not publicly disclosed.",
+      "notes": "Inspector General examination 26-1022 (February 5, 2026), covering work billed through October 29, 2025: all invoiced costs were allowable and properly supported; Prime Axis completed the scope of work; all 23 change orders complied with Facilities Services Division policies and procedures.",
       "source_url": "https://media.edlio.net/594f6250/a686376c/55627808/5a884ec6149f44e38db4c4f67baefc2d?_=26-1022%20Incurred%20Cost%20Audit%20Prime%20Axis%20General%20Builder%20Inc.%20Contract%204400013173.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4314,7 +4395,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 124,
@@ -4324,12 +4406,12 @@
       "vendor_name": "AP Construction Group, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "General contracting / construction services for LAUSD facilities. OIG performed incurred cost audit on Contract 4400010429 (Dec-2025).\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "HVAC piping systems and related upgrades at Ramon C. Cortines School of Visual and Performing Arts. The District executed Contract No. 4400010429 with AP Construction Group, Inc., dba Air Plus, on April 12, 2022. Original contract amount: $9,525,000; 73 change orders totaling $1,612,094 increased it 16.92% to $11,137,094.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
-      "amount": null,
-      "start_date": "2019-01-01",
+      "amount": 11137094,
+      "start_date": "2022-04-12",
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -4337,13 +4419,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "OIG audit completed Dec-10-2025. Contract 4400010429. Also known as Air Plus Contract. >$50M in completed public projects per company profile.",
+      "notes": "Inspector General audit CA 26-1006 (December 12, 2025), covering work through May 31, 2025: the scope of work was about 99% complete and adequately documented; AP Construction had invoiced $10,541,597; a sample of 34 change orders was supported and awarded according to Facilities Services Division procedures. AP Construction overbilled $5,759 in bond costs on 29 change orders by applying a 2% rate instead of its actual 0.94% rate; it acknowledged the error and issued a credit (Change Order T-573, December 16, 2024).",
       "source_url": "https://media.edlio.net/594f6250/058f0e93/77873b3e/d6006faac98346b78e60e3481274c5a4?_=CA%2026-1006%20AP%20Construction%20Group%20Inc.%20Contract%20No.%204400010429.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4359,7 +4441,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 125,
@@ -4369,12 +4452,12 @@
       "vendor_name": "NSA Construction Group, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "General contracting / construction services for LAUSD facilities. OIG performed incurred cost audit on Contract 4400012532 (Oct-2025).\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Americans with Disabilities Act (ADA) program accessibility improvements at Marlton Special Education Center. The District executed Contract No. 4400012532 on December 29, 2023. Original contract amount: $3,884,000; 27 change orders totaling $167,135 increased it 4.3% to $4,051,135.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
-      "amount": null,
-      "start_date": "2020-01-01",
+      "amount": 4051135,
+      "start_date": "2023-12-29",
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -4382,13 +4465,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "OIG audit completed Oct-22-2025. Contract 4400012532.",
+      "notes": "Inspector General audit 26-1021 (transmitted November 3, 2025; auditor's report dated October 16, 2025), covering costs through June 30, 2025: NSA submitted 14 payment applications totaling $3,382,641; all billed amounts were adequately supported and allowable; NSA completed the scope of work in its schedule of values; all 27 change orders were properly approved and documented.",
       "source_url": "https://media.edlio.net/594f6250/914625ed/b81d59d8/feaf132b2f334bf190e31f8e5e558b93?_=26-1021%20Incurred%20Cost%20Audit%20NSA%20Construction%20Group%20Inc.%20Contract%20No.%204400012532.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4404,22 +4487,23 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 126,
       "contract_number": null,
-      "title": "STAR Sports Theater Arts & Recreation",
-      "short_name": null,
-      "vendor_name": "STAR Sports Theater Arts & Recreation",
+      "title": "STAR After-School and Summer Programs",
+      "short_name": "STAR After-School Programs",
+      "vendor_name": "STAR Sports Theatre Arts & Recreation, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Sports, theater arts, and recreation facility construction/services for LAUSD. OIG performed incurred cost audit on Contract 4400007320 (Dec-2025).\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "After-school and summer program services under Contract No. 4400007320, executed July 1, 2019, overseen by LAUSD's Beyond the Bell Branch.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
-      "amount": null,
-      "start_date": "2020-01-01",
+      "amount": 15600000,
+      "start_date": "2019-07-01",
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -4427,13 +4511,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "OIG audit completed Dec-4-2025. Contract 4400007320.",
-      "source_url": "https://media.edlio.net/594f6250/914625ed/b81d59d8/4dfa04fc57a64cc8b6f31f19c233d5e8?_=CA%2025-1471%20Incurred%20Cost%20STAR%20Sports%20Theatre%20Arts%20%26%20Recreation%20Cont%20No%204400007320.pdf",
+      "notes": "Inspector General incurred cost audit CA 25-1471 (Dec. 8, 2025), covering July 1, 2019 through June 30, 2024: as of July 31, 2024, LAUSD had paid STAR $15.6 million across 2,129 invoices. A sample of 37 invoices ($632,447) was accurate, properly supported and allowable in all material respects. STAR maintained required insurance, supported reported attendance, and conducted background checks and initial TB clearances. Non-compliance found: 24% of sampled staff were not retested for TB every four years; the Beyond the Bell app had incomplete or missing TB, background check and training certifications; half of sampled incidents lacked Incident Notes forms; enrollment documentation was missing for 40% of sampled students; and the equipment inventory log lacked key data with no biennial physical inventory.",
+      "source_url": "https://media.edlio.net/594f6250/914625ed/fd4ac2a0/4ad28be848894de6baf14a55e48b006c?_=CA%2025-1471%20Incurred%20Cost%20STAR%20Sports%20Theatre%20Arts%20%26%20Recreation%20Cont%20No%204400007320.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4443,13 +4527,16 @@
       "source_links": [
         {
           "label": "OIG Incurred Cost Audit CA 25-1471: STAR Sports Theatre Arts & Recreation (PDF)",
-          "url": "https://media.edlio.net/594f6250/914625ed/b81d59d8/4dfa04fc57a64cc8b6f31f19c233d5e8?_=CA%2025-1471%20Incurred%20Cost%20STAR%20Sports%20Theatre%20Arts%20%26%20Recreation%20Cont%20No%204400007320.pdf"
+          "url": "https://media.edlio.net/594f6250/914625ed/fd4ac2a0/4ad28be848894de6baf14a55e48b006c?_=CA%2025-1471%20Incurred%20Cost%20STAR%20Sports%20Theatre%20Arts%20%26%20Recreation%20Cont%20No%204400007320.pdf"
         }
       ],
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21",
+      "amount_basis": "Paid as of July 31, 2024 (OIG audit)",
+      "data_discrepancy": "Earlier versions of this page linked the wrong audit (Zum Services, CA 25-1463) and described STAR as a construction contractor; corrected to the STAR audit CA 25-1471."
     },
     {
       "id": 127,
@@ -4472,13 +4559,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Contract No. 4400007798. Inspector General audit CA 24-1436 (Oct. 8, 2024): amounts billed generally reflected contract discounts, but Mainline overbilled $2,162.58 in sales tax on non-taxable software subscriptions. Mainline paid the required volume rebates, but not all payments were on time, and it owed $2,982.51 in late-payment interest. Total questioned: $5,145. Mainline refunded both amounts. The audit also noted missing or incomplete freight documents/packing slips.",
+      "notes": "Contract No. 4400007798. Inspector General audit CA 24-1436 (Oct. 8, 2024): overall, Mainline complied with the contract terms and conditions. As of September 30, 2023, the amount invoiced was allowable and reflected the contract discounts, except for a $2,162.58 overbilling of sales tax on non-taxable software subscriptions. Mainline paid the required volume rebates, but not all payments were on time, and it owed $2,982.51 in late-payment interest. Total questioned: $5,145. Mainline agreed and refunded both amounts. The audit also observed that some freight documents and/or packing slips provided by manufacturers/distributors were missing or lacked information such as District purchase order numbers.",
       "source_url": "/documents/LAUSD_OIG_FY2025_Annual_Report.pdf",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4488,7 +4575,14 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "source_links": [
+        {
+          "label": "LAUSD Inspector General FY2025 Annual Report (PDF), pp. 60-61",
+          "url": "https://media.edlio.net/594f6250/19e0b246/431b688f/dc6e708026124f4cb20a0d55c98bd8d6?_=FY_2025_Annual_Report_to_the_BOE_07302025.pdf"
+        }
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 128,
@@ -4498,12 +4592,12 @@
       "vendor_name": "HeyTutor, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Tutoring services platform: on-demand tutors matched to LAUSD students across elementary, middle, and high schools. Contracted through Division of Instruction (DOI).\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Tutoring services under Contract No. 4400010491. The Division of Instruction (DOI) sponsors the District's tutorial services contracts.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
       "plain_english": null,
       "category": "Curriculum",
       "contract_type": "Other",
       "amount": null,
-      "start_date": "2022-01-01",
+      "start_date": null,
       "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
@@ -4511,13 +4605,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Contract No. 4400010491. Audit (CA 24-1449, performed by Baker Tilly) found $62,709 in questioned/unsupported costs. Findings: 52% of tutors lacked evidence of required background checks; billing irregularities across 13 tested invoices including services billed before work authorizations. District agreed to 7 recommendations.",
+      "notes": "Inspector General audit CA 24-1449 (May 20, 2025), performed by bench firm Baker Tilly, covering 13 invoices paid as of October 2023. Findings: HeyTutor did not provide evidence of background checks and tuberculosis screenings for 13 of 25 (52%) tutors selected for testing; Fingerprint and Criminal Background Check Certification forms were not submitted to Risk Finance and Insurance Services, and neither the schools nor DOI ensured they were. Of the 13 invoices tested, four included tutors with no school site identified ($37,850), two included a non-LAUSD school ($5,171), and three included services performed before the work authorization's timestamp; training hours above the contract's three-hour limit totaled $19,688. The audit recommended the District work with HeyTutor to recover $62,709 in unsupported costs. The District agreed with all seven recommendations; HeyTutor agreed with one and partially agreed with three. The OIG could not obtain all requested documentation from HeyTutor and the District.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4535,7 +4629,8 @@
       ],
       "overlap_groups": [
         "tutoring"
-      ]
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 129,
@@ -4545,26 +4640,26 @@
       "vendor_name": "JG Management Consultants, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Construction project management professional services for LAUSD bond-funded capital program. Provided 24 contract professionals in roles including CEQA project management, construction engineering, design management, risk management, regional construction direction.",
+      "description": "Professional construction and project management services for the LAUSD capital improvement program. JG Management provided 24 contract professionals, in roles including CEQA project manager, construction project engineer, design manager, risk management consultant, and regional construction director.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
       "amount": 22600000,
       "start_date": "2019-12-01",
-      "end_date": "2024-11-01",
+      "end_date": "2024-11-30",
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Contract No. 4400007489. NTE $22.6M (increased from original $5M). Cumulative expenditures: $20,512,420 as of Jun-2024. Contract period extended through Nov-2024. Audit (OA 24-1444): invoices properly documented and approved by FSD management. No exceptions.",
+      "notes": "Contract No. 4400007489. Original term December 1, 2019 to November 30, 2021, with an initial not-to-exceed amount of $5,000,000 and three one-year extension options; later extended through November 30, 2024, with the not-to-exceed amount increased to $22,600,000. Cumulative expenditures: $20,512,420 as of June 30, 2024. Inspector General audit OA 24-1444 (March 25, 2025): JG Management invoices and timesheets were properly documented and approved by Facilities Services Division management.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4580,7 +4675,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 130,
@@ -4590,26 +4686,26 @@
       "vendor_name": "Hill International, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Construction program management professional services for LAUSD bond-funded capital improvement program. Provided 7 contract professionals including real estate asset manager, OAR, project scheduler, QA/QC electrical reviewer.",
+      "description": "Professional construction and project management services for the LAUSD capital improvement program. Hill provided seven contract professionals, in roles including real estate asset manager, owner authorized representative, project program scheduler, and QA/QC electrical technical reviewer.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
       "amount": 7000000,
       "start_date": "2019-12-01",
-      "end_date": "2024-11-01",
+      "end_date": "2024-11-30",
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Contract No. 4400007487. NTE $7.0M (increased from original $5M via 12 amendments + 3 one-year extensions). Cumulative expenditures: $5,492,478 as of Apr-2024. Audit (OA 24-1443): invoices reviewed and approved per District policies and procedures. No exceptions.",
+      "notes": "Contract No. 4400007487. Original term December 1, 2019 to November 30, 2021, with an initial not-to-exceed amount of $5,000,000 and three one-year extension options. The contract was amended 12 times, extending the term through November 30, 2024 and increasing the not-to-exceed amount to $7,000,000. Cumulative expenditures: $5,492,478 as of April 30, 2024. Inspector General audit OA 24-1443 (March 14, 2025): Facilities Services Division management reviewed and approved Hill invoices and timesheets according to District policies and procedures.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4625,7 +4721,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 131,
@@ -4635,7 +4732,7 @@
       "vendor_name": "PCN3, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Seismic retrofit of the Benjamin Franklin High School auditorium. Scope changes included: replacing damaged materials/fixtures and other significant renovations.",
+      "description": "Seismic retrofit of the Benjamin Franklin High School auditorium. Change orders included replacing damaged materials and fixtures and other significant renovations requested by the end user.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
@@ -4648,13 +4745,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Contract No. 4400009999. Original award: $6,090,000. 259 change orders totaling $2,646,174 increased total to $8,736,174 (+43%). Audit (CA 24-1439): found $23,936 overbilled for payment/performance bond costs; credit change order issued. Scope substantially complete.",
+      "notes": "Contract No. 4400009999. Original award: $6,090,000. As of February 29, 2024, 259 change orders totaling $2,646,174 increased the contract value by 43% to $8,736,174. Inspector General audit CA 24-1439 (November 19, 2024): the amount invoiced was allowable and supported; a sample of 30 change orders was reasonable and properly authorized; PCN3 completed the contracted scope for the audit period, based on the project architect's sign-off of five of seven punch list reports. The payment and performance bond cost PCN3 charged on change orders exceeded its actual bond cost by $23,936; the District executed credit Change Order No. T-871 for that amount, and PCN3 agreed with the recommendation.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4685,7 +4782,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 132,
@@ -4695,20 +4793,20 @@
       "vendor_name": "California Certified Construction and Electrical, Inc. (CCCE)",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Graham Elementary School Americans with Disabilities Act (ADA) Barrier Removal Project: modified nine restrooms, corrected nine path-of-travel slopes, installed drinking fountains and classroom doors, modified cafeteria counter, added assembly seating lift.",
+      "description": "Graham Elementary School Americans with Disabilities Act (ADA) Barrier Removal Project: modifying nine restrooms, correcting nine major path-of-travel slopes, installing four drinking fountains, installing classroom doors, hardware and thresholds, modifying sinks and cabinets in the STEM classroom and nurse's office, adding a lift and two front rows of assembly seating in the auditorium, and modifying the cafeteria service counter area.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
       "amount": 2882749,
       "start_date": null,
-      "end_date": "2024-12-31",
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Contract No. 4400010524. Original amount: $2,389,000. 39 change orders totaling $493,749 increased contract by 20.7% to $2,882,749. Audit (CA 25-1445): CCCE invoiced $2,882,749 (100% of revised contract); all costs allowable. Scope completed per Substantial Completion certificate. Status set to Expired because the contract term in the source document ended 2024-12-31; renewal options or later amendments, if any, are not reflected here.",
+      "notes": "Contract No. 4400010524. Original amount: $2,389,000. 39 change orders totaling $493,749 increased the contract by 20.7% to $2,882,749. Inspector General audit CA 25-1445 (April 15, 2025): CCCE invoiced $2,882,749 as of August 13, 2024 (100% of the revised contract); all invoiced costs were allowable and properly supported; a sample of 24 change orders was awarded according to Facilities Services Division policies. Completion was confirmed through the Certificate of Substantial Completion, the Notice of Contract Completion & Acceptance, and a site walkthrough.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
@@ -4730,7 +4828,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 133,
@@ -4740,20 +4839,20 @@
       "vendor_name": "Geronimo Concrete, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Classroom Replacement Project at Wonderland Elementary School - new kindergarten building and related campus construction.",
+      "description": "Classroom Replacement Project at Wonderland Elementary School, including a new kindergarten building.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
       "amount": 6300000,
       "start_date": null,
-      "end_date": "2024-12-31",
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Contract No. 4400009058. Original contract value: $6.3M. Project substantially completed 375 days late (COVID supply chain, community noise requests). Technical Evaluation (24-0307-TE, Feb-2025): exterior plaster cracks found in new kindergarten building walls/ceilings; DSA certification delayed 20+ months after substantial completion. $22,747 in keys stolen due to improper key management by LAUSD staff. Status set to Expired because the contract term in the source document ended 2024-12-31; renewal options or later amendments, if any, are not reflected here.",
+      "notes": "Contract No. 4400009058. Original contract value: $6.3 million. Inspector General technical evaluation 24-0307-TE (February 14, 2025): the OIG concluded Geronimo completed most of the project work in accordance with the contract and observed good workmanship, but found Geronimo did not fully comply with all contract requirements. The project was substantially completed 375 days after the original date, mainly due to COVID-19 supply chain issues, logistical difficulties from the school's location, and community requests to adjust work hours due to noise. Findings also included exterior plaster cracks in the new kindergarten building's walls and ceilings, and DSA certification still pending more than 20 months after substantial completion due to additional safety work requested by the District's Office of Environmental Health and Safety and a missing backflow-preventer enclosure. Separately, District project management staff did not manage school keys per District guidelines; the cost to replace stolen keys was $22,747. Geronimo agreed with all recommendations.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
@@ -4775,7 +4874,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 134,
@@ -4785,26 +4885,26 @@
       "vendor_name": "Eberhard",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Roofing replacement and repair project at Mulholland Middle School - 33-building campus, 15-building roof downspout removal/replacement, gymnasium overflow scupper installation.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Roofing project at Mulholland Middle School.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
       "amount": null,
       "start_date": "2023-09-01",
-      "end_date": "2024-08-01",
+      "end_date": "2024-08-30",
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Contract No. 4400011944. BOE approved Mar-2017; construction did not start until Sep-2023; substantial completion Aug-2024 (7+ year delay). Technical Evaluation (25-0174-TE, Jun-2025): change order rate 2.31% (well below 8-14% industry average). Findings: missing shop drawings for gymnasium scuppers; incomplete Contractor Evaluation Form.",
+      "notes": "Contract No. 4400011944. Inspector General technical evaluation 25-0174-TE (June 12, 2025): the scope of the project was successfully completed, with a change order rate of 2.31%, well below the industry average of 8-14%. The Board of Education approved the project on March 14, 2017; construction did not start until September 1, 2023, and substantial completion was August 30, 2024. The OIG described this as a project planning delay by Facilities Services Division. Other findings: deficiencies in the installation of the gymnasium overflow scuppers, with no approved shop drawings for that work; an incompletely filled Contractor Evaluation Form (FSD did not obtain the principal's input); unclear specifications for removing roof downspouts on 15 of 33 buildings; and unclear Section 179D tax credit requirements. Eberhard agreed with the recommendations that pertained to it.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4820,7 +4920,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 135,
@@ -4830,7 +4931,7 @@
       "vendor_name": "Ninyo & Moore Geotechnical & Environmental Sciences Consultants",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Material testing and special inspection professional services for LAUSD construction projects. Services provided via individual task orders issued against a master contract.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Material testing and special inspection professional services, provided through task orders.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
@@ -4843,13 +4944,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Contract No. 4400008553. Audit (CA 25-1458, Jun-2025): billings adequately supported, matched contract rates, and followed all contract requirements. Ninyo & Moore completed work per scope for 10 of 28 reviewed task orders; 18 task orders still in progress at audit close. No exceptions found.",
+      "notes": "Contract No. 4400008553. Inspector General audit CA 25-1458 (June 30, 2025): billings were adequately supported and allowable; labor hours and laboratory costs were properly documented, matched the contract rates, and followed all contract requirements; no exceptions were found in the sample tested. Of 28 task orders reviewed, Ninyo & Moore completed the work and submitted the required reports for 10; the remaining 18 were still in progress.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4865,7 +4966,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 136,
@@ -4875,7 +4977,7 @@
       "vendor_name": "CNS Environmental, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Asbestos, lead-containing material, and hazardous materials consulting services for LAUSD facilities and construction projects. Task-order based contract.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Asbestos, lead-containing material, and hazardous materials consulting services, provided through task orders.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
@@ -4888,13 +4990,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Contract No. 4400010136. Audit (Ca 25-1451, Jun-2025): billings accurate, at approved contract rates, and compliant with all contract requirements. CNS completed work per scope for 26 of 28 reviewed task orders; remaining 2 task orders cancelled without deliverables. No exceptions found.",
+      "notes": "Contract No. 4400010136. Inspector General audit CA 25-1451 (June 24, 2025): invoices were supported by documentation, billed at the approved contract rates, and complied with all contract requirements; no exceptions were identified in the sample tested. Of 28 task orders sampled, CNS completed the work and submitted the required reports for 26; the other two were cancelled and required no deliverables.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4910,7 +5012,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 137,
@@ -4920,7 +5023,7 @@
       "vendor_name": "Sandy Pringle Associates, Inc.",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "DSA (Division of State Architect) Construction Inspection Professional Services for LAUSD bond-funded school construction projects. Inspectors validate construction compliance with DSA-approved plans and state safety standards.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
+      "description": "Division of the State Architect (DSA) Construction Inspection Professional Services.\n\nContract amount not available in public board records. File a CPRA request for full contract details.",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Other",
@@ -4933,13 +5036,13 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Contract No. 4400011124. Audit (CA 25-1447, May-2025): billed amounts adequately supported and allowable under contract. All overtime and District-shutdown work properly pre-approved - resolving deficiencies cited in a prior audit. No exceptions found.",
+      "notes": "Contract No. 4400011124. Inspector General audit CA 25-1447 (May 20, 2025): amounts billed were adequately supported and allowable under the contract. All overtime and work during District shutdown periods was pre-approved by the inspector's immediate supervisor, resolving concerns from a prior audit. Facilities Services Division management reviewed and approved invoices and timesheets according to District policies and procedures.",
       "source_url": "LAUSD OIG FY2025 Annual Report to BOE (Jul-2025)",
       "verification_status": "reported",
       "keywords": null,
       "flag_count": 0,
       "created_at": "2026-04-09 20:21:35",
-      "updated_at": "2026-04-09 20:21:35",
+      "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
       "red_flags": null,
@@ -4955,7 +5058,8 @@
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 138,
@@ -5035,12 +5139,12 @@
     {
       "id": 139,
       "contract_number": null,
-      "title": "95 Percent Group Reading Intervention",
+      "title": "95 Percent Group Reading Products",
       "short_name": "95 Percent Group",
       "vendor_name": "95 Percent Group, Inc",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Digital instruction / reading intervention tools. Commitment and spending data from UTLA public records request cited in PESP report.",
+      "description": "Reading products and related services. PESP lists 95 Percent Group among LAUSD's digital instructional tool vendors.",
       "plain_english": "LAUSD paid 95 Percent Group for reading intervention tools: $1.38M against a $4.69M commitment, per PESP's analysis of UTLA records.",
       "category": "Technology",
       "contract_type": "Service",
@@ -5053,7 +5157,7 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Per PESP report (UTLA data): $1,376,715 spent within commitment dates against $4,688,610 in total active commitments. Contract expired.",
+      "notes": "Per PESP report (April 2026), using data UTLA obtained through a public records request: $1,376,715 spent within commitment dates against $4,688,610 in total active commitments. PESP lists the contract as expired as of July 2025.",
       "source_url": null,
       "verification_status": "reported",
       "keywords": "edtech, reading, literacy",
@@ -5075,12 +5179,17 @@
         {
           "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
           "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "95 Percent Group website",
+          "url": "https://www.95percentgroup.com/"
         }
       ],
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 140,
@@ -5311,8 +5420,8 @@
       "vendor_name": "Renaissance Learning, Inc",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Digital assessment and instruction tools. Commitment and spending data from UTLA public records request cited in PESP report.",
-      "plain_english": "LAUSD paid Renaissance Learning for digital assessment tools.",
+      "description": "Digital instructional tools. PESP lists Renaissance Learning among LAUSD's digital instructional tool vendors.",
+      "plain_english": "LAUSD paid Renaissance Learning $3.16M within the commitment dates, against $2.96M in total active commitments, per PESP's analysis of UTLA records.",
       "category": "Technology",
       "contract_type": "Service",
       "amount": 3157579,
@@ -5324,7 +5433,7 @@
       "department": null,
       "funding_source": null,
       "status": "Expired",
-      "notes": "Per PESP report (UTLA data): $3,157,579 spent within commitment dates against $2,955,000 in total active commitments. Contract expired. Renaissance Learning is owned by Francisco Partners, a private equity firm.",
+      "notes": "Per PESP report (April 2026), using data UTLA obtained through a public records request: $3,157,579 spent within commitment dates against $2,955,000 in total active commitments. PESP lists the contract as expired as of July 2025. Francisco Partners, a private equity firm, agreed to acquire Renaissance in May 2018. In November 2021, Renaissance announced a significant equity investment from funds managed by Blackstone, with Francisco Partners remaining a major shareholder.",
       "source_url": null,
       "verification_status": "reported",
       "keywords": "edtech, assessment, reading",
@@ -5346,6 +5455,14 @@
         {
           "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
           "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "Francisco Partners press release: Francisco Partners to Acquire Renaissance (May 3, 2018)",
+          "url": "https://www.franciscopartners.com/news/francisco-partners-to-acquire-renaissance"
+        },
+        {
+          "label": "K-12 Dive press release: Renaissance Announces Significant Growth Investment from Blackstone (Nov 9, 2021)",
+          "url": "https://www.k12dive.com/press-release/20211109-renaissance-announces-significant-growth-investment-from-blackstone"
         }
       ],
       "funding_categories": [
@@ -5353,7 +5470,8 @@
       ],
       "overlap_groups": [
         "assessment"
-      ]
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 144,
@@ -5363,29 +5481,29 @@
       "vendor_name": "Defined Learning, LLC",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Project-based learning digital platform. Commitment and spending data from UTLA public records request cited in PESP report.",
-      "plain_english": "LAUSD pays Defined Learning for a project-based learning digital platform.",
+      "description": "Digital project-based learning platform. PESP lists Defined Learning among LAUSD's digital instructional tool vendors.",
+      "plain_english": "LAUSD pays Defined Learning for a project-based learning digital platform: $1.35M spent within the commitment dates, against $786,173 in total active commitments, per PESP's analysis of UTLA records.",
       "category": "Technology",
       "contract_type": "Service",
       "amount": 1352869,
       "start_date": null,
-      "end_date": "2026-12-28",
+      "end_date": null,
       "approval_date": null,
       "board_meeting_date": null,
       "board_vote": null,
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "Per PESP report (UTLA data): $1,352,869 spent within commitment dates against $786,173 in total active commitments, with 545 days left as of July 2025 (~January 2027). VC-backed per PESP.",
+      "notes": "Per PESP report (April 2026), using data UTLA obtained through a public records request: $1,352,869 spent within commitment dates against $786,173 in total active commitments, with 545 days left in the active contract as of July 2025.",
       "source_url": null,
       "verification_status": "reported",
       "keywords": "edtech, project-based learning",
       "flag_count": 0,
       "created_at": "2026-04-09 00:00:00",
       "updated_at": "2026-11-21 00:00:00",
-      "ai_analysis": "Defined Learning is a project-based learning platform providing online curriculum units connecting classroom content to career applications. Project-based learning is a well-established pedagogical approach that predates ed-tech platforms \u2014 experienced teachers implement PBL without any software. Free and lower-cost alternatives exist including PBLWorks (a nonprofit with free resources), Google Classroom-based PBL frameworks, and state-provided curriculum resources. There is no public evidence that Defined Learning was evaluated against ESSA standards for evidence-based interventions. UNESCO's 2023 review found less than 1 in 5 of the top 100 ed-tech tools used in US classrooms met ESSA evidence requirements.",
-      "questions_to_ask": "- What evidence of student outcome improvement did Defined Learning provide before this contract was signed?\n- Did this contract go through LAUSD's UDIPP review process?\n- Has LAUSD evaluated free alternatives including PBLWorks resources and state-provided curriculum materials?\n- What percentage of LAUSD teachers are actively using this platform?",
-      "red_flags": "- Project-based learning is a teaching methodology that does not require a $1.35M software platform.\n- No public evidence this tool was evaluated against ESSA evidence-based intervention standards before purchase.\n- Free nonprofit alternatives including PBLWorks provide equivalent curriculum frameworks at no cost.\n- Unclear whether this contract went through LAUSD's UDIPP review process for ed-tech procurement.",
+      "ai_analysis": null,
+      "questions_to_ask": "- What evidence of effectiveness, if any, did LAUSD review before purchasing Defined Learning?\n- What percentage of LAUSD teachers are actively using this platform?",
+      "red_flags": null,
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "medium",
       "ai_analysis_date": null,
@@ -5400,12 +5518,17 @@
         {
           "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
           "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "Defined Learning: About",
+          "url": "https://definedlearning.com/about-defined-learning"
         }
       ],
       "funding_categories": [
         "Unknown"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 145,
@@ -5415,7 +5538,7 @@
       "vendor_name": "Various Vendors (78 law firms)",
       "vendor_list": null,
       "vendor_id": null,
-      "description": "Seventy-eight law firms providing outside legal counsel services across administrative, education, business, facilities, general liability, labor, workers compensation, and specialty practice areas. Authorized as an aggregate not-to-exceed amount \u2014 individual firm spending is not publicly disclosed.",
+      "description": "Seventy-eight (78) contracts for outside legal services across administrative and education legal support; business and government services; facilities-related legal matters; general liability litigation; labor and employment; workers' compensation, disability and subrogation; conflict counsel; and other specialty practice areas (RFP 2000003939). Authorization to increase or decrease the contract amounts is limited to an aggregate value of $250,000,000. The board report does not list amounts for individual firms. Funding sources: Liability Self Insurance (55%), General Funds (25%), Bond Funds (20%).",
       "plain_english": null,
       "category": "Other",
       "contract_type": "Service",
@@ -5428,16 +5551,16 @@
       "department": null,
       "funding_source": "Liability Self Insurance (55%), General Funds (25%), Bond Funds (20%)",
       "status": "Active",
-      "notes": "Corrected: Previously attributed to IT Infrastructure Services contract on same board agenda. Reader review confirmed this $250M belongs to outside legal counsel bench (Item G).",
+      "notes": "Source: LAUSD Board Report 107-25/26, Attachment B, Item G (Office of the General Counsel). Contract term 01/01/26 \u2013 12/31/30, including two one-year renewal options. Contract Nos. C9552; C9880\u2013C9893; C9895\u2013C9901; C9904\u2013C9920; C9922\u2013C9926; C9928\u2013C9951; C9953\u2013C9958; C9964\u2013C9967.",
       "source_url": "/documents/C9552_IT_Infrastructure_Services.docx",
       "verification_status": "reported",
-      "keywords": "legal, outside counsel, law firms, liability, settlements",
+      "keywords": "legal, outside counsel, law firms, liability",
       "flag_count": 0,
       "created_at": "2026-04-12 00:00:00",
-      "updated_at": "2026-04-12 00:00:00",
-      "ai_analysis": "This is a bench contract covering 78 outside law firms approved January 2026 through December 2030. The $250M figure is an aggregate not-to-exceed ceiling \u2014 individual firm spending is not disclosed in the public record. The number of firms and aggregate amount warrant scrutiny: who selected these firms, what criteria were used, and how much does each firm actually receive?",
-      "questions_to_ask": "- How much has each of the 78 firms received under this contract?\n- What criteria were used to select these firms?\n- Are any of these firms connected to board members or district administrators through Form 700 disclosures?",
-      "red_flags": "- Aggregate contract for 78 law firms with no public breakdown of individual firm spending.\n- Funded 55% through Liability Self Insurance \u2014 the same fund paying sexual abuse settlements.\n- No public disclosure of selection criteria for the 78 firms.",
+      "updated_at": "2026-11-21 00:00:00",
+      "ai_analysis": "This is a bench of 78 outside law firm contracts with a term of January 1, 2026 through December 31, 2030, including two one-year renewal options. The $250M figure is an aggregate limit; the board report does not list amounts for individual firms.",
+      "questions_to_ask": "- How much has each of the 78 firms received under these contracts?\n- What evaluation criteria were used to select firms under RFP 2000003939?",
+      "red_flags": "- The board report lists a $250,000,000 aggregate amount for 78 law firms and does not list amounts for individual firms.",
       "sources": null,
       "finding_level": "medium",
       "ai_analysis_date": "2026-04-12 00:00:00",
@@ -5446,7 +5569,9 @@
         "General fund",
         "Bonds"
       ],
-      "overlap_groups": []
+      "overlap_groups": [],
+      "source_links": [],
+      "text_audited": "2026-11-21"
     },
     {
       "contract_number": "C3408",
@@ -12142,7 +12267,7 @@
       "website": "https://amplify.com",
       "parent_company": null,
       "headquarters": null,
-      "founded": "2015 (as Amplify, after News Corp sale; formerly Wireless Generation)",
+      "founded": "2000 (as Wireless Generation); renamed Amplify by News Corp in 2012; sold by News Corp in October 2015",
       "company_type": "Private, investor-backed",
       "ticker_symbol": null,
       "annual_revenue": null,
@@ -12152,14 +12277,14 @@
       "key_executives": null,
       "lobbying_spend": null,
       "political_donations": null,
-      "controversies": "Per PESP (UTLA data): LAUSD paid $225.2M against $164.3M in active commitments as of July 2025; original contract amounts were never publicly disclosed.",
+      "controversies": "Per PESP's table of UTLA records data, LAUSD's total spending with Amplify within commitment dates was $225,207,363, compared with $164,329,349 in total active commitments (contract data as of July 2025). PESP highlights vendors whose total payments exceed their total contract commitments.",
       "cost_analysis": "Per PESP's analysis of UTLA records data: $225,207,363 spent within commitment dates against $164,329,349 in active commitments (July 2025).",
-      "public_alternative": "Public curriculum alternatives exist but integration costs are barrier",
+      "public_alternative": null,
       "notes": "Amplify's LAUSD page lists CKLA, Boost Reading, mCLASS and Amplify Science accessed through LAUSD single sign-on (Schoology or Clever). Amplify is not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts.",
       "sources": null,
       "created_at": "2026-04-09 20:22:40",
       "updated_at": "2026-11-21 00:00:00",
-      "ownership": "Formerly Wireless Generation; News Corp sold Amplify in October 2015 to a management team backed by private investors. Investors include Emerson Collective, Learn Capital and A-Street; Cox Enterprises led a Series C round in May 2023 (per Amplify's announcement). No public ownership percentages.",
+      "ownership": "Formerly Wireless Generation. News Corp sold Amplify in October 2015 to a management team backed by private investors. Per Amplify's May 23, 2023 announcement, Cox Enterprises led a Series C round, joining existing investors Emerson Collective, Learn Capital and A-Street Ventures. No public ownership percentages.",
       "source_links": [
         {
           "label": "Amplify: raises significant funding (Cox Enterprises-led Series C, 2023)",
@@ -12172,8 +12297,13 @@
         {
           "label": "Amplify: LAUSD page",
           "url": "https://amplify.com/lausd"
+        },
+        {
+          "label": "PESP: Venture Capital and Private Equity Dominate LAUSD Contracts (April 2026)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
-      ]
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 46,
@@ -12191,17 +12321,32 @@
       "key_executives": null,
       "lobbying_spend": null,
       "political_donations": null,
-      "controversies": "Per PESP report (April 2026): Battery Ventures owns LAUSD contractors ContinuumCloud and Welligent. Battery Ventures had a major profit windfall in 2024 by selling its interests in Paragon Solutions \u2014 maker of Graphite spyware software \u2014 to private equity firm AE Industrial Partners. Prior to the sale, Paragon secured a contract with ICE in October 2024. Members of Congress raised concerns to DHS Secretary Kristi Noem over constitutional rights and civil liberties related to Graphite, which 'can gain unauthorized access into mobile phones without the owner's knowledge or consent, allowing access to encrypted applications, the phone's location data, as well as messages and photographs.' LAUSD had double the expected enrollment decline at the start of 2025-26 due to ICE operations in Los Angeles.",
+      "controversies": "Per PESP's April 2026 report: Battery Ventures owns LAUSD contractors ContinuumCloud and Welligent. PESP reports that Battery Ventures 'had a major profit windfall in 2024' by selling its interests in Paragon Solutions, maker of the Graphite spyware software, to private equity firm AE Industrial Partners, and that before the sale Paragon secured a contract with ICE in October 2024. TechCrunch, citing Wired, described that contract as a one-year, $2 million ICE contract, and reported (citing Globes) that Battery Ventures and Red Dot received part of the upfront payment for Paragon. Per PESP, members of Congress raised concerns to DHS Secretary Kristi Noem over constitutional rights and civil liberties related to the use of Graphite. Their October 2025 letter states that 'Graphite can gain unauthorized access into mobile phones without the owner's knowledge or consent, allowing access to encrypted applications, the phone's location data, as well as messages and photographs saved to the phone.'",
       "cost_analysis": null,
       "public_alternative": null,
-      "notes": "Battery Ventures is the parent company of LAUSD contractors ContinuumCloud and its subsidiary Welligent. The firm's connection to Paragon/Graphite spyware and ICE contracts is documented in the PESP April 2026 report.",
+      "notes": "Battery Ventures formed Behavioral Holdings in February 2021 as a platform for Welligent and DATIS HR Cloud. The company was renamed ContinuumCloud in April 2021, and Welligent operates as part of ContinuumCloud. PESP's April 2026 report says Battery Ventures sold its interests in Paragon Solutions (maker of Graphite spyware), which had an ICE contract.",
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-04-09 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "portfolio_vendors": [
         "ContinuumCloud",
         "Welligent"
-      ]
+      ],
+      "source_links": [
+        {
+          "label": "PESP: Venture Capital and Private Equity Dominate LAUSD Contracts (April 2026)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "ContinuumCloud: Behavioral Holdings Becomes ContinuumCloud",
+          "url": "https://continuumcloud.com/press-releases/behavioral-holdings-becomes-continuumcloud/"
+        },
+        {
+          "label": "TechCrunch: Israeli spyware maker Paragon bought by U.S. private equity giant (Dec 16, 2024)",
+          "url": "https://techcrunch.com/2024/12/16/israeli-spyware-maker-paragon-bought-by-u-s-private-equity-giant"
+        }
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 47,
@@ -12216,22 +12361,37 @@
       "employee_count": null,
       "ceo_name": "Ramzi Musallam",
       "ceo_compensation": null,
-      "key_executives": "CEO: Ramzi Musallam",
+      "key_executives": "CEO and Managing Partner: Ramzi Musallam",
       "lobbying_spend": null,
       "political_donations": null,
-      "controversies": "Per PESP report (April 2026): Veritas Capital describes itself as 'a premier technology investment firm with an in-depth knowledge and understanding that uniquely focuses on the intersection of technology and government.' Its core business is defense contractors \u2014 including Peraton, which is building HART (Homeland Advanced Recognition Technology), a DHS biometric surveillance system that can track nearly 300 million people in real time using DMV data, utility records, social media, license plates, DNA, and facial/eye scans. Veritas just closed a $15 billion fund for defense technology; the California Public Employees' Retirement System committed $400 million. Veritas acquired Cambium Learning Group for $900 million in 2018 and also owns Houghton Mifflin Harcourt (HMH). Together, Cambium and HMH claim to serve 95% and 90% of U.S. school districts respectively. Veritas-owned Anthology (Blackboard) filed for chapter 11 bankruptcy in September 2025 with more than $1 billion in liabilities, losing $80 million in revenue in the two years prior to filing.",
-      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: Explore Learning (via Cambium) \u2014 $0 expended on bench contract C3435 plus $1,023,733 in delegated purchases; Amira Learning (via HMH) \u2014 $2,109,888 expended on bench contract C3175 plus $28,722 delegated; Lexia Voyager Sopris \u2014 $0 on C3834 plus $350,019 delegated; Lexia Learning Systems \u2014 $1,771,734 delegated (no contract listed); Istation \u2014 $0 on C3830. DATA DISCREPANCY: PESP/UTLA data (July 2025) lists $1,004,617 spent against $488,000 in active commitments for Explorelearning, and $2,129,988 spent against $2,109,888 for Amira.",
+      "controversies": "Per PESP's April 2026 report: Veritas Capital describes itself as 'a premier technology investment firm with an in-depth knowledge and understanding that uniquely focuses on the intersection of technology and government.' PESP writes that Veritas' 'bread and butter' has come from military and defense contractors such as Arcfield and Peraton. Peraton has a contract with the Department of Homeland Security to develop Homeland Advanced Recognition Technology (HART), a biometric-based identity management platform. PESP reports that HART 'will be able to track nearly 300 million people in real time,' using profiles built from sources such as the DMV, utility services, social media profiles and license plate readers, and will include DNA and face and eye scans. Veritas closed its ninth flagship fund at $14.4 billion in September 2025; PESP describes it as a '$15 billion dollar fund for defense technology' and reports that the California Public Employees' Retirement System committed $400 million. Per PESP, Veritas acquired Cambium Learning for $900 million in 2018. Veritas also owns Houghton Mifflin Harcourt (HMH), whose acquisition it completed in 2022. PESP reports that Cambium claims to serve 95% of U.S. school districts and that HMH reaches 90% of U.S. K-12 schools. Per PESP, Veritas-owned Anthology (Blackboard) filed for Chapter 11 bankruptcy in September 2025, reporting more than $1 billion in liabilities, and lost $80 million in revenue in the two years before the filing.",
+      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: Explore Learning (via Cambium) \u2014 $0 expended on bench contract C3435 plus $1,023,733 in delegated purchases; Amira Learning (via HMH) \u2014 $2,109,888 expended on bench contract C3175 plus $28,722 delegated; Lexia Voyager Sopris \u2014 $0 on C3834 plus $350,019 delegated; Lexia Learning Systems \u2014 $1,771,734 delegated (no contract listed); Istation \u2014 $0 on C3830. For comparison, PESP's table of UTLA data (July 2025) lists $1,004,617 total spent within commitment dates against $488,000 in total active commitments for Explorelearning, and $2,129,988 spent against $2,109,888 for Amira.",
       "public_alternative": null,
-      "notes": "Veritas Capital is the ultimate parent of Cambium Learning Group (which owns Lexia Learning and Explorelearning) and Houghton Mifflin Harcourt (which owns Amira Learning and Istation). The firm's primary business is defense and government technology, not education.",
+      "notes": "Per PESP, Veritas Capital owns Cambium Learning Group (which owns Lexia Learning and Explorelearning) and Houghton Mifflin Harcourt (which PESP says owns Amira Learning and Istation). PESP writes that Veritas' 'bread and butter' has come from military and defense contractors.",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026; PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-10-03 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "portfolio_vendors": [
         "Amira Learning",
         "Explore Learning",
         "Lexia Learning Systems",
         "Istation"
-      ]
+      ],
+      "source_links": [
+        {
+          "label": "PESP: Venture Capital and Private Equity Dominate LAUSD Contracts (April 2026)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "Business Wire: Veritas Capital Closes Ninth Flagship Fund at Hard Cap of $14.4 Billion (Sept 2025)",
+          "url": "https://www.businesswire.com/news/home/20250910414578/en/Veritas-Capital-Closes-Ninth-Flagship-Fund-at-Hard-Cap-of-%2414.4-Billion"
+        },
+        {
+          "label": "THE Journal: Houghton Mifflin Harcourt Completes Sale to Veritas Capital (April 2022)",
+          "url": "https://thejournal.com/articles/2022/04/07/houghton-mifflin-harcourt-completes-sale-to-veritas-capital.aspx"
+        }
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 48,
@@ -12246,16 +12406,27 @@
       "employee_count": "11,000 (per PESP report)",
       "ceo_name": "Tim Murphy",
       "ceo_compensation": null,
-      "key_executives": "CEO: Tim Murphy (also an operating partner at Shore Capital Partners)",
+      "key_executives": "CEO: Tim Murphy (per PESP, also an operating partner at Shore Capital Partners)",
       "lobbying_spend": null,
       "political_donations": null,
-      "controversies": "Per PESP report (April 2026): Stepping Stones Group is one of the largest companies providing behavioral health services to children. It operates under three vendor names in LAUSD contracts: Stepping Stones (special education), CBEST/Center for Behavioral, Educational, and Social Therapies (speech and language, acquired 2022), and Progressus Therapy (via Invo Healthcare, acquired 2025). Together, the Stepping Stones and CBEST contracts are worth more than $26 million per the PESP report. In 2024, Stepping Stones agreed to pay $4.25 million to settle a class action lawsuit alleging widespread wage and hour violations \u2014 including failure to pay minimum wages, failure to provide meal and rest periods, and untimely payment of wages. The company denied all claims while agreeing to settle. The company has acquired at least 21 smaller companies since Leonard Green and Partners acquired it in December 2021. Prior owner Shore Capital Partners (2014\u20132018) made a 7x return on investment. Shore Capital founder Justin Ishbia is a billionaire with majority stakes in the Chicago White Sox, Phoenix Suns, and Phoenix Mercury. Parent firm Leonard Green and Partners had $75 billion in assets under management as of December 2024. Leonard Green also previously owned Prospect Medical Holdings, which filed for bankruptcy in January 2025 with over $1 billion in liabilities after Leonard Green and minority owners extracted approximately $658 million in fees and dividends while the company took a $603 million loss. A July 2025 Senate Budget Committee report found Leonard Green board meetings focused on 'profit maximization tactics \u2014 cost cutting, increasing patient volume, and managing labor expenses \u2014 with little to no discussion of patient outcomes or quality of care.' Leonard Green also owned Joann when it filed for bankruptcy, laying off 19,000 people and closing 500 stores.",
+      "controversies": "Per PESP's April 2026 report: The Stepping Stones Group is one of the largest companies providing behavioral health services to children. In LAUSD's contracting data it operates as Stepping Stones (special education) and as the Center for Behavioral, Educational, and Social Therapies (CBEST; speech and language), which it acquired in 2022. Together the two contracts are worth more than $26 million. PESP also reports that Stepping Stones acquired Invo Healthcare, which owns Progressus Therapy, another LAUSD contractor in the Speech Language category. In 2024, Stepping Stones agreed to pay $4.25 million to settle a class action lawsuit alleging wage and hour violations, including failure to pay all minimum wages, failure to provide meal periods or pay for missed meals, failure to provide rest periods, and untimely payment of wages. The company denied all claims and maintains that it has fully complied with the law. Per PESP, Stepping Stones has acquired at least 21 smaller companies since Leonard Green and Partners acquired it in December 2021, and prior owner Shore Capital Partners (2014\u20132018) made a 7x return on investment. Leonard Green had $75 billion in assets under management as of December 2024. Leonard Green previously owned Prospect Medical Holdings, a hospital system that filed for bankruptcy in January 2025 with over $1 billion in liabilities. Leonard Green sold its stake in Prospect in 2021. PESP reports that over Leonard Green's ten-year ownership, Leonard Green and Prospect's minority owners took approximately $658 million in fees and dividends, and that between FY 2015 and FY 2020 Prospect took a $603 million loss. A January 2025 Senate Budget Committee report found that Leonard Green and Prospect 'spent board meetings discussing profit maximization tactics' (cost cutting, increasing patient volume and managing labor expenses) with little to no discussion of patient outcomes or quality of care.",
       "cost_analysis": "Per PESP report: Stepping Stones and CBEST contracts together worth more than $26 million. Progressus Therapy is an additional LAUSD contractor in the speech language category.",
       "public_alternative": "In-house district special education staff (nurses, paraeducators, speech-language professionals)",
-      "notes": "Stepping Stones operates under multiple vendor names in LAUSD: 'Stepping Stones Group' (special education), 'CBEST' (speech and language), and 'Progressus Therapy' (speech language, via Invo Healthcare acquisition 2025). All are ultimately owned by private equity firm Leonard Green and Partners.",
+      "notes": "Per PESP, Stepping Stones appears in LAUSD contracting data as 'Stepping Stones' (special education) and 'CBEST' (speech and language), and owns Invo Healthcare, parent of LAUSD contractor Progressus Therapy (speech language). Per PESP, Stepping Stones is owned by private equity firm Leonard Green and Partners.",
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-04-09 00:00:00"
+      "updated_at": "2026-11-21 00:00:00",
+      "source_links": [
+        {
+          "label": "PESP: Venture Capital and Private Equity Dominate LAUSD Contracts (April 2026)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "Senate Budget Committee: Private Equity in Health Care Shown to Harm Patients... (Jan 7, 2025)",
+          "url": "https://www.budget.senate.gov/chairman/newsroom/press/private-equity-in-health-care-shown-to-harm-patients-degrade-care-and-drive-hospital-closures"
+        }
+      ],
+      "text_audited": "2026-11-21"
     },
     {
       "id": 49,
@@ -12273,21 +12444,21 @@
       "key_executives": null,
       "lobbying_spend": null,
       "political_donations": null,
-      "controversies": "Per PESP report (April 2026): LAUSD began contracting with Age of Learning in 2023 after Carvalho became superintendent, committing $3.5 million for two years. Carvalho had previously brought Age of Learning to Miami-Dade County Public Schools starting in 2016, when Debra Kerr was Head of Sales for the company. Kerr later claimed to have facilitated the AllHere AI chatbot contract with LAUSD \u2014 the contract at the center of the federal investigation into Carvalho. This follows a pattern in which Carvalho brought Miami-Dade vendors to LAUSD.",
-      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term 6/10/2024\u20136/9/2027), plus $29,946 in delegated purchases. DATA DISCREPANCY: PESP/UTLA data lists $3,501,946 spent against $3,497,000 in active commitments as of July 2025.",
+      "controversies": "Per PESP's April 2026 report: Miami-Dade County Public Schools began contracting with Age of Learning, which PESP describes as private equity-backed, in 2016, when Alberto Carvalho was M-DCPS superintendent. At the time, Debra Kerr was the company's Head of Sales. LAUSD began contracting with Age of Learning in 2023 after Carvalho became superintendent, committing $3.5 million for two years. PESP reports that Kerr claims responsibility for facilitating LAUSD's contract with AllHere, the company PESP describes as at the center of the federal investigation into Carvalho. The 74 reported that Kerr, AllHere's largest creditor, argued she helped close the Los Angeles deal and was never paid her commission.",
+      "cost_analysis": "Per LAUSD's Sept 29, 2026 report: $3,222,000 expended through 6/30/26 under Digital Tools Bench contract C3196 (term 6/10/2024\u20136/9/2027), plus $29,946 in delegated purchases. For comparison, PESP's table of UTLA data lists $3,501,946 total spent within commitment dates against $3,497,000 in total active commitments (July 2025 data).",
       "public_alternative": null,
-      "notes": "Connected to AllHere/Carvalho network via former employee Debra Kerr. See AllHere contract for related investigation details.",
+      "notes": "Per PESP and The 74, Debra Kerr, formerly Age of Learning's head of sales, later said she helped facilitate LAUSD's AllHere contract. See AllHere contract for related details.",
       "sources": "LAUSD, 'Comprehensive Report of Classroom Technology Contracts' (follow-up to Board Resolution 048-25/26), Sept. 29, 2026; PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "created_at": "2026-04-09 00:00:00",
-      "updated_at": "2026-10-04 00:00:00",
+      "updated_at": "2026-11-21 00:00:00",
       "what_they_do": "Age of Learning makes learning games and apps for young children. It is best known for ABCmouse, a subscription app families use at home, and it also sells school versions of its programs, including My Reading Academy and My Math Academy for pre-K through 2nd grade.",
-      "service_explained": "LAUSD pays for Age of Learning's digital practice programs (ABCmouse, My Reading Academy and My Math Academy) so young students can practice early reading and math skills on a device. The programs adjust to each child's level and are used as extra practice or as intervention for students who are behind. Teachers can see each student's progress.",
-      "ownership": "Privately held. Founded in 2007 by Doug Dohring, who served as founder, CEO and chairman and died in 2023. Outside investors include ICONIQ Capital, which put in $150M in 2016 at a $1B valuation; Tencent Holdings, which invested $50M in a 2020 Series B; and a $300M Series C in 2021 led by TPG (through its TPG Tech Adjacencies fund) with Qatar Investment Authority and Madrone Capital Partners, valuing the company at $3B. By 2021 the company had raised about $500M in private investment.",
-      "leadership": "Alex Galvagni, CEO since September 2023 (previously Chief Product Officer). Earlier CEOs: Paul Candland (2019-2022) and founder Doug Dohring.",
-      "scale": "Reached more than 10 million children in the year before July 2021 (LA Business Journal). LinkedIn lists 201-500 employees.",
+      "service_explained": "LAUSD buys Age of Learning digital instructional tools under its Digital Tools Bench contract C3196 (per LAUSD's Sept 29, 2026 report). The company's school programs include My Reading Academy and My Math Academy, adaptive programs for pre-K through 2nd grade. The sources reviewed do not show which specific products LAUSD licenses.",
+      "ownership": "Privately held. Founded in 2007 by Doug Dohring, who served as founder, CEO and chairman; the company announced his passing in September 2023. ICONIQ Capital led a $150M Series A (the LA Business Journal dates it to 2015; Wikipedia reports 2016 at a $1B valuation). Tencent invested $50M in a Series B about a year before July 2021. TPG, through its TPG Tech Adjacencies fund, led a $300M Series C in 2021 with Qatar Investment Authority and Madrone Capital Partners, valuing the company at $3B. By then the company had raised about $500M in private investment (LA Business Journal).",
+      "leadership": "Alex Galvagni, CEO since September 2023 (previously Chief Product Officer). Earlier CEOs include Paul Candland (appointed 2019) and founder Doug Dohring.",
+      "scale": "The LA Business Journal reported in July 2021 that Age of Learning reached more than 10 million children the previous year.",
       "issues": [
         {
-          "summary": "The FTC sued Age of Learning (ABCmouse) for deceptive marketing and unfair billing. It alleged the company misled consumers about cancellations, failed to disclose that memberships automatically renewed, and made cancelling hard. The company paid $10 million to settle and agreed to change its billing practices. In April 2021 the FTC sent about $9.7 million in refunds to consumers.",
+          "summary": "The FTC alleged that Age of Learning (ABCmouse) misrepresented how cancellations worked and failed to disclose important information, so that tens of thousands of consumers were renewed and charged without proper consent. It also alleged unauthorized billing and that the company made cancelling hard. The company agreed to pay $10 million and change its negative option marketing and billing practices. In April 2021 the FTC announced $9.7 million in refunds to consumers.",
           "date": "2020-09-02",
           "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/172-3186-age-learning-inc-abcmouse"
         }
@@ -12340,10 +12511,15 @@
         {
           "label": "LinkedIn: Age of Learning company page",
           "url": "https://www.linkedin.com/company/age-of-learning"
+        },
+        {
+          "label": "PESP: Venture Capital and Private Equity Dominate LAUSD Contracts (April 2026)",
+          "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
         }
       ],
       "research_notes": "The current ownership split (how much the founder's estate, TPG, ICONIQ, Tencent and others each hold) is not public. The 2021 LA Business Journal article's exact publication day was shown as July 4, 2021, so only the month is listed. Layoff reports (2023, 2025) appeared only on Glassdoor-style sites and were left out. The FTC blog post was found in search but not opened; the FTC case page was opened.",
-      "researched_at": "October 2026"
+      "researched_at": "October 2026",
+      "text_audited": "2026-11-21"
     },
     {
       "what_they_do": "Amira Learning makes an AI reading tutor that listens to children read aloud on a computer or tablet and helps them in real time when they get stuck. It also sells reading tests (screeners) that schools use to check which students may be struggling. In 2024 it merged with Istation, a Texas company that makes online reading and math lessons.",
