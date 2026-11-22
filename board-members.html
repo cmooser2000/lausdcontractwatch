@@ -7,7 +7,7 @@
   <meta name="description" content="LAUSD Board of Education member profiles, voting records, and accountability links.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="/css/style.css?v=20261004l">
+  <link rel="stylesheet" href="/css/style.css?v=20261121a">
   <script src="https://unpkg.com/lucide@1.51.0/dist/umd/lucide.min.js"></script>
   <style>
     .bm-stat-box {
@@ -67,10 +67,10 @@
         <span class="bm-stat-desc">Seven people control an $18 billion budget. They are elected by district, serve four-year terms, and answer to voters &mdash; but their votes are nearly impossible to find in the public record.</span>
       </div>
       <div class="bm-stat-box">
-        <span class="bm-stat-number">7-0</span>
-        <span class="bm-stat-label">On every bond and procurement contract package we could find</span>
+        <span class="bm-stat-number">0</span>
+        <span class="bm-stat-label">No votes against any technology contract in the 16 votes we documented</span>
         <div class="bm-stat-divider"></div>
-        <span class="bm-stat-desc">Of 15 documented votes since June 2025, 10 were unanimous, including $6.6 billion in bonds and every procurement contracts package. The board split on layoffs and budget cuts, an immigration resolution, and one facilities contracts package.</span>
+        <span class="bm-stat-desc">Of 16 documented votes since June 2025, 10 were unanimous among members present, including $6.6 billion in bonds. Procurement packages passed with no member voting against any technology contract; the only no votes on contracts were on employee dental and vision insurance and one facilities package.</span>
       </div>
       <div class="bm-stat-box">
         <span class="bm-stat-number">84%</span>
@@ -91,7 +91,7 @@
 <!-- Vote Context -->
 <section class="section" style="padding-top:1rem;padding-bottom:1rem">
   <div class="container" style="max-width:700px;text-align:center">
-    <p style="font-size:0.95rem;line-height:1.7;color:var(--text-muted)">LAUSD&rsquo;s public vote records only go back to June 2025 &mdash; earlier votes on contracts like AllHere, iReady, and the teacher contract are not in the public database. Of the 15 votes we could document member by member, 10 were unanimous. The exceptions: Sherlett Hendy Newbill (District 1) voted No on a December 2025 immigration enforcement resolution; the board split 4&ndash;3 and 5&ndash;2 on 2026 layoffs and 5&ndash;2 on the June fiscal stabilization plan; and on September 15, 2026, Scott Schmerelson (District 3) cast the lone No vote on a facilities contracts package. Every bond and procurement contracts package passed 7&ndash;0. <a href="#profiles" style="color:var(--gold);font-weight:600">Scroll down to see how each member voted.</a></p>
+    <p style="font-size:0.95rem;line-height:1.7;color:var(--text-muted)">LAUSD&rsquo;s public vote records only go back to June 2025 &mdash; earlier votes on contracts like AllHere, iReady, and the teacher contract are not in the public database. Of the 16 votes we could document member by member, 10 were unanimous among members present. The exceptions: Sherlett Hendy Newbill (District 1) voted No on a December 2025 immigration enforcement resolution; the board split 4&ndash;3 and 5&ndash;2 on 2026 layoffs and 5&ndash;2 on the June fiscal stabilization plan; and on September 15, 2026, Scott Schmerelson (District 3) voted No on a facilities contracts package, while Nick Melvoin and Tanya Ortiz Franklin voted No on two employee insurance contracts within the procurement package. Every bond passed 7&ndash;0, and no member voted against any technology contract, including the October 2026 increase to the digital tools bench that funds i-Ready and IXL. <a href="#profiles" style="color:var(--gold);font-weight:600">Scroll down to see how each member voted.</a></p>
     <p style="font-size:0.78rem;line-height:1.6;color:var(--text-muted);opacity:0.6;font-style:italic;margin-top:0.75rem">Vote records sourced from LAUSD Legistar (June 2025&ndash;present) and, for January&ndash;June 2026 votes missing from Legistar, news reports. LAUSD Contract Watch filed 2 public records requests for complete voting histories. LAUSD did not respond to either.</p>
   </div>
 </section>
@@ -114,7 +114,7 @@
   </div>
 </section>
 
-<script src="/js/layout.js?v=20261004l"></script>
+<script src="/js/layout.js?v=20261121a"></script>
 <script>
 (function() {
   initLayout();
@@ -186,8 +186,10 @@
           const label = v.label.length > 50 ? v.label.substring(0, 50) + '...' : v.label;
           const date = formatDate(v.date);
           let voteCell = '';
-          if (vote === 'Yes') {
-            voteCell = '<span class="bm-vote-yes" title="Yes">&#10003;</span>';
+          const qualifier = vote.indexOf('(') > -1 ? vote.slice(vote.indexOf('(')) : '';
+          if (vote.indexOf('Yes') === 0) {
+            voteCell = '<span class="bm-vote-yes" title="' + escapeHtml(vote) + '">&#10003;</span>' +
+              (qualifier ? '<div style="font-size:0.65rem;color:var(--text-muted);line-height:1.2">' + escapeHtml(qualifier) + '</div>' : '');
           } else if (vote === 'No') {
             voteCell = '<span class="bm-vote-no" title="No">&#10007;</span>';
           } else {
@@ -199,7 +201,8 @@
           const roll = v.rollcall_url ? ' <a href="' + escapeHtml(v.rollcall_url) + '" target="_blank" rel="noopener" title="Roll-call record from LAUSD\u2019s Legistar data feed" style="font-size:0.7rem;color:var(--text-muted)">(roll call)</a>' : '';
           const src = v.source_url ? ' <a href="' + escapeHtml(v.source_url) + '" target="_blank" rel="noopener" title="Source: ' + escapeHtml(v.source) + '" style="font-size:0.7rem;color:var(--text-muted)">(news)</a>' : '';
           const tally = v.tally && v.tally !== 'Unanimous' ? ' <span style="font-size:0.7rem;color:var(--text-muted)">' + escapeHtml(v.tally) + '</span>' : '';
-          rows += '<tr><td class="date-cell">' + date + '</td><td><a' + url + ' class="bm-vote-link">' + escapeHtml(label) + '</a>' + tally + roll + src + '</td><td class="bm-vote-cell">' + voteCell + '</td></tr>';
+          const vnote = v.vote_note ? '<div style="font-size:0.7rem;color:var(--text-muted);margin-top:0.2rem">' + escapeHtml(v.vote_note) + '</div>' : '';
+          rows += '<tr><td class="date-cell">' + date + '</td><td><a' + url + ' class="bm-vote-link" title="' + escapeHtml(v.label) + '">' + escapeHtml(label) + '</a>' + tally + roll + src + vnote + '</td><td class="bm-vote-cell">' + voteCell + '</td></tr>';
         });
         tableWrap.innerHTML = `
           <table class="bm-vote-table">

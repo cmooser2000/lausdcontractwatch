@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="/css/style.css?v=20261004l">
+  <link rel="stylesheet" href="/css/style.css?v=20261121a">
   <script src="https://unpkg.com/lucide@1.51.0/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -46,6 +46,22 @@
             <option>Security</option>
             <option>Maintenance</option>
             <option>Other</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filterFund">Paid From</label>
+          <select id="filterFund">
+            <option value="">All Funding Sources</option>
+            <option>General fund</option>
+            <option>COPs (borrowing repaid from general fund)</option>
+            <option>Bonds</option>
+            <option>Federal funds</option>
+            <option>State funds</option>
+            <option>School/office budgets (various)</option>
+            <option>Cafeteria fund</option>
+            <option>Insurance/benefits funds</option>
+            <option>Revenue (paid to LAUSD)</option>
+            <option>Unknown</option>
           </select>
         </div>
         <div class="filter-group">
@@ -109,6 +125,7 @@
             <th>Vendor</th>
             <th>Category</th>
             <th class="col-right">Cost Estimate</th>
+            <th>Paid From</th>
             <th>Status</th>
             <th>Date</th>
             <th>Source</th>
@@ -155,8 +172,8 @@
   }
   .search-alert-close:hover { color: var(--text); }
 </style>
-<script src="/js/layout.js?v=20261004l"></script>
-<script src="/js/search.js?v=20261004l"></script>
+<script src="/js/layout.js?v=20261121a"></script>
+<script src="/js/search.js?v=20261121a"></script>
 <script>
   lucide.createIcons();
   // Dynamic contract count

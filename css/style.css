@@ -758,6 +758,8 @@ svg.lucide {
 .cf-sources summary { cursor: pointer; color: var(--text-muted); font-weight: 600; }
 .cf-legacy-sources { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.5rem; line-height: 1.5; }
 
+.fund-cell { font-size: 0.78rem; color: var(--text-light); max-width: 170px; }
+
 /* Vendor page */
 .vendor-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
 .vendor-stat { background: var(--white); border: 1px solid var(--border); border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 1rem 1.1rem; }

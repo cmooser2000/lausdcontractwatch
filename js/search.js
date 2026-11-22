@@ -108,6 +108,7 @@ function readUrlParams() {
   if (p.get('q'))        $('searchInput').value      = p.get('q');
   if (p.get('category')) $('filterCategory').value   = p.get('category');
   if (p.get('status'))   $('filterStatus').value     = p.get('status');
+  if (p.get('fund'))     $('filterFund').value       = p.get('fund');
   if (p.get('sort'))     $('filterSort').value        = p.get('sort');
   if (p.get('finding'))  $('filterFinding').value     = p.get('finding');
   if (p.get('min'))      $('filterAmountMin').value   = p.get('min');
@@ -127,6 +128,8 @@ function pushUrlParams() {
   if (q)   p.set('q', q);
   if (cat) p.set('category', cat);
   if (st)  p.set('status', st);
+  const fundV = $('filterFund').value;
+  if (fundV) p.set('fund', fundV);
   if (srt && srt !== 'lausd_report') p.set('sort', srt);
   if (fnd) p.set('finding', fnd);
   if (mn)  p.set('min', mn);
@@ -142,6 +145,7 @@ function applyFilters() {
   const q   = $('searchInput').value.trim().toLowerCase();
   const cat = $('filterCategory').value;
   const st  = $('filterStatus').value;
+  const fund = $('filterFund').value;
   const srt = $('filterSort').value;
   const fnd = $('filterFinding').value;
   const mn  = parseFloat($('filterAmountMin').value) || 0;
@@ -153,6 +157,7 @@ function applyFilters() {
   filtered = allContracts.filter(c => {
     if (cat && c.category !== cat) return false;
     if (st  && c.status   !== st)  return false;
+    if (fund && !(c.funding_categories || ['Unknown']).includes(fund)) return false;
     if (fnd && c.finding_level !== fnd) return false;
     const amt = parseFloat(c.amount) || 0;
     if (amt < mn || amt > mx) return false;
@@ -206,7 +211,7 @@ function renderTable() {
 
   if (!page.length) {
     const q = $('searchInput').value.trim();
-    tbody.innerHTML = `<tr><td colspan="7">
+    tbody.innerHTML = `<tr><td colspan="8">
       <div class="empty-state">
         <div class="empty-icon"><i data-lucide="search"></i></div>
         <h3>No contracts found</h3>
@@ -228,6 +233,7 @@ function renderTable() {
       <td>${escapeHtml(c.vendor_name || '—')}</td>
       <td>${categoryTag(c.category)} ${c.report_table ? verificationBadge(c.verification_status) : ''} ${findingBadgeHtml(c.finding_level)}</td>
       <td class="col-right amount-cell">${formatMoney(c.amount)}</td>
+      <td class="fund-cell" title="${escapeHtml(c.funding_source || 'Not listed in available board records')}">${escapeHtml((c.funding_categories || ['Unknown']).join(', '))}</td>
       <td>${statusBadge(c.status)}</td>
       <td class="date-cell">${formatDate(c.approval_date)}</td>
       <td>${c.source_url && c.source_url.startsWith('/') ? `<a href="${escapeHtml(c.source_url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:0.8rem;font-weight:600;white-space:nowrap"><i data-lucide="file-text" style="width:14px;height:14px;vertical-align:-2px"></i> View</a>` : '<span style="color:var(--text-muted)">—</span>'}</td>
@@ -275,7 +281,7 @@ function bindEvents() {
     clearTimeout(debounce);
     debounce = setTimeout(() => { currentPage = 1; applyFilters(); }, 200);
   });
-  ['filterCategory','filterStatus','filterSort','filterFinding',
+  ['filterCategory','filterStatus','filterFund','filterSort','filterFinding',
    'filterAmountMin','filterAmountMax'].forEach(id => {
     $(id).addEventListener('change', () => { currentPage = 1; applyFilters(); });
   });
@@ -283,7 +289,8 @@ function bindEvents() {
     $('searchInput').value = '';
     $('filterCategory').value = '';
     $('filterStatus').value = '';
-    $('filterSort').value = 'amount_desc';
+    $('filterFund').value = '';
+    $('filterSort').value = 'lausd_report';
     $('filterFinding').value = '';
     $('filterAmountMin').value = '';
     $('filterAmountMax').value = '';
