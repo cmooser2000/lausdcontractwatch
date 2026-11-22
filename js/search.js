@@ -285,6 +285,16 @@ function bindEvents() {
    'filterAmountMin','filterAmountMax'].forEach(id => {
     $(id).addEventListener('change', () => { currentPage = 1; applyFilters(); });
   });
+  // Search button: apply filters and jump to the results
+  $('btnSearch').addEventListener('click', () => {
+    currentPage = 1;
+    applyFilters();
+    $('resultsSummary').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  $('searchInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); $('btnSearch').click(); }
+  });
+
   $('btnClearFilters').addEventListener('click', () => {
     $('searchInput').value = '';
     $('filterCategory').value = '';

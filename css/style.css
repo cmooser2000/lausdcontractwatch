@@ -3623,3 +3623,5 @@ textarea.search-input { resize: vertical; }
 @media (max-width: 480px) {
     .pillar-stat { font-size: 2.75rem; }
 }
+
+#resultsSummary { scroll-margin-top: 90px; }

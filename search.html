@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="/css/style.css?v=20261121a">
+  <link rel="stylesheet" href="/css/style.css?v=20261121b">
   <script src="https://unpkg.com/lucide@1.51.0/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -107,7 +107,8 @@
             <option value="none">Appears Legitimate</option>
           </select>
         </div>
-        <div class="filter-group" style="display:flex;align-items:flex-end">
+        <div class="filter-group" style="display:flex;align-items:flex-end;gap:0.5rem">
+          <button class="btn btn-primary" id="btnSearch" type="button">Search</button>
           <button class="btn btn-outline" id="btnClearFilters">Clear Filters</button>
         </div>
       </div>
@@ -172,8 +173,8 @@
   }
   .search-alert-close:hover { color: var(--text); }
 </style>
-<script src="/js/layout.js?v=20261121a"></script>
-<script src="/js/search.js?v=20261121a"></script>
+<script src="/js/layout.js?v=20261121b"></script>
+<script src="/js/search.js?v=20261121b"></script>
 <script>
   lucide.createIcons();
   // Dynamic contract count
