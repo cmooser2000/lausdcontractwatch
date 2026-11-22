@@ -4004,7 +4004,7 @@
       "category": "Curriculum",
       "contract_type": "Other",
       "amount": 225207363,
-      "start_date": "2020-01-01",
+      "start_date": null,
       "end_date": "2028-11-01",
       "approval_date": null,
       "board_meeting_date": null,
@@ -4012,7 +4012,7 @@
       "department": null,
       "funding_source": null,
       "status": "Active",
-      "notes": "PESP report (April 2026, using UTLA public records data) lists $225,207,363 spent within commitment dates against $164,329,349 in total active commitments, with 1,224 days remaining on the active contract as of July 2025, meaning payments exceeded the active commitment by about $60.9 million. Original board contract amounts were not publicly disclosed; these figures come from a UTLA records request, not LAUSD board documents. Amplify is majority-owned by the Walton Family Foundation.",
+      "notes": "PESP report (April 2026, using UTLA public records data) lists $225,207,363 spent within commitment dates against $164,329,349 in total active commitments, with 1,224 days remaining on the active contract as of July 2025, meaning payments exceeded the active commitment by about $60.9 million. Original board contract amounts were not publicly disclosed; these figures come from a UTLA records request, not LAUSD board documents. End date (~Nov. 2028) is estimated from PESP's 1,224 days remaining as of July 2025; start date unknown. Amplify's LAUSD page lists CKLA, Boost Reading, mCLASS and Amplify Science accessed through LAUSD single sign-on.",
       "source_url": "Amplify.com/lausd; LAUSD Instructional Tech pages",
       "verification_status": "estimated",
       "keywords": "Amplify, phonics, literacy, reading, curriculum, Walton Family Foundation, edtech, ELA",
@@ -4021,11 +4021,11 @@
       "updated_at": "2026-11-21 00:00:00",
       "ai_analysis": null,
       "questions_to_ask": null,
-      "red_flags": "Per PESP's analysis of UTLA records data, LAUSD paid Amplify $225.2M against $164.3M in active contract commitments (as of July 2025). Original contract amounts were not publicly disclosed. Amplify is majority-owned by the Walton Family Foundation, a major funder of school privatization. District-wide deployment creates significant vendor lock-in. Data collection on K-3 students via mCLASS assessment.",
+      "red_flags": "Per PESP's analysis of UTLA records data, LAUSD paid Amplify $225.2M against $164.3M in active contract commitments (as of July 2025), about $60.9M over. Original contract amounts were not publicly disclosed. Amplify is not listed in LAUSD's Sept. 2026 classroom technology report.",
       "sources": "PESP (Private Equity Stakeholder Project) report: 'Venture Capital and Private Equity Dominate LAUSD Contracts', April 2026. Data from UTLA public records request.",
       "finding_level": "significant",
       "ai_analysis_date": null,
-      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). Correction: PESP's table lists $225,207,363 as \"Total Spent within Commitment Dates\" and $164,329,349 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP.",
+      "data_discrepancy": "Not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts (which covers active classroom technology contracts and delegated purchases). Correction: PESP's table lists $225,207,363 as \"Total Spent within Commitment Dates\" and $164,329,349 as \"Total Active Commitments\" (as of July 2025). This site previously reversed those two figures. LAUSD paid this vendor more than its active commitment, per PESP. Earlier versions of this page said Amplify is majority-owned by the Walton Family Foundation; no source supports that and it has been removed. Amplify's investors include Emerson Collective, Learn Capital, A-Street and Cox Enterprises.",
       "source_links": [
         {
           "label": "Amplify: LAUSD page",
@@ -4038,6 +4038,14 @@
         {
           "label": "PESP report, \"Venture Capital and Private Equity Dominate LAUSD Contracts\" (April 2026), table p. 9 (PDF)",
           "url": "https://pestakeholder.org/wp-content/uploads/2026/04/PESP_Report_LAUSD_Privatization_April_2026.pdf"
+        },
+        {
+          "label": "Amplify: raises significant funding (Cox Enterprises-led Series C, 2023)",
+          "url": "https://amplify.com/news/education-technology-pioneer-amplify-raises-significant-funding-to-help-expand-its-k-12-portfolio/"
+        },
+        {
+          "label": "Wikipedia: Amplify (company)",
+          "url": "https://en.wikipedia.org/wiki/Amplify_(company)"
         }
       ],
       "funding_categories": [
@@ -12132,25 +12140,40 @@
       "id": "45",
       "vendor_name": "Amplify Education",
       "website": "https://amplify.com",
-      "parent_company": "Walton Family Foundation (majority owner)",
+      "parent_company": null,
       "headquarters": null,
-      "founded": "2015 (spun out of News Corp)",
-      "company_type": "Private (PE-backed)",
+      "founded": "2015 (as Amplify, after News Corp sale; formerly Wireless Generation)",
+      "company_type": "Private, investor-backed",
       "ticker_symbol": null,
       "annual_revenue": null,
       "employee_count": null,
       "ceo_name": null,
       "ceo_compensation": null,
-      "key_executives": "CEO: Larry Berger",
+      "key_executives": null,
       "lobbying_spend": null,
-      "political_donations": "Walton Family - major funders of privatization",
-      "controversies": "Walton Family ownership raises ideological concerns; News Corp origins; original contract amounts never publicly disclosed; PESP (UTLA data) lists $225.2M paid against $164.3M in active commitments as of July 2025",
+      "political_donations": null,
+      "controversies": "Per PESP (UTLA data): LAUSD paid $225.2M against $164.3M in active commitments as of July 2025; original contract amounts were never publicly disclosed.",
       "cost_analysis": "Per PESP's analysis of UTLA records data: $225,207,363 spent within commitment dates against $164,329,349 in active commitments (July 2025).",
       "public_alternative": "Public curriculum alternatives exist but integration costs are barrier",
-      "notes": "District-wide deployment across LAUSD via Schoology LMS with SSO integration. Products: mCLASS, Amplify CKLA, Amplify Science, Amplify Reading. Data collection on K-3 students via mCLASS. Amplify is not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts.",
-      "sources": "amplify.com/lausd; LAUSD ITS Digital Learning Tools; Amplify ELA/LAUSD Program Booklet (2021)",
+      "notes": "Amplify's LAUSD page lists CKLA, Boost Reading, mCLASS and Amplify Science accessed through LAUSD single sign-on (Schoology or Clever). Amplify is not listed in LAUSD's Sept 29, 2026 Comprehensive Report of Classroom Technology Contracts.",
+      "sources": null,
       "created_at": "2026-04-09 20:22:40",
-      "updated_at": "2026-10-03 00:00:00"
+      "updated_at": "2026-11-21 00:00:00",
+      "ownership": "Formerly Wireless Generation; News Corp sold Amplify in October 2015 to a management team backed by private investors. Investors include Emerson Collective, Learn Capital and A-Street; Cox Enterprises led a Series C round in May 2023 (per Amplify's announcement). No public ownership percentages.",
+      "source_links": [
+        {
+          "label": "Amplify: raises significant funding (Cox Enterprises-led Series C, 2023)",
+          "url": "https://amplify.com/news/education-technology-pioneer-amplify-raises-significant-funding-to-help-expand-its-k-12-portfolio/"
+        },
+        {
+          "label": "Wikipedia: Amplify (company)",
+          "url": "https://en.wikipedia.org/wiki/Amplify_(company)"
+        },
+        {
+          "label": "Amplify: LAUSD page",
+          "url": "https://amplify.com/lausd"
+        }
+      ]
     },
     {
       "id": 46,
